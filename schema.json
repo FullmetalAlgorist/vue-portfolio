@@ -1,0 +1,130 @@
+{
+  "basics": {
+    "name": "Mariah Vicary",
+    "label": "Front-end Developer",
+    "picture": "",
+    "email": "mariah.vicary@gmail.com",
+    "phone": "nope",
+    "website": "this/portfolio.com",
+    "summary": "I live on an island in the pacific northwest of america.  When I’m not out exploring or dancing, I like to design user experiences! I aim to incorporate calming natural textures into efficient, functional websites. ",
+    "location": {
+      "address": "Bainbridge Island, WA, USA",
+      "postalCode": "WA 99110",
+      "city": "Seattle",
+      "countryCode": "US",
+      "region": "WA"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Mariah",
+        "url": "https://www.linkedin.com/in/mariah-vicary-12b75142/"
+      },
+      {
+        "network": "Codepen",
+        "username": "Mariah",
+        "url": "https://codepen.io/akcrew/"
+      },
+      {
+        "network": "Github",
+        "username": "Mariah",
+        "url": "https://github.com/FullmetalAlgorist"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Mobile first development",
+      "position": "President",
+      "website": "http://company.com",
+      "startDate": "2018-01-01",
+      "summary": "In 2018 58% of all web traffic came from mobile phones, and that number raises significantly for certain sites, such as restruant menus, every website I make prioritzes small screen interaction and also scales up beautifully (try my profile on any device!), Not only will it look great on a mobile phones, it will also ook amazing on bigger screens."
+    },
+    {
+      "company": "Responsive design",
+      "position": "District Manager",
+      "website": "http://company.com",
+      "startDate": "2015-01-01",
+      "summary": "It's important to me to make a visitor to your website feel like they are part of an experience rather than just viewing a static page of information.  I strive to use animations and transitions to make web interaction more dynamic and therfore more enjoyable, stress free and memorable for any technical skill level. "
+    },
+    {
+      "company": "Transparancy",
+      "position": "Store Manager",
+      "website": "http://company.com",
+      "startDate": "2012-01-01",
+      "summary": "I am so good at communicating!!! I promise :ohp:"
+    },
+    {
+      "company": "Speed",
+      "position": "Electrical Engineering intern",
+      "website": "http://company.com",
+      "startDate": "2009-01-01",
+      "summary": "Lorem ipsum about how I can quickly deliver a product. Maybe say something convincing like that I only work on one project at a time......."
+    },
+    {
+      "company": "A sense of play",
+      "position": "Electrical Engineering intern",
+      "website": "http://company.com",
+      "startDate": "2009-01-01",
+      "summary": "There is no reason why your webpage shouldn't be a fun experience.  Efficiency in some areas needs to be maintained but if a user interacting with your website feels engaged and entertained they are more likely to stay for longer and possibly come back again for more"
+    },
+    {
+      "company": "Minimalizm",
+      "position": "Electrical Engineering intern",
+      "website": "http://company.com",
+      "startDate": "2009-01-01",
+      "summary": "The internet is cluttered with excess information users get overwhelmed visualy and have no choice but to shut out most of the input.  I try to make my websites a break from the bussiness of the web and our lives.  Where information is presented as needed in a calm attractive fasion, taylored towards the end goal, on any screen size"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Western Washington University",
+      "area": "Computer Science",
+      "studyType": "Bachelor",
+      "startDate": "2006-01-01",
+      "endDate": "2011-01-01",
+      "courses": [
+        "Computer Sciences"
+      ]
+    }
+  ],
+  "skills": [
+   
+    {
+      "name": "Web",
+      "level": 4,
+      "keywords": [
+        "Javascript",
+        "Vue js",
+        "Vuetify",
+        "NUXT js"
+      ]
+    }
+  ],
+  "interests": [
+    {
+      "name": "Web Development",
+      "keywords": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor. Lorem ipsum dolor sit amet consectetur adipisicing elit, eiusmod tempor. Proin luctus nulla elit, vitae varius massa.Etiam massa sapien, ultricies quis enim at, tempor fringilla metus. Nulla rhoncus enim sed consectetur. Mauris et eros feugiat, tincidunt eget, dictum neque. Maecenas dapibus sodales magna, eget lectus vehicula non."
+      ]
+    },
+    {
+      "name": "Photography",
+      "keywords": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor. Lorem ipsum dolor sit amet consectetur adipisicing elit, eiusmod tempor. Proin luctus nulla elit, vitae varius massa.Etiam massa sapien, ultricies quis enim at, tempor fringilla metus. Nulla rhoncus enim sed consectetur. Mauris et eros feugiat, tincidunt eget, dictum neque. Maecenas dapibus sodales magna, eget lectus vehicula non."
+      ]
+    },
+    {
+      "name": "Marketing",
+      "keywords": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor. Lorem ipsum dolor sit amet consectetur adipisicing elit, eiusmod tempor. Proin luctus nulla elit, vitae varius massa.Etiam massa sapien, ultricies quis enim at, tempor fringilla metus. Nulla rhoncus enim sed consectetur. Mauris et eros feugiat, tincidunt eget, dictum neque. Maecenas dapibus sodales magna, eget lectus vehicula non."
+      ]
+    },
+    {
+      "name": "Support",
+      "keywords": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor. Lorem ipsum dolor sit amet consectetur adipisicing elit, eiusmod tempor. Proin luctus nulla elit, vitae varius massa.Etiam massa sapien, ultricies quis enim at, tempor fringilla metus. Nulla rhoncus enim sed consectetur. Mauris et eros feugiat, tincidunt eget, dictum neque. Maecenas dapibus sodales magna, eget lectus vehicula non."
+      ]
+    }
+  ]
+}
