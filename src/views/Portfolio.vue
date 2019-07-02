@@ -30,15 +30,22 @@
         <v-container grid-list-sm fluid>
           <v-layout row wrap>
           <v-flex
-              v-for="n in ninePhotos"
-              :key="n.id"
+               v-for="n in 9"
+              :key="n"
               xs4
               d-flex
             >
               <v-card flat tile class="d-flex">
+<!-- 
+ v-for="n in ninePhotos"
+              :key="n.id" -->
+<!-- ---- -->
+                  <!-- :src="n.srrc"
+                 :lazy-src="require('@/assets/download.jpeg')" -->
                   <v-img
-                  :src="n.srrc"
-                 :lazy-src="require('@/assets/download.jpeg')"
+
+                 :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
+                  :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
                   aspect-ratio="1"
                   class="grey lighten-2"
                 >
@@ -77,18 +84,18 @@ computed:{
       }
     },
     data: () => ({
-      ninePhotos: [
+      // ninePhotos: [
       
-        {srrc: require('@/assets/gallery/loggy.jpg')},
-        {srrc: require('@/assets/gallery/IMG_6191.jpg')},
-        {srrc: require('@/assets/gallery/IMG_4828.jpg')},
-        {srrc: require('@/assets/gallery/IMG_6244.jpg')},
-        {srrc: require('@/assets/gallery/circ1.jpg')},
-        {srrc: require('@/assets/gallery/sea.jpg')},
-       {srrc: require('@/assets/gallery/IMG_5992.jpg')},
-        {srrc: require('@/assets/gallery/IMG_4370.jpg')},
-        {srrc: require('@/assets/gallery/wood-close.jpg')},
-      ]
+      //   {srrc: require('@/assets/gallery/loggy.jpg')},
+      //   {srrc: require('@/assets/gallery/IMG_6191.jpg')},
+      //   {srrc: require('@/assets/gallery/IMG_4828.jpg')},
+      //   {srrc: require('@/assets/gallery/IMG_6244.jpg')},
+      //   {srrc: require('@/assets/gallery/circ1.jpg')},
+      //   {srrc: require('@/assets/gallery/sea.jpg')},
+      //  {srrc: require('@/assets/gallery/IMG_5992.jpg')},
+      //   {srrc: require('@/assets/gallery/IMG_4370.jpg')},
+      //   {srrc: require('@/assets/gallery/wood-close.jpg')},
+      // ]
     }),
     methods: {
       toPhotos(){
