@@ -58,7 +58,7 @@
     },
     data: () => ({
       expansion: 0,
-      imag: {srrc: require('@/assets/gif/one.png')},
+      //imag: {srrc: require('@/assets/gif/one.png')},
       kneel: {srrc: require('@/assets/realFinal.png')},
       images : [
         {srrc: require('@/assets/data/061.png')},
