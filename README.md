@@ -48,3 +48,10 @@ update info situation..maybe effect of full menu that is one on mobile
 make backend situatiohn for myself for statistics or something to track users.. cookie aggreement?
 
 try my animated button maybe pulse
+
+figure  out best image hosting situation...
+also maybe load on click for processing sketches, see if that  helps
+
+maybe ask about heroku as best option while asking about image hosting on discord?
+
+maybe use launcher grid situation to display projects 

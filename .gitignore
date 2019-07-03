@@ -18,3 +18,8 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+
+# images that I need to figure out how to host, or don't need
+logos
+gif
+gall
