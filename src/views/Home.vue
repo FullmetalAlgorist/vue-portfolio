@@ -10,10 +10,10 @@
       class="cont"
     >
       <about-me />
-      <skills />
-      <Processing />
-      <priorities />
+      <!-- <skills /> -->
       <works />
+      <priorities />
+      <Processing />
       <portfolio />
 
       <contact />

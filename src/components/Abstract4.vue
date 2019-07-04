@@ -1,6 +1,6 @@
 <template>
   <v-img
-    :src="require('@/assets/abstact44.png')"
+    :src="require('@/assets/abstract44.png')"
     class="abstract-4"
     height="90%"
     width="100%"
