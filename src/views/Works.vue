@@ -51,7 +51,6 @@
         sites: [
           {
             src: require('@/assets/clients/Screen.png')
-           
           },
           {
             src: require('@/assets/clients/roboto.png')
