@@ -3,8 +3,11 @@
     <v-card
       class="v-card--game"
       elevation="6"
+      @click="toSite"
     >
-      <!-- <router-link :to="`/store/games/${value.id}`"> -->
+      <!-- to="this.value.link"
+       -->
+      <!-- <router-link :to="this.value.link"> -->
         <v-img
           v-bind="$attrs"
           :height="height"
@@ -32,10 +35,10 @@
 
           <!-- :is="getAction(value)"
         v-if="showAction" -->
-      <component
+      <!-- <component
     
         value="Launch"
-      />
+      /> -->
     </v-card>
   </v-hover>
 </template>
@@ -114,11 +117,14 @@
     //   }
     },
 mounted(){
-    console.log('value:',this.value);
-    console.log('dense:',this.dense);
+
 },
     methods: {
-
+      toSite(){
+        // console.log();
+        // this.$route.push(this.value.link);
+        window.location = this.value.link;
+      }
     //   getAction (game) {
     //     let action = 'Launch'
 

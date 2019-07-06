@@ -50,14 +50,16 @@
     data: () => ({
         sites: [
           {
-            src: require('@/assets/clients/Screen.png')
-           
+            src: require('@/assets/clients/Screen.png'),
+            link: 'https://mariah-nutrition-app.herokuapp.com'
           },
           {
-            src: require('@/assets/clients/roboto.png')
+            src: require('@/assets/clients/roboto.png'),
+             link: 'https://akcrew-roboto.herokuapp.com/'
           },
           {
-             src: require('@/assets/clients/p.png')
+             src: require('@/assets/clients/p.png'),
+             link: 'https://akcrew-transitions.herokuapp.com/'
           }
         ]
     })
