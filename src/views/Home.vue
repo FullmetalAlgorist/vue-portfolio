@@ -10,7 +10,7 @@
       class="cont"
     >
       <about-me />
-      <!-- <skills /> -->
+      <skills />
       <works />
       <priorities />
       <Processing />

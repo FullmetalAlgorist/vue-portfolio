@@ -39,8 +39,24 @@ make backend situatiohn for myself for statistics or something to track users.. 
 try my animated button maybe pulse
 
 figure  out best image hosting situation...
-also maybe load on click for processing sketches, see if that  helps
+also maybe load on click (lazy) for processing sketches, see if that  helps
 
 maybe ask about heroku as best option while asking about image hosting on discord?
 
-maybe use launcher grid situation to display projects 
+Redo recent works screenshots
+-- make them look clickable/ play with launch thing... scout out diffferent ways to give an idea what the apps are like without openeing them
+
+--make the css transitions on menu more my own (or credit it)
+
+remove one of the buttons on about me and lighten them... maybe lighten a few things
+
+figure out why the load time is so shit... host things other places, have loading menus (personalized)
+
+redo priorities...
+redo abstract 1
+
+
+DISCORD
+ask about remote hosting best practices
+ask about best way to implement ads?
+also maybe google anylitics
