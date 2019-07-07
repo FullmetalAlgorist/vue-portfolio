@@ -5,9 +5,6 @@
       elevation="6"
       @click="toSite"
     >
-      <!-- to="this.value.link"
-       -->
-      <!-- <router-link :to="this.value.link"> -->
         <v-img
           v-bind="$attrs"
           :height="height"
@@ -16,7 +13,6 @@
         >
          <!-- :style="styles" -->
           <v-layout
-           
             align-center
             justify-center
             fill-height
@@ -31,33 +27,22 @@
             /> -->
           </v-layout>
         </v-img>
-      <!-- </router-link> -->
-
-          <!-- :is="getAction(value)"
-        v-if="showAction" -->
-      <!-- <component
-    
-        value="Launch"
+     <!-- <component
+        :is="Show"
       /> -->
+      <show />
     </v-card>
   </v-hover>
 </template>
 
 <script>
-  // Utilities
-//   import {
-//     mapState
-//   } from 'vuex'
-
   export default {
     components: {
     //   InstallAction: () => import('@/components/library/InstallAction'),
-    //   LaunchAction: () => import('@/components/library/LaunchAction'),
+      Show: () => import('@/components/goThough'),
     //   VerifyAction: () => import('@/components/library/VerifyAction')
     },
-
     inheritAttrs: false,
-
     props: {
       dense: {
         type: Boolean,
@@ -67,10 +52,10 @@
         type: Boolean,
         default: false
       },
-      showAction: {
-        type: Boolean,
-        default: false
-      },
+      // showAction: {
+      //   type: Boolean,
+      //   default: false
+      // },
       static: {
         type: Boolean,
         default: false

@@ -46,17 +46,8 @@
           class="display-1 mb-2 trial2--text"
           v-text="schema.basics.name"
         />
-        <!-- <span
-          class="title mb-5"
-          v-text="schema.basics.label"
-        /> --> 
          <br>
-        <v-flex><div class="timer"></div></v-flex>
-       
-        
-
-          <!-- <br><br> -->
-      <!-- <div class="spacer"></div>  -->
+        <v-flex><div class="timer"><v-icon class="pt-2" v-text="'mdi-eye'" /></div></v-flex>
         <div
           v-for="(item, i) in items"
           :key="i"
@@ -70,7 +61,6 @@
             <span v-text="item.text" class="hi"/>
           </v-btn>
         </div>
-         <!-- <v-spacer></v-spacer> -->
         <div class="mt-auto">
           <social-contacts />
         </div>
@@ -152,12 +142,8 @@
 <style lang="scss" scoped>
 .nav{
   background-color: rgba(31, 40, 51, 0.24); //.24
-  // background-image: ;
 padding: 0;
 }
-// .mid{
-//   opacity: 1;
-// }
 .triangles{
   //opacity: .2;
   //stroke-opacity: .2;
@@ -181,22 +167,17 @@ font-weight: 375 !important;
 }
 .homer{
   border: white solid 1.5px;
-  /* margin-right: -5px; */
-
 }
 .timer {
   animation: side-to-side 4s ease-in-out reverse infinite;
   background-color: var(--v-trial1-base);
   border:solid 10vmin var(--v-primary-base);
   border-radius:50%;
-   box-sizing:border-box;
-   display: block;
+  box-sizing:border-box;
+  display: block;
   height:10vmin;
-  //left:50%;
   margin-left:-5vmin;
-  //margin-top:-5vmin;
   position:absolute;
-   //top:50%;
   width:10vmin;
 }
 

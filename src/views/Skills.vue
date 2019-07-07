@@ -37,7 +37,7 @@
       xs12
       md3
     >
-      <h3 class="headline font-weight-medium mb-4 primary--text">
+      <h3 class="display-1 font-weight-medium mb-4 primary--text">
         My Education
       </h3>
       <education-card
@@ -50,7 +50,7 @@
       xs12
       md4
     >
-      <h3 class="headline font-weight-medium mb-4 primary--text">
+      <h3 class="display-1 font-weight-medium mb-4 primary--text">
         Mastered Technologies 
       </h3>
       <list />

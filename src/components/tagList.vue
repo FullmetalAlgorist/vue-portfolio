@@ -2,12 +2,28 @@
   <div class="list">
     <v-layout>
         <v-flex class="text-xs-center sm6">
-            <h4 class="text-uppercase mb-3 primary--text" v-text="'Frameworks'"/>
-                <v-chip v-for="skill in frameWorks" :key="skill.id" outline text-color="white" color="primary">{{ skill }}</v-chip>
+         
+            <h4 class="grow primary--text text-uppercase mb-3 title " v-text="'Frameworks'" /> 
+      <!-- :class="`${hover ? white : primary}--text`" --> 
+      <!-- text-color="white" -->
+      <v-hover v-for="skill in frameWorks" :key="skill.id">
+                <v-chip  
+                :class="`${hover ?  'primary' : 'white' }--text`" 
+                class="grow"  
+                outline  
+                slot-scope="{ hover }">{{ skill }}</v-chip>
+        </v-hover> 
         </v-flex>
         <v-flex class="text-xs-center sm6">
-            <h4 class="text-uppercase mb-3 primary--text" v-text="'Web Development'" />
-                <v-chip v-for="skill in webSkills" :key="skill.id" outline text-color="white" color="primary">{{ skill }}</v-chip>
+            <h4 class="grow text-uppercase mb-3 white-text title" v-text="'Web Development'" />
+                <v-hover v-for="skill in webSkills" :key="skill.id">
+                <v-chip 
+                :class="`${hover ?  'white' : 'primary' }--text`" 
+                class="grow "  
+                slot-scope="{ hover }"  
+                outline 
+              >{{ skill }}</v-chip>
+        </v-hover>
         </v-flex>
     </v-layout>
  </div>
@@ -26,6 +42,12 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.3); 
+//color: white;
+  //color:' rgb(192,192,192,.8)';
+  }
+  
 </style>
 
      <!-- Other chip styles -->
