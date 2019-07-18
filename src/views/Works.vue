@@ -17,7 +17,6 @@ Here are some recent projects I've spent time on, click an image to launch the a
           <blockquote
           style="max-width: 230px;"
         >
-
           <p class="core-subheading font-weight-light font-italic">
            All of my code is public (including the code for this page!), want to see how something works? Check out my github.
                   </p>
@@ -90,8 +89,8 @@ Here are some recent projects I've spent time on, click an image to launch the a
   }
 </script>
 <style lang="scss">
-    .redbox{
-        background-color: red;
-        
-    }
+   .phot{
+     color: white;
+     font-size: 42% !important;
+   }
 </style>

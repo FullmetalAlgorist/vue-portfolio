@@ -15,7 +15,7 @@
               class="m-2"
             >
               <p v-text="schema.basics.summary" /> 
-               <p  class="pl-5 subheading font-weight-light font-italic">
+               <p  class="pl-5 phot subheading font-weight-light font-italic">
                I love to live on the edge of nature and technology.
                </p>
                </core-text>
@@ -226,4 +226,7 @@ let controller = new this.$scrollmagic.Controller();
 @-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
 @-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
 @keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+.phot{
+font-size: 110% !important;
+}
 </style>
