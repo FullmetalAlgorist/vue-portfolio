@@ -20,7 +20,7 @@
                </p>
                </core-text>
          <v-flex class="text-xs-center xs-12">
-           <v-btn href="https://codepen.io/akcrew/" color="primary black--text">Check out some recent code!  <v-icon right dark>mdi-codepen</v-icon> </v-btn>
+           <v-btn href="https://codepen.io/akcrew/" color="darkenMyPrimary black--text">Check out some recent code!  <v-icon right dark>mdi-codepen</v-icon> </v-btn>
       
               </v-flex>
      <v-flex pt-3 class="text-xs-center xs12" :pb-4="$vuetify.breakpoint.smAndDown">

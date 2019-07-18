@@ -3,8 +3,9 @@
     <v-card
       class="v-card--game"
       elevation="6"
-      @click="toSite"
+     
     >
+<!--  @click="toSite" -->
         <v-img
           v-bind="$attrs"
           :height="height"

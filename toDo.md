@@ -60,3 +60,23 @@ DISCORD
 ask about remote hosting best practices
 ask about best way to implement ads?
 also maybe google anylitics
+
+redo images... nutri:
+mock app in emulator in different sizes (tablet+android+ios) then write some bulletpoints and find  a nice calagey way to display them
+
+sit down with notepad and do a once over of portfolio with things you might want to change maybe show someone before "public" unveiling
+
+custom loading animation.. also blurred image (might already be implemented in lazyload on main page)
+
+Maybe link up photo blog and gallery situation
+
+check about safety of email sit
+
+prob break up transitions and have those two pages be standalone and make the transitions actually transition... don't be afraid of mimicing sarah's transitions... I think she would be down.  go girls!
+
+figure out secondary color..,.maybe theme change
+
+make current works data in  schema instead of passing it through props
+
+
+enlarge healthy harveast  logo on ipad layout

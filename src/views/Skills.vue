@@ -33,6 +33,8 @@
         </blockquote>
       </v-layout>
     </v-flex>
+
+    
     <v-flex
       xs12
       md3

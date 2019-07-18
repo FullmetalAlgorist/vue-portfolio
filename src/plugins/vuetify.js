@@ -14,7 +14,8 @@ theme: {
   trial3: '#C5C6C7', //make one of these for the buttons
 accent: '#66FCF1',
   primary: '#45A29E', //only one that matters
-  next: '#1b3440'
+  next: '#1b3440',
+  darkenMyPrimary: '#02757552' //my own, b/c buttons were too bright
 },
   components: {
     VLayout

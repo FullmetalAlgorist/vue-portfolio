@@ -18,7 +18,7 @@
             <h4 class="grow text-uppercase mb-3 white-text title" v-text="'Web Development'" />
                 <v-hover v-for="skill in webSkills" :key="skill.id">
                 <v-chip 
-                :class="`${hover ?  'white' : 'primary' }--text`" 
+                :class="`${hover ?  'primary' : 'white' }--text`" 
                 class="grow "  
                 slot-scope="{ hover }"  
                 outline 
