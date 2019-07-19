@@ -47,7 +47,7 @@
           v-text="schema.basics.name"
         />
          <br>
-        <v-flex><div class="timer"><v-icon class="pt-2" v-text="'mdi-eye'" /></div></v-flex>
+        <v-flex><div class="timer"></div></v-flex>
         <div
           v-for="(item, i) in items"
           :key="i"

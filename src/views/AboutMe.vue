@@ -200,32 +200,6 @@ let controller = new this.$scrollmagic.Controller();
 .subheading{
   margin-bottom: -10px;
 }
-.pulse-button {
-
-  position: relative;
-  // width: 100px;
-  // height: 100px;
-  border: none;
-  // box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
-  // border-radius: 50%;
-  // background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/173024/jonathanlarradet_copy.png);
-  // background-size:cover;
-  // background-repeat: no-repeat;
-  cursor: pointer;
-  -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-  -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-  -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-}
-.pulse-button:hover 
-{
-  -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
-}
-
-@-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
-@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
-@-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
-@keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
 .phot{
 font-size: 110% !important;
 }

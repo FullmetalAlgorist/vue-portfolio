@@ -80,3 +80,5 @@ make current works data in  schema instead of passing it through props
 
 
 enlarge healthy harveast  logo on ipad layout
+
+today: redo text size and spacing of recent works
