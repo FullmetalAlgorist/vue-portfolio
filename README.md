@@ -1,8 +1,10 @@
-# Vuetify Theme
-Thank you for purchasing the Theme and supporting Vuetify.
+# Mariah's Portfolio!
+I'm happy to share my code! Shoot me a message if you have questions or comments, thanks for visiting :)
+
+My portfolio is based on a vuetify theme to help me follow best practices, but has all been reworked and hopefully improved upon by me.
 
 ### Quick Start
-Unzip the `theme-release.zip` file into any directory. Copy your theme of choice and from the cli:
+Unzip the `vue-portfolio.zip` file into any directory.
 
 ```bash
 cd path/to/project
