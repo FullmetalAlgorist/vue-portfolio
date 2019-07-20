@@ -10,12 +10,13 @@ Vue.use(Vuetify, {
 //original blues
 theme: {
   trial2: '#1F2833', //MARIAH VICARY
+  darkenMyPrimary: 'rgb(255,255,255)', //my own, b/c buttons were too bright
   trial1: '#1F2833', //background dark
   trial3: '#C5C6C7', //make one of these for the buttons
 accent: '#66FCF1',
   primary: '#4DB6AC', //only one that matters
   next: '#1b3440',
-  darkenMyPrimary: '#02757552' //my own, b/c buttons were too bright
+  darkenMyPrimary: 'rgb(255,255,255)' //my own, b/c buttons were too bright
 },
   components: {
     VLayout

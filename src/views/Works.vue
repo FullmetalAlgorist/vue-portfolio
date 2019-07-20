@@ -18,19 +18,29 @@
       mb-5
       mt-2
       text-xs-center>
+      <!--  -->
         <v-layout
-        justify-center>
-          <v-card color="rgba(2, 196, 205, .2)" elevation="20">
+        justify-center >
+        <v-hover>
+          <v-card class="gitCard"  
+          :color="`${hover ? 'rgba(65,223,213,.42)' : 'rgba(31,40,51,.57)'}`"
+          href="https://github.com/FullmetalAlgorist"
+          slot-scope="{ hover }"
+           elevation="20">
             <v-card-title primary-title>
               <blockquote
               style="max-width: 330px;">
-                <p class=" subheading font-weight-light font-italic">
+              <div >
+                 <v-icon class="gitMe pulse-button" >mdi-github-circle</v-icon>
+                <p  class="justText headline font-weight-light font-italic">
                   All of my code is public (including the code for this page!), want to see how something works? Check out my github.
                 </p>
-                <v-icon  class=" gitMe pulse-button" >mdi-github-circle</v-icon>
+                </div>
+               
               </blockquote>
             </v-card-title>
           </v-card>
+        </v-hover>
         </v-layout>
       </v-flex>
         
@@ -53,8 +63,8 @@
           <h3 class="display-1 font-weight-medium mb-4 primary--text">
             What produce is in season?
           </h3>
-          <p>Produce that's in season is <b>cheaper</b>, more <b>nutritous</b> , <b>tastes better</b>, and has a <b>lower carbon footprint</b> !</p>
-          <p>Bookmark this app on your home  screen for quick  reference  next time you're on a Fruit & Veg run!</p>
+          <p class="subheading font-weight-light font-italic">Produce that's in season is <b>cheaper</b>, more <b>nutritous</b> , <b>tastes better</b>, and has a <b>lower carbon footprint</b> !</p>
+          <p class="subheading font-weight-light font-italic">Bookmark this app on your home  screen for quick  reference  next time you're on a Fruit & Veg run!</p>
         </v-flex>
       </v-layout>
   </core-section>
@@ -66,6 +76,7 @@
        Abstract4: () => import('@/components/Abstract4'),
     },
     data: () => ({
+      card: require('@/assets/abstract22.png'),
         sites: [
           {
             title: 'Healthy Harvest Nutrition App',
@@ -87,15 +98,16 @@
   }
 </script>
 <style lang="scss" >
-   .phot{
-     color: white;
-     font-size: 42% !important;
-   }
    .gitMe{
+    //  padding-bottom: 30px;
+    // margin-bottom: 30px;
 font-size: 600%;
 margin: 30px;
+// padding-bottom: 30px;
+// opacity: .2;
    }
 .pulse-button {
+  
   position: relative;
    width: 69px;
    height: 69px;
@@ -119,4 +131,34 @@ color:black;
 @-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(235, 227, 226, 0);}}
 @keyframes pulse {to {box-shadow: 0 0 0 45px rgba(230, 223, 222, 0);}}
 
+.gitCard{
+    // border-radius: 50%;
+  // width: 150px;
+height: 170px;
+// color:"rgba(31,40,51,.57)";
+// color="rgba(2, 196, 205, .2)"
+
+}
+.gitCard:hover{
+  // height: 300px;
+}
+.gitMe{
+ z-index: -1;
+align-content: center;
+text-align: center;
+opacity: .7;
+
+}
+.justText{
+  //  position: absolute; // Reposition logo from the natural layout
+//align-content: center;
+// font-weight: bold;
+// font-size: 22 !important;
+// color: black;
+color: rgba(255, 255, 255, 0.906);
+margin-top: -150px;
+//  background-color: rgba(255, 255, 255, 0.7);
+// border-radius:50%;
+  width: 330px;
+}
 </style>

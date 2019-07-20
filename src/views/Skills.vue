@@ -1,40 +1,29 @@
 <template>
   <core-section
     id="skills"
-    justify-space-around
-  >
+    justify-space-between>
     <abstract-2 />
     <v-flex
       xs12
-      mb-5
-      position="top center"
-    >
-      <v-layout justify-space-between>
-        <core-heading >What I know.
-        <p  class="pt-2 phot subheading font-weight-light font-italic">
+      mb-5>
+        <core-heading>What I know.</core-heading>
+        <p class="pt-2 subheading font-weight-light font-italic">
            <v-icon class="pr-2">mdi-camera</v-icon>
            All photographs were taken by me unless otherwise noted!
-          </p></core-heading>
-      
-         
+          </p>
         <blockquote
-          style="max-width: 230px;"
-        >
-
+          style="max-width: 230px;">
           <p class="core-subheading font-weight-light font-italic">
-           I've focused on the technologies that I currently prefer, but know quite a few more, and love learning new things!
-                  </p>
+           I've focused on the technologies that I currently prefer, but know quite a few more, and love learning new things!</p>
                   <br>
           <footer class="text-xs-center">
-            <v-btn color="primary black--text">
+            <v-btn color="trial1 black--text">
               download résumé 
             </v-btn>
           </footer>
         </blockquote>
-      </v-layout>
     </v-flex>
 
-    
     <v-flex
       xs12
       md3
@@ -85,10 +74,5 @@
   }
 </script>
 <style lang="scss" scoped>
-.sub{
-  font-size: 120%;
-}
-.phot{
-  color: white;
-}
+
 </style>
