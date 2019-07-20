@@ -101,7 +101,7 @@
    .gitMe{
     //  padding-bottom: 30px;
     // margin-bottom: 30px;
-font-size: 600%;
+font-size: 90px !important;
 margin: 30px;
 // padding-bottom: 30px;
 // opacity: .2;
