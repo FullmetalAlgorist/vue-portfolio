@@ -101,6 +101,33 @@
       ]
     }
   ],
+  "sites": [
+    {
+      "title": "Healthy Harvest Nutrition App",
+      "src": "@assets/appDemo.png",
+      "link": "https://mariah-nutrition-app.herokuapp.com",
+      "infoTitle": "What produce is in season?",
+      "infoText1":"Produce that's in season is <b>cheaper</b>, more <b>nutritous</b> , <b>tastes better</b>, and has a <b>lower carbon footprint</b> !",
+      "infoText2":"Bookmark this app on your home  screen for quick  reference  next time you're on a Fruit & Veg run!"
+    },
+     {
+      "title": "Parallax and photo blog",
+       "src": "@/assets/clients/p.png",
+       "link": "https://akcrew-transitions.herokuapp.com/",
+       "infoTitle": "Sample website concepts",
+       "infoText1":"My version of a couple of popular website styles! The first is an attractive 3d scrolling effect called PARALLAX scrolling, parallax is especially popular for mobile site, but looks great on all devices",
+       "infoText2":"Second we have a photo blog, showcasing a mosaic photo format and filled with some of my favorite captures from this year"
+     
+    },
+    {
+      "title": "Artist/Album search",
+      "src": "@/assets/dualRobots.png",
+       "link": "https://akcrew-roboto.herokuapp.com/",
+       "infoTitle": "Imple Material design discography app",
+       "infoText1":"Search for your artist and see their top albums displayed ",
+       "infoText2":"Featuring a star rating system and links to purchase the album and here song previews through itunes!"
+    }
+  ],
   "interests": [
     {
       "name": "Web Development",
