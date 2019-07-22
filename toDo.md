@@ -84,3 +84,8 @@ enlarge healthy harveast  logo on ipad layout
 today: redo text size and spacing of recent works
 
 try to remove mostpersonalspecific content and putin in schema or amazon hosting...  figure out  about trademark
+
+isolate scrollmagic experiment or other to codepen.. oo maybe have them hosted on aw3s or whateverhe fuck
+maybe sense slower connection and cut things like me.gif out?
+
+everything is manageable if you break it in to the smallest steps.. especially large overwhelming concepts.. start applying this more things.

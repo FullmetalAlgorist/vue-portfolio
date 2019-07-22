@@ -54,7 +54,9 @@
           class="display-1 font-weight-medium mb-4 primary--text">
             {{ site.title }}
           </h3>
-          <img src="@/assets/appDemo.png"/>        </v-flex>
+          <!-- <v-img :src="`https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/sites/appDemo.png`"></v-img>      -->
+<v-img :src="site.src" ></v-img>
+             </v-flex>
         <v-flex
         xs12
         md3>

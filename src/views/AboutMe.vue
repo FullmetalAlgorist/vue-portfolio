@@ -59,7 +59,7 @@
     data: () => ({
       expansion: 0,
       spot: '00',
-      kneel: {srrc: require('@/assets/realFinal.png')},
+      // kneel: {srrc: require('@/assets/realFinal.png')},
       images : [ 
         // {srrc: require('@/assets/data/061.png')},
         // {srrc: require('@/assets/data/060.png')},
@@ -181,6 +181,8 @@ this.preloadImage('https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/0'+how+'
     let NewRange = (62 - 0);
     let NewValue;
     let newS;
+    //uopdate this based on screen size (mobile and sm work)
+    // console.log('window.scrollY: ', window.scrollY);
       if(window.scrollY > 966 && window.scrollY < 1335){
       NewValue = Math.floor((((window.scrollY - 966) * NewRange) / OldRange));
      
@@ -198,7 +200,6 @@ this.preloadImage('https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/0'+how+'
     preloadImage(url){
       let img = new Image();
       img.src=url;
-      console.log('preloading...', img)
     },
 //      pinContainerScene () {
       
