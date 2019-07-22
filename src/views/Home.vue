@@ -26,7 +26,7 @@
     components: {
       AboutMe: () => import('@/views/AboutMe'),
       //Clients: () => import('@/views/Clients'),
-      Projects: () => import('@/components/Projects'),
+      // Projects: () => import('@/components/Projects'),
       Hero: () => import('@/views/Hero'),
       Experience: () => import('@/views/Experience'),
       Portfolio: () => import('@/views/Portfolio'),

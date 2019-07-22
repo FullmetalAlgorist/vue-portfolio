@@ -55,7 +55,7 @@
             {{ site.title }}
           </h3>
           <!-- <v-img :src="`https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/sites/appDemo.png`"></v-img>      -->
-<v-img :src="site.src" ></v-img>
+<a :href="site.link"><v-img @click="toSite" :src="site.src"></v-img></a>
              </v-flex>
         <v-flex
         xs12
@@ -86,6 +86,11 @@
     }),
       computed: {
       ...mapState('app', ['schema'])
+    },
+    methods:{
+      toSite(){
+        // this.$router.push('www.google.com');
+      }
     }
   }
 </script>

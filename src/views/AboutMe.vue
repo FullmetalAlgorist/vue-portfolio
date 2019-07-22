@@ -155,6 +155,7 @@
     }
 this.preloadImage('https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/0'+how+'.png');
      }
+    //  ocean wildlife nature driftwood
 
 // .src = this.images[this.obj.curImg];
 //      this.$gsap.TweenMax.to('.whatever', 0.5, 

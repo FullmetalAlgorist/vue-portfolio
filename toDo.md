@@ -89,3 +89,9 @@ isolate scrollmagic experiment or other to codepen.. oo maybe have them hosted o
 maybe sense slower connection and cut things like me.gif out?
 
 everything is manageable if you break it in to the smallest steps.. especially large overwhelming concepts.. start applying this more things.
+
+TONIGHT WITH GMOTHER:
+redo gif/gimp images
+choose pics to show in galleryl
+
+gallery/aws busy work
