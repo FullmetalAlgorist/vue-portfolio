@@ -55,12 +55,13 @@
             {{ site.title }}
           </h3>
           <!-- <v-img :src="`https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/sites/appDemo.png`"></v-img>      -->
-<a :href="site.link"><v-img @click="toSite" :src="site.src"></v-img></a>
+<a :href="site.link"><v-img class="site" :src="site.src"></v-img></a>
              </v-flex>
         <v-flex
         xs12
-        md3>
-          <h3 class="display-1 font-weight-medium mb-4 primary--text">
+        md3 
+        >
+          <h3 class="display-1 font-weight-medium mb-4 white--text">
             {{ site.infoTitle }}
           </h3>
           <p class="subheading font-weight-light font-italic">{{ site.infoText1 }}</p>
@@ -137,5 +138,8 @@ opacity: .7;
 color: rgba(255, 255, 255, 0.906);
 margin-top: -150px;
   width: 330px;
+}
+.site{
+  margin-bottom: 30px;
 }
 </style>

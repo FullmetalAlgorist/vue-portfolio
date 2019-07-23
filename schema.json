@@ -104,15 +104,15 @@
   "sites": [
     {
       "title": "Healthy Harvest Nutrition App",
-      "src": "https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/sites/appDemo.png",
+      "src": "https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/sites/healthyHarvest.png",
       "link": "https://mariah-nutrition-app.herokuapp.com",
       "infoTitle": "What produce is in season?",
-      "infoText1":"Produce that's in season is <b>cheaper</b>, more <b>nutritous</b> , <b>tastes better</b>, and has a <b>lower carbon footprint</b> !",
+      "infoText1":"Produce that's in season is cheaper, more nutritous, tastes better, and has a lower carbon footprint!",
       "infoText2":"Bookmark this app on your home  screen for quick  reference  next time you're on a Fruit & Veg run!"
     },
      {
       "title": "Parallax and photo blog",
-       "src": "https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/sites/mockuper.png",
+       "src": "https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/sites/another.png",
        "link": "https://akcrew-transitions.herokuapp.com/",
        "infoTitle": "Sample website concepts",
        "infoText1":"My version of a couple of popular website styles! The first is an attractive 3d scrolling effect called PARALLAX scrolling, parallax is especially popular for mobile site, but looks great on all devices",
@@ -123,7 +123,7 @@
       "title": "Artist/Album search",
       "src": "https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/sites/dualRobots.png",
        "link": "https://akcrew-roboto.herokuapp.com/",
-       "infoTitle": "Imple Material design discography app",
+       "infoTitle": "Material design discography app",
        "infoText1":"Search for your artist and see their top albums displayed ",
        "infoText2":"Featuring a star rating system and links to purchase the album and here song previews through itunes!"
     }

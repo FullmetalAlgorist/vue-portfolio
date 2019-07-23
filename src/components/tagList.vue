@@ -3,24 +3,24 @@
     <v-layout>
         <v-flex class="text-xs-center sm6">
          
-            <h4 class="grow primary--text text-uppercase mb-3 title " v-text="'Frameworks'" /> 
+            <h4 class="grow white--text text-uppercase mb-3 title " v-text="'Frameworks'" /> 
       <!-- :class="`${hover ? white : primary}--text`" --> 
       <!-- text-color="white" -->
-      <v-hover v-for="skill in frameWorks" :key="skill.id">
+      <!-- :class="`${hover ?  'primary' : 'white' }--text`" slot-scope="{ hover }"-->
+      <v-hover pa-1 v-for="skill in frameWorks" :key="skill.id">
                 <v-chip  
-                :class="`${hover ?  'primary' : 'white' }--text`" 
+                 text-color="white"
                 class="grow"  
                 outline  
-                slot-scope="{ hover }">{{ skill }}</v-chip>
+                >{{ skill }}</v-chip>
         </v-hover> 
         </v-flex>
         <v-flex class="text-xs-center sm6">
             <h4 class="grow text-uppercase mb-3 white-text title" v-text="'Web Development'" />
                 <v-hover v-for="skill in webSkills" :key="skill.id">
                 <v-chip 
-                :class="`${hover ?  'primary' : 'white' }--text`" 
+                text-color="white"
                 class="grow "  
-                slot-scope="{ hover }"  
                 outline 
               >{{ skill }}</v-chip>
         </v-hover>
@@ -43,7 +43,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.3); 
+.grow:hover { transform: scale(1.4); 
 //color: white;
   //color:' rgb(192,192,192,.8)';
   }

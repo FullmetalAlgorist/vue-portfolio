@@ -17,7 +17,7 @@
            I've focused on the technologies that I currently prefer, but know quite a few more, and love learning new things!</p>
                   <br>
           <footer class="text-xs-center">
-            <v-btn color="trial1 black--text">
+            <v-btn color="primarydark black--text">
               download résumé 
             </v-btn>
           </footer>

@@ -82,14 +82,14 @@
           <v-flex text-xs-right>
              <v-btn
               class="ma-0 mr-4"
-              color="secondary"
+              color="secondarylight black--text"
               @click="resetMe"
             >
               Clear
             </v-btn>
             <v-btn
               class="ma-0"
-              color="primary"
+              color="primarydark black--text"
               @click="contactMe"
             >
               Contact Me

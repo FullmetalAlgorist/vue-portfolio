@@ -20,12 +20,10 @@
                </p>
                </core-text>
          <v-flex class="text-xs-center xs-12">
-           <v-btn href="https://codepen.io/akcrew/" color="darkenMyPrimary black--text">Check out some recent code!  <v-icon right dark>mdi-codepen</v-icon> </v-btn>
-      
+           <v-btn href="https://codepen.io/akcrew/" color="primarydark black--text">Recent code!  <v-icon right dark>mdi-codepen</v-icon> </v-btn>
               </v-flex>
      <v-flex pt-3 class="text-xs-center xs12" :pb-4="$vuetify.breakpoint.smAndDown">
-       <v-btn @click="$vuetify.goTo('#contact')" color="primary black--text">Contact Me!</v-btn>
-
+       <v-btn @click="$vuetify.goTo('#contact')" color="secondarylight black--text">Contact Me!</v-btn>
      </v-flex>
      </v-layout>
       </section>
@@ -39,7 +37,7 @@
      justify-center
      >
     <!-- <div class="spacer"></div> -->
-      <img max-width="450" :src="blah"  />
+      <img max-width="400" :src="blah"  />
     </v-layout>
     </v-flex>
       
@@ -178,14 +176,26 @@ this.preloadImage('https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/0'+how+'
   },
   methods: {
     handleScroll(){
-       let OldRange = (1335 - 966);
-    let NewRange = (62 - 0);
-    let NewValue;
-    let newS;
-    //uopdate this based on screen size (mobile and sm work)
-    // console.log('window.scrollY: ', window.scrollY);
-      if(window.scrollY > 966 && window.scrollY < 1335){
-      NewValue = Math.floor((((window.scrollY - 966) * NewRange) / OldRange));
+      let top;
+      let bottom;
+      if (this.$vuetify.breakpoint.xs){
+        top = 1335;
+        bottom = 966;
+        }
+      else{
+        top = 1000
+        bottom = 630
+      }
+      let OldRange = (top - bottom);
+      let NewRange = (62 - 0);
+      let NewValue;
+      let newS;
+    console.log('scrolling', window.scrollY);
+    //update this based on screen size (mobile and sm work)
+    //when window.scrollY goes above 966 updates this.spot to a corresponding value(00-61) till 1335
+      //so first I convert 966-1335 to 0-61 then format to two digit string and update spot
+      if(window.scrollY > bottom && window.scrollY < top){
+      NewValue = Math.floor((((window.scrollY - bottom) * NewRange) / OldRange));
      
      newS = NewValue.toString();
     if (NewValue < 10){
@@ -193,10 +203,6 @@ this.preloadImage('https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/0'+how+'
     }
        this.spot = newS;
       }
-// console.log('stringMe: ', this.blah);
-      //when window.scrollY goes above 966 I want to update this.spot to a corresponding value(00-61) till 1335
-      //so first convert 966-1335 to 0-61 then format to two digit string and update spot
-      // console.log('scrolling', window.scrollY);
     },
     preloadImage(url){
       let img = new Image();
