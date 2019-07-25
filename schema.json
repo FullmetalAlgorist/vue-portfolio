@@ -127,7 +127,7 @@
     {
       "title": "Material design discography app",
       "outline": "dualRobots",
-      "src": "http://s3.amazonaws.com/mariah-vue-scroll/sites/dualRobotsSmall.png",
+      "src": "https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/private/dualRobotsSmall.png",
        "link": "https://akcrew-roboto.herokuapp.com/",
        "infoTitle": "Album search",
        "infoText1": "Search for your artist and see their top albums displayed ",
