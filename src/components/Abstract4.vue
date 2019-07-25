@@ -2,7 +2,7 @@
   <v-img
     :src="require('@/assets/abstract44.png')"
     class="abstract-4"
-    height="90%"
+  
     width="100%"
   />
 </template>
@@ -17,5 +17,5 @@
   opacity: .5
 
   ~ *
-    z-index: 1 !important
+     z-index: 1 !important
 </style>

@@ -28,7 +28,7 @@
       //Clients: () => import('@/views/Clients'),
       // Projects: () => import('@/components/Projects'),
       Hero: () => import('@/views/Hero'),
-      Experience: () => import('@/views/Experience'),
+      //Experience: () => import('@/views/Experience'),
       Portfolio: () => import('@/views/Portfolio'),
       Priorities: () => import('@/views/Priorities'),
       Processing: () => import('@/views/Process'),

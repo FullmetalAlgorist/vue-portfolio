@@ -1,32 +1,43 @@
 <template>
   <core-section
     id="skills"
-    justify-space-between>
+    justify-space-between
+    >
     <abstract-2 />
-    <v-flex
+   <v-flex
       xs12
-      mb-5>
+      sm6>
         <core-heading>What I know.</core-heading>
         <p class="pt-2 subheading font-weight-light font-italic">
            <v-icon class="pr-2">mdi-camera</v-icon>
            All photographs were taken by me unless otherwise noted!
           </p>
+       </v-flex>
+       
+         <v-flex
+         mb-4
+         pt-4
+      sm5
+      class="right"
+         >
+         <!-- //style="max-width: 230px;"  -->
         <blockquote
-          style="max-width: 230px;">
-          <p class="core-subheading font-weight-light font-italic">
+           >
+          <p class="title font-weight-light font-italic">
            I've focused on the technologies that I currently prefer, but know quite a few more, and love learning new things!</p>
                   <br>
           <footer class="text-xs-center">
-            <v-btn color="primarydark black--text">
+            <v-btn class="font-weight-light" color="primarydark black--text">
               download résumé 
             </v-btn>
           </footer>
         </blockquote>
-    </v-flex>
+         </v-flex>
+  
 
     <v-flex
       xs12
-      md3
+      md4
     >
       <h3 class="display-1 font-weight-medium mb-4 primary--text">
         My Education
@@ -51,6 +62,7 @@
         :value="skill"
       /> -->
     </v-flex>
+      <!-- </v-layout> -->
   </core-section>
 </template>
 
@@ -74,5 +86,8 @@
   }
 </script>
 <style lang="scss" scoped>
-
+.right{
+  align-content: center;
+  text-align: center;
+}
 </style>

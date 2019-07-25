@@ -10,7 +10,7 @@ Vue.use(Vuetify, {
 //original blues
 theme: {
   trial2: '#1F2833', //MARIAH VICARY
-  secondarylight: '#8b8b8b',
+  secondarylight: '#71737b',
   trial1: '#1F2833', //background dark
   trial3: '#10a3b3', //secondary bluer laptop color
 accent: '#424242',  //Dark grey

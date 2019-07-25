@@ -104,29 +104,37 @@
   "sites": [
     {
       "title": "Healthy Harvest Nutrition App",
-      "src": "https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/sites/healthyHarvest.png",
+      "outline": "healthyHarvest",
+      "src": "https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/sites/healthyHarvestSmall.png",
       "link": "https://mariah-nutrition-app.herokuapp.com",
       "infoTitle": "What produce is in season?",
-      "infoText1":"Produce that's in season is cheaper, more nutritous, tastes better, and has a lower carbon footprint!",
-      "infoText2":"Bookmark this app on your home  screen for quick  reference  next time you're on a Fruit & Veg run!"
+      "infoText1": "Produce that's in season is cheaper, more nutritous, tastes better, and has a lower carbon footprint!",
+      "infoText2": "Bookmark this app on your home  screen for quick  reference  next time you're on a Fruit & Veg run!",
+      "nerdTitle": "For the nerds:",
+      "nerds": "Here are a bunch of technologies that I used and demonsteate in this app, including but not limited to greensock (overkill) routes, nuxt, responsive grid layout "
     },
      {
       "title": "Parallax and photo blog",
-       "src": "https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/sites/another.png",
+      "outline": "another",
+       "src": "https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/sites/anotherSmall.png",
        "link": "https://akcrew-transitions.herokuapp.com/",
-       "infoTitle": "Sample website concepts",
-       "infoText1":"My version of a couple of popular website styles! The first is an attractive 3d scrolling effect called PARALLAX scrolling, parallax is especially popular for mobile site, but looks great on all devices",
-       "infoText2":"Second we have a photo blog, showcasing a mosaic photo format and filled with some of my favorite captures from this year"
-     
+       "infoTitle": "Photo blog layout",
+       "infoText1": "My version of a couple of popular website styles! Based on vuetify themes, but with my own personal touch! The first is an attractive 3d scrolling effect called PARALLAX scrolling, parallax is especially popular for mobile site, but looks great on all devices",
+       "infoText2": "Second we have a photo blog, showcasing a mosaic photo format and filled with some of my favorite captures from this year",
+    "nerdTitle": "Parallax scrolling layout",
+       "nerds": " some shit about parallax maybe"
     },
     {
-      "title": "Artist/Album search",
-      "src": "https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/sites/dualRobots.png",
+      "title": "Material design discography app",
+      "outline": "dualRobots",
+      "src": "https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/sites/dualRobotsSmall.png",
        "link": "https://akcrew-roboto.herokuapp.com/",
-       "infoTitle": "Material design discography app",
-       "infoText1":"Search for your artist and see their top albums displayed ",
-       "infoText2":"Featuring a star rating system and links to purchase the album and here song previews through itunes!"
-    }
+       "infoTitle": "Album search",
+       "infoText1": "Search for your artist and see their top albums displayed ",
+       "infoText2": "Featuring a star rating system and links to purchase the album and here song previews through itunes!",
+       "nerdTitle": "For the nerds:",
+       "nerds": "blah"
+      }
   ],
   "interests": [
     {

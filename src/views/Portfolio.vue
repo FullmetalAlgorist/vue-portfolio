@@ -15,7 +15,7 @@
           </p>
           <footer class="text-xs-center foot">
          Here are some of my recent shots!<br>
-         Click an image below and be taken to my portfolio.
+         Click an image below to see more.
           </footer>
         </blockquote>
       </v-layout>
@@ -36,20 +36,12 @@
               d-flex
             >
               <v-card flat tile class="d-flex">
-<!-- 
- v-for="n in ninePhotos"
-              :key="n.id" -->
-<!-- ---- -->
-                  <!-- :src="n.srrc"
-                 :lazy-src="require('@/assets/download.jpeg')" -->
                   <v-img
-
                  :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
                   :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
                   aspect-ratio="1"
                   class="grey lighten-2"
                 >
-                <!--  :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`" -->
                   <template v-slot:placeholder>
                     <v-layout
                       fill-height
@@ -57,7 +49,11 @@
                       justify-center
                       ma-0
                     >
-                      <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                      <!-- <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular> -->
+                   <fingerprint-spinner
+                      :animation-duration="3000"
+                      :size="128"
+                      color="#000000"/>
                     </v-layout>
                   </template>
                 </v-img>
@@ -73,9 +69,11 @@
 
 
 <script>
+import { FingerprintSpinner } from 'epic-spinners'
   export default {
     components: {
       Abstract3: () => import('@/components/Abstract3'),
+      FingerprintSpinner
       // Project: () => import('@/components/Project')
     },
 computed:{

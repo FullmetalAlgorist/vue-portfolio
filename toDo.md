@@ -23,7 +23,6 @@ recreate gif scroll situation in codepen and ask discordf about flashes
 other codepen play
 find a alance of play on each medium so they all look active and don't have tons of duplicates
 
--info model that looks good for nutrition app with switch to outlined icon
 
 make skill tags more attractive
 
@@ -36,15 +35,10 @@ update info situation..maybe effect of full menu that is one on mobile
 
 make backend situatiohn for myself for statistics or something to track users.. cookie aggreement?
 
-try my animated button maybe pulse
-
 figure  out best image hosting situation...
 also maybe load on click (lazy) for processing sketches, see if that  helps
 
 maybe ask about heroku as best option while asking about image hosting on discord?
-
-Redo recent works screenshots
--- make them look clickable/ play with launch thing... scout out diffferent ways to give an idea what the apps are like without openeing them
 
 --make the css transitions on menu more my own (or credit it)
 
@@ -95,3 +89,11 @@ redo gif/gimp images
 choose pics to show in galleryl
 
 gallery/aws busy work
+
+write info panels on processing sketches. pic how to diplay and talk about them, incorporate the carosaul and what pics/vids you want t o use or if that's even the best option
+
+figure out how to lazy load them
+
+redo gif situation
+
+see what uploading album for blog does to aws

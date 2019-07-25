@@ -1,7 +1,7 @@
 <template>
   <v-img
     class="circle"
-    :src="require('@/assets/rippleMe.jpg')"
+    :src="require('@/assets/rippleMeLow.jpg')"
     height="100vh"
   >
     <v-layout

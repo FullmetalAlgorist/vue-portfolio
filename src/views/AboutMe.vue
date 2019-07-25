@@ -19,11 +19,11 @@
                I love to live on the edge of nature and technology.
                </p>
                </core-text>
-         <v-flex class="text-xs-center xs-12">
-           <v-btn href="https://codepen.io/akcrew/" color="primarydark black--text">Recent code!  <v-icon right dark>mdi-codepen</v-icon> </v-btn>
+         <v-flex class="text-xs-center xs-12 ">
+           <v-btn href="https://codepen.io/akcrew/" class="font-weight-light"  color="primarydark black--text">Recent code!  <v-icon  class="font-weight-light" right >mdi-codepen</v-icon> </v-btn>
               </v-flex>
      <v-flex pt-3 class="text-xs-center xs12" :pb-4="$vuetify.breakpoint.smAndDown">
-       <v-btn @click="$vuetify.goTo('#contact')" color="secondarylight black--text">Contact Me!</v-btn>
+       <v-btn @click="$vuetify.goTo('#contact')" class="font-weight-light" color="secondarylight black--text">Contact Me!</v-btn>
      </v-flex>
      </v-layout>
       </section>
@@ -37,7 +37,8 @@
      justify-center
      >
     <!-- <div class="spacer"></div> -->
-      <img max-width="400" :src="blah"  />
+      <!-- <img max-width="400" :src="blah"  /> !!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <v-img :src="kneel.srrc"></v-img>
     </v-layout>
     </v-flex>
       
@@ -49,7 +50,6 @@
     mapState
   } from 'vuex'
  
-
   export default {
     components: {
       Abstract1: () => import('@/components/Abstract1')
@@ -57,7 +57,7 @@
     data: () => ({
       expansion: 0,
       spot: '00',
-      // kneel: {srrc: require('@/assets/realFinal.png')},
+       kneel: {srrc: require('@/assets/realFinal.png')},
       images : [ 
         // {srrc: require('@/assets/data/061.png')},
         // {srrc: require('@/assets/data/060.png')},
@@ -151,7 +151,7 @@
     if (i < 10){
         how = '0'+how;
     }
-this.preloadImage('https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/0'+how+'.png');
+//!!!!!!!!!!!!!!!!!!!!!!!!this.preloadImage('https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/0'+how+'.png');
      }
     //  ocean wildlife nature driftwood
 
@@ -190,7 +190,6 @@ this.preloadImage('https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/0'+how+'
       let NewRange = (62 - 0);
       let NewValue;
       let newS;
-    console.log('scrolling', window.scrollY);
     //update this based on screen size (mobile and sm work)
     //when window.scrollY goes above 966 updates this.spot to a corresponding value(00-61) till 1335
       //so first I convert 966-1335 to 0-61 then format to two digit string and update spot

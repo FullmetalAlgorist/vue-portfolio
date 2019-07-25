@@ -31,11 +31,10 @@
               style="max-width: 330px;">
               <div >
                  <v-icon class="gitMe pulse-button" >mdi-github-circle</v-icon>
-                <p  class="justText headline font-weight-light font-italic">
+                <p class="justText headline font-weight-light font-italic">
                   All of my code is public (including the code for this page!), want to see how something works? Check out my github.
                 </p>
                 </div>
-               
               </blockquote>
             </v-card-title>
           </v-card>
@@ -55,17 +54,39 @@
             {{ site.title }}
           </h3>
           <!-- <v-img :src="`https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/sites/appDemo.png`"></v-img>      -->
-<a :href="site.link"><v-img class="site" :src="site.src"></v-img></a>
+          <a :href="site.link">
+            <v-img 
+            class="site" 
+            :src="site.src"
+            :lazy-src="require('@/assets/'+ site.outline +'Outline.png')">
+               <template v-slot:placeholder>
+                        <v-layout
+                          fill-height
+                          align-center
+                          justify-center
+                          ma-0>
+                      <!-- <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular> -->
+                        <fingerprint-spinner
+                          :animation-duration="3000"
+                          :size="128"
+                          color="#000000"/>
+                      </v-layout>
+                    </template>
+            </v-img>
+          </a>
              </v-flex>
         <v-flex
         xs12
-        md3 
-        >
-          <h3 class="display-1 font-weight-medium mb-4 white--text">
+        md3>
+          <h3 class="headline font-weight-medium mb-3 white--text">
             {{ site.infoTitle }}
           </h3>
           <p class="subheading font-weight-light font-italic">{{ site.infoText1 }}</p>
           <p class="subheading font-weight-light font-italic">  {{ site.infoText2 }}</p>
+          <h3 class="headline font-weight-medium mb-3 white--text">
+            {{site.nerdTitle}}
+          </h3>
+        <p class="subheading font-weight-light">{{ site.nerds }}</p>
         </v-flex>
       </v-layout>
   </core-section>
@@ -75,10 +96,13 @@
  import {
     mapState
   } from 'vuex'
+  import { FingerprintSpinner } from 'epic-spinners'
+
 
   export default {
     components: {
        Abstract4: () => import('@/components/Abstract4'),
+       FingerprintSpinner
     },
     data: () => ({
       card: require('@/assets/abstract22.png'),
@@ -95,13 +119,13 @@
     }
   }
 </script>
-<style lang="scss" >
+<style scoped lang="scss" >
    .gitMe{
 font-size: 90px !important;
 margin: 30px;
    }
 .pulse-button {
-  
+   z-index: 1 !important;
   position: relative;
    width: 69px;
    height: 69px;
@@ -130,9 +154,10 @@ height: 170px;
 }
 .gitMe{
  z-index: -1;
+ 
 align-content: center;
 text-align: center;
-opacity: .7;
+opacity: .4;
 }
 .justText{
 color: rgba(255, 255, 255, 0.906);
@@ -141,5 +166,5 @@ margin-top: -150px;
 }
 .site{
   margin-bottom: 30px;
-}
+ }
 </style>

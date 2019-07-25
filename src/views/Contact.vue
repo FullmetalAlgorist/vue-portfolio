@@ -81,18 +81,18 @@
           </v-flex>
           <v-flex text-xs-right>
              <v-btn
-              class="ma-0 mr-4"
+              class="ma-0 mr-4 font-weight-light"
               color="secondarylight black--text"
               @click="resetMe"
             >
               Clear
             </v-btn>
             <v-btn
-              class="ma-0"
+              class="ma-0 font-weight-light"
               color="primarydark black--text"
               @click="contactMe"
             >
-              Contact Me
+              send
             </v-btn>
            
           </v-flex>
