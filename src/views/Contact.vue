@@ -1,5 +1,6 @@
 <template>
   <core-section id="contact">
+    <abstract-5 />
     <v-flex xs12>
       <core-heading>Say hello!</core-heading>
     </v-flex>
@@ -20,7 +21,7 @@
         Send me a Message
       </core-subheading>
 
-      <v-form v-model="valid" ref="form">
+      <v-form v-model="valid" ref="form" class="formYou">
          <v-dialog
       v-model="dialog"
       max-width="290"
@@ -43,7 +44,7 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
-        <v-layout  wrap>
+        <v-layout class="formMe" wrap>
           <v-flex xs12>
             <v-text-field
               solo-inverted
@@ -74,6 +75,7 @@
             <v-textarea
             v-model="Message"
               solo-inverted
+              
               flat
               label="Message"
               :rules="messageRules"
@@ -205,7 +207,8 @@
       }
     },
     components: {
-      SocialContacts: () => import('@/components/SocialContacts')
+      SocialContacts: () => import('@/components/SocialContacts'),
+      Abstract5: () => import('@/components/Abstract5')
     },
 
     computed: {
@@ -267,5 +270,9 @@
 
 .iconic{
   margin-left: 10px;
+}
+
+.m {
+    background: rgba(255,255,255,0.43);
 }
 </style>

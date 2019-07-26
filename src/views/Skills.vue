@@ -4,7 +4,7 @@
     justify-space-between
     >
     <abstract-2 />
-   <v-flex
+   <!-- <v-flex
       xs12
       sm6>
         <core-heading>What I know.</core-heading>
@@ -12,16 +12,16 @@
            <v-icon class="pr-2">mdi-camera</v-icon>
            All photographs were taken by me unless otherwise noted!
           </p>
-       </v-flex>
+       </v-flex> -->
        
-         <v-flex
+         <!-- <v-flex
          mb-4
          pt-4
       sm5
       class="right"
-         >
+         > -->
          <!-- //style="max-width: 230px;"  -->
-        <blockquote
+        <!-- <blockquote
            >
           <p class="title font-weight-light font-italic">
            I've focused on the technologies that I currently prefer, but know quite a few more, and love learning new things!</p>
@@ -32,21 +32,24 @@
             </v-btn>
           </footer>
         </blockquote>
-         </v-flex>
+         </v-flex> -->
   
 
     <v-flex
       xs12
       md4
     >
+    <div
+     v-for="(degree, i) in schema.education"
+        :key="i">
       <h3 class="display-1 font-weight-medium mb-4 primary--text">
-        My Education
+        {{ degree.title }}
       </h3>
       <education-card
-        v-for="(degree, i) in schema.education"
-        :key="i"
+       
         :value="degree"
       />
+      </div>
     </v-flex>
     <v-flex
       xs12

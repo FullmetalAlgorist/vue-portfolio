@@ -13,7 +13,7 @@
   right: 0
   top: -128px
   z-index: 0 !important
-  opacity: .5
+  opacity: .4
 
   ~ *
     z-index: 1 !important

@@ -13,7 +13,7 @@
       <skills />
       <works />
       <priorities />
-      <Processing />
+      <!-- <Processing /> -->
       <portfolio />
 
       <contact />

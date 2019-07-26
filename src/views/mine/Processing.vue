@@ -1,7 +1,6 @@
 <template>
   <div class="wrapper">
     <v-container class="sketches">
-
       <radar-component/>
       <next-component/>
       <tree-component/>
