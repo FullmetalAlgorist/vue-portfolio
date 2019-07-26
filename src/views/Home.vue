@@ -31,7 +31,7 @@
       //Experience: () => import('@/views/Experience'),
       Portfolio: () => import('@/views/Portfolio'),
       Priorities: () => import('@/views/Priorities'),
-      Processing: () => import('@/views/Process'),
+      //Processing: () => import('@/views/Process'),
       Skills: () => import('@/views/Skills'),
       Works:  () =>  import('@/views/Works'),
       Contact: () => import('@/views/Contact')

@@ -105,7 +105,7 @@
        FingerprintSpinner
     },
     data: () => ({
-      card: require('@/assets/abstract22.png'),
+      // card: require('@/assets/abstract22.png'),
       //  src1: require(schema.sites.src)
         
     }),

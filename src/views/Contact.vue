@@ -166,7 +166,7 @@
       sm5
     >
       <v-img
-        :src="require('@/assets/m.png')"
+        src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/m.png"
         contain
        max-width="450" 
       />

@@ -38,7 +38,7 @@
      >
     <!-- <div class="spacer"></div> -->
       <!-- <img max-width="400" :src="blah"  /> !!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-    <v-img :src="kneel.srrc"></v-img>
+    <v-img src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/realFinalLow.png"></v-img>
     </v-layout>
     </v-flex>
       
@@ -57,7 +57,7 @@
     data: () => ({
       expansion: 0,
       spot: '00',
-       kneel: {srrc: require('@/assets/realFinal.png')},
+      //  kneel: {srrc: require('@/assets/realFinal.png')},
       images : [ 
         // {srrc: require('@/assets/data/061.png')},
         // {srrc: require('@/assets/data/060.png')},

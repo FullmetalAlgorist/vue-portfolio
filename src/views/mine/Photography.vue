@@ -140,10 +140,10 @@ export default {
     'filter':'bird',
     'id':'image14'  },
 
-     {'name':require('@/assets/gallery/loggy.jpg'),
-    'alt':'lines',
-    'filter':'wood',
-    'id':'image15'  },
+    //  {'name':require('@/assets/gallery/loggy.jpg'),
+    // 'alt':'lines',
+    // 'filter':'wood',
+    // 'id':'image15'  },
 
 //    {'name':require('@/assets/gallery/rock-in-wood.jpg'),
 //     'alt':'close-up',

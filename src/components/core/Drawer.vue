@@ -30,7 +30,7 @@
       permanent
       right
     >
-    <v-img :src="require('@/assets/trianglify.png')" 
+    <v-img src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/trianglify.png" 
     height="100%"
     class="triangles">
       <v-layout

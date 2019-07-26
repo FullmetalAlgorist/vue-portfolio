@@ -1,6 +1,6 @@
 <template>
   <v-img
-    :src="require('@/assets/abstract44.png')"
+    src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/abstracts/abstract44Low.png"
     class="abstract-4"
   
     width="100%"
