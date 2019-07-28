@@ -28,15 +28,15 @@
 // :src="require(`@/assets/clients/${value.avat`)"
     data: () => ({
         items: [
-          {
-            src: require('@/assets/sketches/two.png')
-          },
-          {
-            src: require('@/assets/sketches/four.png')
-          },
-          {
-            src: require('@/assets/sketches/three.png')
-          },
+          // {
+          //   src: require('@/assets/sketches/two.png')
+          // },
+          // {
+          //   src: require('@/assets/sketches/four.png')
+          // },
+          // {
+          //   src: require('@/assets/sketches/three.png')
+          // },
         //    {
         //     src: require('@/assets/sketches/mariah.tiff')
         //   }

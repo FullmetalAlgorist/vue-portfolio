@@ -3,7 +3,9 @@
   id="works"
   justify-space-between
   >
-    <abstract-4 />
+   <abstract-6 />
+    <abstract-4 /> 
+    <abstract-7 />
       <v-flex
       xs12
       sm6>
@@ -101,7 +103,9 @@
 
   export default {
     components: {
+      Abstract6: () => import('@/components/Abstract6'),
        Abstract4: () => import('@/components/Abstract4'),
+         Abstract7: () => import('@/components/Abstract7'),
        FingerprintSpinner
     },
     data: () => ({

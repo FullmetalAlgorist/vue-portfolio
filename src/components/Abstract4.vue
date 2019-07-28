@@ -12,7 +12,7 @@
   position: absolute !important
   left: 0
   right: 0
-  top: 50%
+  top: 20%
   z-index: 0 !important
   opacity: .4
 

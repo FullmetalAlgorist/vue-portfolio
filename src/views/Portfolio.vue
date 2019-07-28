@@ -1,5 +1,6 @@
 <template>
   <core-section id="portfolio">
+    <abstract-3 />
       <v-flex xs12 sm6>
           <v-layout justify-space-between>
       <core-heading>Photography</core-heading>
@@ -25,7 +26,7 @@
     @click="toPhotos"
     :style="{ cursor: 'pointer'}"
     >
-    <v-flex  xs12 sm12>
+    <v-flex xs12 sm12>
       <v-card>
         <v-container grid-list-sm fluid>
           <v-layout row wrap>
@@ -33,48 +34,48 @@
                v-for="n in 9"
               :key="n"
               xs4
-              d-flex
-            >
+              d-flex>
               <v-card flat tile class="d-flex">
                   <v-img
-                 :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
-                  :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
-                  aspect-ratio="1"
-                  class="grey lighten-2"
-                >
-                  <template v-slot:placeholder>
-                    <v-layout
-                      fill-height
-                      align-center
-                      justify-center
-                      ma-0
-                    >
+                    :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
+                    :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
+                    aspect-ratio="1"
+                    class="grey lighten-2">
+                      <template v-slot:placeholder>
+                        <v-layout
+                          fill-height
+                          align-center
+                          justify-center
+                          ma-0>
                       <!-- <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular> -->
-                   <fingerprint-spinner
-                      :animation-duration="3000"
-                      :size="128"
-                      color="#000000"/>
-                    </v-layout>
-                  </template>
-                </v-img>
-              </v-card>
-            </v-flex>
-          </v-layout>
-        </v-container>
-      </v-card>
-    </v-flex>
-  </v-layout>
+                        <circles-to-rhombuses-spinner
+  :animation-duration="1200"
+  :circles-num="3"
+  :circle-size="15"
+  color="#ffffff"
+/>
+                      </v-layout>
+                    </template>
+                  </v-img>
+                </v-card>
+              </v-flex>
+            </v-layout>
+          </v-container>
+        </v-card>
+      </v-flex>
+    </v-layout>
   </core-section>
 </template>
 
 
 <script>
 import { FingerprintSpinner } from 'epic-spinners'
+import { CirclesToRhombusesSpinner } from 'epic-spinners'
   export default {
     components: {
       Abstract3: () => import('@/components/Abstract3'),
-      FingerprintSpinner
-      // Project: () => import('@/components/Project')
+      FingerprintSpinner,
+      CirclesToRhombusesSpinner
     },
 computed:{
       med(){

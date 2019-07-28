@@ -99,3 +99,5 @@ redo gif situation
 see what uploading album for blog does to aws
 
 in the middle of redoing potential education card changes, because the layout is nice than the list tba mastered skills section.  also there is a commented out quote form the recently dleted mini section... the all photos are mine and the quote about how I've chosen only some technologies but like to learn, maybe add that to education card situation......
+
+figure out how to disable eslint 

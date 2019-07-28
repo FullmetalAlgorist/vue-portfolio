@@ -6,7 +6,7 @@
     >
       <section >
         <core-heading v-text="'I prioritize:'" />
-        <abstract-3 />
+        <abstract-4 />
         <div>
           <v-expansion-panel
             v-model="expansion"
@@ -48,7 +48,7 @@
       expansion: 0
     }),
 components: {
-      Abstract3: () => import('@/components/Abstract3'),
+      Abstract4: () => import('@/components/Abstract4'),
       // Project: () => import('@/components/Project')
     },
     computed: {

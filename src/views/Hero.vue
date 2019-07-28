@@ -43,8 +43,18 @@
     },
      components: {
       CoreDrawer: () => import('@/components/core/Drawer')
+    },
+    methods: {
+        preloadImage(url){
+      let img = new Image();
+      img.src=url;
     }
-  }
+    },
+    created(){
+     this.preloadImage('https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/rippleMeLow.jpg');
+    }
+//      
+    }
 </script>
 <style lang="scss"scoped>
 h1{
