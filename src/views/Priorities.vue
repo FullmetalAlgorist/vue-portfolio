@@ -15,16 +15,17 @@
             <v-expansion-panel-content
               v-for="(item,i) in items"
               :key="i"
-              :class="expansion !== i ? 'transparent' : ''"
+              :class="expansion !== i ? 'transparent' : 'db'"
             >
               <div
                 slot="header"
                 class="title font-weight-light"
+                color="db"
               >
                 <div v-text="item.company" />
               </div>
               <div>
-                <v-card color="transparent">
+                <v-card color="db">
                   <v-card-text v-text="item.summary" />
                 </v-card>
               </div>

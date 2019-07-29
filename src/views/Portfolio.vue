@@ -123,4 +123,7 @@ computed:{
   .foot{
     padding-bottom: 20px;
   }
+    .v-sheet {
+    background-color: rgba(0,0,0,.28) !important;
+}
 </style>

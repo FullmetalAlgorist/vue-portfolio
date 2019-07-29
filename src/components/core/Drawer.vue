@@ -106,9 +106,9 @@
           text: 'About Me',
           to: '#about-me'
         },
-         {
-          text: 'Skills & Education',
-          to: '#skills'
+        {
+          text: 'Portfolio',
+          to: '#works'
         },
         {
           text: 'Priorities',
@@ -116,8 +116,8 @@
         },
        
         {
-          text: 'Projects',
-          to: '#projects'
+          text: 'Processing',
+          to: '#processing'
         },
         {
           text: 'Photography',

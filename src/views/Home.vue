@@ -13,6 +13,7 @@
       <skills />
       <works />
       <priorities />
+      <glitch />
       <!-- <Processing /> -->
       <portfolio />
 
@@ -25,7 +26,7 @@
   export default {
     components: {
       AboutMe: () => import('@/views/AboutMe'),
-      //Clients: () => import('@/views/Clients'),
+      Glitch: () => import('@/views/Glitch'),
       // Projects: () => import('@/components/Projects'),
       Hero: () => import('@/views/Hero'),
       //Experience: () => import('@/views/Experience'),

@@ -75,7 +75,6 @@
             <v-textarea
             v-model="Message"
               solo-inverted
-              
               flat
               label="Message"
               :rules="messageRules"
@@ -96,7 +95,6 @@
             >
               send
             </v-btn>
-           
           </v-flex>
         </v-layout>
       </v-form>
@@ -111,11 +109,9 @@
     <v-flex
       xs12
       sm7
-      
-     
     >
       <core-subheading class="text-uppercase">
-        Social Contacts
+        do you want more?
       </core-subheading>
 
       <social-contacts />
@@ -251,7 +247,7 @@
     }
   }
 </script>
-<style scoped>
+<style>
 #contact{
   padding-bottom: 0 !important;
 }
@@ -272,7 +268,7 @@
   margin-left: 10px;
 }
 
-.m {
-    background: rgba(255,255,255,0.43);
+.v-input__slot {
+    background: rgba(0,0,0,.28) !important;
 }
 </style>

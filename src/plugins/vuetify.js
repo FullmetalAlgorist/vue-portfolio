@@ -17,6 +17,7 @@ accent: '#424242',  //Dark grey
   primary: '#4DB6AC', //only one that matters
   primarydark: '#2c9b91', //One shade darker for buttons
   next: '#1b3440',
+  db: '#161d25'//dark blue that looks good with background
   //darkenMyPrimary: 'rgb(255,255,255)' //my own, b/c buttons were too bright
 },
   components: {
