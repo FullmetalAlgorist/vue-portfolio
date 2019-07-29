@@ -1,8 +1,8 @@
 <template>
-  <v-img
+<div>
+  <div
     class="circle"
-    src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/rippleMeLow.jpg"
-    height="100vh"
+    
   >
     <v-layout
       fill-height
@@ -28,7 +28,8 @@
         />
       </div>
     </v-layout>
-  </v-img>
+  </div>
+  </div>
 </template>
 
 <script>
@@ -38,6 +39,11 @@
   } from 'vuex'
 
   export default {
+    sata(){
+      return{
+        imag: ''
+      }
+    },
     computed: {
       ...mapState('app', ['schema'])
     },
@@ -45,13 +51,12 @@
       CoreDrawer: () => import('@/components/core/Drawer')
     },
     methods: {
-        preloadImage(url){
-      let img = new Image();
-      img.src=url;
-    }
+       
     },
     created(){
-     this.preloadImage('https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/rippleMeLow.jpg');
+    //  let img = new Image;
+    //  img = 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/rippleMeLow.jpg';
+    // this.imag = img;
     }
 //      
     }
@@ -74,5 +79,10 @@ h1{
   .label{
     /* filter: grayscale(100%); */
    
+  }
+  .circle{
+    background-image: url('https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/rippleMeLow.jpg');
+ height: 100vh;
+  background-size: cover; 
   }
 </style>

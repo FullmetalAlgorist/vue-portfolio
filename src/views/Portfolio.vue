@@ -31,14 +31,15 @@
         <v-container grid-list-sm fluid>
           <v-layout row wrap>
           <v-flex
-               v-for="n in 9"
-              :key="n"
+               v-for="n in ninePhotos"
+              :key="n.id"
               xs4
               d-flex>
               <v-card flat tile class="d-flex">
+                <!-- :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`" -->
                   <v-img
-                    :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
-                    :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
+                    :src="n.srrc"
+                    
                     aspect-ratio="1"
                     class="grey lighten-2">
                       <template v-slot:placeholder>
@@ -83,9 +84,17 @@ computed:{
       }
     },
     data: () => ({
-      // ninePhotos: [
-      
-      //   {srrc: require('@/assets/gallery/loggy.jpg')},
+      ninePhotos: [
+        {srrc: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_6191.jpg'},
+        {srrc: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_4828.jpg'},
+        {srrc: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_6244.jpg'},
+        {srrc: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/circ1.jpg'},
+        {srrc: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/sea.jpg'},
+        {srrc: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_5992.jpg'},
+        {srrc: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_4370.jpg'},
+        {srrc: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_4370.jpg'},
+        {srrc: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/wood-close.jpg'},
+
       //   {srrc: require('@/assets/gallery/IMG_6191.jpg')},
       //   {srrc: require('@/assets/gallery/IMG_4828.jpg')},
       //   {srrc: require('@/assets/gallery/IMG_6244.jpg')},
@@ -94,7 +103,7 @@ computed:{
       //  {srrc: require('@/assets/gallery/IMG_5992.jpg')},
       //   {srrc: require('@/assets/gallery/IMG_4370.jpg')},
       //   {srrc: require('@/assets/gallery/wood-close.jpg')},
-      // ]
+      ]
     }),
     methods: {
       toPhotos(){
