@@ -15,7 +15,7 @@
             <v-expansion-panel-content
               v-for="(item,i) in items"
               :key="i"
- 
+  :class="expansion !== i ? 'transparent' : 'db'"
             >
             <!--         :class="expansion !== i ? 'blue' : 'red'"      :class="expansion !== i ? 'db' : 'transparent'" -->
               <div
@@ -26,7 +26,7 @@
                 <div v-text="item.company" />
               </div>
               <div>
-                <v-card color="db">
+                <v-card class="db">
                   <v-card-text v-text="item.summary" />
                 </v-card>
               </div>
@@ -79,6 +79,15 @@ components: {
         color: #e5a12e !important;
     }
     .v-expansion-panel__container{
-       background-color: rgba(0,0,0,.28) !important;
+      //  background-color: rgba(0,0,0,.28) !important;
+       opacity: .72 !important;
+     z-index: 1;
     }
+    .next{
+      //background-color:'#161d25' !important;
+    // background-color: red !important;
+  
+   
+    }
+   
 </style>

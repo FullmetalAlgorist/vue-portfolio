@@ -101,3 +101,8 @@ see what uploading album for blog does to aws
 in the middle of redoing potential education card changes, because the layout is nice than the list tba mastered skills section.  also there is a commented out quote form the recently dleted mini section... the all photos are mine and the quote about how I've chosen only some technologies but like to learn, maybe add that to education card situation......
 
 figure out how to disable eslint 
+figure out how to priortise loading ripple image
+add my images back to photo section bar
+add my photos to group of photos obvi wait till I finish picking them 
+
+another front page sectgion idea: opener a single image prob size of current photo 9 piece turtle pic that glitches when hovered over... auto glitch on mobile? and links to insta (like other insta library I made... ) except for fullmtalalgorist shit.. also start posting again plz. and code pen.

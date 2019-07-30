@@ -34,14 +34,14 @@
         md4
         class="text-xs-center">
           <h3 
-          class="display-1 font-weight-medium mb-4 primary--text">
+          class="display-1 font-weight-medium my-4 primary--text">
             Processing
           </h3>
           <p class="subheading" v-text="'I use a combination of p5.js and processing to bring algorithms to life on the web!  Here are some attempts to make my processing sketches interactive.'" /> 
            <!-- <p class="subheading font-weight-light font-italic">I use a combination of p5.js and processing to bring algorithms to life on the web!  Here are some attempts to make my processing sketches interactive.  Press some buttons and see what happens :)</p> -->
-          <p  class="pl-5 subheading font-weight-light font-italic">  Follow the link, press some buttons, and see what happens :) </p>
-<v-btn @mouseenter="hoverMe=true" @mouseleave="hoverMe=false" class="font-weight-light" color="primarydark black--text" @click="toProc">live processing sketches!!</v-btn>
-              <!-- <v-btn @click="$vuetify.goTo('#contact')" >Contact Me!</v-btn> -->
+          <p  class="subheading font-weight-light font-italic">  Follow the link, press some buttons, and see what happens :) </p>
+<v-btn @mouseenter="hoverMe=true" @mouseleave="hoverMe=false" class="font-weight-light but" :color="hoverMe ? 'white--text primarydark' : 'black--text primarydark' "  @click="toProc">live processing sketches!!</v-btn>
+              <!-- <v-btn @click="$vuetify.goTo('#contact')" >Contact Me!</v-btn>   color="primarydark"-->
              <v-img :src="hoverMe ? logo2 : logo1"></v-img>
           
              <!-- <v-icon>mdi-touch_app</v-icon> -->
@@ -107,9 +107,7 @@ computed:{
     /* height: 150px; */
      transform: rotate(36deg);
 }
-/*
-.outerTouch{
-    align-content: center;
-
-} */
+.but:hover{
+  background-color: rgba(0,0,0,.28) !important;
+}
 </style>
