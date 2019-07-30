@@ -24,7 +24,7 @@
         justify-center >
         <v-hover>
           <v-card class="gitCard"  
-          :color="`${hover ? 'rgba(65,223,213,.42)' : 'rgba(31,40,51,.57)'}`"
+          :color="`${hover ? 'rgba(65,223,213,.42)' : 'rgba(0,0,0,.28)'}`"
           href="https://github.com/FullmetalAlgorist"
           slot-scope="{ hover }"
            elevation="20">

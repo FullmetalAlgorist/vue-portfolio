@@ -33,8 +33,7 @@ export default {
 }
 .wrapper {
   /* background-image: url('~@/assets/trianglifyLarge2.png'); */
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-    url("https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/trianglifyLarge.png");
+  background:url("https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/trianglifyLarge2.png");
   background-repeat: repeat-y;
   display: cover;
 }

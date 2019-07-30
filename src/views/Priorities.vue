@@ -15,12 +15,13 @@
             <v-expansion-panel-content
               v-for="(item,i) in items"
               :key="i"
-              :class="expansion !== i ? 'transparent' : 'db'"
+ 
             >
+            <!--         :class="expansion !== i ? 'blue' : 'red'"      :class="expansion !== i ? 'db' : 'transparent'" -->
               <div
                 slot="header"
                 class="title font-weight-light"
-                color="db"
+                
               >
                 <div v-text="item.company" />
               </div>
@@ -78,6 +79,6 @@ components: {
         color: #e5a12e !important;
     }
     .v-expansion-panel__container{
-       border-color: red !important;
+       background-color: rgba(0,0,0,.28) !important;
     }
 </style>
