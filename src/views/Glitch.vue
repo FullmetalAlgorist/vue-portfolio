@@ -1,29 +1,24 @@
 <template>
   <core-section id="glitch">
-    <!-- <abstract-3 /> -->
     <v-layout wrap justify-space-between align-center> 
-    <v-flex xs12 md7  >
-    
-          <!-- <v-layout > -->
-      <core-heading>Generative art</core-heading>
-     
-        <blockquote
-          style="max-width: 450px;">
+      <v-flex xs12 md7>
+        <core-heading>Generative art</core-heading>
+          <blockquote
+            style="max-width: 450px;">
           <p class="subheading font-weight-light font-italic">
-      I work with a computer to intentionally introduce randomness to naturally occuring algorithms, this occasionally leads to visually pleasing results.
+            I work with a computer to intentionally introduce randomness to naturally occuring algorithms, this occasionally leads to visually pleasing results.
           </p>
           <footer class="text-xs-center foot">
-         Here is an instagram feed with some of those results!
+            Here is an instagram feed with some of those results!
           </footer>
         </blockquote>
-    <!-- </v-layout> -->
-        <v-hover
+      <v-hover
         v-slot:default="{ hover }">
       <v-card>
         <v-container grid-list-sm fluid 
         @click="toInsta"
-    :style="{ cursor: 'pointer'}">
-            <v-img class="glitch" :src="hover ? turtle2 : turtle"></v-img>
+        :style="{ cursor: 'pointer'}">
+            <v-img class="glitch" :src="$isMobile() ? turtle2 : turtle"></v-img>
           </v-container>
         </v-card>
         </v-hover>
@@ -40,16 +35,14 @@
           <p class="subheading" v-text="'I use a combination of p5.js and processing to bring algorithms to life on the web!  Here are some attempts to make my processing sketches interactive.'" /> 
            <!-- <p class="subheading font-weight-light font-italic">I use a combination of p5.js and processing to bring algorithms to life on the web!  Here are some attempts to make my processing sketches interactive.  Press some buttons and see what happens :)</p> -->
           <p  class="subheading font-weight-light font-italic">  Follow the link, press some buttons, and see what happens :) </p>
-<v-btn @mouseenter="hoverMe=true" @mouseleave="hoverMe=false" class="font-weight-light but" :color="hoverMe ? 'white--text primarydark' : 'black--text primarydark' "  @click="toProc">live processing sketches!!</v-btn>
-              <!-- <v-btn @click="$vuetify.goTo('#contact')" >Contact Me!</v-btn>   color="primarydark"-->
-             <v-img :src="hoverMe ? logo2 : logo1"></v-img>
-          
-             <!-- <v-icon>mdi-touch_app</v-icon> -->
-              </v-flex>
-              </v-layout>
+           <v-btn @mouseenter="hoverMe=true" @mouseleave="hoverMe=false" class="font-weight-light but" :color="hoverMe ? 'white--text primarydark' : 'black--text primarydark' "  @click="toProc">live processing sketches!!</v-btn>
+          <!-- <v-btn @click="$vuetify.goTo('#contact')" >Contact Me!</v-btn>   color="primarydark"-->
+        <v-img :src="hoverMe ? logo2 : logo1"></v-img>  
+        <!-- <v-icon>mdi-touch_app</v-icon> -->
+      </v-flex>
+    </v-layout>
   </core-section>
 </template>
-
 
 <script>
 import { FingerprintSpinner } from 'epic-spinners'
@@ -79,6 +72,9 @@ computed:{
       toProc(){
           this.$router.push('/processing');
       }
+    },
+    created(){
+      console.log('mobile? ',this.$isMobile());
     }
   }
 </script>
@@ -108,6 +104,7 @@ computed:{
      transform: rotate(36deg);
 }
 .but:hover{
+
   background-color: rgba(0,0,0,.28) !important;
 }
 </style>

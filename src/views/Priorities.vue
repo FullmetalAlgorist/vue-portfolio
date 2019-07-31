@@ -83,11 +83,4 @@ components: {
        opacity: .72 !important;
      z-index: 1;
     }
-    .next{
-      //background-color:'#161d25' !important;
-    // background-color: red !important;
-  
-   
-    }
-   
 </style>

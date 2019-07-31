@@ -15,10 +15,9 @@
   <button @click="getMoreGrams">Load More</button>
     </div>
 </template>
-<script> 
+<script>
 import axios from 'axios'
 export default {
-   
     data(){
         return {
             access_token: "7280261909.1677ed0.55fec655db7a4be9992a160ed1cbd052",
@@ -152,7 +151,9 @@ a{
 }
 img{
   max-width: 100%;
-  //  max-height: 350px;
+  background-image: cover;
+  //  max-height: 95vh;
+  //  max-width: 95vw;
  
 }
 //insta token

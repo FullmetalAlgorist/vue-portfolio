@@ -45,6 +45,7 @@
     "style-loader": "^0.23.1",
     "vue-color": "^2.7.0",
     "vue-global-var": "0.0.4",
+    "vue-mobile-detection": "^1.0.0",
     "vue-my-photos": "^1.0.4"
   }
 }
