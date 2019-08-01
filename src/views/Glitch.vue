@@ -18,7 +18,7 @@
         <v-container grid-list-sm fluid 
         @click="toInsta"
         :style="{ cursor: 'pointer'}">
-            <v-img class="glitch" :src="$isMobile ? turtle : turtle2"></v-img>
+            <v-img class="glitch" :src="hover ? turtle2 : turtle"></v-img>
           </v-container>
         </v-card>
         </v-hover>

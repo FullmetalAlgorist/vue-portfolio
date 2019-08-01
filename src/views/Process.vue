@@ -1,5 +1,5 @@
 <template>
-  <core-section id="works">
+  <core-section id="process">
     <abstract-4 />
     <v-layout
       mb-5

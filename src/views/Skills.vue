@@ -33,7 +33,6 @@
           </footer>
         </blockquote>
          </v-flex> -->
-  
 
     <v-flex
       xs12
@@ -46,7 +45,6 @@
         {{ degree.title }}
       </h3>
       <education-card
-       
         :value="degree"
       />
       </div>
@@ -59,6 +57,14 @@
         Mastered Technologies 
       </h3>
       <list />
+        <div>
+<info-card
+  :frontType="front.type"
+  :frontTitle="front.title"
+  :frontData="front.graphData"
+  :backTitle="back.title"
+  :backData="back.message"/>
+  </div>
       <!-- <skill
         v-for="(skill, i) in schema.skills"
         :key="i"
@@ -74,13 +80,27 @@
   import {
     mapState
   } from 'vuex'
-
+ import InfoCard from 'vue-info-card'
   export default {
+   
+    data(){
+      return{
+ front: {
+        title: 'Mastered Technologies',
+        graphData: 'I am the body of a card Look what I can do!',
+      },
+      back: {
+        title: 'Title maybe or the start of mstered tech',
+        message: 'Nuxt.js  vue.js vueitfy processing javascript',
+      },
+      }
+    },
     components: {
       Abstract2: () => import('@/components/Abstract2'),
       EducationCard: () => import('@/components/EducationCard'),
       Skill: () => import('@/components/Skill'),
-      List: () => import('@/components/tagList')
+      List: () => import('@/components/tagList'),
+      InfoCard
     },
 
     computed: {

@@ -9,6 +9,7 @@
       right
       @click="goHome"
       v-if="!onHome"
+      small
     >
       <v-icon>mdi-home</v-icon>
     </v-btn>
@@ -116,8 +117,8 @@
         },
        
         {
-          text: 'Processing',
-          to: '#processing'
+          text: 'Generative Art',
+          to: '#glitch'
         },
         {
           text: 'Photography',
@@ -167,6 +168,7 @@ font-weight: 375 !important;
 }
 .homer{
   border: white solid 1.5px;
+  margin-top:24px;
 }
 .timer {
   animation: side-to-side 4s ease-in-out reverse infinite;

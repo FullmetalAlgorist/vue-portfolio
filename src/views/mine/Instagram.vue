@@ -3,16 +3,20 @@
       <h1> 
         <a :href="instapage">@{{ username }} on instagram</a>
       </h1>
+    
   <template v-if="grams.length > 0">
-    <div v-for="(gram, index) in grams">
+      <!-- <v-layout wrap justify-space-around> -->
+      <div  v-for="(gram, index) in grams">
       <a :href="gram.link">
-        <img :src="gram.images.standard_resolution.url" :alt="gram.text" />
+        <img class="wait" :src="gram.images.standard_resolution.url" :alt="gram.text" />
       </a>
-    </div>
+   </div>
+   <!-- </v-layout> -->
   </template>
   <div v-else class="loading"></div>
   <div v-if="error" class="error">Sorry, the Instagrams couldn't be fetched.</div>
   <button @click="getMoreGrams">Load More</button>
+  
     </div>
 </template>
 <script>
@@ -127,7 +131,7 @@ a{
   display: block;
   overflow: hidden;
   object-fit:cover;
-  max-height: 325px;
+  //  max-height: 325px;
   
 }
 .error{
@@ -149,9 +153,12 @@ a{
     transform: rotate(360deg);
   }
 }
-img{
-  max-width: 100%;
-  background-image: cover;
+.wait{
+  width: 100%;
+ //height:500px !important;
+ //position: relative;
+ // object-fit: contain !important;
+  //background-image: cover;
   //  max-height: 95vh;
   //  max-width: 95vw;
  

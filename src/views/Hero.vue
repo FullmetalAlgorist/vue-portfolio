@@ -21,6 +21,8 @@
         >
 <!-- :class="`display-${$vuetify.breakpoint.mdAndUp ? '4' : '3'}`" -->
         </h1>
+        <h1 v-if="$isMobile()">MOBILE</h1>
+        <h1 v-else>NOT MOBILE</h1>
         <div
           :class="`display-${$vuetify.breakpoint.mdAndUp ? '3' : '1'}`"
           class="text-uppercase label"
