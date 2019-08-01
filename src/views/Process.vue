@@ -15,8 +15,6 @@
   </v-carousel>
       </v-flex>
     </v-layout>
-   
-    
   </core-section>
 </template>
 

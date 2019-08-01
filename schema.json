@@ -78,29 +78,7 @@
   ],
   "education": [
     {
-      "title": "Passions",
-      "institution": "Nature Music",
-      "area": "Computer Science",
-      "studyType": "Bachelor",
-      "startDate": "2006-01-01",
-      "endDate": "2011-01-01",
-      "courses": [
-        "Computer Sciences"
-      ]
-    },
-    {
       "title": "Education",
-      "institution": "Western Washington University",
-      "area": "Computer Science",
-      "studyType": "Bachelor",
-      "startDate": "2006-01-01",
-      "endDate": "2011-01-01",
-      "courses": [
-        "Computer Sciences"
-      ]
-    },
-    {
-      "title": "Mastered Technologies",
       "institution": "Western Washington University",
       "area": "Computer Science",
       "studyType": "Bachelor",
@@ -112,7 +90,6 @@
     }
   ],
   "skills": [
-   
     {
       "name": "Web",
       "level": 4,

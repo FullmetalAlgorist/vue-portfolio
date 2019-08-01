@@ -4,35 +4,34 @@
     justify-space-between
     >
     <abstract-2 />
-   <!-- <v-flex
+   <v-flex
       xs12
       sm6>
         <core-heading>What I know.</core-heading>
-        <p class="pt-2 subheading font-weight-light font-italic">
+        <!-- <p class="pt-2 subheading font-weight-light font-italic">
            <v-icon class="pr-2">mdi-camera</v-icon>
            All photographs were taken by me unless otherwise noted!
-          </p>
-       </v-flex> -->
+          </p> -->
+       </v-flex>
        
-         <!-- <v-flex
+         <v-flex
          mb-4
          pt-4
       sm5
       class="right"
-         > -->
+         >
          <!-- //style="max-width: 230px;"  -->
-        <!-- <blockquote
+        <blockquote
            >
           <p class="title font-weight-light font-italic">
-           I've focused on the technologies that I currently prefer, but know quite a few more, and love learning new things!</p>
-                  <br>
+           I've focused on the technologies that I currently prefer, but know quite a few more, and love learning new things!</p><br>
           <footer class="text-xs-center">
             <v-btn class="font-weight-light" color="primarydark black--text">
               download résumé 
             </v-btn>
           </footer>
         </blockquote>
-         </v-flex> -->
+         </v-flex>
 
     <v-flex
       xs12
@@ -56,15 +55,16 @@
       <h3 class="display-1 font-weight-medium mb-4 primary--text">
         Mastered Technologies 
       </h3>
-      <list />
-        <div>
-<info-card
-  :frontType="front.type"
-  :frontTitle="front.title"
-  :frontData="front.graphData"
-  :backTitle="back.title"
-  :backData="back.message"/>
-  </div>
+<tags-ball :color="'#ffffff'" v-bind:style='{"border":"2px solid black"}' :width="400" :height="400"  :radius="100" :tags='tags'/>
+
+      <!-- <list /> -->
+        <!-- <div>
+ <v-card >
+    <v-img src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/rippleMeLow.jpg"></v-img>
+    <h1 slot="header">Canyons</h1>
+    <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  </v-card>
+  </div> -->
       <!-- <skill
         v-for="(skill, i) in schema.skills"
         :key="i"
@@ -80,19 +80,12 @@
   import {
     mapState
   } from 'vuex'
- import InfoCard from 'vue-info-card'
+ import TagsBall from 'vue-tags-ball'
   export default {
    
     data(){
       return{
- front: {
-        title: 'Mastered Technologies',
-        graphData: 'I am the body of a card Look what I can do!',
-      },
-      back: {
-        title: 'Title maybe or the start of mstered tech',
-        message: 'Nuxt.js  vue.js vueitfy processing javascript',
-      },
+tags: ["Nuxt.js", "Javascript", "Vue.js", "Node.js", "Vuetify.js","GIT",""]
       }
     },
     components: {
@@ -100,7 +93,7 @@
       EducationCard: () => import('@/components/EducationCard'),
       Skill: () => import('@/components/Skill'),
       List: () => import('@/components/tagList'),
-      InfoCard
+      TagsBall
     },
 
     computed: {
