@@ -51,11 +51,15 @@
     <v-flex
       xs12
       md4
+      text-xs-center
     >
       <h3 class="display-1 font-weight-medium mb-4 primary--text">
         Mastered Technologies 
       </h3>
-<tags-ball :color="'#ffffff'" v-bind:style='{"border":"2px solid black"}' :width="400" :height="400"  :radius="100" :tags='tags'/>
+      <!-- v-bind:style='{"border":"2px solid black"}' -->
+<tags-ball
+v-bind:style='{"border":"none"}'
+ :color="'#ffffff'"   :radius="60" :tags='tags'/>
 
       <!-- <list /> -->
         <!-- <div>
@@ -85,7 +89,7 @@
    
     data(){
       return{
-tags: ["Nuxt.js", "Javascript", "Vue.js", "Node.js", "Vuetify.js","GIT",""]
+tags: ["Nuxt.js", "Javascript", "Vue.js", "Node.js", "Vuetify.js","GIT"]
       }
     },
     components: {
