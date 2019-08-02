@@ -2,6 +2,7 @@
 <div>
   <div
     class="circle"
+    :style="{ height: $isMobile() ? winHeight+'px' : '100vh'}"
   >
     <v-layout
       fill-height
@@ -38,13 +39,19 @@
   } from 'vuex'
 
   export default {
-    sata(){
+    data(){
       return{
-        imag: ''
+        imag: '',
+
       }
     },
     computed: {
-      ...mapState('app', ['schema'])
+      ...mapState('app', ['schema']),
+      winHeight(){
+         //console.log('vh: ', vh);
+        console.log('innerHeight: ',window.innerHeight);
+        return (window.innerHeight * 0.01)*100
+      } 
     },
      components: {
       CoreDrawer: () => import('@/components/core/Drawer')
@@ -56,6 +63,10 @@
     //  let img = new Image;
     //  img = 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/rippleMeLow.jpg';
     // this.imag = img;
+    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+// let vh = 
+// Then we set the value in the --vh custom property to the root of the document
+// document.documentElement.style.setProperty('--vh', `${vh}px`);
     }
 //      
     }
@@ -81,7 +92,10 @@ h1{
   }
   .circle{
     background-image: url('https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/rippleMeLow.jpg');
- height: 100vh;
+//  height: 100vh;
   background-size: cover; 
+  //height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  // height: calc(var(--vh, 1vh) * 100);
   }
+ 
 </style>
