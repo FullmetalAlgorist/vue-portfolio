@@ -18,13 +18,16 @@
           :class="`display-${$vuetify.breakpoint.mdAndUp ? '4' : '3'}`"
           class="display-4 name text-uppercase trial2--text"
           v-text="schema.basics.name"
+         :style="{ fontSize: $isMobile() ? '568% !important' : '700% !important'}"
         >
+         <!-- :style="{ width: $isMobile() ? '600%' : '700%'}" -->
 <!-- :class="`display-${$vuetify.breakpoint.mdAndUp ? '4' : '3'}`" -->
         </h1>
         <div
           :class="`display-${$vuetify.breakpoint.mdAndUp ? '3' : '1'}`"
           class="text-uppercase label"
           v-text="schema.basics.label"
+          :style="{ fontSize: $isMobile() ? '27px !important' : '34px !important'}"
         />
       </div>
     </v-layout>
@@ -72,23 +75,11 @@
     }
 </script>
 <style lang="scss"scoped>
-h1{
-  font-weight:400;
-  //opacity: .9;
-  padding-right: 250px;
-  font-size: 700% !important;
-}
 .name{
-  /* color: black; */
-    /* -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); */
-  /* filter: grayscale(100%); */
-   /* color: primary !important; */
    line-height: 1 !important;
-  }
-  .label{
-    /* filter: grayscale(100%); */
-   
+    font-weight:400;
+  padding-right: 250px;
+//  font-size: 700% !important;
   }
   .circle{
     background-image: url('https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/rippleMeLow.jpg');
