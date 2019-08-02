@@ -5,33 +5,18 @@ maybe have dif photos with theme change? me or hero
 
 upload photos
 
-Redo clients/dudes/projects situation. probably only one
- carasoul
-
 make logo (processing/ rhombus? after updating colors) ooo and a different one based on each color theme scheme thing 
 
 play with stolen menu shape
 
-decide on codepen display level (just link or layout situation.
+!! host on own domain through heroku
 
-!! host on own domain through heroku and get heroku upload process streamlines from macbook
+put together simple info panels for live processing sketches
 
-put together simple info panels for processing sketches
+maybe make an option based on speed or just if people want it to change me to scroll
 
-recreate gif scroll situation in codepen and ask discordf about flashes
-
-other codepen play
-find a alance of play on each medium so they all look active and don't have tons of duplicates
-
-
-make skill tags more attractive
-
-todo: projects
-
-todo- processing:
-make a photo option that takes a snap of the image and puts a tradmark on it for saving
-maybe a clear screen setting... maybe same trademark as on pics. simple other varients
-update info situation..maybe effect of full menu that is one on mobile 
+other codepen play @fullmetalalgorist....
+find a balance of play on each medium so they all look active and don't have tons of duplicates
 
 make backend situatiohn for myself for statistics or something to track users.. cookie aggreement?
 
@@ -42,67 +27,32 @@ maybe ask about heroku as best option while asking about image hosting on discor
 
 --make the css transitions on menu more my own (or credit it)
 
-remove one of the buttons on about me and lighten them... maybe lighten a few things
+figure out why the load time is so shit... (D?) host things other places, have loading menus (personalized)
+figure out unused bits
 
-figure out why the load time is so shit... host things other places, have loading menus (personalized)
-
-redo priorities...
-redo abstract 1
-
+rewrite  priorities (save current info so I can make sure I don't stray too far and overwork things)
 
 DISCORD
 ask about remote hosting best practices
 ask about best way to implement ads?
 also maybe google anylitics
 
-redo images... nutri:
-mock app in emulator in different sizes (tablet+android+ios) then write some bulletpoints and find  a nice calagey way to display them
-
 sit down with notepad and do a once over of portfolio with things you might want to change maybe show someone before "public" unveiling
-
-custom loading animation.. also blurred image (might already be implemented in lazyload on main page)
-
-Maybe link up photo blog and gallery situation
 
 check about safety of email sit
 
 prob break up transitions and have those two pages be standalone and make the transitions actually transition... don't be afraid of mimicing sarah's transitions... I think she would be down.  go girls!
 
-figure out secondary color..,.maybe theme change
 
-make current works data in  schema instead of passing it through props
+everything is manageable if you break it in to the smallest steps.. especially large overwhelming concepts.. start applying this more things. !!
 
-
-enlarge healthy harveast  logo on ipad layout
-
-today: redo text size and spacing of recent works
-
-try to remove mostpersonalspecific content and putin in schema or amazon hosting...  figure out  about trademark
-
-isolate scrollmagic experiment or other to codepen.. oo maybe have them hosted on aw3s or whateverhe fuck
-maybe sense slower connection and cut things like me.gif out?
-
-everything is manageable if you break it in to the smallest steps.. especially large overwhelming concepts.. start applying this more things.
-
-TONIGHT WITH GMOTHER:
-redo gif/gimp images
-choose pics to show in galleryl
-
-gallery/aws busy work
-
-write info panels on processing sketches. pic how to diplay and talk about them, incorporate the carosaul and what pics/vids you want t o use or if that's even the best option
-
-figure out how to lazy load them
-
-redo gif situation
-
-see what uploading album for blog does to aws
-
-in the middle of redoing potential education card changes, because the layout is nice than the list tba mastered skills section.  also there is a commented out quote form the recently dleted mini section... the all photos are mine and the quote about how I've chosen only some technologies but like to learn, maybe add that to education card situation......
+maybe talk about all ophotos being mine.. maybe link or hghlight words in intro bio passions that mve you to those sections (photo) genretive
 
 figure out how to disable eslint 
-figure out how to priortise loading ripple image
-add my images back to photo section bar
+
+select best 9 photos
 add my photos to group of photos obvi wait till I finish picking them 
 
-another front page sectgion idea: opener a single image prob size of current photo 9 piece turtle pic that glitches when hovered over... auto glitch on mobile? and links to insta (like other insta library I made... ) except for fullmtalalgorist shit.. also start posting again plz. and code pen.
+ auto glitch turtle on mobile?  also start posting again plz. and code pen.
+
+ fix name/title for mobile sizes

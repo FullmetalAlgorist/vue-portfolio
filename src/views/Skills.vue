@@ -12,6 +12,7 @@
         <core-heading>What I know.</core-heading>
          <!-- v-bind:style='{"border":"2px solid black"}'   :font="'70px monaco'"-->
        <v-flex >
+         <!-- on small and up... pl-4 pb-4 for this flex ^ -->
        <blockquote >
           <p class="title font-weight-light font-italic">
            I've focused on the technologies that I currently prefer, but know quite a few more, and love learning new things!</p><br>
@@ -28,19 +29,23 @@
          pt-4
       sm5
       md4
-      
+      :style="{ marginTop: $vuetify.breakpoint.mdAndUp ?  '-100px' : '0'}"
+       
          >
        <v-flex text-xs-center>
        <tags-ball
-v-bind:style='{"border":"none"}'
- :color="'#ffffff'" :width="300" :radius="60" :tags='tags'/>
+          v-bind:style='{"border":"none"}'
+ :color="'#ffffff'" 
+ :width="300" 
+ :radius="70" 
+ :tags='tags'/>
        </v-flex>
          <!-- //style="max-width: 230px;"  -->
         
          </v-flex>
     <v-flex
       xs12
-      md3
+      md4
       >
     <div
      v-for="(degree, i) in schema.education"

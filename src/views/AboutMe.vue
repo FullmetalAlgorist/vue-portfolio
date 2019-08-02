@@ -19,9 +19,9 @@
                I love to live on the edge of nature and technology.
                </p>
                </core-text>
-         <v-flex class="text-xs-center xs-12 ">
+         <!-- <v-flex class="text-xs-center xs-12 ">
            <v-btn href="https://codepen.io/akcrew/" class="font-weight-light"  color="primarydark black--text">Recent code!  <v-icon  class="font-weight-light" right >mdi-codepen</v-icon> </v-btn>
-              </v-flex>
+              </v-flex> -->
      <v-flex pt-3 class="text-xs-center xs12" :pb-4="$vuetify.breakpoint.smAndDown">
        <v-btn @click="$vuetify.goTo('#contact')" class="font-weight-light" color="secondarylight black--text">Contact Me!</v-btn>
      </v-flex>

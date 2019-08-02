@@ -23,17 +23,24 @@
         <v-layout
         justify-center >
         <v-hover>
+<!-- :color="`${hover ? 'rgba(65,223,213,.42)' : 'rgba(0,0,0,.28)'}`" -->
+          <!--  :style="{ marginTop: $vuetify.breakpoint.mdAndUp ?  '-100px' : '0'`}" -->
           <v-card class="gitCard"  
-          :color="`${hover ? 'rgba(65,223,213,.42)' : 'rgba(0,0,0,.28)'}`"
+         :color="`${hover ? 'rgba(65,223,213,.42)' : 'rgba(0,0,0,.28)'}`"
+          :style="{ maxWidth: $vuetify.breakpoint.smOnly ?  '270px' : '340px'}"
           href="https://github.com/FullmetalAlgorist"
           slot-scope="{ hover }"
            elevation="20">
             <v-card-title primary-title>
+              <!-- style="max-width: 320px;" -->
               <blockquote
-              style="max-width: 330px;">
+              >
               <div >
                  <v-icon class="gitMe pulse-button" >mdi-github-circle</v-icon>
-                <p class="justText headline font-weight-light font-italic">
+                <p class="justText headline font-weight-light font-italic pr-1"
+                :style="{ width: $vuetify.breakpoint.smOnly ?  '249px' : '310px'}"
+                
+                >
                   All of my code is public (including the code for this page!), want to see how something works? Check out my github.
                 </p>
                 </div>
@@ -166,7 +173,7 @@ opacity: .4;
 .justText{
 color: rgba(255, 255, 255, 0.906);
 margin-top: -150px;
-  width: 330px;
+  
 }
 .site{
   margin-bottom: 30px;
