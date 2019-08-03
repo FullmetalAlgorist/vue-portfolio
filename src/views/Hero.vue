@@ -1,6 +1,6 @@
 <template>
 <div>
-     <div class="scroll-downs">
+     <div  v-if="blah" class="scroll-downs">
   <div class="mousey">
     <div class="scroller"></div>
   </div>
@@ -53,7 +53,7 @@
     data(){
       return{
         imag: '',
-
+blah : false
       }
     },
     computed: {
@@ -78,6 +78,8 @@
 // let vh = 
 // Then we set the value in the --vh custom property to the root of the document
 // document.documentElement.style.setProperty('--vh', `${vh}px`);
+    setTimeout(() => this.blah=true, 5000);
+    
     }
 //      
     }
@@ -99,7 +101,7 @@
   background-attachment: fixed;
   }
  .scroll-downs {
-  position: relative;
+   position:absolute;
         top: 40vh;
    left: 46vw;
   // bottom: 0;
