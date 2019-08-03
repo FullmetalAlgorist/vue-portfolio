@@ -1,5 +1,10 @@
 <template>
 <div>
+     <div class="scroll-downs">
+  <div class="mousey">
+    <div class="scroller"></div>
+  </div>
+</div>
   <div
     class="circle"
     :style="{ height: $isMobile() ? winHeight+'px' : '100vh'}"
@@ -20,15 +25,18 @@
           v-text="schema.basics.name"
          :style="{ fontSize: $isMobile() ? '568% !important' : '700% !important'}"
         >
+     
          <!-- :style="{ width: $isMobile() ? '600%' : '700%'}" -->
 <!-- :class="`display-${$vuetify.breakpoint.mdAndUp ? '4' : '3'}`" -->
         </h1>
+      
         <div
           :class="`display-${$vuetify.breakpoint.mdAndUp ? '3' : '1'}`"
           class="text-uppercase label"
           v-text="schema.basics.label"
           :style="{ fontSize: $isMobile() ? '27px !important' : '34px !important'}"
         />
+          
       </div>
     </v-layout>
   </div>
@@ -88,6 +96,41 @@
   background-position: 63% bottom;
   //height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   // height: calc(var(--vh, 1vh) * 100);
+  background-attachment: fixed;
   }
- 
+ .scroll-downs {
+  position: relative;
+        top: 40vh;
+   left: 46vw;
+  // bottom: 0;
+  // left: 0;
+  // margin: auto;
+  
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 3px solid #1f2833;
+  border-radius: 25px;
+  opacity: 0.90;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #1f2833;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
 </style>

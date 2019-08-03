@@ -3,7 +3,7 @@
     <abstract-1 />
     <v-flex
       xs12
-      sm6
+      sm7
       justify-end
     >
       <section>
@@ -25,21 +25,32 @@
      <v-flex pt-3 class="text-xs-center xs12" :pb-4="$vuetify.breakpoint.smAndDown">
        <v-btn @click="$vuetify.goTo('#contact')" class="font-weight-light" color="secondarylight black--text">Contact Me!</v-btn>
      </v-flex>
+<!-- <v-btn 
+:class="`display-${$vuetify.breakpoint.smOnly ? '4' : '3'}`"
+ class="font-weight-light" color="primarydark"
+>
+codepen</v-btn>  
+cool looking title button combo -->
+
      </v-layout>
       </section>
          </v-flex>
             <v-flex
     xs12
-      sm6
-      class="CCC"
+      sm5
+      class="CCC text-xs-center"
     >
     <v-layout
-     justify-center
+     justify-align-end
+     wrap
      >
     <!-- <div class="spacer"></div> -->
       <!-- <img max-width="400" :src="blah"  /> !!!!!!!!!!!!!!!!!!!!!!!!!!!-->
     <v-img src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/realFinalLow.png"></v-img>
+
+
     </v-layout>
+
     </v-flex>
       
  </core-section>
