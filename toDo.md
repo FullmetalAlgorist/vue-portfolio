@@ -1,8 +1,4 @@
-
 todo:
-1 update color pallate situation -- play with new theme each time.  organize some themes.
-maybe have dif photos with theme change? me or hero
-
 upload photos
 
 make logo (processing/ rhombus? after updating colors) ooo and a different one based on each color theme scheme thing 
@@ -56,3 +52,17 @@ add my photos to group of photos obvi wait till I finish picking them
  auto glitch turtle on mobile?  also start posting again plz. and code pen.
 
  fix name/title for mobile sizes
+
+ maybe sprinkle in some hover tip situations
+
+ works write ups
+
+ maybe implement social hover
+
+ maybe preload glitched turtle and dark transitions logo
+
+ switch middle works section (have text on the left to separate colors and mix shit up)
+
+ make sure sketches are fgetting destoryed or not running when not  on screen
+
+ figure out why processing sketches have redrawn white canvas border  from center

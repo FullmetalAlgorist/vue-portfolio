@@ -105,16 +105,16 @@ export default {
   height: 82.5px;//55px;
 }
 .mousey {
-  width: 4.5px; //3px;
+  width: 4px; //3px;
   padding: 15px 22.5px; //10px 15px;
   height: 52.5px;//35px;
-  border: 3.5px solid #1f2833;
+  border: 3px solid #1f2833;
   border-radius: 37.5px; //25?
   opacity: 0.9;
   box-sizing: content-box;
 }
 .scroller {
-  width: 4.5px; //3px;
+  width: 3px; //3px;
   height: 15px; //10px;
   border-radius: 25%;
   background-color: #1f2833;

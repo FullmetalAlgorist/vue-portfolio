@@ -6,28 +6,59 @@
     wrap 
     fill-height 
     fluid>
+    <info-panel :sketchMe="1" v-model="dialog"></info-panel>
         <v-flex justify-space-between xs4>
-            <v-btn small color="black" fab>
+              <v-tooltip top>
+      <template v-slot:activator="{ on }">
+         <v-btn @click="dialog = true" small color="black" fab v-on="on"> 
                 <v-icon medium class="aboutME">mdi-information</v-icon>
             </v-btn>
+      </template>
+      <span>About this sketch</span>
+    </v-tooltip>
         </v-flex>  
         <v-flex justify-space-between xs6>
-            <v-btn small fab @click="uno" color="black">
+                <v-tooltip top>
+      <template v-slot:activator="{ on }">
+         <v-btn small fab @click="uno" color="black" v-on="on">
                     <v-icon large>{{ icon1 }}</v-icon>
-            </v-btn>     
-            <v-btn small fab @click="dos" color="black"> 
+            </v-btn> 
+      </template>
+      <span>{{ tool1 }}</span>
+    </v-tooltip>
+                       <v-tooltip top>
+      <template v-slot:activator="{ on }">
+          <v-btn small fab @click="dos" color="black" v-on="on"> 
                 <v-icon large>{{ icon2 }}</v-icon>
             </v-btn>
-            <v-btn small fab @click="tres" color="black">
+      </template>
+      <span>{{ tool2 }}</span>
+    </v-tooltip>      
+     <v-tooltip top>
+      <template v-slot:activator="{ on }">
+        
+            <v-btn small fab @click="tres" color="black" v-on="on">
                 <v-icon large>{{ icon3 }}</v-icon>
             </v-btn>
+      </template>
+      <span>{{ tool3 }}</span>
+    </v-tooltip>
+         
         </v-flex>
         <v-flex xs2>
+             <v-tooltip top>
+      <template v-slot:activator="{ on }">
+        
             <v-switch 
                 class="switch"
                 color="white"
-                v-model="fast">
+                v-model="fast"
+                v-on="on">
             </v-switch>
+      </template>
+      <span>Speed mode!</span>
+    </v-tooltip>
+           
         </v-flex>
         <v-layout 
         text-xs-center 
@@ -51,9 +82,13 @@ export default {
             oneAgain: true,
      twoAgain: true,
      threeAgain: true,
-     fast: false
+     fast: false,
+         dialog: false
         }
     },
+     components: {
+       infoPanel: () => import('@/components/sketches/infoPanel'),
+     },
       mounted() {
     const P5 = require('p5');
     new P5(next.main);
@@ -67,6 +102,15 @@ export default {
     },
     icon3(){
      return this.threeAgain ? 'mdi-numeric-3-box': 'mdi-numeric-3-box-outline';
+    },
+    tool1(){
+     return this.oneAgain ? 'Hide': 'Show';
+    },
+    tool2(){
+     return this.twoAgain ? 'Hide': 'Show';
+    },
+    tool3(){
+     return this.threeAgain ? 'Hide': 'Show';
     }
   },
 methods: {
@@ -88,10 +132,13 @@ watch:{
 }
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .switch{
  position: relative;
  bottom: 7px;
 }
-
+.v-dialog {
+  margin-top: -120px !important;
+  opacity: .7;
+}
 </style>

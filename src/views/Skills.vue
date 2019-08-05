@@ -8,7 +8,7 @@
    <v-flex
       xs12
       sm7
-      md4>
+      lg4>
         <core-heading>What I know.</core-heading>
          <!-- v-bind:style='{"border":"2px solid black"}'   :font="'70px monaco'"-->
        <v-flex >
@@ -28,8 +28,8 @@
          mb-4
          pt-4
       sm5
-      md4
-      :style="{ marginTop: $vuetify.breakpoint.mdAndUp ?  '-100px' : '0'}"
+      lg4
+      :style="{ marginTop: $vuetify.breakpoint.lgAndUp ?  '-100px' : '0'}"
        
          >
        <v-flex text-xs-center>
@@ -45,7 +45,7 @@
          </v-flex>
     <v-flex
       xs12
-      md4
+      lg4
       >
     <div
      v-for="(degree, i) in schema.education"

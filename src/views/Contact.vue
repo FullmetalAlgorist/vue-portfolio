@@ -21,7 +21,7 @@
         Send me a Message
       </core-subheading>
 
-      <v-form v-model="valid" ref="form" class="formYou">
+      <v-form v-model="valid" ref="form" class="formYou ">
          <v-dialog
       v-model="dialog"
       max-width="290"
@@ -52,6 +52,7 @@
               label="Name"
               :rules="nameRules"
               v-model="Name"
+          
             />
           </v-flex>
           <v-flex xs12>
@@ -61,6 +62,7 @@
               label="Email"
               :rules="emailRules"
               v-model="Email"
+             
             />
           </v-flex>
           <v-flex xs12>
@@ -268,7 +270,16 @@
   margin-left: 10px;
 }
 
-.v-input__slot {
+/* .v-input__slot {
     background: rgba(0,0,0,.28) !important;
-}
+    
+    color: white !important;
+} */
+/* .v-input__slot--is-focused{
+background: rgba(157, 9, 9, 0.28) !important;
+} */
+
+/* .theme--dark.v-text-field--solo-inverted.v-text-field--solo > .v-input__control > .v-input__slot{
+color: white !important;
+} */
 </style>

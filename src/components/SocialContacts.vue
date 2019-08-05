@@ -7,7 +7,7 @@
       class="mx-2"
       :title="`Mariah's ${social.network}`"
     >
-      <v-icon large v-text="social.icon" />
+      <v-icon class="bigMe" large v-text="social.icon" />
     </a>
   </div>
 </template>
@@ -42,5 +42,8 @@
 <style scoped>
   a {
     text-decoration: none;
+  }
+  .bigMe:hover{
+     color: var(--v-primary-base);
   }
 </style>

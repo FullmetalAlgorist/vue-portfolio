@@ -1,25 +1,67 @@
 <template>
   <div class="wrapper">
-    <v-container class="sketches">
-      <radar-component/>
-      <next-component/>
+  
+    <v-container  class="sketches">
+        <v-layout  justify-center align-center class="text-xs-right ">
+      <!-- <v-flex ></v-flex> -->
+      <!-- justify-center align-center  -->
+     <v-flex justify-center align-center xs12>
+      
+<v-flex v-if="s>0">
+           <v-tooltip left>
+      <template v-slot:activator="{ on }">
+         <v-icon @click="s--" class="bigArrowLeft"  large color="black" v-on="on">mdi-chevron-left</v-icon>
+      </template>
+      <span>Last sketch</span>
+    </v-tooltip>
+    </v-flex>
+    
+       <component   :is="sketchArray[s].component"></component>
+       <v-flex v-if="s<3">
+           <v-tooltip right>
+      <template v-slot:activator="{ on }">
+         <v-icon @click="s++" class="bigArrowRight"  large color="black" v-on="on">mdi-chevron-right</v-icon>
+      </template>
+      <span>Next sketch</span>
+    </v-tooltip>
+    </v-flex>
+    
+     </v-flex>
+      <!-- <next-component/>
       <tree-component/>
-      <lines-component/>
+      <lines-component/> -->
+      </v-layout>
     </v-container>
   </div>
 </template>
 
 <script>
+    // nextComponent: () => import("@/components/sketches/Next"),
+    // treeComponent: () => import("@/components/sketches/Tree"),
+    // linesComponent: () => import("@/components/sketches/Lines")
+import radarComponent from '@/components/sketches/Radar.vue';
+import nextComponent from '@/components/sketches/Next';
+    import treeComponent from '@/components/sketches/Tree';
+  import  linesComponent from '@/components/sketches/Lines';
 export default {
-  data() {
-    return {};
+   components: {
+    radarComponent,
+    nextComponent ,
+    treeComponent ,
+  linesComponent
   },
-  components: {
-    radarComponent: () => import("@/components/sketches/Radar"),
-    nextComponent: () => import("@/components/sketches/Next"),
-    treeComponent: () => import("@/components/sketches/Tree"),
-    linesComponent: () => import("@/components/sketches/Lines")
-  }
+  data() {
+    return {
+      s: 0,
+      sketchArray: [
+{title: 'radar', component: radarComponent}, 
+{title: 'next', component: nextComponent}, 
+{title: 'tree', component: treeComponent}, 
+{title: 'lines', component: linesComponent}, 
+      ]
+    }
+  },
+ 
   // methods: {
   //   callbackOnP5: function(timeStr) {
   //     this.message = timeStr;
@@ -40,6 +82,18 @@ export default {
 
 .sketches {
   max-width: 650px;
+}
+.bigArrowRight{
+  font-size: 450% !important;
+  position: absolute;
+  left: 62vw;
+  top: 1vh;
+}
+.bigArrowLeft{
+  font-size: 450% !important;
+  position: absolute;
+  left: 32vw;
+  top: 1vh;
 }
 </style>
 

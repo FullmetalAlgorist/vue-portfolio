@@ -136,6 +136,28 @@
        "nerds": "blah"
       }
   ],
+  "sketch": [
+    {
+      "title": "SUPER FORMULA!",
+      "text": "The superformula is my favorite formula!! It’s a generalization of the superellipse and is a relatively new proposition (2000).  It’s honestly amazing.  We’re just starting to understand its potential to describe all sorts of shapes and curves found in nature.  It’s patent pending, but for now we can do what we want with it.  I decided to duplicate it in processing to make it more accessible to play with. ",
+    "tips": " Try adding or subtracting vertices, or randomizing the formula completely by ‘FLIP’ping and starting over!"
+    },
+    {
+      "title": "SINE WAVES!",
+      "text": "Reminiscent of a 90s screensaver, this exploration into the sine wave is a simplified version of a larger project I experimented with last year involving some midi controllers and audio input.  Sine waves occur naturally all around us, and are another of my favorite geometric forms to play with.",
+      "tips": "Try bumping up the speed with the switch on the right, or limiting the number of webs!"
+    },
+    {
+      "title": "FRACTAL TREE!",
+      "text": "One of the most basic visualizations of a fractal, this fractal tree is made by applying an infintely recursive formula.  We start with a single trunk that splits into two branches, each of those branches in turn splits in to another two, and so on to infinity! (Or when I tell it to stop). I ported this from Daniel Shiffman’s processing examples. (Thanks Daniel!)",
+      "tips": "Try changing the angle of the branching limbs by moving the slider!"
+    },
+    {
+      "title": "Emergent behavior!",
+      "text": "Emergence is the idea that a system does not depend on its individual parts, but on their relationships to one another.  This can have implications throughout the universe, but is most easily visualized in particle systems. Here we have a bunch of vertexes floating through space connecting with lines when they get close enough, and responsive to mouse movement-There is a lot of math going on constantly behind the scenes here... If things start to slow down, just refresh the page to start with a clean slate",
+      "tips": "'SWITCH' up the line color, or reset it back to black and white with the ink drop on the right"
+    }
+  ],
   "interests": [
     {
       "name": "Web Development",

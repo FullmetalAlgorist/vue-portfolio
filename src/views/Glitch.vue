@@ -34,6 +34,7 @@
             Processing
           </h3>
           <p class="subheading" v-text="'I use a combination of p5.js and processing to bring algorithms to life on the web!  Here are some attempts to make my processing sketches interactive.'" /> 
+          <p class="subheading b">**These sketches work significantly less well on mobile devices!</p>
            <!-- <p class="subheading font-weight-light font-italic">I use a combination of p5.js and processing to bring algorithms to life on the web!  Here are some attempts to make my processing sketches interactive.  Press some buttons and see what happens :)</p> -->
           <p  class="subheading font-weight-light font-italic">  Follow the link, press some buttons, and see what happens :) </p>
            <v-btn @mouseenter="hoverMe=true" @mouseleave="hoverMe=false" class="font-weight-light but" :color="hoverMe ? 'white--text primarydark' : 'black--text primarydark' "  @click="toProc">live processing sketches!!</v-btn>
@@ -107,5 +108,8 @@ computed:{
 .but:hover{
 
   background-color: rgba(0,0,0,.28) !important;
+}
+.b{
+  font-weight: bold;
 }
 </style>
