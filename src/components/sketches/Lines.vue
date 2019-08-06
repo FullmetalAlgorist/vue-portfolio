@@ -33,7 +33,7 @@
       </template>
       <span>Reset</span>
     </v-tooltip>
-   
+  
     </v-flex>
     <v-layout 
     text-xs-center 

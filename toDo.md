@@ -7,8 +7,6 @@ play with stolen menu shape
 
 !! host on own domain through heroku
 
-put together simple info panels for live processing sketches
-
 maybe make an option based on speed or just if people want it to change me to scroll
 
 other codepen play @fullmetalalgorist....
@@ -56,8 +54,6 @@ add my photos to group of photos obvi wait till I finish picking them
  maybe sprinkle in some hover tip situations
 
  works write ups
-
- maybe implement social hover
 
  maybe preload glitched turtle and dark transitions logo
 

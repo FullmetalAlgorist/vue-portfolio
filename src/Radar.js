@@ -9,34 +9,27 @@ let none = 2.0;
 let ntwo = 2.0;
 let nthree= 2.0;
 let theta = 0;
-let p5;
 
 
-export function main(_p5, one, two) {
-  p5 = _p5
+export function main(_p5) {
+ let p5 = _p5
 
   p5.setup = _ => {
-    console.log();
-    p5.background(0);
-  //   let height = document.body.clientHeight
-  // let width   = document.body.clientWidth
-    // var canvas = p5.createCanvas(p5.width,p5.height)
-    var canvas = p5.createCanvas(375, 400);
+    let canvas = p5.createCanvas(375, 400);
     canvas.parent("p5Canvas");
     p5.frameRate(50);
     p5.smooth();
-  	
-
+    p5.background(0);
   }
 
   p5.draw = _ => {
-  	// p5.background(0);
+  	//  p5.background(0);
   	p5.fill(0,5);
 	p5.rect(-5, -5, 1250,510);
   // p5.text("# of vertices: " + p5.int(em), 10, 20);
 
   p5.translate(p5.width/2, p5.height/2);
-
+  
 	//count1++;
 	if (newShape){
 		none = p5.random(0.5);

@@ -23,7 +23,6 @@ export function main(_p5) {
         y[l]=p5.random(-60,460);
     }
 
-
   p5.draw = _ => {
     p5.background(0);
     for (let i=0;i<x.length;i++) {

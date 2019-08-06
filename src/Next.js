@@ -46,8 +46,6 @@ export function main(_p5) {
     p5.background(0);
     let canvas = p5.createCanvas(375, 400)
     canvas.parent("p5Canvas2");
-    //p5.frameRate(50);
-    //p5.smooth();
   }
 
   p5.draw = _ => {
@@ -142,9 +140,3 @@ export function tres(){
     speed2 = (fast ? .026 : .001);
     speed3 = (fast ? .060 : .002);
    }
-
-
-//    lspeed1 = .005;
-
-// let speed2 = .001;
-// let speed3 = .002;
