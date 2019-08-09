@@ -80,6 +80,10 @@ font-size: 105%;
   font-size: 300% !important;
 }
 
+//this isn't working, for some reason it has to be in the parent component
+// .v-dialog {
+//   opacity: .7;
+// }
     </style>
     
     

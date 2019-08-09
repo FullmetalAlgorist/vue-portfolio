@@ -46,6 +46,7 @@
     "vue-color": "^2.7.0",
     "vue-global-var": "0.0.4",
     "vue-info-card": "^0.1.1",
+    "vue-masonry-gallery": "^1.1.1",
     "vue-mobile-detection": "^1.0.0",
     "vue-my-photos": "^1.0.4",
     "vue-tags-ball": "^1.2.0"

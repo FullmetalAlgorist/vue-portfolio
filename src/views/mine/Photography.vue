@@ -12,28 +12,36 @@
           color="primary"
           value="All"
           ></v-radio>
-        <v-radio  id="bird"
+        <v-radio  id="wildlife"
             name="filters" 
-            @click="clickSeabirds"
-             label="Birds"
-             value="Seabirds"
+            @click="clickWildlife"
+             label="Wildlife"
+             value="Wildlife"
              color="primary"
              class="radios"
             ></v-radio>
-        <v-radio id="water"
+        <v-radio id="ocean"
            name="filters"
-           @click="clickWater"
+           @click="clickOcean"
            class="radios"
-           label="Water"
-           value="Water"
+           label="Ocean"
+           value="Ocean"
            color="primary"
            />
-        <v-radio id="wood"
+        <v-radio id="driftwood"
            name="filters"
            @click="clickDriftwood" 
            class="radios"
-           label="Wood"
+           label="Driftwood"
            value="Driftwood"
+           color="primary"
+           />
+             <v-radio id="nature"
+           name="filters"
+           @click="clickNature" 
+           class="radios"
+           label="Nature"
+           value="Nature"
            color="primary"
            />
       </v-radio-group>
@@ -59,148 +67,28 @@
 </div>
 </template>
 <script>
+import axios from 'axios'
 export default {
   data() {
     return {
       ex8: 'All',
       galleryFilter: 'all',
-      st1: 'require(',
-      st2: ')',
-      thumbnailDir :'@/assets/gallery/',
       phone: 'phone',
- images :
- [
-   
-  {'name':'https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/gallery/IMG_4370.jpg',
-    'alt':'trees',
-    'id':'image1' },
-  
-  {'name':'https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/gallery/IMG_4390.jpg',
-    'alt':'driftwood',
-    'filter':'wood',
-    'id':'image2'  },
-
-   {'name':'https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/gallery/IMG_4410.jpg',
-    'alt':'seagull',
-    'filter':'bird',
-    'id':'image3'  },
-
-   {'name':'https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/gallery/IMG_4450.jpg',
-    'alt':'splash',
-    'filter':'water',
-    'id':'image4'  },
-
-   {'name':'https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/gallery/IMG_5956.jpg',
-    'alt':'another gull',
-    'filter':'bird',
-    'id':'image5'  },
-
-   {'name':'https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/gallery/IMG_5989.jpg',
-    'alt':'eye',
-    'filter':'wood',
-    'id':'image6'  },
-
-   {'name':'https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/gallery/IMG_5992.jpg',
-    'alt':'close-up',
-    'filter':'wood',
-    'id':'image7'  },
-
-   {'name':'https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/gallery/IMG_6149.jpg',
-    'alt':'heron-cleaning',
-    'filter':'bird',
-    'id':'image8'  },
-
-    {'name':'https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/gallery/IMG_6166.jpg',
-    'alt':'heron',
-    'filter':'bird',
-    'id':'image9' },
-
-   {'name':'https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/gallery/IMG_6184.jpg',
-    'alt':'drip1',
-    'filter':'water',
-    'id':'image10'  },
-
-   {'name':'https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/gallery/IMG_5603.jpg',
-    'alt':'little',
-    'filter':'bird',
-    'id':'image11'  },
-
-   {'name':'https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/gallery/IMG_6191.jpg',
-    'alt':'splash',
-    'filter':'water',
-    'id':'image12'  },
-
-   {'name':'https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/gallery/IMG_6239.jpg',
-    'alt':'flight',
-    'filter':'bird',
-    'id':'image13'  },
-
-   {'name':'https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/gallery/IMG_6244.jpg',
-    'alt':'flight2',
-    'filter':'bird',
-    'id':'image14'  },
-
-    //  {'name':require('@/assets/gallery/loggy.jpg'),
-    // 'alt':'lines',
-    // 'filter':'wood',
-    // 'id':'image15'  },
-
-//    {'name':require('@/assets/gallery/rock-in-wood.jpg'),
-//     'alt':'close-up',
-//     'filter':'wood',
-//     'id':'image16'  },
-
-//    {'name':require('@/assets/gallery/wood-close.jpg'),
-//     'alt':'leaf',
-//     'filter':'wood',
-//     'id':'image17'  },
-
-//     {'name':require('@/assets/gallery/circ1.jpg'),
-//     'alt':'ring',
-//     'filter':'wood',
-//     'id':'image19'  },
-
-//      {'name':require('@/assets/gallery/IMG_4771.jpg'),
-//     'alt':'wood',
-//     'filter':'wood',
-//     'id':'image20'  },
-
-//       {'name':require('@/assets/gallery/IMG_4814.jpg'),
-//     'alt':'drift',
-//     'filter':'wood',
-//     'id':'image21'  },
-
-//      {'name':require('@/assets/gallery/IMG_4828.jpg'),
-//     'alt':'gull2',
-//     'filter':'bird',
-//     'id':'image22'  },
-
-//     {'name':require('@/assets/gallery/IMG_5003.jpg'),
-//     'alt':'pecker',
-//     'filter':'bird',
-//     'id':'image23'  },
-// //
-//     {'name':require('@/assets/gallery/IMG_6510.jpg'),
-//     'alt':'wood',
-//     'filter':'wood',
-//     'id':'image24'  },
-
-//       {'name':require('@/assets/gallery/rip.jpg'),
-//     'alt':'ocean',
-//     'filter':'water',
-//     'id':'image25'  },
-
-//      {'name':require('@/assets/gallery/IMG_6766.jpg'),
-//     'alt':'goose',
-//     'filter':'bird',
-//     'id':'image26'  },
-
-//     {'name':require('@/assets/gallery/IMG_6590.jpg'),
-//     'alt':'nail',
-//     'filter':'wood',
-//     'id':'image27'  }
-    ]
+  imageArray: [],
+  images: [
+         {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/untitled+folder/IMG_5067.JPG',
+    'alt':'Sea flower',
+    'filter':'Nature',
+    'id':'image27'  },
+       {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/yellow.jpg',
+    'alt':'Lichen',
+    'filter':'Nature',
+    'id':'image28'  }]
     }
+  },
+  created(){
+    this.fillArray();
+    //this.imageArray = https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/untitled+folder/c
   },
   methods: {
     showLightbox: function(imageName) {
@@ -213,17 +101,43 @@ export default {
       this.updateFilter('all');
       this.ex8="All";
     },
-    clickSeabirds(){
-      this.updateFilter('bird');
-      this.ex8="Seabirds";
+    clickWildlife(){
+      this.updateFilter('Wildlife');
+      this.ex8="Wildlife";
     },
-    clickWater(){
-      this.updateFilter('water');
-      this.ex8="Water";
+    clickOcean(){
+      this.updateFilter('Ocean');
+      this.ex8="Ocean";
     },
     clickDriftwood(){
-      this.updateFilter('wood');
+      this.updateFilter('Driftwood');
       this.ex8="Driftwood";
+    },
+    clickNature(){
+      this.updateFilter('Nature');
+      this.ex8="Nature";
+    },
+    fillArray(){
+//       axios.get('https://site.com/', {
+//   params: {
+//     Host: 'Flavio'
+//   }
+// })
+      // https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/untitled+folder/c
+      // /gallery/untitled+folder/?list-type=2
+      axios.get('https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/?list-type=2')
+        .then(({data}) => {
+          // this.imageArray = 
+          // this.grams = data.data
+          // this.username = data.data[0].user.username
+          // this.next_url = data.pagination.next_url
+          console.log(data);
+
+        })
+        .catch(function (error) {
+          console.log(error)
+          // this.error = true
+        });
     }
   },
   computed: {
@@ -238,8 +152,153 @@ export default {
       return this.screenWidth;
     } 
   }
-
 }
+// images :
+//  [
+//   {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_4370.jpg',
+//     'alt':'Maples',
+//     'filter':'Nature',
+//     'id':'image1' },
+  
+//   {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_4390.jpg',
+//     'alt':'Cloudy Driftwood',
+//     'filter':'Driftwood',
+//     'id':'image2'  },
+
+//    {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_4410.jpg',
+//     'alt':'Shit Rock',
+//     'filter':'Wildlife',
+//     'id':'image3'  },
+
+//    {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_4450.jpg',
+//     'alt':'Splash',
+//     'filter':'Ocean',
+//     'id':'image4'  },
+
+//    {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_4771.jpg',
+//     'alt':'Get in there',
+//     'filter':'Driftwood',
+//     'id':'image5'  },
+
+//    {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_4814.jpg',
+//     'alt':'Roots',
+//     'filter':'Driftwood',
+//     'id':'image6'  },
+
+//    {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_4828.jpg',
+//     'alt':'Shades of Grey',
+//     'filter':'Wildlife',
+//     'id':'image7'  },
+
+//     {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_5003.jpg',
+//     'alt':'Pileated',
+//     'filter':'Wildlife',
+//     'id':'image8'  },
+
+//      {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_5603.jpg',
+//     'alt':'Little guy',
+//     'filter':'Wildlife',
+//     'id':'image9' },
+
+//     {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_5956.jpg',
+//     'alt':'Gull in flight',
+//     'filter':'Wildlife',
+//     'id':'image10'  },
+
+//     {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_5989.jpg',
+//     'alt':'Whale eye',
+//     'filter':'Driftwood',
+//     'id':'image11'  },
+
+//     {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_5992.jpg',
+//     'alt':'So close',
+//     'filter':'Driftwood',
+//     'id':'image12'  },
+
+//     {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_6149.jpg',
+//     'alt':'Cleaning',
+//     'filter':'Wildlife',
+//     'id':'image13'  },
+
+//     {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_6166.jpg',
+//     'alt':'Seattle heron',
+//     'filter':'Wildlife',
+//     'id':'image14'  },
+
+//      {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_6184.jpg',
+//     'alt':'Dropping (direction?)',
+//     'filter':'Ocean',
+//     'id':'image15' },
+  
+//   {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_6191.jpg',
+//     'alt':'Rock splash',
+//     'filter':'Ocean',
+//     'id':'image16'  },
+
+//    {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_6239.jpg',
+//     'alt':'Sandpipers1',
+//     'filter':'Wildlife',
+//     'id':'image17'  },
+
+//    {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_6244.jpg',
+//     'alt':'Sandpipers2',
+//     'filter':'Wildlife',
+//     'id':'image18'  },
+
+//    {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_6510.jpg',
+//     'alt':'Sandpiper splash',
+//     'filter':'Wildlife',
+//     'id':'image19'  },
+
+//    {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_6590.jpg',
+//     'alt':'Nail',
+//     'filter':'Driftwood',
+//     'id':'image20'  },
+
+//    {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_6766.jpg',
+//     'alt':'Gooose',
+//     'filter':'Wildlife',
+//     'id':'image21'  },
+
+//     {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/circ1.jpg',
+//     'alt':'Rings',
+//     'filter':'Driftwood',
+//     'id':'image22'  },
+
+//     {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/rip.jpg',
+//     'alt':'Ripple',
+//     'filter':'Ocean',
+//     'id':'image23'  },
+
+//     {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/rock-in-wood.jpg',
+//     'alt':'Embedded',
+//     'filter':'Driftwood',
+//     'id':'image24'  },
+
+//     {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/sea.jpg',
+//     'alt':'Clear',
+//     'filter':'Ocean',
+//     'id':'image25'  },
+
+//     {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/wood-close.jpg',
+//     'alt':'Leafy',
+//     'filter':'Driftwood',
+//     'id':'image26'  },
+
+//     {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/yellow.jpg',
+//     'alt':'Lichen',
+//     'filter':'Nature',
+//     'id':'image27'  },
+
+//        {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/untitled+folder/IMG_5080.JPG',
+//     'alt':'Ferry bird',
+//     'filter':'Ocean',
+//     'id':'image26'  },
+
+//     {'name':'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/untitled+folder/IMG_5067.JPG',
+//     'alt':'Sea flower',
+//     'filter':'Nature',
+//     'id':'image27'  },] }
 </script>
 
 <style lang="scss" scoped>

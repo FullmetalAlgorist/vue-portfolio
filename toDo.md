@@ -61,4 +61,17 @@ add my photos to group of photos obvi wait till I finish picking them
 
  make sure sketches are fgetting destoryed or not running when not  on screen
 
- figure out why processing sketches have redrawn white canvas border  from center
+ photos-todo
+ custom loading, with placeholder lazyloading image
+
+ center menu so it looks ok on mobile and otherwise.. maybe also align it with home button
+
+figure out how to 'load more' automatically? fill array in vuex? with axios? 
+
+some sort of watermark.. or are you ok with people stealing pics?
+
+after all this is sorted ^
+-- process photos and pick top 9 
+
+have scroll mouse fade in and then fade out and in
+add lazy  load image and custom loader to phots

@@ -13,7 +13,7 @@
     </v-flex>
 
     <v-flex pr-4 pl-4 justify-end xs8>
-      <v-slider color="white" v-model="fine" :max="600" :min="-600" always-dirty></v-slider>
+      <v-slider light color="black" v-model="fine" :max="600" :min="-600" always-dirty ></v-slider>
       <!-- <v-btn @click="hi">hi</v-btn> -->
     </v-flex>
     <v-layout text-xs-center justify-center fluid fill-height justify-space-between>

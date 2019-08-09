@@ -1,13 +1,13 @@
 <template>
   <v-layout 
   class="sketchMe elevation-24 pt-2" 
-  text-xs-center 
-  justify-center 
+ align-center
+  justify-space-between
   wrap 
   fill-height 
   fluid>
   <info-panel :sketchMe="3" v-model="dialog"></info-panel>
-    <v-flex justify-space-between xs4>
+    <v-flex  xs4>
                   <v-tooltip top>
       <template v-slot:activator="{ on }">
          <v-btn @click="dialog = true" small color="black" fab v-on="on"> 
@@ -18,23 +18,25 @@
     </v-tooltip>
     </v-flex>
     <!-- <v-flex xs2></v-flex> -->
-    <v-flex justify-space-between xs6>
+    <v-flex xs4>
                    <v-tooltip top>
       <template v-slot:activator="{ on }">
-          <v-btn large @click="colorMe" v-on="on">switch</v-btn>
+          <v-btn style="font-size: 139%" outline color="black" large @click="colorMe" v-on="on">switch</v-btn>
       </template>
       <span>Random color!</span>
     </v-tooltip>
+    </v-flex>
+    <v-flex xs4>
                     <v-tooltip top>
       <template v-slot:activator="{ on }">
-             <v-btn small fab @click="white" color="black" v-on="on">
-        <v-icon large>mdi-invert-colors</v-icon>
-      </v-btn>
+             <!-- <v-btn small fab > -->
+        <v-icon x-large @click="white" color="black" v-on="on">mdi-invert-colors</v-icon>
+      <!-- </v-btn> -->
       </template>
       <span>Reset</span>
     </v-tooltip>
-  
-    </v-flex>
+  </v-flex>
+    
     <v-layout 
     text-xs-center 
     justify-center 

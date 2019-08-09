@@ -103,6 +103,7 @@
   ],
   "sites": [
     {
+      "id": "1",
       "title": "Healthy Harvest Nutrition App",
       "outline": "healthyHarvest",
       "src": "https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/works/healthyHarvestSmall.png",
@@ -114,6 +115,7 @@
       "nerds": "Here are a bunch of technologies that I used and demonsteate in this app, including but not limited to greensock (overkill) routes, nuxt, responsive grid layout "
     },
      {
+      "id": "2",
       "title": "Parallax and photo blog",
       "outline": "another",
        "src": "https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/works/anotherSmall.png",
@@ -125,6 +127,7 @@
        "nerds": " some shit about parallax maybe"
     },
     {
+      "id": "3",
       "title": "Material design discography app",
       "outline": "dualRobots",
       "src": "https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/works/dualRobotsSmall.png",

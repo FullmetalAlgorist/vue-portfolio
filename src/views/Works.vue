@@ -39,7 +39,6 @@
                  <v-icon class="gitMe pulse-button" >mdi-github-circle</v-icon>
                 <p class="justText headline font-weight-light font-italic pr-1"
                 :style="{ width: $vuetify.breakpoint.smOnly ?  '249px' : '310px'}"
-                
                 >
                   All of my code is public (including the code for this page!), want to see how something works? Check out my github.
                 </p>
@@ -54,10 +53,16 @@
       <v-layout
       v-for="site in schema.sites"
       :key="site.id"
-      justify-space-between wrap>
+      justify-space-between 
+      wrap
+      align-center
+      >
+      
         <v-flex
         xs12
-        md8>
+        md8
+      :class="`${(site.id==='2') ? 'order-md2' : ''}`"
+        >
           <h3 
           class="display-1 font-weight-medium mb-4 primary--text">
             {{ site.title }}

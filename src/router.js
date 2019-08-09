@@ -36,6 +36,11 @@ const router = new Router({
       path: '/insta',
       name: 'instagram',
       component: () => import('@/views/mine/Instagram')
+    },
+    {
+      path: '/pics',
+      name: 'pics',
+      component: () => import('@/views/mine/Masonry')
     }
 
     

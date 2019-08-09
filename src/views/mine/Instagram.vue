@@ -39,8 +39,7 @@ export default {
   },
   methods: {
     getGrams() {
-        
-      axios.get(this.url + "?access_token=" + this.access_token)
+        axios.get(this.url + "?access_token=" + this.access_token)
         .then(({data}) => {
           this.grams = data.data
           this.username = data.data[0].user.username
