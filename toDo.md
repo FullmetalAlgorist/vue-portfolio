@@ -75,3 +75,5 @@ after all this is sorted ^
 
 have scroll mouse fade in and then fade out and in
 add lazy  load image and custom loader to phots
+
+somehow hide a3 bucket data

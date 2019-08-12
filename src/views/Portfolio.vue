@@ -15,7 +15,7 @@
             Tired of using stock photos on your website?  I would love to include my own photos as backgrounds and menu pages in the creation of your site!
           </p>
           <footer class="text-xs-center foot">
-         Here are some of my recent shots!<br>
+         Here is a sample of my work!<br>
          Click an image below to see more.
           </footer>
         </blockquote>
@@ -85,14 +85,15 @@ computed:{
     },
     data: () => ({
       ninePhotos: [
-        {srrc: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_6191.jpg'},
-        {srrc: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_4828.jpg'},
+          // 5208,  7111, 9243
+        {srrc: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/untitled+folder/IMG_7619.JPG'},
+        {srrc: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/untitled+folder/IMG_5208.JPG'},
         {srrc: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_6244.jpg'},
+         {srrc: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/untitled+folder/IMG_9176.JPG'},
         {srrc: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/circ1.jpg'},
-        {srrc: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/sea.jpg'},
-        {srrc: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_5992.jpg'},
+        {srrc: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/untitled+folder/IMG_5705.JPG'},
         {srrc: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_4370.jpg'},
-        {srrc: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/IMG_4370.jpg'},
+        {srrc: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/untitled+folder/IMG_9546.JPG'},
         {srrc: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/wood-close.jpg'},
 
       //   {srrc: require('@/assets/gallery/IMG_6191.jpg')},
