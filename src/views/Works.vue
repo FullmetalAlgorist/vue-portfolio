@@ -83,7 +83,7 @@
                         <fingerprint-spinner
                           :animation-duration="3000"
                           :size="128"
-                          color="#000000"/>
+                          color="white"/>
                       </v-layout>
                     </template>
             </v-img>

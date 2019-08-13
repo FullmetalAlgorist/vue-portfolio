@@ -1,17 +1,19 @@
 <template>
   <div>
     <transition name="fade">
-      <div v-if="blah" class="scroll-downs">
-        <div class="mousey">
+      <div  class="scroll-downs">
+        <div v-if="blah" class="mousey">
           <div class="scroller"></div>
         </div>
-      </div>
-      <orbit-spinner v-else
+
+              <orbit-spinner v-else
   :animation-duration="1200"
   :size="55"
-  color="trial1"
+  :color="trial1"
 />
       
+      </div>
+
     </transition>
 
     <div class="circle" :style="{ height: $isMobile() ? winHeight+'px' : '100vh'}">

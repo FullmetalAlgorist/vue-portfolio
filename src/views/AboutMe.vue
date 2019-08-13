@@ -84,7 +84,7 @@ cool looking title button combo -->
     },
     data: () => ({
       expansion: 0,
-      spot: '00',
+      // spot: '00',
       //  kneel: {srrc: require('@/assets/realFinal.png')},
       images : [ 
         // {srrc: require('@/assets/data/061.png')},
@@ -165,22 +165,24 @@ cool looking title button combo -->
           icon: this.iconMap[social.network.toLowerCase()] || 'mdi-account'
         }))
       },
-      currentImage()  {return this.imag},
-      blah() {
-        return 'https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/0'+this.spot+'.png'
-      }
+      // currentImage()  {return this.imag},
+      // blah() {
+      //   return 'https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/0'+this.spot+'.png'
+      // }
     },
     created() {
-      window.addEventListener('scroll', this.handleScroll);
-      // this.$nextTick(this.pinContainerScene)
-      let how;
-     for(let i=0; i<62; i++){
-       how = i.toString();
-    if (i < 10){
-        how = '0'+how;
-    }
+this.preloadImage(`https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/realFinalLow.png`)
+
+    //   window.addEventListener('scroll', this.handleScroll);
+    //   // this.$nextTick(this.pinContainerScene)
+    //   let how;
+    //  for(let i=0; i<62; i++){
+    //    how = i.toString();
+    // if (i < 10){
+    //     how = '0'+how;
+    // }
 //!!!!!!!!!!!!!!!!!!!!!!!!this.preloadImage('https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/0'+how+'.png');
-     }
+    // }
     //  ocean wildlife nature driftwood
 
 // .src = this.images[this.obj.curImg];
