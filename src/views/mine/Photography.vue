@@ -56,6 +56,7 @@
          :title="thumb.alt" 
        :class="[$vuetify.breakpoint.xs ? phone : '']"
        :lazy-src="require('@/assets/download.jpeg')"
+       @contextmenu.prevent
          />
   </transition-group>
   <lightbox id="mylightbox"
@@ -198,7 +199,7 @@ export default {
     'id':'image29'},
      {'name':'7342.JPG',
     'alt':'Snowy Branches',
-    'filter':'Wildlife',
+    'filter':'Nature',
     'id':'image30'},
       {'name':'7372.JPG',
     'alt':'Snowy Chickadee!',
@@ -260,7 +261,7 @@ export default {
     'id':'image44'},
      {'name':'8145.JPG',
     'alt':'Space Needle',
-    'filter':'Wildlife',
+    'filter':'Nature',
     'id':'image45'},
       {'name':'8534.JPG',
     'alt':'Cool Rock',

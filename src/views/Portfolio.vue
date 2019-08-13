@@ -39,9 +39,9 @@
                 <!-- :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`" -->
                   <v-img
                     :src="n.srrc"
-                    
+                    :lazy-src="lazyLoad"
                     aspect-ratio="1"
-                    class="grey lighten-2">
+                    >
                       <template v-slot:placeholder>
                         <v-layout
                           fill-height
@@ -84,6 +84,7 @@ computed:{
       }
     },
     data: () => ({
+      lazyLoad: require('@/assets/download.jpeg'),
       ninePhotos: [
           // 5208,  7111, 9243
         {srrc: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/gallery/untitled+folder/IMG_7619.JPG'},

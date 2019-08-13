@@ -77,3 +77,18 @@ have scroll mouse fade in and then fade out and in
 add lazy  load image and custom loader to phots
 
 somehow hide a3 bucket data
+disable right click to download on images
+have placeholders... maybe as easy as fixing lazy load.
+update codepen and tab avatar situation... make a simple ass logo. maybe with rhombus maker 
+
+start mouse scroll icon timer for after some loading happens (at least hero loaded) also maybe have a loading message.. 
+ask james about sparkle coat high quality version
+
+write resume
+
+be ready with updated linked in as soon as portfolio  drops
+
+why are abstracts o verlapping in  what I know smallish
+
+maybe fix codepen for mobile... like keys for rhombus
+

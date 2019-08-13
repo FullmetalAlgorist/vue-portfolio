@@ -6,6 +6,12 @@
           <div class="scroller"></div>
         </div>
       </div>
+      <orbit-spinner v-else
+  :animation-duration="1200"
+  :size="55"
+  color="trial1"
+/>
+      
     </transition>
 
     <div class="circle" :style="{ height: $isMobile() ? winHeight+'px' : '100vh'}">
@@ -44,9 +50,9 @@
 <script>
 // Utilities
 import { mapState } from "vuex";
-
+import { OrbitSpinner } from 'epic-spinners'
 export default {
-  data() {
+    data() {
     return {
       imag: "",
       blah: false
@@ -61,7 +67,8 @@ export default {
     }
   },
   components: {
-    CoreDrawer: () => import("@/components/core/Drawer")
+    CoreDrawer: () => import("@/components/core/Drawer"),
+  OrbitSpinner
   },
   methods: {},
   created() {
@@ -72,7 +79,7 @@ export default {
     // let vh =
     // Then we set the value in the --vh custom property to the root of the document
     // document.documentElement.style.setProperty('--vh', `${vh}px`);
-    setTimeout(() => (this.blah = true), 5000);
+    setTimeout(() => (this.blah = true), 20000);
   }
   //
 };

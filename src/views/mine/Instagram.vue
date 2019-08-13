@@ -8,7 +8,23 @@
       <!-- <v-layout wrap justify-space-around> -->
       <div v-for="(gram, index) in grams">
         <a :href="gram.link">
-          <img class="wait" :src="gram.images.standard_resolution.url" :alt="gram.text" />
+          <v-img class="wait" :src="gram.images.standard_resolution.url" :alt="gram.text" :lazy-src="lazyLoad">
+            <template v-slot:placeholder>
+                        <v-layout
+                          fill-height
+                          align-center
+                          justify-center
+                          ma-0>
+                      <!-- <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular> -->
+                       <scaling-squares-spinner
+  :animation-duration="1250"
+  :size="65"
+  color="black"
+/>
+                      </v-layout>
+                    </template>
+
+          </v-img>
         </a>
       </div>
       <!-- </v-layout> -->
@@ -20,6 +36,8 @@
 </template>
 <script>
 import axios from "axios";
+import { ScalingSquaresSpinner } from 'epic-spinners'
+
 export default {
   data() {
     return {
@@ -28,8 +46,12 @@ export default {
       username: "",
       grams: [],
       next_url: "",
-      error: false
-    };
+      error: false,
+      lazyLoad: require('@/assets/rhombus.png'),
+    }
+  },
+  components: {
+ScalingSquaresSpinner
   },
   computed: {
     instapage() {

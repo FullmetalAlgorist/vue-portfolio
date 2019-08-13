@@ -46,7 +46,23 @@ cool looking title button combo -->
      >
     <!-- <div class="spacer"></div> -->
       <!-- <img max-width="400" :src="blah"  /> !!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-    <v-img src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/realFinalLow.png"></v-img>
+    <v-img src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/realFinalLow.png">
+      <template v-slot:placeholder>
+                        <v-layout
+                          fill-height
+                          align-center
+                          justify-center
+                          ma-0>
+                      <!-- <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular> -->
+                      <spring-spinner
+  :animation-duration="3000"
+  :size="60"
+  color="white"
+/>
+                      </v-layout>
+                    </template>
+    
+    </v-img>
 
 
     </v-layout>
@@ -60,10 +76,11 @@ cool looking title button combo -->
   import {
     mapState
   } from 'vuex'
- 
+ import { SpringSpinner } from 'epic-spinners'
   export default {
     components: {
-      Abstract1: () => import('@/components/Abstract1')
+      Abstract1: () => import('@/components/Abstract1'),
+      SpringSpinner
     },
     data: () => ({
       expansion: 0,
