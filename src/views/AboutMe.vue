@@ -46,7 +46,7 @@ cool looking title button combo -->
      >
     <!-- <div class="spacer"></div> -->
       <!-- <img max-width="400" :src="blah"  /> !!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-    <v-img src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/realFinalLow.png">
+    <v-img :src="me">
       <template v-slot:placeholder>
                         <v-layout
                           fill-height
@@ -84,74 +84,7 @@ cool looking title button combo -->
     },
     data: () => ({
       expansion: 0,
-      // spot: '00',
-      //  kneel: {srrc: require('@/assets/realFinal.png')},
-      images : [ 
-        // {srrc: require('@/assets/data/061.png')},
-        // {srrc: require('@/assets/data/060.png')},
-        // {srrc: require('@/assets/data/059.png')},
-        // {srrc: require('@/assets/data/058.png')},
-        // {srrc: require('@/assets/data/057.png')},
-        // {srrc: require('@/assets/data/056.png')},
-        // {srrc: require('@/assets/data/055.png')},
-        // {srrc: require('@/assets/data/054.png')},
-        // {srrc: require('@/assets/data/053.png')},
-        // {srrc: require('@/assets/data/052.png')},
-        // {srrc: require('@/assets/data/051.png')},
-        // {srrc: require('@/assets/data/050.png')},
-        // {srrc: require('@/assets/data/049.png')},
-        // {srrc: require('@/assets/data/048.png')},
-        // {srrc: require('@/assets/data/047.png')},
-        // {srrc: require('@/assets/data/046.png')},
-        // {srrc: require('@/assets/data/045.png')},
-        // {srrc: require('@/assets/data/044.png')},
-        // {srrc: require('@/assets/data/043.png')},
-        // {srrc: require('@/assets/data/042.png')},
-        // {srrc: require('@/assets/data/041.png')},
-        // {srrc: require('@/assets/data/040.png')},
-        // {srrc: require('@/assets/data/039.png')},
-        // {srrc: require('@/assets/data/038.png')},
-        // {srrc: require('@/assets/data/037.png')},
-        // {srrc: require('@/assets/data/036.png')},
-        // {srrc: require('@/assets/data/035.png')},
-        // {srrc: require('@/assets/data/034.png')},
-        // {srrc: require('@/assets/data/033.png')},
-        // {srrc: require('@/assets/data/032.png')},
-        // {srrc: require('@/assets/data/031.png')},
-        // {srrc: require('@/assets/data/030.png')},
-        // {srrc: require('@/assets/data/029.png')},
-        // {srrc: require('@/assets/data/028.png')},
-        // {srrc: require('@/assets/data/027.png')},
-        // {srrc: require('@/assets/data/026.png')},
-        // {srrc: require('@/assets/data/025.png')},
-        // {srrc: require('@/assets/data/024.png')},
-        // {srrc: require('@/assets/data/023.png')},
-        // {srrc: require('@/assets/data/022.png')},
-        // {srrc: require('@/assets/data/021.png')},
-        // {srrc: require('@/assets/data/020.png')},
-        // {srrc: require('@/assets/data/019.png')},
-        // {srrc: require('@/assets/data/018.png')},
-        // {srrc: require('@/assets/data/017.png')},
-        // {srrc: require('@/assets/data/016.png')},
-        // {srrc: require('@/assets/data/015.png')},
-        // {srrc: require('@/assets/data/014.png')},
-        // {srrc: require('@/assets/data/013.png')},
-        // {srrc: require('@/assets/data/012.png')},
-        // {srrc: require('@/assets/data/011.png')},
-        // {srrc: require('@/assets/data/010.png')},
-        // {srrc: require('@/assets/data/009.png')},
-        // {srrc: require('@/assets/data/008.png')},
-        // {srrc: require('@/assets/data/007.png')},
-        // {srrc: require('@/assets/data/006.png')},
-        // {srrc: require('@/assets/data/005.png')},
-        // {srrc: require('@/assets/data/004.png')},
-        // {srrc: require('@/assets/data/003.png')},
-        // {srrc: require('@/assets/data/002.png')},
-        // {srrc: require('@/assets/data/001.png')},
-        // {srrc: require('@/assets/data/000.png')}
-        
-      ],
-      // obj : {curImg: 0}
+      me: require('@/assets/realFinalLow.png'),
     }),
 
     computed: {
@@ -171,7 +104,6 @@ cool looking title button combo -->
       // }
     },
     created() {
-this.preloadImage(`https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/realFinalLow.png`)
 
     //   window.addEventListener('scroll', this.handleScroll);
     //   // this.$nextTick(this.pinContainerScene)

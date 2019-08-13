@@ -81,7 +81,7 @@ export default {
     // let vh =
     // Then we set the value in the --vh custom property to the root of the document
     // document.documentElement.style.setProperty('--vh', `${vh}px`);
-    setTimeout(() => (this.blah = true), 20000);
+    setTimeout(() => (this.blah = true), 17000);
   }
   //
 };
