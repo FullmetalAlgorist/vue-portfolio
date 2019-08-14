@@ -1,6 +1,6 @@
 <template>
   <div>
-    <hero/>
+    <hero :load="load"/>
 
     <v-container
       py-5
@@ -23,11 +23,8 @@
 </template>
 
 <script>
-window.addEventListener("load", function(event) {
-    // waits for all data to load
-    this.loader = true;
-    console.log('LOADED', loader);
-  });
+
+
   export default {
     components: {
       AboutMe: () => import('@/views/AboutMe'),
@@ -50,20 +47,31 @@ window.addEventListener("load", function(event) {
     },
     computed:{
       med(){
+        
         return this.$vuetify.breakpoint.mdAndUp;
       },
+      loader(){
+        return this.load;
+      }
      
     },
 mounted(){
     this.$root.$on('toggleMe', (text) => { // here you need to use the arrow function
      this.show = text;
+     
     })
 },
     data: () => ({
-      //
-      loader: false,
-      show : false
-    })
+      load: false,
+      show : false,
+    }),
+    created(){
+      let self = this;
+      window.addEventListener('load',(e) => {
+    // waits for all data to load
+    self.load = true;
+    });
+    }
   }
 </script>
 <style scoped>

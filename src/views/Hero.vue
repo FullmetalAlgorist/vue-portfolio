@@ -2,13 +2,13 @@
   <div>
     <transition name="fade">
       <div  class="scroll-downs">
-        <div v-if="blah" class="mousey">
+        <div v-if="blah || load" class="mousey">
           <div class="scroller"></div>
         </div>
               <orbit-spinner v-else
   :animation-duration="1200"
-  :size="55"
-  :color="trial1"
+  :size="85"
+  color="white"
 /> 
       </div>
     </transition>
@@ -51,10 +51,14 @@
 import { mapState } from "vuex";
 import { OrbitSpinner } from 'epic-spinners'
 export default {
+props: {
+  load: Boolean
+},
     data() {
     return {
       imag: "",
-      blah: false
+      blah: false,
+      
     };
   },
   computed: {
