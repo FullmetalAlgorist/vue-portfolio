@@ -76,7 +76,7 @@ computed:{
       }
     },
     created(){
-      console.log('mobile? ',this.$isMobile());
+      //console.log('mobile? ',this.$isMobile());
     }
   }
 </script>

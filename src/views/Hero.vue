@@ -5,15 +5,12 @@
         <div v-if="blah" class="mousey">
           <div class="scroller"></div>
         </div>
-
               <orbit-spinner v-else
   :animation-duration="1200"
   :size="55"
   :color="trial1"
-/>
-      
+/> 
       </div>
-
     </transition>
 
     <div class="circle" :style="{ height: $isMobile() ? winHeight+'px' : '100vh'}">

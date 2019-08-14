@@ -92,3 +92,7 @@ why are abstracts o verlapping in  what I know smallish
 
 maybe fix codepen for mobile... like keys for rhombus
 
+figure out how to test which dependencies are being used...
+
+Main things:  make write ups look/sound good... don't overthink it
+have placeholders or more attractive loading for photo gallery
