@@ -77,6 +77,8 @@ disable right click for images everywhere on site... obvi
 
 write resume
 
+a couple padding mobile situations
+
 be ready with updated linked in as soon as portfolio  drops
 
 !Make write ups look/sound good. Don't overthink it!

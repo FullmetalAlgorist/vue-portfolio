@@ -15,7 +15,7 @@
          <!-- on small and up... pl-4 pb-4 for this flex ^ -->
        <blockquote >
           <p class="title font-weight-light font-italic">
-           I've focused on the technologies that I currently prefer, but know quite a few more, and love learning new things!</p><br>
+           I've focused on the technologies that I currently prefer, but know quite a few more, and am always keeping an eye on emerging technologies!</p><br>
           <footer class="text-xs-center">
             <v-btn class="font-weight-light" color="primarydark black--text">
               download résumé 
