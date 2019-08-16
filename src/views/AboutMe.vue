@@ -23,7 +23,7 @@
            <v-btn href="https://codepen.io/akcrew/" class="font-weight-light"  color="primarydark black--text">Recent code!  <v-icon  class="font-weight-light" right >mdi-codepen</v-icon> </v-btn>
               </v-flex> -->
      <v-flex pt-3 class="text-xs-center xs12" :pb-4="$vuetify.breakpoint.smAndDown">
-       <v-btn @click="$vuetify.goTo('#contact')" class="font-weight-light" color="secondarylight black--text">Contact Me!</v-btn>
+       <v-btn @click="$vuetify.goTo('#contact')" class="font-weight-light" color="primarydark black--text">Contact Me!</v-btn>
      </v-flex>
 <!-- <v-btn 
 :class="`display-${$vuetify.breakpoint.smOnly ? '4' : '3'}`"
