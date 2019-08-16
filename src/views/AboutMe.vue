@@ -1,15 +1,19 @@
 <template>
   <core-section id="about-me" >
+    <v-layout   align-center
+      justify-center wrap>
     <abstract-1 />
     <v-flex
       xs12
       sm7
       justify-end
+      align-center
     >
       <section>
         <core-heading v-text="'Who I am.'" />
         <v-layout
           wrap 
+          align-center
         >
             <core-text
               class="m-2"
@@ -34,41 +38,45 @@ cool looking title button combo -->
 
      </v-layout>
       </section>
-         </v-flex>
-            <v-flex
+         </v-flex> 
+           <v-flex
     xs12
       sm5
-      class="CCC text-xs-center"
+      class="text-xs-center"
+      align-center
+      justify-center
     >
-    <v-layout
-     justify-align-end
+  
+        <!-- <v-layout
+  
      wrap
-     >
-    <!-- <div class="spacer"></div> -->
-      <!-- <img max-width="400" :src="blah"  /> !!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-    <v-img :src="me">
-      <template v-slot:placeholder>
-                        <v-layout
-                          fill-height
+     
                           align-center
                           justify-center
-                          ma-0>
+                          ma-0
+     >  -->
+         
+    <!-- <div class="spacer"></div> -->
+      <!-- <img max-width="400" :src="blah"  /> !!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <v-img :src="me" class="me">
+      <template v-slot:placeholder>
+                       
                       <!-- <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular> -->
                       <spring-spinner
   :animation-duration="3000"
   :size="60"
   color="white"
 />
-                      </v-layout>
+                 
                     </template>
     
     </v-img>
+ <!-- </v-layout> -->
+</v-flex>
+   
 
-
-    </v-layout>
-
-    </v-flex>
-      
+    
+      </v-layout>
  </core-section>
 </template>
 <script>
@@ -203,5 +211,8 @@ cool looking title button combo -->
 
 .subheading{
   margin-bottom: -10px;
+}
+.me{
+  z-index: 10;
 }
 </style>

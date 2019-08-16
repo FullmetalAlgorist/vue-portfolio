@@ -1,5 +1,6 @@
 <template>
   <div>
+<screen />
     <hero :load="load"/>
 
     <v-container
@@ -37,7 +38,9 @@
       //Processing: () => import('@/views/Process'),
       Skills: () => import('@/views/Skills'),
       Works:  () =>  import('@/views/Works'),
-      Contact: () => import('@/views/Contact')
+      Contact: () => import('@/views/Contact'),
+      Screen: () => import('@/views/mine/screenSize')
+    
     },
 
     metaInfo () {

@@ -99,7 +99,7 @@
  <!--  :color="'rgba(31,40,51,.72)'" :style="{ maxWidth: $vuetify.breakpoint.smOnly ?  '270px' : '340px'}" -->
       <v-card 
         
-         class="mb-4 db second"
+         class="mb-4 second"
            elevation="20">
             <v-card-title primary-title>
               <!-- style="max-width: 320px;" -->
@@ -200,6 +200,8 @@ margin-top: -150px;
   margin-bottom: 30px;
  }
  .second{
-   opacity: 0.72 !important;
+   background-color: #161d25ad;
+  //  opacity: 0.72 !important;
+   
  }
 </style>
