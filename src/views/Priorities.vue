@@ -96,6 +96,7 @@ export default {
   opacity: 0.72 !important;
   z-index: 1;
 }
+// rgba(65,223,213,.42)
 .question {
   display: inline;
   font-size: large;

@@ -96,7 +96,23 @@
             {{ site.infoTitle }}
           </h3>
           <p class="subheading font-weight-light font-italic">{{ site.infoText1 }}</p>
-          <p class="subheading font-weight-light font-italic">  {{ site.infoText2 }}</p>
+ <!--  :color="'rgba(31,40,51,.72)'" :style="{ maxWidth: $vuetify.breakpoint.smOnly ?  '270px' : '340px'}" -->
+      <v-card 
+        
+         class="mb-4 db second"
+           elevation="20">
+            <v-card-title primary-title>
+              <!-- style="max-width: 320px;" -->
+              <blockquote
+              >
+              <div >
+                <p class="subheading font-weight-light font-italic">  {{ site.infoText2 }}</p>
+                </div>
+              </blockquote>
+            </v-card-title>
+          </v-card>
+          
+          
           <h3 class="headline font-weight-medium mb-3 white--text">
             {{site.nerdTitle}}
           </h3>
@@ -182,5 +198,8 @@ margin-top: -150px;
 }
 .site{
   margin-bottom: 30px;
+ }
+ .second{
+   opacity: 0.72 !important;
  }
 </style>
