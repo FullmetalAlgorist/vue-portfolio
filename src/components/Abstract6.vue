@@ -18,7 +18,7 @@
 .abstract-6
   position: absolute !important
   left: 0
-  top: -10%
+  top: -5%
   right: 0
   z-index: 0 !important
   opacity: .4
