@@ -34,7 +34,7 @@
             Processing
           </h3>
           <p class="subheading" v-text="'I use a combination of p5.js and processing to bring algorithms to life on the web!  Here are some attempts to make my processing sketches interactive.'" /> 
-          <p class="subheading b">**These sketches work significantly less well on mobile devices!</p>
+          <!-- <p class="subheading b">**These sketches work significantly less well on mobile devices!</p> -->
            <!-- <p class="subheading font-weight-light font-italic">I use a combination of p5.js and processing to bring algorithms to life on the web!  Here are some attempts to make my processing sketches interactive.  Press some buttons and see what happens :)</p> -->
           <p  class="subheading font-weight-light font-italic">  Follow the link, press some buttons, and see what happens :) </p>
            <v-btn @mouseenter="hoverMe=true" @mouseleave="hoverMe=false" class="font-weight-light but" :color="hoverMe ? 'white--text primarydark' : 'black--text primarydark' "  @click="toProc">live processing sketches!!</v-btn>
@@ -63,11 +63,11 @@ computed:{
     data: () => ({
       
         turtle: require('@/assets/turtleC.jpg'),
-        turtle2: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/turt_2.png',
+        turtle2: require('@/assets/turt_2.png'),
         logo1: require('@/assets/logo1.png'),
         logo2: require('@/assets/logoblack.png'),
         hoverMe: false
-        // require('@/assets/turt_2.png'),
+        // require('@/assets/turt_2.png'),'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/turt_2.png',
     }),
     methods: {
       toInsta(){
@@ -79,10 +79,10 @@ computed:{
     },
     created(){
       let img1 = new Image();
-      let img2 = new Image();
-      img1.src = 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/turt_2.png';
+      // let img2 = new Image();
+      img1.src = require('@/assets/turt_2.png');
       
-      img2.src = require('@/assets/logoblack.png');
+      // img2.src = require('@/assets/logoblack.png');
       //this.logo2 = img2;
     }
   }
