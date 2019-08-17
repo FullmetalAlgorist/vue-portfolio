@@ -39,7 +39,7 @@
           <p  class="subheading font-weight-light font-italic">  Follow the link, press some buttons, and see what happens :) </p>
            <v-btn @mouseenter="hoverMe=true" @mouseleave="hoverMe=false" class="font-weight-light but" :color="hoverMe ? 'white--text primarydark' : 'black--text primarydark' "  @click="toProc">live processing sketches!!</v-btn>
           <!-- <v-btn @click="$vuetify.goTo('#contact')" >Contact Me!</v-btn>   color="primarydark"-->
-        <v-img :src="hoverMe ? logo2 : logo1"></v-img>  
+        <v-img :src="hoverMe ? logo2 : logo1" > </v-img>  
         <!-- <v-icon>mdi-touch_app</v-icon> -->
       </v-flex>
     </v-layout>
@@ -61,11 +61,13 @@ computed:{
       }
     },
     data: () => ({
+      
         turtle: require('@/assets/turtleC.jpg'),
-        turtle2: require('@/assets/turt_2.png'),
+        turtle2: 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/turt_2.png',
         logo1: require('@/assets/logo1.png'),
         logo2: require('@/assets/logoblack.png'),
         hoverMe: false
+        // require('@/assets/turt_2.png'),
     }),
     methods: {
       toInsta(){
@@ -76,7 +78,12 @@ computed:{
       }
     },
     created(){
-      //console.log('mobile? ',this.$isMobile());
+      let img1 = new Image();
+      let img2 = new Image();
+      img1.src = 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/turt_2.png';
+      
+      img2.src = require('@/assets/logoblack.png');
+      //this.logo2 = img2;
     }
   }
 </script>

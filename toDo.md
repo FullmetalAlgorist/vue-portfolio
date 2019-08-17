@@ -75,10 +75,19 @@ ask austin about cover photo
 
 disable right click for images everywhere on site... obvi
 
-write resume
+
 
 a couple padding mobile situations
 
 be ready with updated linked in as soon as portfolio  drops
 
 !Make write ups look/sound good. Don't overthink it!
+
+loading in between works site loinks maybe open in new tab... probably mark if so? also loadrer for sketches and delete last sketch.. replace?
+
+me loader in wrong place
+resumer pic from austin and james .. just send the texts
+
+don't say entertained tice (second priority)
+
+write resume
