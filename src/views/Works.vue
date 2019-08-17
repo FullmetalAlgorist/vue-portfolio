@@ -60,7 +60,7 @@
       
         <v-flex
         xs12
-        md8
+        md7
       :class="`${(site.id==='2') ? 'order-md2' : ''}`"
         >
           <h3 
@@ -70,6 +70,8 @@
           <!-- <v-img :src="`https://mariah-vue-scroll.s3.us-east-2.amazonaws.com/sites/appDemo.png`"></v-img>      -->
           <a :href="site.link">
             <v-img 
+            max-width="700"
+            
             class="site" 
             :src="site.src"
             :lazy-src="require('@/assets/'+ site.outline +'Outline.png')">
@@ -91,7 +93,7 @@
              </v-flex>
         <v-flex
         xs12
-        md3>
+        md4>
           <h3 class="headline font-weight-medium mb-3 white--text">
             {{ site.infoTitle }}
           </h3>
