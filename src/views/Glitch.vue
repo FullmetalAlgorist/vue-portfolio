@@ -79,11 +79,9 @@ computed:{
     },
     created(){
       let img1 = new Image();
-      // let img2 = new Image();
+      let img2 = new Image();
       img1.src = require('@/assets/turt_2.png');
-      
-      // img2.src = require('@/assets/logoblack.png');
-      //this.logo2 = img2;
+      img2.src = require('@/assets/logoblack.png');
     }
   }
 </script>
