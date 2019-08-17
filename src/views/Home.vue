@@ -1,6 +1,6 @@
 <template>
   <div>
-<screen />
+<!-- <screen /> -->
     <hero :load="load"/>
 
     <v-container
@@ -39,7 +39,7 @@
       Skills: () => import('@/views/Skills'),
       Works:  () =>  import('@/views/Works'),
       Contact: () => import('@/views/Contact'),
-      Screen: () => import('@/views/mine/screenSize')
+      // Screen: () => import('@/views/mine/screenSize')
     
     },
 
