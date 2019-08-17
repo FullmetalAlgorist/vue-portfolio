@@ -83,7 +83,7 @@
       "infoText1": "Produce that's in season is cheaper, more nutritious, tastes better, and has a lower carbon footprint!",
       "infoText2": "Bookmark this app on your home screen for quick reference next time you're on a fruit & veg run!",
       "nerdTitle": "For the nerds:",
-      "nerds": "With a dynamic grid system, employing vue router for the season changes, and green sock animation for icon transitions this nuxt SPA represents my first foray into responsive design. The seasonal produce data is stored in a firebase backend."
+      "nerds": "With a dynamic grid system, employing Vue router for the season changes, and GreenSock animation for icon transitions, this Nuxt SPA represents my first foray into responsive design. The seasonal produce data is retrieved from a Firebase backend."
     },
      {
       "id": "2",
@@ -95,7 +95,7 @@
        "infoText1": "Here’s my take on two popular website styles.  The first is an attractive (and increasingly popular) scrolling effect called PARALLAX, where the background images move at a different speed than the foreground creating a pleasing three dimensional effect.",
        "infoText2": "The second tab will lead you to a sample blog-style layout.  With its customizable mosaic grid it’s a great choice for any image based web design.  The photos could link to individual blog articles or purchasable items on an e-commerce site, in addition to the photo setup displayed. The layout becomes a full screen image scroll when on mobile devices.",
     "nerdTitle": "For the nerds",
-       "nerds": "I basically just put my own twist on two premade vuetify themes.  They are meant to serve as starter templates for personalized home pages or blog like applications.  Both scale from mobile to desktop environments so only a single code base is needed, and could be easily connected to a headless CMS for hassle free content management."
+       "nerds": "I basically just put my own twist on two premade Vuetify themes.  They are meant to serve as starter templates for personalized home pages or blog like applications.  Both scale from mobile to desktop environments so only a single code base is needed, and could be easily connected to a headless CMS for hassle free content management."
     },
     {
       "id": "3",

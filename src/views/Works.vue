@@ -200,7 +200,7 @@ margin-top: -150px;
   margin-bottom: 30px;
  }
  .second{
-   background-color: #161d25ad;
+   background-color: #161d25ad !important;
   //  opacity: 0.72 !important;
    
  }
