@@ -3,50 +3,63 @@
     id="skills"
     justify-space-between
     wrap 
+    align-center
     >
     <abstract-2 />
    <v-flex
       xs12
       sm7
-      lg4>
+      pr-4
+      >
         <core-heading>What I know.</core-heading>
          <!-- v-bind:style='{"border":"2px solid black"}'   :font="'70px monaco'"-->
        <v-flex >
+          <v-card class="mb-4 second" elevation="20">
+         <v-card-title>
+            <blockquote>
+              <div>
+                <p class=" font-weight-light nothing">
+           I currently prefer Vue (Nuxt with Vuex + Vuetify) for front end development and a backend powered by Node, Express and MongoDB or Firebase, with Axios to setup API calls. </p><br> 
+            <p class="subtitle font-weight-light nothing ">I have a background in Object Oriented Programming, but am very interested in implementing emerging web technologies. I love to learn new things!</p>
+              </div>
+            </blockquote>
+</v-card-title>
+        </v-card>
+
          <!-- on small and up... pl-4 pb-4 for this flex ^ -->
        <blockquote >
-          <p class="title font-weight-light font-italic">
-           I've focused on the technologies that I currently prefer, but know quite a few more, and am always keeping an eye on emerging technologies!</p><br>
-          <footer class="text-xs-center">
+         
+          <!-- <footer class="text-xs-center">
             <v-btn class="font-weight-light" color="primarydark black--text">
               download résumé 
             </v-btn>
-          </footer>
+          </footer> -->
         </blockquote>
        </v-flex>
    </v-flex>
-         <v-flex
+         <!-- <v-flex
          mb-4
          pt-4
       sm5
       lg4
-      :style="{ marginTop: $vuetify.breakpoint.lgAndUp ?  '-100px' : '0'}"
-       
-         >
-       <v-flex text-xs-center>
+      :style="{ marginTop: $vuetify.breakpoint.lgAndUp ?  '-100px' : '0'}"> -->
+       <!-- <v-flex text-xs-center>
        <tags-ball
           v-bind:style='{"border":"none"}'
  :color="'#ffffff'" 
  :width="300" 
  :radius="70" 
  :tags='tags'/>
-       </v-flex>
+       </v-flex> -->
          <!-- //style="max-width: 230px;"  -->
         
-         </v-flex>
+         <!-- </v-flex> -->
+        
     <v-flex
       xs12
-      lg4
+      sm5
       >
+       <!-- <v-layout justify-center align-center> -->
     <div
      v-for="(degree, i) in schema.education"
         :key="i">
@@ -57,7 +70,9 @@
         :value="degree"
       />
       </div>
+        <!-- </v-layout> -->
     </v-flex>
+  
   </core-section>
 </template>
 
@@ -66,20 +81,20 @@
   import {
     mapState
   } from 'vuex'
- import TagsBall from 'vue-tags-ball'
+  import TagsBall from 'vue-tags-ball'
   export default {
    
     data(){
       return{
-tags: ["Nuxt.js", "Javascript", "Vue.js", "Node.js", "Vuetify.js","GIT"]
+ tags: ["Nuxt", "JavaScript", "Vue.js", "Node.js", "Vuetify.js","GIT", "Sass", "GreenSock"]
       }
     },
     components: {
       Abstract2: () => import('@/components/Abstract2'),
       EducationCard: () => import('@/components/EducationCard'),
       Skill: () => import('@/components/Skill'),
-      List: () => import('@/components/tagList'),
-      TagsBall
+       List: () => import('@/components/tagList'),
+       TagsBall
     },
 
     computed: {
@@ -91,5 +106,13 @@ tags: ["Nuxt.js", "Javascript", "Vue.js", "Node.js", "Vuetify.js","GIT"]
 .right{
   align-content: center;
   text-align: center;
+}
+.nothing{
+  font-size: 1.2em;
+}
+.second {
+  background-color: #161d25ad !important;
+  //  opacity: 0.72 !important;
+  border-radius: 1%;
 }
 </style>

@@ -78,6 +78,7 @@ export default {
 <style lang="scss" scoped>
 .v-expansion-panel > li {
   border-top: 1px solid rgba(#fff, 0.12) !important;
+  border-radius: 1%;
 }
 .l {
   list-style-type: none;

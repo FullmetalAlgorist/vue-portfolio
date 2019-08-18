@@ -27,7 +27,7 @@
     :style="{ cursor: 'pointer'}"
     >
     <v-flex xs12 sm12>
-      <v-card>
+      <v-card class="r">
         <v-container grid-list-sm fluid>
           <v-layout row wrap>
           <v-flex
@@ -127,5 +127,8 @@ computed:{
   }
     .v-sheet {
     background-color: rgba(0,0,0,.28) !important;
+}
+.r{
+  border-radius: 1%;
 }
 </style>

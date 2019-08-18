@@ -14,7 +14,7 @@
         </blockquote>
       <v-hover
         v-slot:default="{ hover }">
-      <v-card>
+      <v-card class="r">
         <v-container grid-list-sm fluid 
         @click="toInsta"
         :style="{ cursor: 'pointer'}">
@@ -116,5 +116,8 @@ computed:{
 }
 .b{
   font-weight: bold;
+}
+.r{
+  border-radius: 1%;
 }
 </style>
