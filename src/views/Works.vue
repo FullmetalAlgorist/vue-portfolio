@@ -4,10 +4,10 @@
     <abstract-4 />
     <abstract-7 />
     <v-flex xs12 sm6>
-      <core-heading>Recent Works</core-heading>
-      <p
-        class="subheading font-weight-light font-italic"
-      >Here are some recent projects I've spent time on, click an image to launch the app!</p>
+      <core-heading>Recent Work</core-heading>
+      <!-- <p
+        class="single font-weight-light font-italic"
+      >Here are some recent projects I've spent time on, click an image to launch the app!</p> -->
     </v-flex>
     <v-flex xs12 sm5 mb-5 mt-2 text-xs-center>
       <v-layout justify-center>
@@ -170,7 +170,10 @@ export default {
 }
 .second {
   background-color: #161d25ad !important;
-  border-radius: 5%;
+  border-radius: 2%;
   //  opacity: 0.72 !important;
+}
+.single{
+  font-size: 1.3em;
 }
 </style>

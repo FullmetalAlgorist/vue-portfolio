@@ -15,7 +15,7 @@
             <v-flex class="text-xs-center xs12" :pb-4="$vuetify.breakpoint.smAndDown">
               <v-btn
                 @click="$vuetify.goTo('#contact')"
-                class="font-weight-light"
+                class="font-weight-light contactButton"
                 color="primarydark black--text"
               >Contact Me!</v-btn>
             </v-flex>
@@ -119,5 +119,8 @@ export default {
 }
 .love{
   font-size: 1.5em !important;
+}
+.contactButton{
+  font-size: 130%;
 }
 </style>
