@@ -5,9 +5,9 @@
     <abstract-7 />
     <v-flex xs12 sm6>
       <core-heading>Recent Work</core-heading>
-      <!-- <p
+      <p
         class="single font-weight-light font-italic"
-      >Here are some recent projects I've spent time on, click an image to launch the app!</p> -->
+      >Here are some recent projects I've spent time on, click an image to launch the app!</p>
     </v-flex>
     <v-flex xs12 sm5 mb-5 mt-2 text-xs-center>
       <v-layout justify-center>
@@ -175,5 +175,6 @@ export default {
 }
 .single{
   font-size: 1.3em;
+  font-family: 'Open Sans', sans-serif;
 }
 </style>

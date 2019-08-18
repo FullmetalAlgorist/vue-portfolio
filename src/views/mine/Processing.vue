@@ -20,7 +20,7 @@
           <v-flex text-xs-center px-4  class="bb">
           <component :is="sketchArray[s].component"></component>
       </v-flex>
-          <v-flex v-if="s<3">
+          <v-flex v-if="s<sketchArray.length-1">
             <v-tooltip right>
               <template v-slot:activator="{ on }">
                 <v-icon
@@ -50,13 +50,13 @@
 import radarComponent from "@/components/sketches/Radar.vue";
 import nextComponent from "@/components/sketches/Next";
 import treeComponent from "@/components/sketches/Tree";
-import linesComponent from "@/components/sketches/Lines";
+// import linesComponent from "@/components/sketches/Lines";
 export default {
   components: {
     radarComponent,
     nextComponent,
     treeComponent,
-    linesComponent
+    // linesComponent
   },
   data() {
     return {
@@ -64,8 +64,8 @@ export default {
       sketchArray: [
         { title: "radar", component: radarComponent },
         { title: "next", component: nextComponent },
-        { title: "tree", component: treeComponent },
-        { title: "lines", component: linesComponent }
+        { title: "tree", component: treeComponent }
+        // { title: "lines", component: linesComponent }
       ]
     };
   }

@@ -2,14 +2,14 @@
   <core-section id="about-me">
     <v-layout align-center justify-center wrap>
       <abstract-1 />
-      <v-flex xs12 sm7 justify-end align-center>
+      <v-flex xs12 sm7>
         <section>
           <core-heading v-text="'Who I am.'" />
           <v-layout wrap align-center>
             <core-text class="ma-1">
-              <p class="title font-weight-light  font-italic aboutMe" v-text="schema.basics.summary" />
+              <p class="title font-weight-light  font-italic aboutMe text-xs-center" >&nbsp; &nbsp; &nbsp; {{ schema.basics.summary }}  </p>
               <br>
-              <p class="pl-5 aboutMe love font-weight-light title font-italic"
+              <p class=" aboutMe love font-weight-light title font-italic text-xs-center"
               >I love to live on the edge of nature and technology.</p>
             </core-text>
             <v-flex class="text-xs-center xs12" :pb-4="$vuetify.breakpoint.smAndDown">
@@ -108,7 +108,7 @@ export default {
 
 <style lang="scss" scoped>
 .subheading {
-  margin-bottom: -10px;
+  margin-bottom: 10px !important;
 }
 .me {
   z-index: 10;

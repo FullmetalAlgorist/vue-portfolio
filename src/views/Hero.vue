@@ -106,7 +106,7 @@ props: {
 .scroll-downs {
   position: absolute;
   top: 40vh;
-  left: 46vw;
+  left: 42vw; //46vw
   // bottom: 0;
   // left: 0;
   // margin: auto;
