@@ -18,7 +18,7 @@
          <v-card-title>
             <blockquote>
               <div>
-                <p class=" font-weight-light nothing text-xs-center" >I currently prefer <span class="tech">Vue </span>(<span class="tech">Nuxt</span> with <span class="tech">Vuex</span> + <span class="tech">Vuetify</span>) for front end development and a backend powered by <span class="tech">Node</span>, <span class="tech">Express</span> and <span class="tech">MongoDB</span> or <span class="tech">Firebase</span>, with <span class="tech">Axios</span> for API calls and <span class="tech">GreenSock</span> for animation.     I love implementing emerging technologies!  </p>
+                <p class=" font-weight-light nothing text-xs-center" >I currently prefer <span class="tech">Vue </span>(<span class="tech">Nuxt</span> with <span class="tech">Vuex</span> + <span class="tech">Vuetify</span>) for front end development and a backend powered by <span class="tech">Node</span>, <span class="tech">Express</span> and <span class="tech">MongoDB</span> or <span class="tech">Firebase</span>, with <span class="tech">Axios</span> for API calls and <span class="tech">GreenSock</span> for animation. <span class="techy">I love implementing emerging technologies!</span></p>
               
  <!-- I love to learn new things! -->
               </div>
@@ -123,5 +123,10 @@ font-family: 'Open Sans', sans-serif;
 font-size: 110%;
 font-weight: bold;
 // font-family: 'Open Sans Condensed', sans-serif;
+}
+.techy{
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+// font-size: 110%;
 }
 </style>

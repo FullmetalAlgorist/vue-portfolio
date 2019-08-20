@@ -5,7 +5,7 @@
         <core-heading v-text="'I prioritize:'" />
         <abstract-4 />
         <div>
-          <v-expansion-panel v-model="expansion" popout>
+          <v-expansion-panel v-model="expansion">
             <v-expansion-panel-content
               v-for="(item,i) in items"
               :key="i"

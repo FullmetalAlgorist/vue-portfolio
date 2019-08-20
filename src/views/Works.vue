@@ -56,23 +56,37 @@
           </v-img>
         </a>
       </v-flex>
-      <v-flex xs12 :class="`${(site.id==='3') ? 'md6' : 'md5'}`">
-        <h3 class="headline font-weight-medium mb-3 white--text">{{ site.infoTitle }}</h3>
-        <p class="subheading font-weight-light font-italic">{{ site.infoText1 }}</p>
-        <!--  :color="'rgba(31,40,51,.72)'" :style="{ maxWidth: $vuetify.breakpoint.smOnly ?  '270px' : '340px'}" -->
-        <v-card class="mb-4 second" elevation="20">
+      <v-flex xs12 mb-3 :class="`${(site.id==='3') ? 'md6' : 'md5'}`">
+ <h3 class="headline font-weight-medium mb-3 white--text">{{ site.infoTitle }}</h3>
+         <v-card class="mb-4 second" elevation="20">
           <v-card-title primary-title>
             <!-- style="max-width: 320px;" -->
             <blockquote>
               <div>
-                <p class="subheading font-weight-light font-italic">{{ site.infoText2 }}</p>
+                <p class="subheading font-weight-light font-italic">{{ site.infoText1 }} <br/><br/> {{ site.infoText2  }}</p>
               </div>
             </blockquote>
           </v-card-title>
         </v-card>
 
-        <h3 class="headline font-weight-medium mb-3 white--text">{{site.nerdTitle}}</h3>
-        <p class="subheading font-weight-light">{{ site.nerds }}</p>
+       
+        <!-- <p class="subheading font-weight-light font-italic">{{ site.infoText2 }}</p> -->
+        <!--  :color="'rgba(31,40,51,.72)'" :style="{ maxWidth: $vuetify.breakpoint.smOnly ?  '270px' : '340px'}" -->
+       
+    
+  <v-expansion-panel
+  
+    >   
+    <v-expansion-panel-content class=" subheading font-weight-light elevation-20" >
+    <div slot="header" class="title font-weight-light">{{site.nerdTitle}}</div>
+      <!-- <v-expansion-panel-header class="headline font-weight-medium mb-3 white--text">{{site.nerdTitle}}</v-expansion-panel-header> -->
+   
+        <div class="pa-3">{{ site.nerds }}</div>
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+        <!-- <h3 class="headline font-weight-medium mb-3 white--text"></h3> -->
+        <!-- <p class="subheading font-weight-light">{{ site.nerds }}</p> -->
+       
       </v-flex>
     </v-layout>
   </core-section>
@@ -178,5 +192,11 @@ export default {
 .single{
   font-size: 1.3em;
   font-family: 'Open Sans', sans-serif;
+}
+.v-expansion-panel__container {
+    background-color: #161d25ad !important;
+  // opacity: 0.72 !important;
+  z-index: 1;
+  border-radius: 2%;
 }
 </style>
