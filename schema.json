@@ -92,10 +92,10 @@
        "src": "https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/works/anotherSmall.png",
        "link": "https://akcrew-transitions.herokuapp.com/",
        "infoTitle": "Photo blog layout",
-       "infoText1": "Here’s my take on two popular website styles.  The first is an attractive (and increasingly popular) scrolling effect called PARALLAX, where the background images move at a different speed than the foreground creating a pleasing three dimensional effect.",
-       "infoText2": "The second tab will lead you to a sample blog-style layout.  With its customizable mosaic grid it’s a great choice for any image based web design.  The photos could link to individual blog articles or purchasable items on an e-commerce site, in addition to the photo setup displayed. The layout becomes a full screen image scroll when on mobile devices.",
+       "infoText1": "My take on two popular website styles, the first is an attractive (and increasingly popular) scrolling effect called Parallax, where the background images move at a different speed than the foreground creating a pleasing three-dimensional effect.",
+       "infoText2": "The second tab will lead you to a sample blog-style layout. With its customizable mosaic grid it’s a great choice for any image based web design.Individual photos could link to individual blog articles or purchasable items on an e-commerce site. The layout becomes a full screen image scroll when on mobile devices.",
     "nerdTitle": "For the nerds",
-       "nerds": "I basically just put my own twist on two premade Vuetify themes.  They are meant to serve as starter templates for personalized home pages or blog like applications.  Both scale from mobile to desktop environments so only a single code base is needed, and could be easily connected to a headless CMS for hassle free content management."
+       "nerds": "My version of two premade Vuetify themes. They are meant to serve as starter templates for a myriad of website needs.  Each layout scales from mobile to desktop seamlessly so only a single code base is needed, and could be connected to a headless CMS for hassle free content management."
     },
     {
       "id": "3",

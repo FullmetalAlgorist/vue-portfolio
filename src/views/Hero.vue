@@ -8,8 +8,9 @@
               <orbit-spinner v-else
   :animation-duration="1200"
   :size="85"
-  color="white"
-/> 
+  
+/>
+<!-- color="white"  -->
       </div>
     </transition>
 
@@ -26,7 +27,7 @@
         <div>
           <h1
             :class="`display-${$vuetify.breakpoint.mdAndUp ? '4' : '3'}`"
-            class="display-4 name text-uppercase trial2--text"
+            class="name text-uppercase"
             v-text="schema.basics.name"
             :style="{ fontSize: $isMobile() ? '568% !important' : '700% !important'}"
           >
@@ -90,12 +91,18 @@ props: {
 <style lang="scss"scoped>
 .name {
   line-height: 1 !important;
-  font-weight: 400;
+  color: #ffffffc9;
   padding-right: 250px;
+  // font-family: 'Open Sans', sans-serif !important;
+   font-weight: 300 !important;
   //  font-size: 700% !important;
 }
+.label{
+  letter-spacing: .1em !important;
+  color: #ffffffc9;
+}
 .circle {
-  background-image: url("https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/rippleMeLow.jpg");
+  background-image: url("https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/newRip.jpeg");
   //  height: 100vh;
   background-size: cover;
   background-position: 63% bottom;
@@ -118,16 +125,16 @@ props: {
   width: 4px; //3px;
   padding: 15px 22.5px; //10px 15px;
   height: 52.5px;//35px;
-  border: 3px solid #1f2833;
+  border: 2px solid #ffffffc9;
   border-radius: 37.5px; //25?
   opacity: 0.9;
   box-sizing: content-box;
 }
 .scroller {
-  width: 3px; //3px;
+  width: 2px; //3px;
   height: 15px; //10px;
   border-radius: 25%;
-  background-color: #1f2833;
+  background-color: #ffffffc9;
   animation-name: scroll;
   animation-duration: 2.2s;
   animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);

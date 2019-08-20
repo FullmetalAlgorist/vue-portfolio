@@ -2,7 +2,7 @@
   <v-img
     src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/abstracts/abstract3.png"
     class="abstract-6 flip"
-    width="100%"
+    height="100%"
   />
 </template>
 
@@ -18,7 +18,7 @@
 .abstract-6
   position: absolute !important
   left: 0
-  top: -5%
+  top: 28%
   right: 0
   z-index: 0 !important
   opacity: .4

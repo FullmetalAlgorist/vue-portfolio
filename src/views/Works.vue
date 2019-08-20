@@ -1,8 +1,9 @@
 <template>
   <core-section id="works" justify-space-between >
-    <abstract-6 />
-    <abstract-4 />
-    <abstract-7 />
+  
+    <abstract-4 /> 
+     <abstract-6 />
+    <!-- <abstract-7 /> -->
     <v-flex xs12 sm6>
       <core-heading>Recent Work</core-heading>
       <p
@@ -171,6 +172,7 @@ export default {
 .second {
   background-color: #161d25ad !important;
   border-radius: 2%;
+  font-family: 'Open Sans', sans-serif;
   //  opacity: 0.72 !important;
 }
 .single{
