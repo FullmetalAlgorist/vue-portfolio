@@ -81,7 +81,7 @@
       "link": "https://mariah-nutrition-app.herokuapp.com",
       "infoTitle": "What produce is in season?",
       "infoText1": "Produce that's in season is cheaper, more nutritious, tastes better, and has a lower carbon footprint!",
-      "infoText2": "Bookmark this app on your home screen for quick reference next time you're on a fruit & veg run!",
+      "infoText2": "Fun little app to help remind you what's currently in season, produce leads to nutrition facts when clicked. Bookmark this app on your home screen for quick reference next time you're on a fruit & veg run!",
       "nerdTitle": "For the nerds:",
       "nerds": "With a dynamic grid system, employing Vue router for the season changes, and GreenSock animation for icon transitions, this Nuxt SPA represents my first foray into responsive design. The seasonal produce data is retrieved from a Firebase backend."
     },

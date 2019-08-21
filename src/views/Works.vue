@@ -4,13 +4,13 @@
     <abstract-4 /> 
      <abstract-6 />
     <!-- <abstract-7 /> -->
-    <v-flex xs12 sm6>
+    <v-flex xs12 sm6 class="me">
       <core-heading>Recent Work</core-heading>
       <p
         class="single font-weight-light font-italic"
       >Here are some recent projects I've spent time on, click an image to launch the app!</p>
     </v-flex>
-    <v-flex xs12 sm5 mb-5 mt-2 text-xs-center>
+    <v-flex xs12 sm5 mb-5 mt-2 text-xs-center class="me">
       <v-layout justify-center>
         <v-hover>
           <v-card
@@ -207,5 +207,8 @@ export default {
 }
 .App{
   background-color: #008078a8  !important;
+}
+.me {
+  z-index: 10;
 }
 </style>

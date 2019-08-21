@@ -1,7 +1,7 @@
 <template>
   <core-section id="skills" justify-space-between wrap align-center>
     <abstract-2 />
-    <v-flex xs12 sm7 px-2>
+    <v-flex xs12 sm7 px-2 class="me">
       <core-heading>What I know.</core-heading>
       <v-flex>
         <v-card class="mb-4 second" elevation="20">
@@ -35,7 +35,7 @@
         </blockquote>
       </v-flex>
     </v-flex>
-    <v-flex xs12 sm5 px-3>
+    <v-flex xs12 sm5 px-3 class="me">
       <div v-for="(degree, i) in schema.education" :key="i">
         <h3 class="display-1 font-weight-medium mb-4 primary--text">{{ degree.title }}</h3>
         <education-card :value="degree" />
@@ -101,5 +101,8 @@ export default {
   font-family: "Open Sans", sans-serif;
   font-style: italic;
   // font-size: 110%;
+}
+.me {
+  z-index: 10;
 }
 </style>
