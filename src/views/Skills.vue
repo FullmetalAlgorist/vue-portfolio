@@ -102,4 +102,7 @@ export default {
   font-style: italic;
   // font-size: 110%;
 }
+.me {
+  z-index: 10;
+}
 </style>
