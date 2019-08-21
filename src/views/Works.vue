@@ -171,10 +171,10 @@ export default {
 .gitCard {
   height: 170px;
   border-radius: 3%;
+  
 }
 .gitMe {
   z-index: -1;
-
   align-content: center;
   text-align: center;
   opacity: 0.4;
@@ -182,6 +182,8 @@ export default {
 .justText {
   color: rgba(255, 255, 255, 0.906);
   margin-top: -150px;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 1.6em !important;
 }
 .site {
   margin-bottom: 30px;

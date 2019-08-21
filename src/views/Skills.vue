@@ -37,7 +37,7 @@
     </v-flex>
     <v-flex xs12 sm5 px-3>
       <div v-for="(degree, i) in schema.education" :key="i">
-        <h3 class="display-1 font-weight-medium mb-4 primary--text">{{ degree.title }}</h3>
+        <h3 class="display-1 me font-weight-medium mb-4 primary--text">{{ degree.title }}</h3>
         <education-card :value="degree" />
       </div>
     </v-flex>

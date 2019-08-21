@@ -7,7 +7,7 @@
           <core-heading class="z" v-text="'Who I am.'" />
           <v-layout wrap align-center>
             <core-text class="ma-1">
-              <p class="title font-weight-light  font-italic aboutMe text-xs-center" >&nbsp; &nbsp; &nbsp; {{ schema.basics.summary }}  </p>
+              <p class="family title font-weight-light  font-italic aboutMe text-xs-center" >&nbsp; &nbsp; &nbsp; {{ schema.basics.summary }}  </p>
               <br>
               <p class=" aboutMe love font-weight-light title font-italic text-xs-center"
               >I love to live on the edge of nature and technology.</p>
@@ -23,7 +23,7 @@
         </section>
       </v-flex>
       <v-flex xs12 sm5 class="text-xs-center" align-center justify-center>
-        <v-img max-width="450" :src="me" class="me">
+        <v-img max-width="450" :src="me" class="me dog">
           <template v-slot:placeholder>
             <v-layout fill-height align-center justify-center ma-0>
               <spring-spinner :animation-duration="3000" :size="60" color="white" />
@@ -67,34 +67,6 @@ export default {
   destroyed() {
   },
   methods: {
-    handleScroll() {
-      let top;
-      let bottom;
-      if (this.$vuetify.breakpoint.xs) {
-        top = 1335;
-        bottom = 966;
-      } else {
-        top = 1000;
-        bottom = 630;
-      }
-      let OldRange = top - bottom;
-      let NewRange = 62 - 0;
-      let NewValue;
-      let newS;
-      //update this based on screen size (mobile and sm work)
-      //when window.scrollY goes above 966 updates this.spot to a corresponding value(00-61) till 1335
-      //so first I convert 966-1335 to 0-61 then format to two digit string and update spot
-      if (window.scrollY > bottom && window.scrollY < top) {
-        NewValue = Math.floor(
-          ((window.scrollY - bottom) * NewRange) / OldRange
-        );
-        newS = NewValue.toString();
-        if (NewValue < 10) {
-          newS = "0" + newS;
-        }
-        this.spot = newS;
-      }
-    },
     preloadImage(url) {
       let img = new Image();
       img.src = url;
@@ -123,5 +95,11 @@ export default {
 .contactButton{
   font-size: 130%;
 }
-
+.dog{
+  margin-bottom:  -40px;
+  margin-top: 10px;
+}
+.family{
+  font-family: 'Open Sans', sans-serif !important;
+}
 </style>
