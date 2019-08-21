@@ -1,6 +1,6 @@
 <template>
   <v-sheet
-    class="mb-5"
+  
     color="transparent"
   >
     <v-layout>
