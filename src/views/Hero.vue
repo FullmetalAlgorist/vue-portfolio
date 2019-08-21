@@ -37,9 +37,10 @@
 
           <div
             :class="`display-${$vuetify.breakpoint.mdAndUp ? '3' : '1'}`"
+            
             class="text-uppercase label"
             v-text="schema.basics.label"
-            :style="{ fontSize: $isMobile() ? '27px !important' : '34px !important'}"
+            :style="{ fontSize: $isMobile() ? '27px !important' : '34px !important', letterSpacing : (winWidth < 321) ? '0' : '.1em !important'}"
           />
         </div>
       </v-layout>
@@ -58,8 +59,7 @@ props: {
     data() {
     return {
       imag: "",
-      blah: false,
-      
+      blah: false
     };
   },
   computed: {
@@ -68,13 +68,18 @@ props: {
       //console.log('vh: ', vh);
       console.log("innerHeight: ", window.innerHeight);
       return window.innerHeight * 0.01 * 100;
+    },
+     winWidth() {
+      console.log("innerWidth: ", window.innerWidth);
+      return window.innerWidth;
     }
   },
   components: {
     CoreDrawer: () => import("@/components/core/Drawer"),
   OrbitSpinner
   },
-  methods: {},
+  methods: {
+  },
   created() {
     //  let img = new Image;
     //  img = 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/rippleMeLow.jpg';
@@ -83,9 +88,9 @@ props: {
     // let vh =
     // Then we set the value in the --vh custom property to the root of the document
     // document.documentElement.style.setProperty('--vh', `${vh}px`);
-    setTimeout(() => (this.blah = true), 17000);
-  }
-  //
+   setTimeout(() => (this.blah = true), 17000);
+  },
+  
 };
 </script>
 <style lang="scss"scoped>
@@ -98,8 +103,11 @@ props: {
   //  font-size: 700% !important;
 }
 .label{
-  letter-spacing: .1em !important;
+  
   color: #ffffffc9;
+}
+.kern{
+letter-spacing: .1em !important;
 }
 .circle {
   background-image: url("https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/newRip.jpeg");

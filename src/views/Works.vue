@@ -19,10 +19,8 @@
             :style="{ maxWidth: $vuetify.breakpoint.smOnly ?  '270px' : '340px'}"
             href="https://github.com/FullmetalAlgorist"
             slot-scope="{ hover }"
-            elevation="20"
-          >
+            elevation="20">
             <v-card-title primary-title>
-              <!-- style="max-width: 320px;" -->
               <blockquote>
                 <div>
                   <v-icon class="gitMe pulse-button">mdi-github-circle</v-icon>
@@ -46,8 +44,7 @@
             :max-width="(site.id==3) ?  600 : 750"
             class="site"
             :src="site.src"
-            :lazy-src="require('@/assets/'+ site.outline +'Outline.png')"
-          >
+            :lazy-src="require('@/assets/'+ site.outline +'Outline.png')">
             <template v-slot:placeholder>
               <v-layout fill-height align-center justify-center ma-0>
                 <fingerprint-spinner :animation-duration="3000" :size="128" color="white" />
@@ -57,37 +54,43 @@
         </a>
       </v-flex>
       <v-flex xs12 mb-3 :class="`${(site.id==='3') ? 'md6' : 'md5'}`">
- <h3 class="headline font-weight-medium mb-3 white--text">{{ site.infoTitle }}</h3>
-         <v-card class="mb-4 second" elevation="20">
+
+
+        <h3 class="headline font-weight-medium mb-3 white--text">{{ site.infoTitle }}</h3>
+         <v-card class="mb-4 second" elevation="20" color="#2c2c2c78">
           <v-card-title primary-title>
-            <!-- style="max-width: 320px;" -->
             <blockquote>
               <div>
-                <p class="subheading font-weight-light font-italic">{{ site.infoText1 }} <br/><br/> {{ site.infoText2  }}</p>
+                <p class="subheading font-weight-light font-italic">{{ site.infoText1 }}</p>
               </div>
             </blockquote>
           </v-card-title>
         </v-card>
-
        
-        <!-- <p class="subheading font-weight-light font-italic">{{ site.infoText2 }}</p> -->
-        <!--  :color="'rgba(31,40,51,.72)'" :style="{ maxWidth: $vuetify.breakpoint.smOnly ?  '270px' : '340px'}" -->
-       
-    
-  <v-expansion-panel
-  
-    >   
-    <v-expansion-panel-content class=" subheading font-weight-light elevation-20" >
-    <div slot="header" class="title font-weight-light">{{site.nerdTitle}}</div>
-      <!-- <v-expansion-panel-header class="headline font-weight-medium mb-3 white--text">{{site.nerdTitle}}</v-expansion-panel-header> -->
-   
-        <div class="pa-3">{{ site.nerds }}</div>
+ 
+   <v-expansion-panel>   
+    <v-expansion-panel-content class="mb-3 second elevation-20 App" >
+    <div slot="header" class="headline font-weight-medium">About the App</div>
+      <blockquote>
+              <div class="pa-3">
+                <p class="subheading font-weight-light font-italic">{{ site.infoText2 }}</p>
+             <p class="subheading font-weight-light font-italic" v-if="site.id==='2'">{{ site.infoText3 }}</p>
+              </div>
+            </blockquote>
       </v-expansion-panel-content>
     </v-expansion-panel>
-        <!-- <h3 class="headline font-weight-medium mb-3 white--text"></h3> -->
-        <!-- <p class="subheading font-weight-light">{{ site.nerds }}</p> -->
-       
-      </v-flex>
+ 
+  <v-expansion-panel>   
+    <v-expansion-panel-content class=" subheading font-weight-light elevation-20" >
+    <div slot="header" class="title font-weight-light">{{site.nerdTitle}}</div>
+     <div class="pa-3">{{ site.nerds }}</div>
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+
+
+     </v-flex>
+
+
     </v-layout>
   </core-section>
 </template>
@@ -184,19 +187,25 @@ export default {
   margin-bottom: 30px;
 }
 .second {
-  background-color: #161d25ad !important;
+  // background-color: #161d25ad !important;
   border-radius: 2%;
   font-family: 'Open Sans', sans-serif;
+  //  font-size: 1.3em !important;
   //  opacity: 0.72 !important;
 }
 .single{
   font-size: 1.3em;
   font-family: 'Open Sans', sans-serif;
 }
+// #008078a8
+// #2c2c2c78 dark gray maybe for top bit
 .v-expansion-panel__container {
-    background-color: #161d25ad !important;
+    background-color: #2c2c2c78 !important;
   // opacity: 0.72 !important;
   z-index: 1;
   border-radius: 2%;
+}
+.App{
+  background-color: #008078a8  !important;
 }
 </style>

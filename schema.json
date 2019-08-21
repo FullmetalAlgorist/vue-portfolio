@@ -92,10 +92,11 @@
        "src": "https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/works/anotherSmall.png",
        "link": "https://akcrew-transitions.herokuapp.com/",
        "infoTitle": "Photo blog layout",
-       "infoText1": "My take on two popular website styles, the first is an attractive (and increasingly popular) scrolling effect called Parallax, where the background images move at a different speed than the foreground creating a pleasing three-dimensional effect.",
-       "infoText2": "The second tab will lead you to a sample blog-style layout. With its customizable mosaic grid it’s a great choice for any image based web design.Individual photos could link to individual blog articles or purchasable items on an e-commerce site. The layout becomes a full screen image scroll when on mobile devices.",
-    "nerdTitle": "For the nerds",
-       "nerds": "My version of two premade Vuetify themes. They are meant to serve as starter templates for a myriad of website needs.  Each layout scales from mobile to desktop seamlessly so only a single code base is needed, and could be connected to a headless CMS for hassle free content management."
+       "infoText1": "My take on two popular, single page websites, that would be great for a small business or a personal profile!",
+       "infoText2": "The first is a simple scrolling page that demonstrates an effect called Parallax, in which the foreground images move at a different speed than the background, creating a pleasing 3d effect.",
+      "infoText3": "The second tab will lead you to an attractive mosaic grid of photos that could link to individual blog articles or purchasable items on an e-commerce site. The layout becomes a full page image scroll when on mobile devices.",
+       "nerdTitle": "For the nerds",
+       "nerds": "These two variations on Vuetify themes are meant to serve as starter templates for a myriad of website needs. Each layout scales from mobile to desktop seamlessly so only a single code base is needed, and could be connected to a headless CMS for hassle free content management."
     },
     {
       "id": "3",
