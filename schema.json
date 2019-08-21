@@ -93,8 +93,8 @@
        "link": "https://akcrew-transitions.herokuapp.com/",
        "infoTitle": "Photo blog layout",
        "infoText1": "My take on two popular, single page websites, that would be great for a small business or a personal profile!",
-       "infoText2": "The first is a simple scrolling page that demonstrates an effect called Parallax, in which the foreground images move at a different speed than the background, creating a pleasing 3d effect.",
-      "infoText3": "The second tab will lead you to an attractive mosaic grid of photos that could link to individual blog articles or purchasable items on an e-commerce site. The layout becomes a full page image scroll when on mobile devices.",
+       "infoText2": "The first tab is a simple scrolling page that demonstrates an effect called Parallax, in which the foreground images move at a different speed than the background, creating a pleasing 3d effect.",
+      "infoText3": "The second will lead you to an attractive mosaic grid of photos that could link to individual blog articles or purchasable items on an e-commerce site. The layout becomes a full page image scroll when on mobile devices.",
        "nerdTitle": "For the nerds",
        "nerds": "These two variations on Vuetify themes are meant to serve as starter templates for a myriad of website needs. Each layout scales from mobile to desktop seamlessly so only a single code base is needed, and could be connected to a headless CMS for hassle free content management."
     },

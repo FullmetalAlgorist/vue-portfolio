@@ -59,7 +59,8 @@ props: {
     data() {
     return {
       imag: "",
-      blah: false
+      blah: false,
+      heroLoad: Boolean
     };
   },
   computed: {
@@ -79,11 +80,18 @@ props: {
   OrbitSpinner
   },
   methods: {
+  //   onLoad(){
+  //  alert('loadme');
+  //      this.heroLoad = true;
+  //   }
   },
   created() {
-    //  let img = new Image;
-    //  img = 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/rippleMeLow.jpg';
-    // this.imag = img;
+  //    let img = new Image();
+  // img.src = 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/rippleMeLow.jpg';
+  //    img.onLoad = function(){
+  //   }
+  //   if (img.complete) img.onload();
+    
     // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
     // let vh =
     // Then we set the value in the --vh custom property to the root of the document

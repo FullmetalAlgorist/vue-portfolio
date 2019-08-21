@@ -2,9 +2,9 @@
   <core-section id="about-me">
     <v-layout align-center justify-center wrap>
       <abstract-1 />
-      <v-flex xs12 sm7>
-        <section>
-          <core-heading v-text="'Who I am.'" />
+      <v-flex xs12 sm7  class="me">
+        <section >
+          <core-heading class="z" v-text="'Who I am.'" />
           <v-layout wrap align-center>
             <core-text class="ma-1">
               <p class="title font-weight-light  font-italic aboutMe text-xs-center" >&nbsp; &nbsp; &nbsp; {{ schema.basics.summary }}  </p>
@@ -123,4 +123,5 @@ export default {
 .contactButton{
   font-size: 130%;
 }
+
 </style>

@@ -13,8 +13,7 @@
   left: -48px
   top: -48px
   opacity: .5
-  z-index: 0 !important
 
   ~ *
-    z-index: 1 !important
+  z-index: 1 !important
 </style>

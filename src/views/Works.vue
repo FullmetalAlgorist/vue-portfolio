@@ -203,7 +203,7 @@ export default {
     background-color: #2c2c2c78 !important;
   // opacity: 0.72 !important;
   z-index: 1;
-  border-radius: 2%;
+  border-radius: 1%;
 }
 .App{
   background-color: #008078a8  !important;
