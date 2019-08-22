@@ -25,6 +25,7 @@
       </template>
       <span>Random color!</span>
     </v-tooltip>
+    <v-btn @click="stopPlease">STOP</v-btn>
     </v-flex>
     <v-flex xs4>
                     <v-tooltip top>
@@ -74,6 +75,9 @@ dialog: false
    },
    white(){
      lines.white();
+    },
+    stopPlease(){
+      lines.stopPlease();
     }
     }
    

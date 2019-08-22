@@ -50,13 +50,15 @@
 import radarComponent from "@/components/sketches/Radar.vue";
 import nextComponent from "@/components/sketches/Next";
 import treeComponent from "@/components/sketches/Tree";
-// import linesComponent from "@/components/sketches/Lines";
+import penroseComponent from "@/components/sketches/Penrose";
+import linesComponent from "@/components/sketches/Lines";
 export default {
   components: {
     radarComponent,
     nextComponent,
     treeComponent,
-    // linesComponent
+    penroseComponent,
+    linesComponent
   },
   data() {
     return {
@@ -64,8 +66,9 @@ export default {
       sketchArray: [
         { title: "radar", component: radarComponent },
         { title: "next", component: nextComponent },
-        { title: "tree", component: treeComponent }
-        // { title: "lines", component: linesComponent }
+        { title: "tree", component: treeComponent },
+        { title: "penrose", component: penroseComponent },
+        { title: "lines", component: linesComponent }
       ]
     };
   }

@@ -8,6 +8,7 @@ let dx=[];
 let c1 = 255;
 let c2 = 255;
 let c3 = 255;
+let del = false; //boolean that controls is sketch is removed
 
 export function main(_p5) {
   let p5 = _p5
@@ -24,7 +25,10 @@ export function main(_p5) {
     }
 
   p5.draw = _ => {
-    p5.background(0);
+	p5.background(0);
+	if(del){
+		p5.remove(); // remove whole sketch 
+	}
     for (let i=0;i<x.length;i++) {
 		dx = targetX - x[i];
 	 	dy = targetY - y[i];
@@ -55,7 +59,7 @@ export function main(_p5) {
     }
 }
 
-export function colorMe(){
+export function colorMe(){ 
 	c1 = Math.random()*255;
 	c2 = Math.random()*255;
 	c3 = Math.random()*255;
@@ -65,4 +69,8 @@ export function colorMe(){
 	c1 = 255;
 	c2 = 255;
 	c3 = 255;
+  }
+
+  export function stopPlease() {
+	del = true;
   }
