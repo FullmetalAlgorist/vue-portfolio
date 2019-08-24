@@ -12,7 +12,19 @@
   export default {
     components: {
       CoreDrawer: () => import('@/components/core/Drawer')
+    },
+    data(){
+      return {
+      }
+    },
+      watch:{//currently firing whenever route changes
+    $route (to, from){
+        if(from.name == 'processing'){
+            this.$router.go();
+// this.$store.commit('app/death');
+        }
     }
+}
   }
 </script>
 

@@ -4,12 +4,11 @@
     <v-flex justify-space-between xs4>
       <v-tooltip top>
         <template v-slot:activator="{ on }">
-          <v-btn @click="dialog = true" small color="black" fab v-on="on">
-            <v-icon medium class="aboutME">mdi-information</v-icon>
-          </v-btn>
+          <v-icon color="black" x-large @click="dialog = true" fab v-on="on" class="aboutME">mdi-information</v-icon>
         </template>
         <span>About this sketch</span>
       </v-tooltip>
+      <!-- <h3>{{ daeth }}</h3> -->
     </v-flex>
 
     <v-flex justify-space-between xs4>
@@ -45,13 +44,16 @@
 </template>
 
 <script>
+  // import {
+  //   mapState
+  // } from 'vuex'
 if (process.browser) {
   var radar = require("@/Radar.js");
 }
 export default {
   data() {
     return {
-      dialog: false
+      dialog: false,
     };
   },
   components: {
@@ -71,7 +73,14 @@ export default {
     down() {
       radar.down();
     }
-  }
+  },
+  // computed:{
+  //   daeth(){
+  //     //console.log(this.$store.app.state.killSketches);
+  //     return this.$store.state.app.killSketches;
+  //   },
+    // ...mapState('app', ['killSketches']),
+  // }
 };
 </script>
 <style lang="scss">

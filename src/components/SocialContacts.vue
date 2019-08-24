@@ -13,7 +13,7 @@
 </template>
 
 <script>
-  // Utilities
+  // Utilities 
   import {
     mapState
   } from 'vuex'

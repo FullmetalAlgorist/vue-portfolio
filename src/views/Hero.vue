@@ -67,11 +67,11 @@ props: {
     ...mapState("app", ["schema"]),
     winHeight() {
       //console.log('vh: ', vh);
-      console.log("innerHeight: ", window.innerHeight);
+      // console.log("innerHeight: ", window.innerHeight);
       return window.innerHeight * 0.01 * 100;
     },
      winWidth() {
-      console.log("innerWidth: ", window.innerWidth);
+      // console.log("innerWidth: ", window.innerWidth);
       return window.innerWidth;
     }
   },

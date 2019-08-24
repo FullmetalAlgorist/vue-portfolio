@@ -1,5 +1,6 @@
 let ds;
-let del = false; //boolean that controls is sketch is removed
+let base = 10;
+let flag = false;
 
 export function main(_p5) {
     let p5 = _p5
@@ -13,10 +14,14 @@ export function main(_p5) {
 }
 
 p5.draw = _ => {
-    if(del){
-		p5.remove(); // remove whole sketch 
-	}
+ 
+
   p5.background(0);
+  // if(flag){
+  //   flag = false;
+  //   p5.clear();
+    
+  // } 
   ds.render();
 }
 
@@ -33,7 +38,7 @@ function PenroseLSystem() {
 
     //please play around with the following two lines
     this.startLength = 460.0;
-    this.theta = p5.TWO_PI / 10.0; //36 degrees, try TWO_PI / 6.0, ...
+    this.theta = p5.TWO_PI / base; //36 degrees, try TWO_PI / 6.0, ...
     this.reset();
 }
 
@@ -123,8 +128,18 @@ PenroseLSystem.prototype.render = function () {
       }
     }
   }
+  function reset(){
+    
+    // p5.remove();
+    // p5.redraw();
+    // p5.frameCount = -1;
+}
 }
 
-export function stopPlease() {
-	del = true;
-  }
+export function flip(value){
+  base=value;
+
+}
+// export function stopPlease() {
+// 	del = true;
+//   }

@@ -10,9 +10,7 @@
     <v-flex  xs4>
                   <v-tooltip top>
       <template v-slot:activator="{ on }">
-         <v-btn @click="dialog = true" small color="black" fab v-on="on"> 
-                <v-icon medium class="aboutME">mdi-information</v-icon>
-            </v-btn>
+             <v-icon color="black" x-large @click="dialog = true" fab v-on="on" class="aboutME">mdi-information</v-icon>
       </template>
       <span>About this sketch</span>
     </v-tooltip>
@@ -25,7 +23,6 @@
       </template>
       <span>Random color!</span>
     </v-tooltip>
-    <v-btn @click="stopPlease">STOP</v-btn>
     </v-flex>
     <v-flex xs4>
                     <v-tooltip top>
@@ -67,20 +64,14 @@ dialog: false
     const P5 = require('p5');
     new P5(lines.main);
      },
-    //  slideMe(){
-    //   console.log(this.ex3.val);
     methods: {
          colorMe(){
      lines.colorMe();
    },
    white(){
      lines.white();
-    },
-    stopPlease(){
-      lines.stopPlease();
     }
     }
-   
 }
 </script>
 <style lang="scss" scoped>

@@ -71,7 +71,6 @@ ask james about sparkle coat high quality version
 update codepen and tab avatar situation... make a simple ass logo. maybe with rhombus maker 
 (james shirt with double iconss )
 
-ask austin about cover photo
 
 disable right click for images everywhere on site... obvi
 
@@ -91,3 +90,18 @@ resumer pic from austin and james .. just send the texts
 don't say entertained tice (second priority)
 
 write resume
+
+decrease gallery image size at the very least -- unacceptable right now
+
+port another processing sketch ( or example.. at least one more)
+
+shorten priorites.  maybe add more than those 3 but shorter for sure, or break up text somehow
+
+
+maybe fuck with email situation. read link  from one they sent me
+
+change anstract z-index
+
+add 'after hero loads to scrolling view option'
+
+figure out how to discard or shutdown sketches on exit.

@@ -10,9 +10,7 @@
     <v-flex justify-space-between xs4>
       <v-tooltip top>
         <template v-slot:activator="{ on }">
-          <v-btn @click="dialog = true" small color="black" fab v-on="on">
-            <v-icon medium class="aboutME">mdi-information</v-icon>
-          </v-btn>
+          <v-icon color="black" x-large @click="dialog = true" fab v-on="on" class="aboutME">mdi-information</v-icon>
         </template>
         <span>About this sketch</span>
       </v-tooltip>
