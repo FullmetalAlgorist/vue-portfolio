@@ -39,7 +39,7 @@
     <v-layout v-for="site in schema.sites" :key="site.id" justify-space-between wrap align-center>
       <v-flex xs12 md6 :class="`${(site.id==='2') ? 'order-md2' : ''}`">
         <h3 class="display-1 font-weight-medium mb-4 primary--text">{{ site.title }}</h3>
-        <a :href="site.link">
+        <a :href="site.link" target="_blank">
           <v-img
             :max-width="(site.id==3) ?  600 : 750"
             class="site"
@@ -54,8 +54,6 @@
         </a>
       </v-flex>
       <v-flex xs12 mb-3 :class="`${(site.id==='3') ? 'md6' : 'md5'}`">
-
-
         <h3 class="headline font-weight-medium mb-3 white--text">{{ site.infoTitle }}</h3>
          <v-card class="mb-4 second" elevation="20" color="#2c2c2c78">
           <v-card-title primary-title>
@@ -66,8 +64,6 @@
             </blockquote>
           </v-card-title>
         </v-card>
-       
- 
    <v-expansion-panel>   
     <v-expansion-panel-content class="mb-3 second elevation-20 App" >
     <div slot="header" class="headline font-weight-medium">About the App</div>
