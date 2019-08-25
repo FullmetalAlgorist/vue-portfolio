@@ -39,7 +39,15 @@ const router = new Router({
     }
 
     
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+  
+    if (to.name == 'photography'){
+  
+      return { x: 0, y: 0 }
+    }
+    
+  }
 })
 
 // Bootstrap Analytics

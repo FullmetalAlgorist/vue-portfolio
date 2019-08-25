@@ -20,14 +20,15 @@
              color="primary"
              class="radios"
             ></v-radio>
-        <v-radio id="ocean"
+        <!-- <v-radio id="ocean"
            name="filters"
            @click="clickOcean"
            class="radios"
            label="Ocean"
            value="Ocean"
            color="primary"
-           />
+           /> -->
+           
         <v-radio id="driftwood"
            name="filters"
            @click="clickDriftwood" 
@@ -92,7 +93,7 @@ export default {
     'id':'image2'  },
      {'name':'5136.JPG',
     'alt':'City Ducks',
-    'filter':'Ocean',
+    'filter':'Nature',
     'id':'image3'},
      {'name':'5166.JPG',
     'alt':'Golden Log',
@@ -100,7 +101,7 @@ export default {
     'id':'image4'},
        {'name':'5183.JPG',
     'alt':'Mountain Duck',
-    'filter':'Ocean',
+    'filter':'Nature',
     'id':'image5'  },
      {'name':'5187.JPG',
     'alt':'Flight',
@@ -117,27 +118,27 @@ export default {
     'id':'image8'  },
      {'name':'5297.JPG',
     'alt':'Sea',
-    'filter':'Ocean',
+    'filter':'Nature',
     'id':'image9'},
         {'name':'5305.JPG',
     'alt':'Shipping Container',
-    'filter':'Ocean',
+    'filter':'Nature',
     'id':'image10'},
      {'name':'5346.JPG',
     'alt':'Wind',
-    'filter':'Ocean',
+    'filter':'Nature',
     'id':'image11'},
        {'name':'5367.JPG',
     'alt':'Winter Ripples',
-    'filter':'Ocean',
+    'filter':'Nature',
     'id':'image12'  },
       {'name':'5370.JPG',
     'alt':'Ripples',
-    'filter':'Ocean',
+    'filter':'Nature',
     'id':'image13'},
       {'name':'5404.JPG',
     'alt':'Winter Storm',
-    'filter':'Ocean',
+    'filter':'Nature',
     'id':'image14'},
      {'name':'5451.JPG',
     'alt':'Flock',
@@ -150,15 +151,15 @@ export default {
   
        {'name':'5705.JPG',
     'alt':'Cool Cloud Day',
-    'filter':'Ocean',
+    'filter':'Nature',
     'id':'image17'  },
       {'name':'5763.JPG',
     'alt':'Murmer',
-    'filter':'Nature',
+    'filter':'Wildlife',
     'id':'image18'},
        {'name':'7094.JPG',
     'alt':'Wet Rocks',
-    'filter':'Ocean',
+    'filter':'Nature',
     'id':'image19'  },
      {'name':'7108.JPG',
     'alt':'Cement',
@@ -285,7 +286,7 @@ export default {
     'id':'image49'  },
      {'name':'8849.JPG',
     'alt':'Sunny Ripples',
-    'filter':'Ocean',
+    'filter':'Nature',
     'id':'image50'},
    {'name':'8871.JPG',
     'alt':'Wildflower',
@@ -339,10 +340,10 @@ export default {
       this.updateFilter('Wildlife');
       this.ex8="Wildlife";
     },
-    clickOcean(){
-      this.updateFilter('Ocean');
-      this.ex8="Ocean";
-    },
+    // clickOcean(){
+    //   this.updateFilter('Ocean');
+    //   this.ex8="Ocean";
+    // },
     clickDriftwood(){
       this.updateFilter('Driftwood');
       this.ex8="Driftwood";
