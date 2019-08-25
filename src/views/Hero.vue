@@ -1,16 +1,14 @@
 <template>
   <div>
     <transition name="fade">
-      <div  class="scroll-downs">
-        <div v-if="blah || load" class="mousey">
+      <div class="scroll-downs">
+        
+        <orbit-spinner v-if="!load" :animation-duration="1200" :size="85" />
+        <div v-else-if="blah" class="mousey">
           <div class="scroller"></div>
         </div>
-              <orbit-spinner v-else
-  :animation-duration="1200"
-  :size="85"
-  
-/>
-<!-- color="white"  -->
+        
+        <!-- color="white"  -->
       </div>
     </transition>
 
@@ -37,7 +35,6 @@
 
           <div
             :class="`display-${$vuetify.breakpoint.mdAndUp ? '3' : '1'}`"
-            
             class="text-uppercase label"
             v-text="schema.basics.label"
             :style="{ fontSize: $isMobile() ? '27px !important' : '34px !important', letterSpacing : (winWidth < 321) ? '0' : '.1em !important'}"
@@ -51,12 +48,12 @@
 <script>
 // Utilities
 import { mapState } from "vuex";
-import { OrbitSpinner } from 'epic-spinners'
+import { OrbitSpinner } from "epic-spinners";
 export default {
-props: {
-  load: Boolean
-},
-    data() {
+  props: {
+    load: Boolean
+  },
+  data() {
     return {
       imag: "",
       blah: false,
@@ -70,35 +67,19 @@ props: {
       // console.log("innerHeight: ", window.innerHeight);
       return window.innerHeight * 0.01 * 100;
     },
-     winWidth() {
+    winWidth() {
       // console.log("innerWidth: ", window.innerWidth);
       return window.innerWidth;
     }
   },
   components: {
     CoreDrawer: () => import("@/components/core/Drawer"),
-  OrbitSpinner
+    OrbitSpinner
   },
-  methods: {
-  //   onLoad(){
-  //  alert('loadme');
-  //      this.heroLoad = true;
-  //   }
-  },
+  methods: {},
   created() {
-  //    let img = new Image();
-  // img.src = 'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/rippleMeLow.jpg';
-  //    img.onLoad = function(){
-  //   }
-  //   if (img.complete) img.onload();
-    
-    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-    // let vh =
-    // Then we set the value in the --vh custom property to the root of the document
-    // document.documentElement.style.setProperty('--vh', `${vh}px`);
-   setTimeout(() => (this.blah = true), 17000);
-  },
-  
+    setTimeout(() => (this.blah = true), 5000);
+  }
 };
 </script>
 <style lang="scss"scoped>
@@ -107,15 +88,14 @@ props: {
   color: #ffffffc9;
   padding-right: 250px;
   // font-family: 'Open Sans', sans-serif !important;
-   font-weight: 300 !important;
+  font-weight: 300 !important;
   //  font-size: 700% !important;
 }
-.label{
-  
+.label {
   color: #ffffffc9;
 }
-.kern{
-letter-spacing: .1em !important;
+.kern {
+  letter-spacing: 0.1em !important;
 }
 .circle {
   background-image: url("https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/newRip.jpeg");
@@ -134,13 +114,13 @@ letter-spacing: .1em !important;
   // left: 0;
   // margin: auto;
 
-  width: 51px;//34px;
-  height: 82.5px;//55px;
+  width: 51px; //34px;
+  height: 82.5px; //55px;
 }
 .mousey {
   width: 4px; //3px;
   padding: 15px 22.5px; //10px 15px;
-  height: 52.5px;//35px;
+  height: 52.5px; //35px;
   border: 2px solid #ffffffc9;
   border-radius: 37.5px; //25?
   opacity: 0.9;
