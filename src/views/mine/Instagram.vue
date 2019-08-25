@@ -5,27 +5,44 @@
     </h1>
 
     <template v-if="grams.length > 0">
-      <!-- <v-layout wrap justify-space-around> -->
-      <div v-for="(gram, index) in grams">
-        <a :href="gram.link">
-          <v-img class="wait" :src="gram.images.standard_resolution.url" :alt="gram.text" :lazy-src="lazyLoad">
+      <!-- <v-layout class="justify-center align-center text-xs-center"> -->
+      <div v-for="(gram, index) in grams"
+      :key="index"
+      @contextmenu.prevent
+      >
+      <!-- <v-layout >
+        <v-flex  > -->
+          <v-icon  medium @click="showTags=!showTags" class="pa-1 hash">{{ ico }}</v-icon>
+      <taggy v-if="showTags" :tags="gram.tags" 
+      class="taggy"
+      :style="{maxWidth: $vuetify.breakpoint.width < 790 ? '90vw' : '48vw', marginTop: $isMobile() ? '0' : '75px' }"
+      :class="$vuetify.breakpoint.width > 1180 ? 'tri' : ''"
+      />
+      <!-- </v-flex>
+      </v-layout> -->
+<v-img v-if="!gram.carousel_media"
+:src="gram.images.standard_resolution.url"
+></v-img>
+        <!-- <a :href="gram.link"> -->
+          <v-carousel v-else :cycle="false">
+    <v-carousel-item
+      v-for="(item,i) in gram.carousel_media"
+      :key="i"
+      :src="item.images.standard_resolution.url"
+    ></v-carousel-item>
+  </v-carousel>
+          <!-- <v-img
+            class="wait"
+            :src="gram.images.standard_resolution.url"
+            :alt="gram.text"
+            :lazy-src="lazyLoad">
             <template v-slot:placeholder>
-                        <v-layout
-                          fill-height
-                          align-center
-                          justify-center
-                          ma-0>
-                      <!-- <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular> -->
-                       <scaling-squares-spinner
-  :animation-duration="1250"
-  :size="65"
-  color="black"
-/>
-                      </v-layout>
-                    </template>
-
-          </v-img>
-        </a>
+              <v-layout fill-height align-center justify-center ma-0>
+                <scaling-squares-spinner :animation-duration="1250" :size="65" color="black" />
+              </v-layout>
+            </template>
+          </v-img> -->
+        <!-- </a> -->
       </div>
       <!-- </v-layout> -->
     </template>
@@ -36,7 +53,7 @@
 </template>
 <script>
 import axios from "axios";
-import { ScalingSquaresSpinner } from 'epic-spinners'
+import { ScalingSquaresSpinner } from "epic-spinners";
 
 export default {
   data() {
@@ -47,15 +64,25 @@ export default {
       grams: [],
       next_url: "",
       error: false,
-      lazyLoad: require('@/assets/rhombus.png'),
-    }
+      lazyLoad: require("@/assets/rhombus.png"),
+      showTags: false
+    };
   },
   components: {
-ScalingSquaresSpinner
+    ScalingSquaresSpinner,
+    Taggy: () => import("@/components/tagList")
   },
   computed: {
     instapage() {
       return "https://www.instagram.com/" + this.username;
+    },
+    ico(){
+      if(this.showTags){
+        return 'mdi-close-outline';
+      }
+      else{
+        return 'mdi-pound';
+      }
     }
   },
   methods: {
@@ -63,6 +90,7 @@ ScalingSquaresSpinner
       axios
         .get(this.url + "?access_token=" + this.access_token)
         .then(({ data }) => {
+          console.log(data.data);
           this.grams = data.data;
           this.username = data.data[0].user.username;
           this.next_url = data.pagination.next_url;
@@ -182,4 +210,22 @@ a {
 }
 //insta token
 // 178334721.1677ed0.47e8323111844b6795c472347c89680f
+.taggy{
+  position: absolute;
+  z-index: 2;
+//  margin-top: 75px;
+ 
+}
+.tri{
+ max-width: 30vw !important;
+}
+.hash{
+  position: absolute;
+   z-index: 3;
+   margin-top: 20px;
+   margin-left: 20px;
+  //  border:black solid 1px;
+  //  border-radius: 50%;
+
+}
 </style>

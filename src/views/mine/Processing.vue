@@ -1,8 +1,5 @@
 <template>
-<!-- <div class="wrapper fuckingCenter"> -->
-    <!-- <v-container class="ugh justify-center text-xs-center align-center align-content-center"> -->
       <v-layout class="sketches">
-
  <v-tooltip>
               <template v-slot:activator="{ on }">
                 <v-icon
@@ -20,7 +17,7 @@
             <v-tooltip left>
               <template v-slot:activator="{ on }">
                 <v-icon
-                  @click="s--"
+                  @click="$store.commit('app/minusS')"
                   class="bigArrowLeft"
                   color="black"
                   v-on="on"
@@ -28,7 +25,6 @@
               </template>
               <span>Last sketch</span>
             </v-tooltip>
-           
           </v-flex>
           
           <v-flex text-xs-center px-4  class="bb">
@@ -39,7 +35,7 @@
             <v-tooltip right>
               <template v-slot:activator="{ on }">
                 <v-icon
-                  @click="s++"
+                  @click="$store.commit('app/plusS')"
                   class="bigArrowRight"
                   large
                   color="black"
@@ -50,12 +46,7 @@
             </v-tooltip>
           </v-flex>
         </v-flex>
-        <!-- <next-component/>
-      <tree-component/>
-        <lines-component/>-->
       </v-layout>
-    <!-- </v-container> -->
-<!-- </div> -->
 </template>
 
 <script>
@@ -77,7 +68,8 @@ export default {
   },
   data() {
     return {
-      s: 0,
+      
+      // s: this.$store.state.app.s,
       sketchArray: [
         { title: "radar", component: radarComponent},
         { title: "next", component: nextComponent},
@@ -97,6 +89,9 @@ methods: {
   computed: {
     refresh(){
       return !this.$store.state.app.killPenrose;
+    },
+    s(){
+      return this.$store.state.app.s
     }
   },
   // watch: {
@@ -105,6 +100,11 @@ methods: {
       
   //   }
   // }
+  mounted(){
+    
+    //  this.s = this.$store.state.app.s;
+    //  console.log(this.s);
+  }
 }
 </script>
 <style lang= "scss" scoped>

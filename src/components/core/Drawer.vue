@@ -1,6 +1,7 @@
 <template>
 <!-- app -->
   <div>
+    <!-- <screen /> -->
     <v-btn     
       class="toggle homer"  
       fixed
@@ -80,7 +81,8 @@
   export default {
     name: 'Drawer',
     components: {
-      SocialContacts: () => import('@/components/SocialContacts')
+      SocialContacts: () => import('@/components/SocialContacts'),
+    Screen: () => import('@/views/mine/screenSize')
     },
     methods:{
       toggleMenu(){

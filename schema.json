@@ -128,6 +128,11 @@
       "tips": "Try changing the angle of the branching limbs by moving the slider!"
     },
     {
+      "title": "PENROSE TILING!",
+      "text": "This penrose tiling exhibits both reflection symmetry and five fold rotational symmetry.  It is  found all over in architecture.  A shifted copy of a tiling will never match the original!  Another sketch ported from a processing.org example :)",
+      "tips": "Click the icons to toggle between tiling rhombuses or triangles!"
+    },
+    {
       "title": "Emergent behavior!",
       "text": "Emergence is the idea that a system does not depend on its individual parts, but on their relationships to one another.  This can have implications throughout the universe, but is most easily visualized in particle systems. Here we have a bunch of vertexes floating through space connecting with lines when they get close enough, and responsive to mouse movement-There is a lot of math going on constantly behind the scenes here... If things start to slow down, just refresh the page to start with a clean slate",
       "tips": "'SWITCH' up the line color, or reset it back to black and white with the ink drop on the right"

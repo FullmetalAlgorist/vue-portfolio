@@ -1,6 +1,6 @@
 <template>
   <v-layout class="sketchMe elevation-24 pt-2" text-xs-center align-center justify-center wrap fill-height fluid>
-    <info-panel :sketchMe="2" v-model="dialog"></info-panel>
+    <info-panel :sketchMe="3" v-model="dialog"></info-panel>
     <v-flex justify-space-between xs4>
                   <v-tooltip top>
       <template v-slot:activator="{ on }">
@@ -45,7 +45,7 @@ export default {
          
     const P5 = require('p5');
     new P5(penrose.main);
-     console.log(this.$store.state.app.triangle);
+     //console.log(this.$store.state.app.triangle);
     //  if(){
     //    this.shape = true;
     //  }

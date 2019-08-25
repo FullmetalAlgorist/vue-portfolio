@@ -1,21 +1,21 @@
 <template>
   <div class="list">
     <v-layout>
-        <v-flex class="text-xs-center sm6">
+        <v-flex  class="text-xs-center">
          
-            <h4 class="grow white--text text-uppercase mb-3 title " v-text="'Frameworks'" /> 
+            <!-- <h4 class="grow white--text text-uppercase mb-3 title " v-text="'###'" />  -->
       <!-- :class="`${hover ? white : primary}--text`" --> 
       <!-- text-color="white" -->
       <!-- :class="`${hover ?  'primary' : 'white' }--text`" slot-scope="{ hover }"-->
-      <v-hover pa-1 v-for="skill in frameWorks" :key="skill.id">
+      <v-hover pa-1 v-for="tag in tags" :key="tag.id">
                 <v-chip  
                  text-color="white"
                 class="grow"  
-                outline  
-                >{{ skill }}</v-chip>
+                color="#424242bf"
+                >{{ tag }}</v-chip>
         </v-hover> 
         </v-flex>
-        <v-flex class="text-xs-center sm6">
+        <!-- <v-flex class="text-xs-center sm6">
             <h4 class="grow text-uppercase mb-3 white-text title" v-text="'Web Development'" />
                 <v-hover v-for="skill in webSkills" :key="skill.id">
                 <v-chip 
@@ -24,16 +24,21 @@
                 outline 
               >{{ skill }}</v-chip>
         </v-hover>
-        </v-flex>
+        </v-flex> -->
     </v-layout>
  </div>
 </template>
 <script>
 export default {
+  props: {
+      tags: {
+        type: Array
+      }
+    },
     data() {
         return{
-            frameWorks: ['Nuxt.js', 'Vue.js', 'Vuetify', 'Processing', 'JavaScript',],
-            webSkills: ['Greensock', 'p5JS', 'NodeJS', 'GIT', 'SSR', 'SEO']
+            //tags: ['Nuxt.js', 'Vue.js', 'Vuetify', 'Processing', 'JavaScript',],
+            //webSkills: ['Greensock', 'p5JS', 'NodeJS', 'GIT', 'SSR', 'SEO']
         }
     },
   methods: {
