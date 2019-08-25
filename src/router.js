@@ -42,7 +42,7 @@ const router = new Router({
   ],
   scrollBehavior (to, from, savedPosition) {
   
-    if (to.name == 'photography'){
+    if (to.name == 'photography' || 'instagram'){
   
       return { x: 0, y: 0 }
     }
