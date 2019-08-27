@@ -15,7 +15,8 @@ const router = new Router({
     {
       path: '/processing',
       name: 'processing',
-      component: () => import('@/views/mine/Processing')
+      component: () => import('@/views/mine/Processing'),
+      props: true
     },
     {
       path: '/photography',

@@ -1,16 +1,19 @@
 <template>
       <v-layout class="sketches">
- <v-tooltip>
+ <!-- <v-tooltip>
               <template v-slot:activator="{ on }">
                 <v-icon
                 class="refresh"
-                 @click="$router.go()"
+                  @click="toSketch"
                   color="black"
                   v-on="on"
-                >mdi-refresh</v-icon>
-              </template>
+                >mdi-refresh</v-icon> -->
+              <!-- @click="$router.go({ name: 'processing', params: {s: s}})" -->
+              <!-- @click="$router.push({ name: 'processing', params: {s: 3}})" -->
+             <!-- @click="toProc"  -->
+             <!-- </template>
               <span>Refresh Sketches!</span>
-            </v-tooltip>
+            </v-tooltip> -->
 
         <v-flex align-self-center xs12 >
           <v-flex v-if="s>0">
@@ -28,7 +31,7 @@
           </v-flex>
           
           <v-flex text-xs-center px-4  class="bb">
-          <component v-if="refresh" :is="sketchArray[s].component"></component>
+          <component v-if="refresh & refresh2" :is="sketchArray[s].component"></component>
       </v-flex>
       
           <v-flex v-if="s<sketchArray.length-1">
@@ -68,8 +71,8 @@ export default {
   },
   data() {
     return {
-      
       // s: this.$store.state.app.s,
+      // s: ,
       sketchArray: [
         { title: "radar", component: radarComponent},
         { title: "next", component: nextComponent},
@@ -85,13 +88,22 @@ methods: {
     //   this.sketchArray[s].componentKey += 1;  
     //    console.log('now', this.sketchArray[s].componentKey);
     // }
+    toSketch(){
+// console.log('toSketch');
+// console.log('s: ', this.s);
+//this.$router.push({ name: 'processing', params: {es: this.s}})
+
+    }
   },
   computed: {
     refresh(){
       return !this.$store.state.app.killPenrose;
     },
+    refresh2(){
+      return !this.$store.state.app.killLines;
+    },
     s(){
-      return this.$store.state.app.s
+       return this.$store.state.app.s;
     }
   },
   // watch: {
@@ -101,9 +113,6 @@ methods: {
   //   }
   // }
   mounted(){
-    
-    //  this.s = this.$store.state.app.s;
-    //  console.log(this.s);
   }
 }
 </script>
@@ -141,6 +150,9 @@ methods: {
   position: absolute;
   left: 47vw;
   top: 1vh;
+}
+.sketch{
+  z-index: 3;
 }
 </style>
 

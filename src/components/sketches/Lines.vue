@@ -24,6 +24,7 @@
       <span>Random color!</span>
     </v-tooltip>
     </v-flex>
+    <v-icon @click="kill">mdi-refresh</v-icon>
     <v-flex xs4>
                     <v-tooltip top>
       <template v-slot:activator="{ on }">
@@ -48,9 +49,10 @@
   </v-layout>
 </template>
 <script>
-if (process.browser) {
+// if (process.browser) {
   var lines = require('@/Lines.js');
-}
+  console.log('here');
+// }
 export default {
     data(){
         return {
@@ -63,6 +65,7 @@ dialog: false
      mounted() {
     const P5 = require('p5');
     new P5(lines.main);
+    console.log('mount lines');
      },
     methods: {
          colorMe(){
@@ -70,6 +73,14 @@ dialog: false
    },
    white(){
      lines.white();
+    },
+    kill(){
+      console.log('kill');
+       lines.stopPlease();
+       this.$store.commit('app/death2');
+      this.$nextTick().then(()  => {
+        this.$store.commit('app/death2');
+    });
     }
     }
 }

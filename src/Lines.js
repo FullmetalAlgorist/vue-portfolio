@@ -25,10 +25,11 @@ export function main(_p5) {
     }
 
   p5.draw = _ => {
-	p5.background(0);
+	
 	if(del){
-		p5.remove(); // remove whole sketch 
+		p5.clear(); // remove whole sketch 
 	}
+	p5.background(0);
     for (let i=0;i<x.length;i++) {
 		dx = targetX - x[i];
 	 	dy = targetY - y[i];

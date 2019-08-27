@@ -42,43 +42,20 @@ export default {
       infoPanel: () => import('@/components/sketches/infoPanel'),
      },
       mounted() {
-         
     const P5 = require('p5');
     new P5(penrose.main);
-     //console.log(this.$store.state.app.triangle);
-    //  if(){
-    //    this.shape = true;
-    //  }
-    //  else{  
-    //      this.shape = false;
-    //  }
       },
        methods: {
-    // flip() {
-    //     if(this.shape)
-    //   penrose.flip(value);
-    // },
      },
      computed:{
-        //  shape(){
-        //      let me = 
-        //     return me;
-        //  }
      },
       watch:{
  shape(){
-    
-    //   
-    //  })
-    //   this.$store.state.app.restartPenrose
-    console.log('shape: ', this.shape);
      if(this.shape == true){
         penrose.flip(10.0);
-        //this.forceUpdate()
      }
      else{
           penrose.flip(6.0);
-        //this.forceUpdate()
      }
      
        this.$store.commit('app/death');
@@ -88,20 +65,6 @@ export default {
      }
      
     }
-   
-//   methods: {
-//    stopPlease(){
-      
-//     }
-//   },
-//    computed:{
-//     daeth(){
-//          console.log('computing death');
-//          console.log(this.$store.state.app.killSketches);
-//       //console.log(this.$store.app.state.killSketches);
-//       return this.$store.state.app.killSketches;
-//     },
-// }
 }
 </script>
 <style lang="scss" scoped>

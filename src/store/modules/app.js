@@ -7,6 +7,7 @@ export default {
     schema,
     initials: schema.basics.name.split(' ').map(name => name.charAt(0)).join(''),
     killPenrose: false,
+    killLines: false,
     triangle:  2,
     s: 0
   },
@@ -15,6 +16,9 @@ export default {
       // `state` is the local module state
       state.triangle = state.triangle + .5;
       state.killPenrose =  !state.killPenrose;
+    },
+    death2 (state){
+      state.killLines = !state.killLines;
     },
     plusS (state){
       state.s++;

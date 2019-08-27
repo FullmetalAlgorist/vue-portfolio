@@ -74,8 +74,10 @@ computed:{
         this.$router.push('/insta');
       },
       toProc(){
-          this.$router.push('/processing');
+           this.$router.push({ name: 'processing', params: {es: 0}})
+
       }
+      
     },
     created(){
       let img1 = new Image();

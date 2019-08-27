@@ -39,8 +39,7 @@
       Skills: () => import('@/views/Skills'),
       Works:  () =>  import('@/views/Works'),
       Contact: () => import('@/views/Contact'),
-      
-    
+
     },
 
     metaInfo () {

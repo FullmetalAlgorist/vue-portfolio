@@ -2,7 +2,8 @@
   <v-app dark class="myApp">
     <core-drawer />
     <v-content class="hide-overflow hi">
-      <router-view /> 
+      <router-view :key="$route.fullPath"></router-view>
+      <!-- <router-view />  -->
     </v-content>
   </v-app>
 </template>
@@ -20,6 +21,7 @@
       watch:{//currently firing whenever route changes
     $route (to, from){
         if(from.name == 'processing'){
+          console.log('watching leave route in App');
             this.$router.go();
 // this.$store.commit('app/death');
         }
