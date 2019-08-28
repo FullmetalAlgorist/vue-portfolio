@@ -25,6 +25,9 @@ export default {
     },
     minusS(state){
       state.s--;
+    },
+    setState(state, blah){
+      state.s = blah;
     }
   },
   getters: {

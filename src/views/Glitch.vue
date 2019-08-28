@@ -74,7 +74,7 @@ computed:{
         this.$router.push('/insta');
       },
       toProc(){
-           this.$router.push({ name: 'processing', params: {es: 0}})
+           this.$router.push({ name: 'processing', params: {sketch: 0}})
 
       }
       

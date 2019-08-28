@@ -24,7 +24,7 @@
       <span>Random color!</span>
     </v-tooltip>
     </v-flex>
-    <v-icon @click="kill">mdi-refresh</v-icon>
+    
     <v-flex xs4>
                     <v-tooltip top>
       <template v-slot:activator="{ on }">
@@ -49,10 +49,10 @@
   </v-layout>
 </template>
 <script>
-// if (process.browser) {
+if (process.browser) {
   var lines = require('@/Lines.js');
   console.log('here');
-// }
+}
 export default {
     data(){
         return {

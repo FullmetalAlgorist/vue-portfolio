@@ -13,7 +13,7 @@ const router = new Router({
       component: () => import('@/views/Home')
     },
     {
-      path: '/processing',
+      path: '/processing/:sketch',
       name: 'processing',
       component: () => import('@/views/mine/Processing'),
       props: true

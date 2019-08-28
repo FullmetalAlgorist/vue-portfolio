@@ -1,26 +1,27 @@
 <template>
       <v-layout class="sketches">
- <!-- <v-tooltip>
+ <v-tooltip bottom>
               <template v-slot:activator="{ on }">
                 <v-icon
                 class="refresh"
                   @click="toSketch"
                   color="black"
-                  v-on="on"
-                >mdi-refresh</v-icon> -->
+                 v-on="on"
+                >mdi-refresh</v-icon> 
               <!-- @click="$router.go({ name: 'processing', params: {s: s}})" -->
               <!-- @click="$router.push({ name: 'processing', params: {s: 3}})" -->
              <!-- @click="toProc"  -->
-             <!-- </template>
-              <span>Refresh Sketches!</span>
-            </v-tooltip> -->
+             </template>
+              <span>REFRESH ME</span>
+            </v-tooltip>
 
         <v-flex align-self-center xs12 >
           <v-flex v-if="s>0">
             <v-tooltip left>
               <template v-slot:activator="{ on }">
+                <!-- @click="$store.commit('app/minusS')" -->
                 <v-icon
-                  @click="$store.commit('app/minusS')"
+                  @click="s--"
                   class="bigArrowLeft"
                   color="black"
                   v-on="on"
@@ -38,7 +39,7 @@
             <v-tooltip right>
               <template v-slot:activator="{ on }">
                 <v-icon
-                  @click="$store.commit('app/plusS')"
+                  @click="s++"
                   class="bigArrowRight"
                   large
                   color="black"
@@ -62,6 +63,7 @@ import treeComponent from "@/components/sketches/Tree";
 import penroseComponent from "@/components/sketches/Penrose";
 import linesComponent from "@/components/sketches/Lines";
 export default {
+   props: ['sketch'],
   components: {
     radarComponent,
     nextComponent,
@@ -71,8 +73,7 @@ export default {
   },
   data() {
     return {
-      // s: this.$store.state.app.s,
-      // s: ,
+       s: this.sketch,
       sketchArray: [
         { title: "radar", component: radarComponent},
         { title: "next", component: nextComponent},
@@ -80,7 +81,7 @@ export default {
         { title: "penrose", component: penroseComponent  },
         { title: "lines", component: linesComponent  }
       ]
-    };
+    }
   },
 methods: {
     // forceRerender(s) {
@@ -90,9 +91,16 @@ methods: {
     // }
     toSketch(){
 // console.log('toSketch');
-// console.log('s: ', this.s);
-//this.$router.push({ name: 'processing', params: {es: this.s}})
+// let newt = Number;
+//  newt = this.sketch + es;
+// console.log('newt: ', newt);
 
+  this.$router.push({ name: 'processing', params: {sketch: 0}});
+ this.$router.push({ name: 'processing', params: {sketch: this.s}});
+
+// this.$router.refresh();
+// this.$router.go();
+console.log('sketch: ', this.sketch);
     }
   },
   computed: {
@@ -102,9 +110,12 @@ methods: {
     refresh2(){
       return !this.$store.state.app.killLines;
     },
-    s(){
-       return this.$store.state.app.s;
-    }
+    // sketch(){
+    //   return 
+    // }
+    // sketch(){
+    //    return this.$store.state.app.s;
+    // }
   },
   // watch: {
   //   refresh(){
@@ -113,6 +124,9 @@ methods: {
   //   }
   // }
   mounted(){
+    // this.$store.commit('app/setState', this.s);
+    // console.log('mounted sketch: ', this.sketch);
+    // this.s = this.sketch;
   }
 }
 </script>
