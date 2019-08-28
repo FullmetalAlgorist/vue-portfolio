@@ -42,8 +42,11 @@
     fluid 
     fill-height 
     justify-space-between>
-      <v-flex class="tat" xs12>
+      <v-flex v-if="!mobileSketch" class="tat" xs12>
         <div class="CANVAS" id="p5Canvas3"></div>
+      </v-flex>
+      <v-flex v-else xs12>
+        <h1 class="er">Sorry, this sketch is not yet available on mobile devices! Try again from a desktop?</h1>
       </v-flex>
     </v-layout>
   </v-layout>
@@ -56,16 +59,23 @@ if (process.browser) {
 export default {
     data(){
         return {
-dialog: false
+dialog: false,
+mobileSketch: false
         }
     },
       components: {
       infoPanel: () => import('@/components/sketches/infoPanel'),
      },
      mounted() {
-    const P5 = require('p5');
+       if(this.$isMobile()){
+         this.mobileSketch = true;
+       }
+       else{
+          const P5 = require('p5');
     new P5(lines.main);
-    console.log('mount lines');
+       }
+   
+    
      },
     methods: {
          colorMe(){
@@ -86,5 +96,10 @@ dialog: false
 }
 </script>
 <style lang="scss" scoped>
-    
+    .er{
+      background-color: black;
+      color: white;
+      padding: 20px;
+      font-family: 'Open Sans', sans-serif !important;
+    }
 </style>

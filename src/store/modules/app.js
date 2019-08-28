@@ -9,7 +9,7 @@ export default {
     killPenrose: false,
     killLines: false,
     triangle:  2,
-    s: 0
+    // s: 0
   },
   mutations: {
     death (state) {
@@ -20,15 +20,15 @@ export default {
     death2 (state){
       state.killLines = !state.killLines;
     },
-    plusS (state){
-      state.s++;
-    },
-    minusS(state){
-      state.s--;
-    },
-    setState(state, blah){
-      state.s = blah;
-    }
+    // plusS (state){
+    //   state.s++;
+    // },
+    // minusS(state){
+    //   state.s--;
+    // },
+    // setState(state, blah){
+    //   state.s = blah;
+    // }
   },
   getters: {
     whatShape(state){
