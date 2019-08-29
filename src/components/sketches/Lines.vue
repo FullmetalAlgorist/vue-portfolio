@@ -6,7 +6,7 @@
   wrap 
   fill-height 
   fluid>
-  <info-panel :sketchMe="3" v-model="dialog"></info-panel>
+  <info-panel :sketchMe="4" v-model="dialog"></info-panel>
     <v-flex  xs4>
                   <v-tooltip top>
       <template v-slot:activator="{ on }">

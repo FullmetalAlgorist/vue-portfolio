@@ -90,7 +90,6 @@ export default {
       axios
         .get(this.url + "?access_token=" + this.access_token)
         .then(({ data }) => {
-          console.log(data.data);
           this.grams = data.data;
           this.username = data.data[0].user.username;
           this.next_url = data.pagination.next_url;

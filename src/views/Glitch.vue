@@ -98,9 +98,7 @@ computed:{
   .foot{
     padding-bottom: 20px;
   }
-  .glitch{
-      /* width: 90vw; */
-  }
+  
   .v-sheet {
     background-color: rgba(0,0,0,.28) !important;
 }
