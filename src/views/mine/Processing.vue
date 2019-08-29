@@ -124,7 +124,7 @@ export default {
   z-index: 3;
 }
 .mobs{
-  top: 82vh;  
+  top: 78vh;  
   color: white;
 }
 </style>
