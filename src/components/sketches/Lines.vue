@@ -5,7 +5,9 @@
   justify-space-between
   wrap 
   fill-height 
-  fluid>
+  fluid
+  :style="{marginTop: $isMobile() ? '0' : '60'}"
+  >
   <info-panel :sketchMe="4" v-model="dialog"></info-panel>
     <v-flex  xs4>
                   <v-tooltip top>

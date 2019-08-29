@@ -5,6 +5,7 @@
     justify-center
     wrap
     fill-height
+    :style="{marginTop: $isMobile() ? '0' : '60'}"
   >
     <info-panel :sketchMe="1" v-model="dialog"></info-panel>
     <v-flex justify-space-between xs4>

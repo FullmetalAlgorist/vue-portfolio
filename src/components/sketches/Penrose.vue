@@ -1,5 +1,5 @@
 <template>
-  <v-layout class="sketchMe elevation-24 pt-2" text-xs-center align-center justify-center wrap fill-height fluid>
+  <v-layout class="sketchMe elevation-24 pt-2" text-xs-center align-center justify-center wrap fill-height fluid :style="{marginTop: $isMobile() ? '0' : '60'}">
     <info-panel :sketchMe="3" v-model="dialog"></info-panel>
     <v-flex justify-space-between xs4>
                   <v-tooltip top>
