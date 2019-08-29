@@ -1,5 +1,5 @@
 <template>
-  <v-app dark class="myApp" :style="{ height: $isMobile() ? winHeight+'px' : '100vh'}">
+  <v-app dark class="myApp">
     <core-drawer />
     <v-content class="hide-overflow hi">
       <router-view :key="$route.fullPath"></router-view>
@@ -28,9 +28,6 @@
     }
 },
  computed: {
-   winHeight() {
-      return window.innerHeight * 0.01 * 100;
-    },
 }
   }
 </script>

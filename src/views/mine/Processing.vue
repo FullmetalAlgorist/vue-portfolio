@@ -1,5 +1,5 @@
 <template>
-  <v-layout class="sketches" :style="{ height: $isMobile() ? winHeight+'px' : '100vh'}">
+  <v-layout class="sketches">
     <v-tooltip bottom>
       <template v-slot:activator="{ on }">
         <v-icon class="refresh" @click="toSketch" :class="$isMobile() ? 'mobs' : ''" v-on="on">mdi-refresh</v-icon>
@@ -78,10 +78,7 @@ export default {
     },
     refresh2() {
       return !this.$store.state.app.killLines;
-    },
-     winHeight() {
-      return window.innerHeight * 0.01 * 100;
-    },
+    }
   },
   mounted() {
   }
@@ -89,7 +86,7 @@ export default {
 </script>
 <style lang= "scss" scoped>
 .sketches {
-  /* height: 100vh; */
+  height: 100vh;
   width: 100%;
   /* display: cover; */
   background-position: center;
