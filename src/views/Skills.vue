@@ -3,10 +3,10 @@
     <abstract-2 />
     <v-flex xs12 sm7 px-2 class="me">
       <core-heading>What I know.</core-heading>
-      <v-flex>
-        <v-card class="mb-4 second" elevation="20">
+      <v-layout justify-center align-center>
+        <v-card class="mb-4 second restrict" elevation="20">
           <v-card-title>
-            <blockquote>
+            <blockquote >
               <div>
                 <p class="font-weight-light nothing text-xs-center">
                   I currently prefer
@@ -33,7 +33,7 @@
             </v-btn>
           </footer>-->
         </blockquote>
-      </v-flex>
+      </v-layout>
     </v-flex>
     <v-flex xs12 sm5 px-3>
       <div v-for="(degree, i) in schema.education" :key="i">
@@ -82,6 +82,7 @@ export default {
 }
 .nothing {
   font-size: 1.2em;
+
 }
 .second {
   background-color: #161d25ad !important;
@@ -104,5 +105,8 @@ export default {
 }
 .me {
   z-index: 10;
+}
+.restrict{
+    max-width: 531px;
 }
 </style>

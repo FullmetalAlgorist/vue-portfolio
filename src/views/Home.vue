@@ -9,6 +9,7 @@
       fluid
       :class="{padR: med&&show}"
       class="cont"
+      
     >
       <about-me />
       <skills />

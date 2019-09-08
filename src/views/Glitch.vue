@@ -1,6 +1,6 @@
 <template>
   <core-section id="glitch">
-    <v-layout wrap justify-space-between align-center> 
+    <v-layout justify-center align-center wrap> 
       <v-flex xs12 md7>
         <core-heading>Generative art</core-heading>
           <blockquote
@@ -28,7 +28,7 @@
         <v-flex
         xs12
         md4
-        class="text-xs-center">
+        class="text-xs-center ma-4">
           <h3 
           class="display-1 font-weight-medium my-4 primary--text">
             Processing

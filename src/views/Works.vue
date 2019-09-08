@@ -1,9 +1,7 @@
 <template>
   <core-section id="works" justify-space-between >
-  
     <abstract-4 /> 
      <abstract-6 />
-    <!-- <abstract-7 /> -->
     <v-flex xs12 sm6 class="me">
       <core-heading>Recent Work</core-heading>
       <p
@@ -39,8 +37,17 @@
     <v-layout v-for="site in schema.sites" :key="site.id" justify-space-between wrap align-center>
       <v-flex xs12 md6 :class="`${(site.id==='2') ? 'order-md2' : ''}`">
         <h3 class="display-1 font-weight-medium mb-4 primary--text">{{ site.title }}</h3>
-        <a :href="site.link" target="_blank">
+       <div v-if="site.id==='2'">
+        <img id="Image-Maps-Com-image-maps-2019-09-08-003359" src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/works/anotherSmall.png" border="0" width="500" height="363" orgWidth="500" orgHeight="363" usemap="#image-maps-2019-09-08-003359" alt="" class="site mapped"/>
+<map name="image-maps-2019-09-08-003359" id="ImageMapsCom-image-maps-2019-09-08-003359">
+<area id="two" alt="" title="twotwo" href="google.com" shape="rect" coords="253,181,475,361" style="outline:none;" target="_self"     />
+<area id="one" alt="" title="oneone" href="facebook" shape="rect" coords="0,2,367,217" style="outline:none;" target="_self"     />
+<area shape="rect" coords="499,362,500,363" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
+</map>
+</div>
+        <a v-else :href="site.link" target="_blank">
           <v-img
+          
             :max-width="(site.id==3) ?  600 : 750"
             class="site"
             :src="site.src"
@@ -54,23 +61,23 @@
         </a>
       </v-flex>
       <v-flex xs12 mb-3 :class="`${(site.id==='3') ? 'md6' : 'md5'}`">
-        <h3 class="headline font-weight-medium mb-3 white--text">{{ site.infoTitle }}</h3>
-         <v-card class="mb-4 second" elevation="20" color="#2c2c2c78">
+        <!-- <h3 class="headline font-weight-medium mb-3 white--text">{{ site.infoTitle }}</h3> -->
+         <!-- <v-card class="mb-4 second" elevation="20" color="#2c2c2c78">
           <v-card-title primary-title>
             <blockquote>
               <div>
-                <p class="subheading font-weight-light font-italic">{{ site.infoText1 }}</p>
+               <h3 class="display-1 font-weight-light mb-3 white--text">{{ site.infoTitle }}</h3>
               </div>
             </blockquote>
           </v-card-title>
-        </v-card>
-   <v-expansion-panel>   
-    <v-expansion-panel-content class="mb-3 second elevation-20 App" >
-    <div slot="header" class="headline font-weight-medium">About the App</div>
+        </v-card> -->
+   <v-expansion-panel :min-width="(site.id==3) ?  600 : 750">   
+    <v-expansion-panel-content class="second elevation-20 App" >
+    <div slot="header" class="display-1 font-weight-light">About the application</div>
       <blockquote>
               <div class="pa-3">
-                <p class="subheading font-weight-light font-italic">{{ site.infoText2 }}</p>
-             <p class="subheading font-weight-light font-italic" v-if="site.id==='2'">{{ site.infoText3 }}</p>
+                <p class="priority font-weight-light font-italic">&nbsp;&nbsp;&nbsp;&nbsp;{{ site.infoText2 }}</p>
+             <p class="priority font-weight-light font-italic" v-if="site.id==='2'">&nbsp;&nbsp;&nbsp;&nbsp;{{ site.infoText3 }}</p>
               </div>
             </blockquote>
       </v-expansion-panel-content>
@@ -78,8 +85,8 @@
  
   <v-expansion-panel>   
     <v-expansion-panel-content class=" subheading font-weight-light elevation-20" >
-    <div slot="header" class="title font-weight-light">{{site.nerdTitle}}</div>
-     <div class="pa-3">{{ site.nerds }}</div>
+    <div slot="header" class="title text-uppercase font-weight-light">{{site.nerdTitle}}</div>
+     <div class="pa-3">&nbsp;&nbsp;&nbsp;&nbsp; {{ site.nerds }}</div>
       </v-expansion-panel-content>
     </v-expansion-panel>
 
@@ -208,5 +215,12 @@ export default {
 }
 .me {
   z-index: 10;
+}
+.priority{
+    font-size: 17px;
+}
+.mapped{
+  // max-width: 110%;
+  // object-fit: cont;
 }
 </style>

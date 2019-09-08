@@ -1,6 +1,7 @@
 <template>
   <core-section id="Priorities">
-    <v-flex xs12 md12>
+    <v-layout wrap justify-center align-center>
+    <v-flex xs12 md12 class="outer">
       <section>
         <core-heading v-text="'I prioritize:'" />
         <abstract-4 />
@@ -12,25 +13,22 @@
               :class="expansion !== i ? 'transparent' : 'db'"
             >
               <!--         :class="expansion !== i ? 'blue' : 'red'"      :class="expansion !== i ? 'db' : 'transparent'" -->
-              <div slot="header" class="title font-weight-light">
+              <div slot="header" class="headline">
                 <div v-text="item.title" />
               </div>
               <div>
                 <v-card class="db">
-                  <v-card-text>
-                  
-                      <v-tooltip right
-                       v-if="item.link"
-                  ref="tooltip"
-                    v-model="tooltip"
-                    close-delay="2000"
-                    > 
-                    <!-- <template v-slot:activator="{ on }"> -->
-                      <v-icon   slot="activator"
-                      class="question">
-                      mdi-help-circle-outline
-                      </v-icon>
-                       
+                  <v-card-text class="priority font-weight-light">
+                    <v-tooltip
+                      right
+                      v-if="item.link"
+                      ref="tooltip"
+                      v-model="tooltip"
+                      close-delay="2000"
+                    >
+                      <!-- <template v-slot:activator="{ on }"> -->
+                      <v-icon slot="activator" class="question">mdi-help-circle-outline</v-icon>
+
                       <!-- </template> -->
                       <span @mouseenter="tooltip=true" @mouseleave="tooltip=false">
                         <!-- @mouseenter="$refs.tooltip.closeDelay(500)" @mouseleave="$refs.tooltip.closeDelay(0)" -->
@@ -50,6 +48,7 @@
         </div>
       </section>
     </v-flex>
+    </v-layout>
   </core-section>
 </template>
 
@@ -99,7 +98,15 @@ export default {
 }
 // rgba(65,223,213,.42)
 .question {
-  display: inline;
+  // display: inline;
   font-size: large;
+  margin-bottom: 2px;
+}
+.priority{
+    font-size: 19px;
+
+}
+.outer{
+  max-width: 800px;
 }
 </style>
