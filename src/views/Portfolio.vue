@@ -11,10 +11,10 @@
         <blockquote
           style="max-width: 450px;"
         >
-          <p class="subheading font-weight-light font-italic">
+          <p class="larger font-weight-light font-italic">
             Tired of using stock photos on your website?  I would love to include my own photos as backgrounds and menu pages in the creation of your site!
           </p>
-          <footer class="text-xs-center foot">
+          <footer class="larger text-xs-center foot">
          Here is a sample of my work!<br>
          Click an image below to see more.
           </footer>
@@ -130,5 +130,8 @@ computed:{
 }
 .r{
   border-radius: 1%;
+}
+.larger{
+  font-size: 1.3em;
 }
 </style>

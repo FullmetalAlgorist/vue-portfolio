@@ -1,7 +1,7 @@
 <template>
   <core-section id="skills" justify-space-between wrap align-center>
     <abstract-2 />
-    <v-flex xs12 sm7 px-2 class="me">
+    <v-flex xs12 sm7  px-2 class="me">
       <core-heading>What I know.</core-heading>
       <v-layout justify-center align-center>
         <v-card class="mb-4 second restrict" elevation="20">

@@ -1,7 +1,7 @@
 <template>
-  <core-section id="works" justify-space-between >
-    <abstract-4 /> 
-     <abstract-6 />
+  <core-section id="works" justify-space-between>
+    <abstract-4 />
+    <abstract-6 />
     <v-flex xs12 sm6 class="me">
       <core-heading>Recent Work</core-heading>
       <p
@@ -17,7 +17,8 @@
             :style="{ maxWidth: $vuetify.breakpoint.smOnly ?  '270px' : '340px'}"
             href="https://github.com/FullmetalAlgorist"
             slot-scope="{ hover }"
-            elevation="20">
+            elevation="20"
+          >
             <v-card-title primary-title>
               <blockquote>
                 <div>
@@ -37,21 +38,57 @@
     <v-layout v-for="site in schema.sites" :key="site.id" justify-space-between wrap align-center>
       <v-flex xs12 md6 :class="`${(site.id==='2') ? 'order-md2' : ''}`">
         <h3 class="display-1 font-weight-medium mb-4 primary--text">{{ site.title }}</h3>
-       <div v-if="site.id==='2'">
-        <img id="Image-Maps-Com-image-maps-2019-09-08-003359" src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/works/anotherSmall.png" border="0" width="500" height="363" orgWidth="500" orgHeight="363" usemap="#image-maps-2019-09-08-003359" alt="" class="site mapped"/>
-<map name="image-maps-2019-09-08-003359" id="ImageMapsCom-image-maps-2019-09-08-003359">
-<area id="two" alt="" title="twotwo" href="google.com" shape="rect" coords="253,181,475,361" style="outline:none;" target="_self"     />
-<area id="one" alt="" title="oneone" href="facebook" shape="rect" coords="0,2,367,217" style="outline:none;" target="_self"     />
-<area shape="rect" coords="499,362,500,363" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
-</map>
-</div>
-        <a v-else :href="site.link" target="_blank">
+        <!-- <div v-if="site.id==='2'">
+          <img
+            id="Image-Maps-Com-image-maps-2019-09-08-003359"
+            src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/works/anotherSmall.png"
+            border="0"
+            width="500"
+            height="363"
+            orgWidth="500"
+            orgHeight="363"
+            usemap="#image-maps-2019-09-08-003359"
+            alt
+            class="site mapped"
+          />
+          <map name="image-maps-2019-09-08-003359" id="ImageMapsCom-image-maps-2019-09-08-003359">
+            <area
+              id="two"
+              alt
+              title="twotwo"
+              href="google.com"
+              shape="rect"
+              coords="253, 181, 475, 361"
+              style="outline:none;"
+              target="_self"
+            />
+            <area
+              id="one"
+              alt
+              title="oneone"
+              href="facebook"
+              shape="rect"
+              coords="0, 2, 367, 217"
+              style="outline:none;"
+              target="_self"
+            />
+            <area
+              shape="rect"
+              coords="499, 362, 500, 363"
+              
+              title="Image Map"
+              href="http://www.image-maps.com/index.php?aff=mapped_users_0"
+            />
+          </map>
+        </div> -->
+        <!-- v-else -->
+        <a  :href="site.link" target="_blank">
           <v-img
-          
             :max-width="(site.id==3) ?  600 : 750"
             class="site"
             :src="site.src"
-            :lazy-src="require('@/assets/'+ site.outline +'Outline.png')">
+            :lazy-src="require('@/assets/'+ site.outline +'Outline.png')"
+          >
             <template v-slot:placeholder>
               <v-layout fill-height align-center justify-center ma-0>
                 <fingerprint-spinner :animation-duration="3000" :size="128" color="white" />
@@ -61,39 +98,30 @@
         </a>
       </v-flex>
       <v-flex xs12 mb-3 :class="`${(site.id==='3') ? 'md6' : 'md5'}`">
-        <!-- <h3 class="headline font-weight-medium mb-3 white--text">{{ site.infoTitle }}</h3> -->
-         <!-- <v-card class="mb-4 second" elevation="20" color="#2c2c2c78">
-          <v-card-title primary-title>
+        <v-expansion-panel :min-width="(site.id==3) ?  600 : 750">
+          <v-expansion-panel-content class="second elevation-20 App">
+            <div slot="header" class="display-1 font-weight-light">About the application</div>
             <blockquote>
-              <div>
-               <h3 class="display-1 font-weight-light mb-3 white--text">{{ site.infoTitle }}</h3>
-              </div>
-            </blockquote>
-          </v-card-title>
-        </v-card> -->
-   <v-expansion-panel :min-width="(site.id==3) ?  600 : 750">   
-    <v-expansion-panel-content class="second elevation-20 App" >
-    <div slot="header" class="display-1 font-weight-light">About the application</div>
-      <blockquote>
               <div class="pa-3">
-                <p class="priority font-weight-light font-italic">&nbsp;&nbsp;&nbsp;&nbsp;{{ site.infoText2 }}</p>
-             <p class="priority font-weight-light font-italic" v-if="site.id==='2'">&nbsp;&nbsp;&nbsp;&nbsp;{{ site.infoText3 }}</p>
+                <p
+                  class="priority font-weight-light font-italic"
+                >&nbsp;&nbsp;&nbsp;&nbsp;{{ site.infoText2 }}</p>
+                <p
+                  class="priority font-weight-light font-italic"
+                  v-if="site.id==='2'"
+                >&nbsp;&nbsp;&nbsp;&nbsp;{{ site.infoText3 }}</p>
               </div>
             </blockquote>
-      </v-expansion-panel-content>
-    </v-expansion-panel>
- 
-  <v-expansion-panel>   
-    <v-expansion-panel-content class=" subheading font-weight-light elevation-20" >
-    <div slot="header" class="title text-uppercase font-weight-light">{{site.nerdTitle}}</div>
-     <div class="pa-3">&nbsp;&nbsp;&nbsp;&nbsp; {{ site.nerds }}</div>
-      </v-expansion-panel-content>
-    </v-expansion-panel>
+          </v-expansion-panel-content>
+        </v-expansion-panel>
 
-
-     </v-flex>
-
-
+        <v-expansion-panel>
+          <v-expansion-panel-content class="subheading font-weight-light elevation-20">
+            <div slot="header" class="title text-uppercase font-weight-light">{{site.nerdTitle}}</div>
+            <div class="pa-3">&nbsp;&nbsp;&nbsp;&nbsp; {{ site.nerds }}</div>
+          </v-expansion-panel-content>
+        </v-expansion-panel>
+      </v-flex>
     </v-layout>
   </core-section>
 </template>
@@ -174,7 +202,6 @@ export default {
 .gitCard {
   height: 170px;
   border-radius: 3%;
-  
 }
 .gitMe {
   z-index: -1;
@@ -185,7 +212,7 @@ export default {
 .justText {
   color: rgba(255, 255, 255, 0.906);
   margin-top: -150px;
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: "Open Sans", sans-serif !important;
   font-size: 1.6em !important;
 }
 .site {
@@ -194,32 +221,33 @@ export default {
 .second {
   // background-color: #161d25ad !important;
   border-radius: 2%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   //  font-size: 1.3em !important;
   //  opacity: 0.72 !important;
 }
-.single{
+.single {
   font-size: 1.3em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 // #008078a8
 // #2c2c2c78 dark gray maybe for top bit
 .v-expansion-panel__container {
-    background-color: #2c2c2c78 !important;
+  background-color: #2c2c2c78 !important;
   // opacity: 0.72 !important;
   z-index: 1;
   border-radius: 1%;
 }
-.App{
-  background-color: #008078a8  !important;
+.App {
+  background-color: #008078a8 !important;
 }
 .me {
   z-index: 10;
 }
-.priority{
-    font-size: 17px;
+.priority {
+  font-size: 17px;
 }
-.mapped{
+.mapped {
+  // transform: ;
   // max-width: 110%;
   // object-fit: cont;
 }

@@ -5,11 +5,11 @@
         <core-heading>Generative art</core-heading>
           <blockquote
             style="max-width: 450px;">
-          <p class="subheading font-weight-light font-italic">
+          <p class="single font-weight-light font-italic">
             I work with a computer to intentionally introduce randomness to naturally occuring algorithms, this occasionally leads to visually pleasing results.
           </p>
-          <footer class="text-xs-center foot">
-            Here is an instagram feed with some of those results!
+          <footer class="text-xs-center foot larger">
+            Here is an instagram feed with some of those results ↓
           </footer>
         </blockquote>
       <v-hover
@@ -33,14 +33,10 @@
           class="display-1 font-weight-medium my-4 primary--text">
             Processing
           </h3>
-          <p class="subheading" v-text="'I use a combination of p5.js and processing to bring algorithms to life on the web!  Here are some attempts to make my processing sketches interactive.'" /> 
-          <!-- <p class="subheading b">**These sketches work significantly less well on mobile devices!</p> -->
-           <!-- <p class="subheading font-weight-light font-italic">I use a combination of p5.js and processing to bring algorithms to life on the web!  Here are some attempts to make my processing sketches interactive.  Press some buttons and see what happens :)</p> -->
-          <p  class="subheading font-weight-light font-italic">  Follow the link, press some buttons, and see what happens :) </p>
+          <p class="larger" v-text="'I use a combination of p5.js and processing to bring algorithms to life on the web!  Here are some attempts to make my processing sketches interactive.'" /> 
+          <p  class="larger font-weight-light font-italic">  Follow the link, press some buttons, and see what happens :) </p>
            <v-btn @mouseenter="hoverMe=true" @mouseleave="hoverMe=false" class="font-weight-light but" :color="hoverMe ? 'white--text primarydark' : 'black--text primarydark' "  @click="toProc">live processing sketches!!</v-btn>
-          <!-- <v-btn @click="$vuetify.goTo('#contact')" >Contact Me!</v-btn>   color="primarydark"-->
         <v-img :src="hoverMe ? logo2 : logo1" > </v-img>  
-        <!-- <v-icon>mdi-touch_app</v-icon> -->
       </v-flex>
     </v-layout>
   </core-section>
@@ -61,13 +57,11 @@ computed:{
       }
     },
     data: () => ({
-      
         turtle: require('@/assets/turtleC.jpg'),
         turtle2: require('@/assets/turt_2.png'),
         logo1: require('@/assets/logo1.png'),
         logo2: require('@/assets/logoblack.png'),
         hoverMe: false
-        // require('@/assets/turt_2.png'),'https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/turt_2.png',
     }),
     methods: {
       toInsta(){
@@ -75,7 +69,6 @@ computed:{
       },
       toProc(){
            this.$router.push({ name: 'processing', params: {sketch: 0}})
-
       }
       
     },
@@ -97,6 +90,7 @@ computed:{
   }
   .foot{
     padding-bottom: 20px;
+    
   }
   
   .v-sheet {
@@ -106,8 +100,6 @@ computed:{
     margin-top: 49%;
     margin-right:11%;
     color: #cecece;
-    /* font-size: 50; */
-    /* height: 150px; */
      transform: rotate(36deg);
 }
 .but:hover{
@@ -119,5 +111,12 @@ computed:{
 }
 .r{
   border-radius: 1%;
+}
+.single{
+  font-size: 1.3em;
+  font-family: 'Open Sans', sans-serif;
+}
+.larger{
+  font-size: 1.3em;
 }
 </style>

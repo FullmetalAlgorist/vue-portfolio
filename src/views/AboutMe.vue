@@ -7,9 +7,9 @@
           <core-heading class="z" v-text="'Who I am.'" />
           <v-layout wrap align-center>
             <core-text class="ma-1">
-              <p class="family title font-weight-light  font-italic aboutMe text-xs-center" >&nbsp; &nbsp; &nbsp; {{ schema.basics.summary }}  </p>
+              <p class=" title font-weight-light  font-italic aboutMe text-xs-center" >&nbsp; &nbsp; &nbsp; {{ schema.basics.summary }}  </p>
               <br>
-              <p class=" aboutMe love font-weight-light title font-italic text-xs-center"
+              <p class="family aboutMe love font-weight-light title font-italic text-xs-center"
               >I love to live on the edge of nature and technology.</p>
             </core-text>
             <v-flex class="text-xs-center xs12" :pb-4="$vuetify.breakpoint.smAndDown">
