@@ -117,23 +117,19 @@
       </core-subheading>
 
       <social-contacts />
-
       <v-list
         class="transparent"
         three-line
      
       >
-        <v-list-tile>
-          <v-list-tile-avatar>
-            <v-icon
+          <v-list-tile-content>
+              <v-icon
               size="48"
               color="primary"
               class="iconic"
             >
-              mdi-map-marker
+              mdi-map-marker-outline
             </v-icon>
-          </v-list-tile-avatar>
-          <v-list-tile-content>
             <v-list-tile-title  class="primary--text">
               Current Location
             </v-list-tile-title>
@@ -141,24 +137,21 @@
               {{ schema.basics.location.address }}<br>
             </v-list-tile-sub-title>
           </v-list-tile-content>
-        </v-list-tile>
-        <v-list-tile>
-          <v-list-tile-avatar>
-            <v-icon
+  
+         
+          <v-list-tile-content>
+                      <v-icon
               size="48"
               color="primary"
               class="iconic"
             >
-              mdi-email
+              mdi-email-outline
             </v-icon>
-          </v-list-tile-avatar>
-          <v-list-tile-content>
             <v-list-tile-title class="primary--text">
               Email
             </v-list-tile-title>
             <v-list-tile-sub-title v-text="schema.basics.email" />
           </v-list-tile-content>
-        </v-list-tile>
       </v-list>
     </v-flex>
     <v-flex
@@ -254,20 +247,35 @@
   padding-bottom: 0 !important;
 }
 
-.v-list__tile__content, .v-list-tile{
-    justify-content: center!important;
-    flex-direction: column!important;
-    text-align: center!important;
-    align-items: center!important;
-    margin-right: 55px;
+.v-list{
+    /* justify-content: center !important;
+   
+    text-align: center !important; */
+    /* align-items: center !important; */
+    /* margin-right: 55px; */
 }
 
-.v-list__tile__title, .v-list__tile__sub-title {
+.v-list__tile__title, .v-list__tile__content {
+  align-items: center !important;
     text-align: center!important;
+}
+.v-list__tile__content{
+    /* margin-top: 15px; */
+  margin-bottom: 25px;
+}
+.v-avatar{
+    /* justify-content: right !important;
+   
+    text-align: right !important;
+    align-items: right !important; */
 }
 
 .iconic{
-  margin-left: 10px;
+  /* margin-left: 10px;
+  margin-right: 15px; */
+  margin-top: 5px;
+  margin-bottom: 5px;
+
 }
 
 /* .v-input__slot {

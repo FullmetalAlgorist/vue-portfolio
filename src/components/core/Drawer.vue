@@ -1,7 +1,7 @@
 <template>
 <!-- app -->
   <div>
-     <screen /> 
+     <!-- <screen />  -->
     <v-btn     
       class="toggle homer"  
       fixed
@@ -144,13 +144,13 @@
 </script>
 <style lang="scss" scoped>
 .nav{
-  background-color: rgba(31, 40, 51, 0.24); //.24
+   background-color: rgba(31, 40, 51, 0.24); //.24
 padding: 0;
 }
 .triangles{
-  //opacity: .2;
-  //stroke-opacity: .2;
- //background-color: rgba(31, 40, 51, 0.94);
+  // opacity: .2;
+  stroke-opacity: .2;
+ background-color: rgba(31, 40, 51, 0.24);
 }
 .bb{
   color: rgb(255, 255, 255);
