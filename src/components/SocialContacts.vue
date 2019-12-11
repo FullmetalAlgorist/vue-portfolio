@@ -24,7 +24,8 @@
         github: 'mdi-github-box',
         linkedin: 'mdi-linkedin-box',
         twitter: 'mdi-twitter-box',
-        codepen: 'mdi-codepen'
+        codepen: 'mdi-codepen',
+        instagram: 'mdi-instagram'
       }
     }),
     computed: {

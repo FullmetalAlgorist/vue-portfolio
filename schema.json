@@ -16,6 +16,11 @@
     },
     "profiles": [
       {
+        "network": "Instagram",
+        "username": "Mariah",
+        "url": "https://www.instagram.com/fullmetalalgorist/"
+      },
+      {
         "network": "LinkedIn",
         "username": "Mariah",
         "url": "https://www.linkedin.com/in/mariah-vicary-12b75142/"
