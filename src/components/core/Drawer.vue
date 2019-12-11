@@ -1,7 +1,7 @@
 <template>
 <!-- app -->
   <div>
-    <!-- <screen /> -->
+     <screen /> 
     <v-btn     
       class="toggle homer"  
       fixed

@@ -35,8 +35,11 @@
       </v-layout>
     </v-flex>
 
-    <v-layout v-for="site in schema.sites" :key="site.id" justify-space-between wrap align-center>
-      <v-flex xs12 md6 :class="`${(site.id==='2') ? 'order-md2' : ''}`">
+             <v-flex v-for="site in schema.sites" :key="site.id" sm12>                           
+    <v-layout  justify-space-between wrap align-center>  
+  
+      
+      <v-flex  xs12 md6 :class="`${(site.id==='2') ? 'order-md2' : ''}`">
         <h3 class="display-1 font-weight-medium mb-4 primary--text">{{ site.title }}</h3>
         <a  :href="site.link" target="_blank">
           <v-img
@@ -53,13 +56,13 @@
           </v-img>
         </a>
       </v-flex>
+                            
       <v-flex xs12 mb-3 :class="`${(site.id==='3') ? 'md6' : 'md5'}`">
         <v-expansion-panel :min-width="(site.id==3) ?  600 : 750">
           <v-expansion-panel-content class="second elevation-20 App">
             <div slot="header" class="display-1 font-weight-light">About the application</div>
             <blockquote>
               <div class="pa-3">
-                <p>HI</p>
                 <p
                   class="priority font-weight-light font-italic"
                 >&nbsp;&nbsp;&nbsp;&nbsp;{{ site.infoText2 }}</p>
@@ -79,7 +82,10 @@
           </v-expansion-panel-content>
         </v-expansion-panel>
       </v-flex>
+     
     </v-layout>
+ </v-flex>
+
   </core-section>
 </template>
 
