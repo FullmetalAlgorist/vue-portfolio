@@ -38,50 +38,6 @@
     <v-layout v-for="site in schema.sites" :key="site.id" justify-space-between wrap align-center>
       <v-flex xs12 md6 :class="`${(site.id==='2') ? 'order-md2' : ''}`">
         <h3 class="display-1 font-weight-medium mb-4 primary--text">{{ site.title }}</h3>
-        <!-- <div v-if="site.id==='2'">
-          <img
-            id="Image-Maps-Com-image-maps-2019-09-08-003359"
-            src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/works/anotherSmall.png"
-            border="0"
-            width="500"
-            height="363"
-            orgWidth="500"
-            orgHeight="363"
-            usemap="#image-maps-2019-09-08-003359"
-            alt
-            class="site mapped"
-          />
-          <map name="image-maps-2019-09-08-003359" id="ImageMapsCom-image-maps-2019-09-08-003359">
-            <area
-              id="two"
-              alt
-              title="twotwo"
-              href="google.com"
-              shape="rect"
-              coords="253, 181, 475, 361"
-              style="outline:none;"
-              target="_self"
-            />
-            <area
-              id="one"
-              alt
-              title="oneone"
-              href="facebook"
-              shape="rect"
-              coords="0, 2, 367, 217"
-              style="outline:none;"
-              target="_self"
-            />
-            <area
-              shape="rect"
-              coords="499, 362, 500, 363"
-              
-              title="Image Map"
-              href="http://www.image-maps.com/index.php?aff=mapped_users_0"
-            />
-          </map>
-        </div> -->
-        <!-- v-else -->
         <a  :href="site.link" target="_blank">
           <v-img
             :max-width="(site.id==3) ?  600 : 750"
@@ -103,6 +59,7 @@
             <div slot="header" class="display-1 font-weight-light">About the application</div>
             <blockquote>
               <div class="pa-3">
+                <p>HI</p>
                 <p
                   class="priority font-weight-light font-italic"
                 >&nbsp;&nbsp;&nbsp;&nbsp;{{ site.infoText2 }}</p>
