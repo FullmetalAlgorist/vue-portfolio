@@ -5,14 +5,14 @@
     </h1>
     <template v-if="grams.length > 0">
       <div v-for="(gram, index) in grams" :key="index" @contextmenu.prevent>
-        <v-icon medium @click="showTags=!showTags" class="pa-1 hash">{{ ico }}</v-icon>
+        <!-- <v-icon medium @click="showTags=!showTags" class="pa-1 hash">{{ ico }}</v-icon>
         <taggy
           v-if="showTags"
           :tags="gram.tags"
           class="taggy"
           :style="{maxWidth: $vuetify.breakpoint.width < 790 ? '90vw' : '48vw', marginTop: $isMobile() ? '0' : '75px' }"
           :class="$vuetify.breakpoint.width > 1180 ? 'tri' : ''"
-        />
+        /> -->
         <template v-if="gram.carousel_media">
           <v-carousel :cycle="false" hide-delimiters>
             <div v-for="item in gram.carousel_media" :key="item.id">

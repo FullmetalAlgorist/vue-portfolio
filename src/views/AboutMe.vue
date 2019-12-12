@@ -10,7 +10,7 @@
               <p class=" title font-weight-light  font-italic aboutMe text-xs-center" >&nbsp; &nbsp; &nbsp; {{ schema.basics.summary }}  </p>
               <br>
               <p class="family aboutMe love font-weight-light title font-italic text-xs-center"
-              >I love to live on the edge of nature and technology.</p>
+              >If you are here for my generative art portfolio click the turtle!</p>
             </core-text>
             <v-flex class="text-xs-center xs12" :pb-4="$vuetify.breakpoint.smAndDown">
               <v-btn
@@ -22,14 +22,32 @@
           </v-layout>
         </section>
       </v-flex>
-      <v-flex xs12 sm5 class="text-xs-center" align-center justify-center>
-        <v-img max-width="450" :src="me" class="me dog">
+      <v-flex xs12 sm5 >
+        <!-- <v-img max-width="450" :src="me" class="me dog">
           <template v-slot:placeholder>
             <v-layout fill-height align-center justify-center ma-0>
               <spring-spinner :animation-duration="3000" :size="60" color="white" />
             </v-layout>
           </template>
-        </v-img>
+        </v-img> -->
+         <v-hover
+        v-slot:default="{ hover }">
+      <v-card   max-width="500" align-right justify-center class="glitch me dog text-xs-center">
+        <v-container grid-list-md 
+        @click="toInsta"
+        :style="{ cursor: 'pointer'}">
+            <v-img v-if="$isMobile()" :src="turtle2" ></v-img>
+            <v-img v-else class="text-xs-center " align-center justify-center :src="hover ? turtle2 : turtle" >
+   <template v-slot:placeholder>
+            <v-layout fill-height align-center justify-center ma-0>
+              <spring-spinner :animation-duration="3000" :size="60" color="white" />
+            </v-layout>
+          </template>
+
+            </v-img>
+          </v-container>
+        </v-card>
+        </v-hover>
       </v-flex>
     </v-layout>
   </core-section>
@@ -45,7 +63,9 @@ export default {
   },
   data: () => ({
     expansion: 0,
-    me: require("@/assets/realFinalLow.png")
+    me: require("@/assets/realFinalLow.png"),
+         turtle: require('@/assets/turtleC.jpg'),
+        turtle2: require('@/assets/turt_2.png')
   }),
 
   computed: {
@@ -61,8 +81,12 @@ export default {
     }
   },
   created() {
-    let img = new Image();
-    img.src = require("@/assets/realFinalLow.png");
+    // let img = new Image();
+     let img1 = new Image();
+      let img2 = new Image();
+      img1.src = require('@/assets/turt_2.png');
+      img2.src = require('@/assets/logoblack.png');
+    // img.src = require("@/assets/realFinalLow.png");
   },
   destroyed() {
   },
@@ -73,7 +97,10 @@ export default {
     },
     toCode() {
       this.$route.push("https://codepen.io/akcrew/");
-    }
+    },
+    toInsta(){
+        this.$router.push('/insta');
+      },
   }
 };
 </script>
@@ -96,10 +123,13 @@ export default {
   font-size: 130%;
 }
 .dog{
-  margin-bottom:  -40px;
-  margin-top: 10px;
+  // margin-bottom:  -40px;
+   margin-left: 100px;
 }
 .family{
   font-family: 'Open Sans', sans-serif !important;
+}
+.r{
+  border-radius: 1%;
 }
 </style>
