@@ -20,17 +20,37 @@
       />
       <!-- </v-flex>
       </v-layout> -->
-<v-img v-if="!gram.carousel_media"
+
+<!-- <template v-if="!gram.carousel_media"> -->
+
+<v-img 
 :src="gram.images.standard_resolution.url"
 ></v-img>
+
+
+<!-- </template> -->
         <!-- <a :href="gram.link"> -->
-          <v-carousel v-else :cycle="false">
+
+          <!-- <template v-else v-for="item in gram.carousel_media">
+
+              <v-carousel v-if="item.images" :cycle="false">
     <v-carousel-item
-      v-for="(item,i) in gram.carousel_media"
-      :key="i"
+     
+      :key="item.id"
       :src="item.images.standard_resolution.url"
     ></v-carousel-item>
-  </v-carousel>
+  </v-carousel> -->
+      <!-- <v-carousel v-else :cycle="false">
+    <v-carousel-item
+      v-for="item in gram.carousel_media"
+      :key="item.id"
+      :src="item.images.standard_resolution.url"
+    ></v-carousel-item>
+  </v-carousel> -->
+          <!-- </template> -->
+       
+
+
           <!-- <v-img
             class="wait"
             :src="gram.images.standard_resolution.url"
@@ -58,7 +78,7 @@ import { ScalingSquaresSpinner } from "epic-spinners";
 export default {
   data() {
     return {
-      access_token: "7280261909.1677ed0.55fec655db7a4be9992a160ed1cbd052",
+      access_token: "7280261909.1677ed0.efa32049d785431b960f6bc3fb81c351",
       url: "https://api.instagram.com/v1/users/self/media/recent/",
       username: "",
       grams: [],
@@ -93,6 +113,7 @@ export default {
           this.grams = data.data;
           this.username = data.data[0].user.username;
           this.next_url = data.pagination.next_url;
+          console.log('grams', this.grams);
         })
         .catch(function(error) {
           console.log(error);
