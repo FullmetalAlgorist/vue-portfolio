@@ -3,68 +3,38 @@
     <h1>
       <a :href="instapage">@{{ username }} on instagram</a>
     </h1>
-
     <template v-if="grams.length > 0">
-      <!-- <v-layout class="justify-center align-center text-xs-center"> -->
-      <div v-for="(gram, index) in grams"
-      :key="index"
-      @contextmenu.prevent
-      >
-      <!-- <v-layout >
-        <v-flex  > -->
-          <v-icon  medium @click="showTags=!showTags" class="pa-1 hash">{{ ico }}</v-icon>
-      <taggy v-if="showTags" :tags="gram.tags" 
-      class="taggy"
-      :style="{maxWidth: $vuetify.breakpoint.width < 790 ? '90vw' : '48vw', marginTop: $isMobile() ? '0' : '75px' }"
-      :class="$vuetify.breakpoint.width > 1180 ? 'tri' : ''"
-      />
-      <!-- </v-flex>
-      </v-layout> -->
-
-<!-- <template v-if="!gram.carousel_media"> -->
-
-<v-img 
-:src="gram.images.standard_resolution.url"
-></v-img>
-
-
-<!-- </template> -->
-        <!-- <a :href="gram.link"> -->
-
-          <!-- <template v-else v-for="item in gram.carousel_media">
-
-              <v-carousel v-if="item.images" :cycle="false">
-    <v-carousel-item
-     
-      :key="item.id"
-      :src="item.images.standard_resolution.url"
-    ></v-carousel-item>
-  </v-carousel> -->
-      <!-- <v-carousel v-else :cycle="false">
-    <v-carousel-item
-      v-for="item in gram.carousel_media"
-      :key="item.id"
-      :src="item.images.standard_resolution.url"
-    ></v-carousel-item>
-  </v-carousel> -->
-          <!-- </template> -->
-       
-
-
-          <!-- <v-img
-            class="wait"
-            :src="gram.images.standard_resolution.url"
-            :alt="gram.text"
-            :lazy-src="lazyLoad">
-            <template v-slot:placeholder>
-              <v-layout fill-height align-center justify-center ma-0>
-                <scaling-squares-spinner :animation-duration="1250" :size="65" color="black" />
-              </v-layout>
-            </template>
-          </v-img> -->
-        <!-- </a> -->
+      <div v-for="(gram, index) in grams" :key="index" @contextmenu.prevent>
+        <v-icon medium @click="showTags=!showTags" class="pa-1 hash">{{ ico }}</v-icon>
+        <taggy
+          v-if="showTags"
+          :tags="gram.tags"
+          class="taggy"
+          :style="{maxWidth: $vuetify.breakpoint.width < 790 ? '90vw' : '48vw', marginTop: $isMobile() ? '0' : '75px' }"
+          :class="$vuetify.breakpoint.width > 1180 ? 'tri' : ''"
+        />
+        <template v-if="gram.carousel_media">
+          <v-carousel :cycle="false" hide-delimiters>
+            <div v-for="item in gram.carousel_media" :key="item.id">
+              <v-carousel-item v-if="item.type== 'video'">
+                <v-hover v-slot:default="{ hover }">
+                  <video :controls="hover ? true : false" loop>
+                    <source :src="item.videos.standard_resolution.url" type="video/mp4" />
+                  </video>
+                </v-hover>
+              </v-carousel-item>
+              <v-carousel-item v-else :src="item.images.standard_resolution.url"></v-carousel-item>
+            </div>
+          </v-carousel>
+        </template>
+        <template v-else>
+          <v-hover v-slot:default="{ hover }">
+            <video :controls="hover ? true : false" loop>
+              <source :src="gram.videos.standard_resolution.url" type="video/mp4" />
+            </video>
+          </v-hover>
+        </template>
       </div>
-      <!-- </v-layout> -->
     </template>
     <div v-else class="loading"></div>
     <div v-if="error" class="error">Sorry, the Instagrams couldn't be fetched.</div>
@@ -85,7 +55,8 @@ export default {
       next_url: "",
       error: false,
       lazyLoad: require("@/assets/rhombus.png"),
-      showTags: false
+      showTags: false,
+      currentImage: true
     };
   },
   components: {
@@ -96,12 +67,11 @@ export default {
     instapage() {
       return "https://www.instagram.com/" + this.username;
     },
-    ico(){
-      if(this.showTags){
-        return 'mdi-close-outline';
-      }
-      else{
-        return 'mdi-pound';
+    ico() {
+      if (this.showTags) {
+        return "mdi-close-outline";
+      } else {
+        return "mdi-pound";
       }
     }
   },
@@ -113,7 +83,7 @@ export default {
           this.grams = data.data;
           this.username = data.data[0].user.username;
           this.next_url = data.pagination.next_url;
-          console.log('grams', this.grams);
+          console.log("grams", this.grams);
         })
         .catch(function(error) {
           console.log(error);
@@ -162,6 +132,7 @@ export default {
   //position: relative;
 }
 .insta {
+  height: 100%;
   display: grid;
   grid-gap: var(--spacing);
   grid-template-columns: repeat(auto-fit, minmax(375px, 2fr));
@@ -230,22 +201,26 @@ a {
 }
 //insta token
 // 178334721.1677ed0.47e8323111844b6795c472347c89680f
-.taggy{
+.taggy {
   position: absolute;
   z-index: 2;
-//  margin-top: 75px;
- 
+  //  margin-top: 75px;
 }
-.tri{
- max-width: 30vw !important;
+.tri {
+  max-width: 30vw !important;
 }
-.hash{
+.hash {
   position: absolute;
-   z-index: 3;
-   margin-top: 20px;
-   margin-left: 20px;
+  z-index: 3;
+  margin-top: 20px;
+  margin-left: 20px;
   //  border:black solid 1px;
   //  border-radius: 50%;
-
+}
+iframe,
+video {
+  //max-width: 30vw !important;
+  height: 100% !important;
+  width: 100% !important;
 }
 </style>
