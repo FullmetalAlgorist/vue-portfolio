@@ -29,6 +29,7 @@
         xs12
         md4
         class="text-xs-center ma-4">
+         <v-card   max-width="500" align-right justify-center class="glitch me dog text-xs-center">
           <h3 
           class="display-1 font-weight-medium my-4 primary--text">
             Processing
@@ -37,6 +38,7 @@
           <p  class="larger font-weight-light font-italic">  Follow the link, press some buttons, and see what happens :) </p>
            <v-btn @mouseenter="hoverMe=true" @mouseleave="hoverMe=false" class="font-weight-light but" :color="hoverMe ? 'white--text primarydark' : 'black--text primarydark' "  @click="toProc">live processing sketches!!</v-btn>
         <v-img :src="hoverMe ? logo2 : logo1" > </v-img>  
+      </v-card>
       </v-flex>
     </v-layout>
   </core-section>

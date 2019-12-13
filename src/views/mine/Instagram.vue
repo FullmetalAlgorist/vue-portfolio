@@ -1,5 +1,53 @@
 <template>
+<div class="outer">
+   <div class=" circle" width="100vw" :style="{ height: $isMobile() ? winHeight+'px' : '100vh'}">
+      <v-layout
+        fill-height
+      justify-end
+        align-end
+   
+        :pa-5="$vuetify.breakpoint.mdAndUp"
+        :pa-3="$vuetify.breakpoint.smAndDown"
+      
+      >
+        <div>
+          <!-- <h1
+            :class="`display-${$vuetify.breakpoint.mdAndUp ? '4' : '3'}`"
+            class="name text-uppercase"
+            v-text="schema.basics.name"
+            :style="{ fontSize: $isMobile() ? '568% !important' : '700% !important'}"
+          > -->
+            <!-- :style="{ width: $isMobile() ? '600%' : '700%'}" -->
+            <!-- :class="`display-${$vuetify.breakpoint.mdAndUp ? '4' : '3'}`" -->
+          <!-- </h1> -->
+
+          <!-- <div
+            :class="`display-${$vuetify.breakpoint.mdAndUp ? '3' : '1'}`"
+            class="text-uppercase label"
+            v-text="schema.basics.label"
+            :style="{ fontSize: $isMobile() ? '27px !important' : '34px !important', letterSpacing : (winWidth < 321) ? '0' : '.1em !important'}"
+          /> -->
+            <v-flex
+        xs12
+        md4
+        class="ma-4"
+        >
+         <v-card    align-right  class="proc text-xs-center">
+          <h3 
+          class="display-1 font-weight-medium my-4 primary--text">
+            Processing
+          </h3>
+          <p class="larger" v-text="'I use a combination of p5.js and processing to bring algorithms to life on the web!  Here are some attempts to make my processing sketches interactive.'" /> 
+          <p  class="larger font-weight-light font-italic">  Follow the link, press some buttons, and see what happens :) </p>
+           <v-btn @mouseenter="hoverMe=true" @mouseleave="hoverMe=false" class="font-weight-light but" :color="hoverMe ? 'white--text primarydark' : 'black--text primarydark' "  @click="toProc">live processing sketches!!</v-btn>
+        <v-img :src="hoverMe ? logo2 : logo1" > </v-img>  
+         </v-card>
+      </v-flex>
+        </div>
+      </v-layout>
+    </div>
   <div class="insta">
+    
     <h1>
       <a :href="instapage">@{{ username }} on instagram</a>
     </h1>
@@ -40,6 +88,7 @@
     <div v-if="error" class="error">Sorry, the Instagrams couldn't be fetched.</div>
     <button @click="getMoreGrams">Load More</button>
   </div>
+  </div>
 </template>
 <script>
 import axios from "axios";
@@ -56,7 +105,10 @@ export default {
       error: false,
       lazyLoad: require("@/assets/rhombus.png"),
       showTags: false,
-      currentImage: true
+      currentImage: true,
+              logo1: require('@/assets/logo1.png'),
+        logo2: require('@/assets/logoblack.png'),
+        hoverMe: false
     };
   },
   components: {
@@ -101,7 +153,10 @@ export default {
           console.log(error);
           this.error = true;
         });
-    }
+    },
+     toProc(){
+           this.$router.push({ name: 'processing', params: {sketch: 0}})
+      }
   },
   created() {
     this.getGrams();
@@ -222,5 +277,26 @@ video {
   //max-width: 30vw !important;
   height: 100% !important;
   width: 100% !important;
+}
+
+.circle {
+  background-image: url("https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/insta.jpg");
+  //  height: 100vh;
+  background-size: cover;
+  background-position: 63% bottom;
+  //height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  // height: calc(var(--vh, 1vh) * 100);
+  background-attachment: fixed;
+}
+.proc{
+  background-color: #0000006b;
+  border-radius: 10px;
+  padding: 3px;
+  
+  
+}
+.but:hover{
+
+  background-color: rgba(0,0,0,.28) !important;
 }
 </style>
