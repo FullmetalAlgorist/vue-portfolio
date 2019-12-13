@@ -31,7 +31,7 @@
         @click="toInsta"
         :style="{ cursor: 'pointer'}">
             <v-img v-if="$isMobile()" :src="turtle2"></v-img>
-            <v-img  class="glitch" :src="hover ? turtle2 : turtle"></v-img>
+            <v-img v-else class="glitch" :src="hover ? turtle2 : turtle"></v-img>
           </v-container>
         </v-card>
         </v-hover>
