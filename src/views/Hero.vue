@@ -39,6 +39,13 @@
             v-text="schema.basics.label"
             :style="{ fontSize: $isMobile() ? '27px !important' : '34px !important', letterSpacing : (winWidth < 321) ? '0' : '.1em !important'}"
           />
+        
+         <div
+            :class="`display-${$vuetify.breakpoint.mdAndUp ? '3' : '1'}`"
+            class="text-uppercase label"
+            v-text="schema.basics.label2"
+            :style="{ fontSize: $isMobile() ? '27px !important' : '34px !important', letterSpacing : (winWidth < 321) ? '0' : '.1em !important'}"
+          />
         </div>
       </v-layout>
     </div>

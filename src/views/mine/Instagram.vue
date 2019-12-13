@@ -13,7 +13,7 @@
         class=" proc"
        
         >
-           <v-btn px-2 @mouseenter="hoverMe=true" @mouseleave="hoverMe=false" class="font-weight-light but" :color="hoverMe ? 'white--text primarydark' : 'white--text grey' "  @click="toProc">live sketches</v-btn>
+           <v-btn px-2  @mouseenter="hoverMe=true" @mouseleave="hoverMe=false" class=" but" :color="hoverMe ? 'white--text primarydark' : 'white--text grey' "  @click="toProc">live sketches</v-btn>
         <v-img :src="hoverMe ? logo2 : logo1" > </v-img>  
       </v-flex>
         <div>
@@ -275,15 +275,19 @@ video {
   // background-attachment: fixed;
 }
 .proc{
-  background-color: #0000006b;
+  // background-color: #0000006b;
   border-radius: 10px;
   padding: 3px;
   position: relative;
 
 }
 .but{
-
-  background-color: rgba(0,0,0,.28) !important;
+background-color: #9e9e9e7a !important;
+  // background-color: rgba(0,0,0,.28) !important;
+}
+.but:hover{
+  background-color: #00000061 !important;
+  // background-color: rgba(0,0,0,.28) !important;
 }
 .name {
   line-height: 1 !important;
