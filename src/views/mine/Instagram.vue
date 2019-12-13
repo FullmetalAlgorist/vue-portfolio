@@ -1,50 +1,36 @@
 <template>
 <div class="outer">
+
    <div class=" circle" width="100vw" :style="{ height: $isMobile() ? winHeight+'px' : '100vh'}">
+        
       <v-layout
-        fill-height
-      justify-end
-        align-end
-   
         :pa-5="$vuetify.breakpoint.mdAndUp"
         :pa-3="$vuetify.breakpoint.smAndDown"
-      
-      >
+        >
+         <v-flex v-if=" $vuetify.breakpoint.mdAndUp"
+        xs2
+        mr-4
+        class=" proc"
+       
+        >
+           <v-btn px-2 @mouseenter="hoverMe=true" @mouseleave="hoverMe=false" class="font-weight-light but" :color="hoverMe ? 'white--text primarydark' : 'white--text grey' "  @click="toProc">live sketches</v-btn>
+        <v-img :src="hoverMe ? logo2 : logo1" > </v-img>  
+      </v-flex>
         <div>
+             <!-- :class="`display-${$vuetify.breakpoint.mdAndUp ? '4' : '2'}`" -->
          <h1
-            :class="`display-${$vuetify.breakpoint.mdAndUp ? '4' : '3'}`"
+         
             class="name text-uppercase"
-            :style="{ fontSize: $isMobile() ? '568% !important' : '700% !important'}"
+            :style="{ fontSize: $vuetify.breakpoint.lgAndUp ? '700% !important' : '368% !important'}"
           > 
             <!-- :style="{ width: $isMobile() ? '600%' : '700%'}" -->
             <!-- :class="`display-${$vuetify.breakpoint.mdAndUp ? '4' : '3'}`" -->
        Generative Art and ALgorithmic Design
           </h1>
-
-          <!-- <div
-            :class="`display-${$vuetify.breakpoint.mdAndUp ? '3' : '1'}`"
-            class="text-uppercase label"
-            v-text="schema.basics.label"
-            :style="{ fontSize: $isMobile() ? '27px !important' : '34px !important', letterSpacing : (winWidth < 321) ? '0' : '.1em !important'}"
-          /> -->
-            <v-flex v-if=" $isMobile()"
-        xs12
-        md4
-        class="ma-4"
-        >
-         <v-card    align-right  class="proc text-xs-center">
-          <h3 
-          class="display-1 font-weight-medium my-4 primary--text">
-            Processing
-          </h3>
-          <p class="larger" v-text="'I use a combination of p5.js and processing to bring algorithms to life on the web!  Here are some attempts to make my processing sketches interactive.'" /> 
-          <p  class="larger font-weight-light font-italic">  Follow the link, press some buttons, and see what happens :) </p>
-           <v-btn @mouseenter="hoverMe=true" @mouseleave="hoverMe=false" class="font-weight-light but" :color="hoverMe ? 'white--text primarydark' : 'black--text primarydark' "  @click="toProc">live processing sketches!!</v-btn>
-        <v-img :src="hoverMe ? logo2 : logo1" > </v-img>  
-         </v-card>
-      </v-flex>
+      
         </div>
-      </v-layout>
+      </v-layout>   
+       
     </div>
   <div class="insta">
     
@@ -198,8 +184,8 @@ h1 {
 }
 h1,
 button {
-  margin: 0;
-  padding: 0;
+  // margin: 0;
+  // padding: 0;
   grid-column: 1 / -1;
   font-size: var(--fontsize);
   line-height: 1.2;
@@ -292,10 +278,10 @@ video {
   background-color: #0000006b;
   border-radius: 10px;
   padding: 3px;
-  
-  
+  position: relative;
+
 }
-.but:hover{
+.but{
 
   background-color: rgba(0,0,0,.28) !important;
 }
@@ -305,6 +291,7 @@ video {
   padding-right: 250px;
   // font-family: 'Open Sans', sans-serif !important;
   font-weight: 350 !important;
-  //  font-size: 700% !important;
+  padding-top: 20vh;
+    // font-size: 200% !important;
 }
 </style>

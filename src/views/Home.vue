@@ -16,7 +16,7 @@
       <skills />
       <works />
       <priorities />
-      <glitch />
+      <!-- <glitch /> -->
       <!-- <Processing /> -->
       <portfolio />
 

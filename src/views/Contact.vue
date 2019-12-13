@@ -14,7 +14,7 @@
         I'm available for freelance
       </core-subheading>
       <core-text class="mb-5">
-        Have a question?  Want to chat about your next project idea, or how to make your personal or business website more attractive and effective? Shoot me a message, I would love to chat!
+        Do you like something you see? Let's talk about it! Shoot me a message, I would love to collaborate.
       </core-text>
 
       <core-subheading class="text-uppercase mb-3">
@@ -159,7 +159,7 @@
       sm5
     >
       <v-img
-        src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/m.png"
+        :src="require('@/assets/realFinalLow.png')"
         contain
        max-width="450" 
       />

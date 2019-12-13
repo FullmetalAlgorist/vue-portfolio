@@ -1,16 +1,16 @@
 <template>
   <div>
-    <transition name="fade">
-      <div class="scroll-downs">
+    <!-- <transition name="fade">ß -->
+      <!-- <div class="scroll-downs">
         
         <orbit-spinner v-if="!load" :animation-duration="1200" :size="85" />
         <div v-else-if="blah" class="mousey">
           <div class="scroller"></div>
-        </div>
+        </div> -->
         
         <!-- color="white"  -->
-      </div>
-    </transition>
+      <!-- </div> -->
+    <!-- </transition> -->
 
     <div class="circle" :style="{ height: $isMobile() ? winHeight+'px' : '100vh'}">
       <v-layout

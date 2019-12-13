@@ -7,7 +7,7 @@
         <v-card class="mb-4 second restrict" elevation="20">
           <v-card-title>
             <blockquote >
-              <div>
+              <div>          
                 <p class="font-weight-light nothing text-xs-center">
                   I currently prefer
                   <span class="tech">Vue</span> (<span class="tech">Nuxt</span> with
@@ -21,6 +21,10 @@
                   <span class="tech">GreenSock</span> for animation.
                   <span class="techy">I love implementing emerging technologies!</span>
                 </p>
+                  <p class="nothing text-xs-center">
+                    <v-icon>mdi-robot</v-icon> &nbsp;&nbsp;I use
+                  <span class="tech">TouchDesigner</span> and <span class="tech">Processing </span> for visual design.
+              </p>
               </div>
             </blockquote>
           </v-card-title>
@@ -83,6 +87,9 @@ export default {
 .nothing {
   font-size: 1.2em;
 
+}
+.something {
+   font-size: 1.3em;
 }
 .second {
   background-color: #161d25ad !important;
