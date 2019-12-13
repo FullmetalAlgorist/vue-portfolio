@@ -10,7 +10,7 @@
               <p class=" title font-weight-light  font-italic aboutMe text-xs-center" >&nbsp; &nbsp; &nbsp; {{ schema.basics.summary }}  </p>
               <br>
               <p class="family aboutMe love font-weight-light title font-italic text-xs-center"
-              >If you are here for my generative art portfolio, click the turtle!</p>
+              >If you are here for my generative art portfolio, follow the turtle!</p>
             </core-text>
             <v-flex class="text-xs-center xs12" :pb-4="$vuetify.breakpoint.smAndDown">
               <v-btn
@@ -68,12 +68,11 @@ export default {
     }
   },
   created() {
-    // let img = new Image();
      let img1 = new Image();
       let img2 = new Image();
       img1.src = require('@/assets/turt_2.png');
       img2.src = require('@/assets/logoblack.png');
-    // img.src = require("@/assets/realFinalLow.png");
+   
   },
   destroyed() {
   },
