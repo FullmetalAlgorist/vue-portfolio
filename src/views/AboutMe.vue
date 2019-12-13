@@ -22,7 +22,8 @@
           </v-layout>
         </section>
       </v-flex>
-      <v-flex xs12 sm5 >
+      <v-flex xs12 sm5>
+         <!-- <v-layout fill-height align-center justify-center ma-0> -->
         <!-- <v-img max-width="450" :src="me" class="me dog">
           <template v-slot:placeholder>
             <v-layout fill-height align-center justify-center ma-0>
@@ -37,7 +38,7 @@
         @click="toInsta"
         :style="{ cursor: 'pointer'}">
             <v-img v-if="$isMobile()" :src="turtle2" ></v-img>
-            <v-img v-else class="text-xs-center " align-center justify-center :src="hover ? turtle2 : turtle" >
+            <v-img v-else :src="hover ? turtle2 : turtle" >
    <template v-slot:placeholder>
             <v-layout fill-height align-center justify-center ma-0>
               <spring-spinner :animation-duration="3000" :size="60" color="white" />
@@ -48,6 +49,7 @@
           </v-container>
         </v-card>
         </v-hover>
+       
       </v-flex>
     </v-layout>
   </core-section>
@@ -124,7 +126,7 @@ export default {
 }
 .dog{
   // margin-bottom:  -40px;
-   margin-left: 100px;
+   //margin-left: 100px;
 }
 .family{
   font-family: 'Open Sans', sans-serif !important;

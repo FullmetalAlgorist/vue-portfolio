@@ -11,15 +11,15 @@
       
       >
         <div>
-          <!-- <h1
+         <h1
             :class="`display-${$vuetify.breakpoint.mdAndUp ? '4' : '3'}`"
             class="name text-uppercase"
-            v-text="schema.basics.name"
             :style="{ fontSize: $isMobile() ? '568% !important' : '700% !important'}"
-          > -->
+          > 
             <!-- :style="{ width: $isMobile() ? '600%' : '700%'}" -->
             <!-- :class="`display-${$vuetify.breakpoint.mdAndUp ? '4' : '3'}`" -->
-          <!-- </h1> -->
+       Generative Art and ALgorithmic Design
+          </h1>
 
           <!-- <div
             :class="`display-${$vuetify.breakpoint.mdAndUp ? '3' : '1'}`"
@@ -27,7 +27,7 @@
             v-text="schema.basics.label"
             :style="{ fontSize: $isMobile() ? '27px !important' : '34px !important', letterSpacing : (winWidth < 321) ? '0' : '.1em !important'}"
           /> -->
-            <v-flex
+            <v-flex v-if=" $isMobile()"
         xs12
         md4
         class="ma-4"
@@ -48,9 +48,9 @@
     </div>
   <div class="insta">
     
-    <h1>
+    <!-- <h1>
       <a :href="instapage">@{{ username }} on instagram</a>
-    </h1>
+    </h1> -->
     <template v-if="grams.length > 0">
       <div v-for="(gram, index) in grams" :key="index" @contextmenu.prevent>
         <!-- <v-icon medium @click="showTags=!showTags" class="pa-1 hash">{{ ico }}</v-icon>
@@ -171,7 +171,7 @@ export default {
   display: block;
 }
 .insta {
-  --color: #1abc9c;
+--color: #ffffffc9;
   --background: #1f1f1f;
   --spacing: 1rem;
   --speed: 1700ms;
@@ -286,7 +286,7 @@ video {
   background-position: 63% bottom;
   //height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   // height: calc(var(--vh, 1vh) * 100);
-  background-attachment: fixed;
+  // background-attachment: fixed;
 }
 .proc{
   background-color: #0000006b;
@@ -298,5 +298,13 @@ video {
 .but:hover{
 
   background-color: rgba(0,0,0,.28) !important;
+}
+.name {
+  line-height: 1 !important;
+  color: #ffffffc9;
+  padding-right: 250px;
+  // font-family: 'Open Sans', sans-serif !important;
+  font-weight: 350 !important;
+  //  font-size: 700% !important;
 }
 </style>
