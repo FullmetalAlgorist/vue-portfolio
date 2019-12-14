@@ -6,6 +6,7 @@
       <v-layout
         :pa-5="$vuetify.breakpoint.mdAndUp"
         :pa-3="$vuetify.breakpoint.smAndDown"
+        
         >
          <v-flex v-if=" $vuetify.breakpoint.mdAndUp"
         xs2
@@ -15,18 +16,18 @@
            <v-btn px-2  @mouseenter="hoverMe=true" @mouseleave="hoverMe=false" class=" but" :color="hoverMe ? 'white--text primarydark' : 'white--text grey' "  @click="toProc">live sketches</v-btn>
         <v-img :src="hoverMe ? logo2 : logo1" > </v-img>  
       </v-flex>
-        <div>
+        <v-flex >
              <!-- :class="`display-${$vuetify.breakpoint.mdAndUp ? '4' : '2'}`" -->
          <h1
-         
             class="name text-uppercase"
             :style="{ fontSize: $vuetify.breakpoint.lgAndUp ? '700% !important' : '368% !important'}"
+            :class="`${$vuetify.breakpoint.lgAndUp ? 'topMe' : 'bottomMe'}`"
           > 
             <!-- :style="{ width: $isMobile() ? '600%' : '700%'}" -->
             <!-- :class="`display-${$vuetify.breakpoint.mdAndUp ? '4' : '3'}`" -->
-       Generative Art and ALgorithmic Design
+       Generative Art and Algorithmic Design
           </h1>
-        </div>
+        </v-flex>
       </v-layout>   
        
     </div>
@@ -37,9 +38,9 @@
     </h1> -->
     <template v-if="grams.length > 0">
       <div v-for="(gram, index) in grams" :key="index" @contextmenu.prevent>
-        <!-- <v-icon medium @click="showTags=!showTags" class="pa-1 hash">{{ ico }}</v-icon>
-        <taggy
-          v-if="showTags"
+        <!-- <v-icon medium @click="showTags=!showTags" class="pa-1 hash">{{ ico }}</v-icon> -->
+                 <!-- <taggy
+          v-if="hover"
           :tags="gram.tags"
           class="taggy"
           :style="{maxWidth: $vuetify.breakpoint.width < 790 ? '90vw' : '48vw', marginTop: $isMobile() ? '0' : '75px' }"
@@ -50,14 +51,15 @@
             <div v-for="item in gram.carousel_media" :key="item.id">
               <v-carousel-item v-if="item.type== 'video'">
                 <v-hover v-slot:default="{ hover }">
-                  <video :controls="hover ? true : false" loop>
+                  <video :controls="hover ? true : false" loop> 
                     <source :src="item.videos.standard_resolution.url" type="video/mp4" />
                   </video>
+        
                 </v-hover>
-                <div class="portfolio-box-caption">
+                <!-- <div class="portfolio-box-caption">
                   testing
-                </div>
-                <div class="project-name"></div>
+                </div> -->
+                <!-- <div class="project-name"></div> -->
               </v-carousel-item>
               <v-carousel-item v-else :src="item.images.standard_resolution.url"></v-carousel-item>
             </div>
@@ -271,13 +273,16 @@ video {
   background-image: url("https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/insta.jpg");
   //  height: 100vh;
   background-size: cover;
-  background-position: 50% left;
+  // background-position:  le;
+  background-position-y: 50%;
+  background-position-x: 10%;
+  
   //height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   // height: calc(var(--vh, 1vh) * 100);
   // background-attachment: fixed;
 }
 .proc{
-  // background-color: #0000006b;
+   background-color: #0000006b;
   border-radius: 10px;
   padding: 3px;
   position: relative;
@@ -297,7 +302,8 @@ background-color: #9e9e9e7a !important;
   padding-right: 250px;
   // font-family: 'Open Sans', sans-serif !important;
   font-weight: 350 !important;
-  padding-top: 20vh;
+  // padding-top: 70vh;
+  
     // font-size: 200% !important;
 }
 .portfolio-box-caption {
@@ -319,4 +325,11 @@ background-color: #9e9e9e7a !important;
     padding: 0 15px;
     font-size: 1em;
 }
+.topMe{
+  margin-top: 40vh;
+}
+.bottomMe{
+margin-top: 50vh;
+}
+
 </style>
