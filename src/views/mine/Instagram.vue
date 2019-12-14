@@ -269,7 +269,7 @@ video {
   background-image: url("https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/insta.jpg");
   //  height: 100vh;
   background-size: cover;
-  background-position: 63% bottom;
+  background-position: 50% bottom;
   //height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   // height: calc(var(--vh, 1vh) * 100);
   // background-attachment: fixed;

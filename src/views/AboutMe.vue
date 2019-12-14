@@ -2,23 +2,25 @@
   <core-section id="about-me">
     <v-layout align-center justify-center wrap>
       <abstract-1 />
-      <v-flex xs12 sm7  class="me">
-        <section >
-          <core-heading class="z" v-text="'Who I am.'" />
+      <v-flex xs12 sm7  class="z" >
+      
+          <core-heading v-text="'Who I am.'" />
+            <section >
           <v-layout wrap align-center>
             <core-text class="ma-1">
               <p class=" title font-weight-light  font-italic aboutMe text-xs-center" >&nbsp; &nbsp; &nbsp; {{ schema.basics.summary }}  </p>
-              <br>
-              <p class="family aboutMe love font-weight-light title font-italic text-xs-center"
-              >If you are here for my generative art portfolio, follow the turtle!</p>
-            </core-text>
-            <v-flex class="text-xs-center xs12" :pb-4="$vuetify.breakpoint.smAndDown">
+               <v-flex class="text-xs-center xs12" :pb-4="$vuetify.breakpoint.smAndDown">
               <v-btn
                 @click="$vuetify.goTo('#contact')"
                 class="font-weight-light contactButton"
                 color="primarydark black--text"
               >Contact Me!</v-btn>
             </v-flex>
+             <br> <br>
+              <p class="family aboutMe love font-weight-light title font-italic text-xs-center"
+              >If you are here for my generative art portfolio, follow the turtle!</p>
+            </core-text>
+           
           </v-layout>
         </section>
       </v-flex>
@@ -95,7 +97,7 @@ export default {
 .subheading {
   margin-bottom: 10px !important;
 }
-.me {
+.z{
   z-index: 10;
 }
 .aboutMe{

@@ -15,7 +15,7 @@
       <about-me />
       <skills />
       <works />
-      <priorities />
+      <!-- <priorities /> -->
       <!-- <glitch /> -->
       <!-- <Processing /> -->
       <portfolio />

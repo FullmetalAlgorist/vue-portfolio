@@ -101,16 +101,31 @@
         </v-layout>
       </v-form>
     </v-flex>
-    <v-layout wrap 
+    <v-layout wrap
      align-center
       justify-center
         fill-height
         text-xs-center
         pt-2
         >
+        <v-flex
+      xs12
+      md4 
+     style="max-width: 600px;"
+        class="me"
+    >
+    <!-- <div  max-width="500px"> -->
+      <v-img
+        :src="require('@/assets/realFinalLow.png')"
+     
+      class="me"
+      />
+   
+     <!--   -->
+    </v-flex>
     <v-flex
       xs12
-      sm7
+      md4
     >
       <core-subheading class="text-uppercase">
         do you want more?
@@ -154,17 +169,7 @@
           </v-list-tile-content>
       </v-list>
     </v-flex>
-    <v-flex
-      xs12
-      sm5
-    >
-      <v-img
-        :src="require('@/assets/realFinalLow.png')"
-        contain
-       max-width="450" 
-      />
-     <!--  style="top: 75px;" -->
-    </v-flex>
+    
     </v-layout>
   </core-section>
 </template>
@@ -247,7 +252,7 @@
   padding-bottom: 0 !important;
 }
 
-.v-list__tile__title, .v-list__tile__content {
+.v-list__tile__title, .v-list__tile__content, .me {
   align-items: center !important;
     text-align: center!important;
 }
