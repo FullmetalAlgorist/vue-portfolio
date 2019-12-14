@@ -106,21 +106,20 @@
       menuIcon: 'mdi-menu',
       items: [
         {
-          text: 'About Me',
+          text: 'Home',
+          to: '#about-me'
+        },
+         {
+          text: 'Art',
           to: '#about-me'
         },
         {
-          text: 'Portfolio',
+          text: 'Web Dev',
+          to: '#skills'
+        },
+         {
+          text: 'Projects',
           to: '#works'
-        },
-        {
-          text: 'Priorities',
-          to: '#Priorities'
-        },
-       
-        {
-          text: 'Generative Art',
-          to: '#glitch'
         },
         {
           text: 'Photography',

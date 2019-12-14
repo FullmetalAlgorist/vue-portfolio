@@ -11,13 +11,15 @@
          <v-flex v-if=" $vuetify.breakpoint.mdAndUp"
         xs2
         mr-4
-        class=" proc"
+        class=" proc text-xs-center"
         >
-           <v-btn px-2  @mouseenter="hoverMe=true" @mouseleave="hoverMe=false" class=" but" :color="hoverMe ? 'white--text primarydark' : 'white--text grey' "  @click="toProc">live sketches</v-btn>
-        <v-img :src="hoverMe ? logo2 : logo1" > </v-img>  
+           <v-btn px-2  @mouseenter="hoverMe2=true" @mouseleave="hoverMe2=false" class=" but" :color="hoverMe ? 'white--text primarydark' : 'white--text grey' "    @click="$vuetify.goTo('#insta')">Portfolio</v-btn>
+           <v-btn px-2  @mouseenter="hoverMe=true" @mouseleave="hoverMe=false" class=" but" :color="hoverMe ? 'white--text primarydark' : 'white--text grey' "  :style="{ backgroundColor: hoverMe ? '#00000061 !important' : ''}" @click="toProc">live sketches</v-btn>
+        <v-img  @mouseenter="hoverMe=true" @mouseleave="hoverMe=false" :src="hoverMe ? logo2 : logo1" @click="toProc"> </v-img>  
       </v-flex>
         <v-flex >
              <!-- :class="`display-${$vuetify.breakpoint.mdAndUp ? '4' : '2'}`" -->
+             
          <h1
             class="name text-uppercase"
             :style="{ fontSize: $vuetify.breakpoint.lgAndUp ? '700% !important' : '368% !important'}"
@@ -31,7 +33,7 @@
       </v-layout>   
        
     </div>
-  <div class="insta">
+  <div id ="insta" class="insta">
     
     <!-- <h1>
       <a :href="instapage">@{{ username }} on instagram</a>
@@ -51,7 +53,7 @@
             <div v-for="item in gram.carousel_media" :key="item.id">
               <v-carousel-item v-if="item.type== 'video'">
                 <v-hover v-slot:default="{ hover }">
-                  <video :controls="hover ? true : false" loop> 
+                  <video :controls="hover ? true : false" controlsList="nodownload" loop> 
                     <source :src="item.videos.standard_resolution.url" type="video/mp4" />
                   </video>
         
@@ -67,7 +69,7 @@
         </template>
         <template v-else>
           <v-hover v-slot:default="{ hover }">
-            <video :controls="hover ? true : false" loop>
+            <video :controls="hover ? true : false" controlsList="nodownload" loop>
               <source :src="gram.videos.standard_resolution.url" type="video/mp4" />
             </video>
           </v-hover>
@@ -98,7 +100,8 @@ export default {
       currentImage: true,
               logo1: require('@/assets/logo1.png'),
         logo2: require('@/assets/logoblack.png'),
-        hoverMe: false
+        hoverMe: false,
+        hoverMe2 : false
     };
   },
   components: {
