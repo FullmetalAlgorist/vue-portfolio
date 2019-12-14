@@ -1,7 +1,7 @@
 <template>
 <div class="outer">
 
-   <div class=" circle" height="100vh" :style="{ height: $isMobile() ? winHeight+'px' : '100vh'}">
+   <div class=" circle"  :style="{ height: $isMobile() ? '98vh' : '100vh'}">
         
       <v-layout
         :pa-5="$vuetify.breakpoint.mdAndUp"
@@ -11,7 +11,6 @@
         xs2
         mr-4
         class=" proc"
-       
         >
            <v-btn px-2  @mouseenter="hoverMe=true" @mouseleave="hoverMe=false" class=" but" :color="hoverMe ? 'white--text primarydark' : 'white--text grey' "  @click="toProc">live sketches</v-btn>
         <v-img :src="hoverMe ? logo2 : logo1" > </v-img>  
@@ -27,7 +26,6 @@
             <!-- :class="`display-${$vuetify.breakpoint.mdAndUp ? '4' : '3'}`" -->
        Generative Art and ALgorithmic Design
           </h1>
-      
         </div>
       </v-layout>   
        
@@ -56,6 +54,10 @@
                     <source :src="item.videos.standard_resolution.url" type="video/mp4" />
                   </video>
                 </v-hover>
+                <div class="portfolio-box-caption">
+                  testing
+                </div>
+                <div class="project-name"></div>
               </v-carousel-item>
               <v-carousel-item v-else :src="item.images.standard_resolution.url"></v-carousel-item>
             </div>
@@ -269,7 +271,7 @@ video {
   background-image: url("https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/insta.jpg");
   //  height: 100vh;
   background-size: cover;
-  background-position: 50% bottom;
+  background-position: 50% left;
   //height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   // height: calc(var(--vh, 1vh) * 100);
   // background-attachment: fixed;
@@ -297,5 +299,24 @@ background-color: #9e9e9e7a !important;
   font-weight: 350 !important;
   padding-top: 20vh;
     // font-size: 200% !important;
+}
+.portfolio-box-caption {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background: rgba(6, 56, 105, 0.9);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    padding: 0 15px;
+    font-size: 1em;
 }
 </style>
