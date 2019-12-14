@@ -1,7 +1,7 @@
 <template>
 <div class="outer">
 
-   <div class=" circle" width="100vw" :style="{ height: $isMobile() ? winHeight+'px' : '100vh'}">
+   <div class=" circle" height="100vh" :style="{ height: $isMobile() ? winHeight+'px' : '100vh'}">
         
       <v-layout
         :pa-5="$vuetify.breakpoint.mdAndUp"
