@@ -40,6 +40,8 @@
     </h1> -->
     <template v-if="grams.length > 0">
       <div v-for="(gram, index) in grams" :key="index" @contextmenu.prevent>
+      
+                <!-- <div class="project-name"></div>-->
         <!-- <v-icon medium @click="showTags=!showTags" class="pa-1 hash">{{ ico }}</v-icon> -->
                  <!-- <taggy
           v-if="hover"
@@ -48,8 +50,12 @@
           :style="{maxWidth: $vuetify.breakpoint.width < 790 ? '90vw' : '48vw', marginTop: $isMobile() ? '0' : '75px' }"
           :class="$vuetify.breakpoint.width > 1180 ? 'tri' : ''"
         /> -->
-        <template v-if="gram.carousel_media">
+        <template v-if="gram.carousel_media"> 
+           
           <v-carousel :cycle="false" hide-delimiters>
+            <div class="portfolio-box-caption">
+                  testing1
+                </div>
             <div v-for="item in gram.carousel_media" :key="item.id">
               <v-carousel-item v-if="item.type== 'video'">
                 <v-hover v-slot:default="{ hover }">
@@ -58,21 +64,26 @@
                   </video>
         
                 </v-hover>
-                <!-- <div class="portfolio-box-caption">
-                  testing
-                </div> -->
-                <!-- <div class="project-name"></div> -->
+                
               </v-carousel-item>
               <v-carousel-item v-else :src="item.images.standard_resolution.url"></v-carousel-item>
             </div>
           </v-carousel>
         </template>
         <template v-else>
+                    <!-- <div class="portfolio-box-caption">
+                  testing2
+                </div>  -->
           <v-hover v-slot:default="{ hover }">
+        <div> 
+         
             <video :controls="hover ? true : false" controlsList="nodownload" loop>
+             
               <source :src="gram.videos.standard_resolution.url" type="video/mp4" />
             </video>
+                </div>
           </v-hover>
+    
         </template>
       </div>
     </template>
@@ -311,17 +322,22 @@ background-color: #9e9e9e7a !important;
 }
 .portfolio-box-caption {
     position: absolute;
-    bottom: 0;
-    display: block;
+    // bottom: 0;
+    // display: block;
     width: 100%;
-    height: 100%;
+    //height: 100%;
     text-align: center;
-    opacity: 0;
+     opacity: 1;
+    z-index : 11;
     color: #fff;
     background: rgba(6, 56, 105, 0.9);
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     transition: all 0.2s;
+    min-height: calc(80vh - var(--spacing)*2);
+}
+.portfolio-box-caption:hover {
+  opacity: 1;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {

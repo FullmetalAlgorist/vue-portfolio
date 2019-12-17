@@ -6,17 +6,19 @@
       
           <core-heading v-text="'Who I am.'" />
             <section >
-          <v-layout wrap align-center>
+          <v-layout wrap align-center justify-center>
             <core-text class="ma-1">
-              <p class=" title font-weight-light  font-italic aboutMe text-xs-center" >&nbsp; &nbsp; &nbsp; {{ schema.basics.summary }}  </p>
-               <v-flex class="text-xs-center xs12" :pb-4="$vuetify.breakpoint.smAndDown">
+              <p class=" title font-weight-light  font-italic aboutMe text-xs-center" > {{ schema.basics.summary }}  </p>
+               <v-flex class="text-xs-center xs12" >
+                 <!-- :pb-4="$vuetify.breakpoint.smAndDown" -->
               <v-btn
                 @click="$vuetify.goTo('#contact')"
                 class="font-weight-light contactButton"
                 color="primarydark black--text"
               >Contact Me!</v-btn>
             </v-flex>
-             <br> <br>
+            <br>
+             <!-- <br> <br> -->
               <p class="family aboutMe love font-weight-light title font-italic text-xs-center"
               >If you are here for my generative art portfolio, follow the turtle!</p>
             </core-text>
@@ -28,7 +30,7 @@
          
         <v-hover
         v-slot:default="{ hover }">
-      <v-card class="r">
+      <v-card class="r z">
         <v-container grid-list-sm fluid 
         @click="toInsta"
         :style="{ cursor: 'pointer'}">
