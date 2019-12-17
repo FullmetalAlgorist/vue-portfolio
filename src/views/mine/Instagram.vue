@@ -51,40 +51,20 @@
           :class="$vuetify.breakpoint.width > 1180 ? 'tri' : ''"
         /> -->
         <template v-if="gram.carousel_media"> 
-           
-          <v-carousel :cycle="false" hide-delimiters>
-            <div class="portfolio-box-caption">
-                  testing1
-                </div>
-            <div v-for="item in gram.carousel_media" :key="item.id">
-              <v-carousel-item v-if="item.type== 'video'">
-                <v-hover v-slot:default="{ hover }">
-                  <video :controls="hover ? true : false" controlsList="nodownload" loop> 
-                    <source :src="item.videos.standard_resolution.url" type="video/mp4" />
-                  </video>
-        
-                </v-hover>
-                
-              </v-carousel-item>
-              <v-carousel-item v-else :src="item.images.standard_resolution.url"></v-carousel-item>
-            </div>
-          </v-carousel>
+          <v-hover v-slot:default="{ hover }">
+          
+        <multiple :cap="gram.caption.text" :grammy="gram.carousel_media" :hov="hover" />
+      
+          </v-hover>
         </template>
         <template v-else>
                     <!-- <div class="portfolio-box-caption">
                   testing2
                 </div>  -->
-          <v-hover v-slot:default="{ hover }">
-        <div> 
-         
-            <video :controls="hover ? true : false" controlsList="nodownload" loop>
-             
-              <source :src="gram.videos.standard_resolution.url" type="video/mp4" />
-            </video>
-                </div>
-          </v-hover>
-    
-        </template>
+              <v-hover v-slot:default="{ hover }">
+      <single  :sourceMe="gram.videos.standard_resolution.url" :hov="hover"/>
+  </v-hover>
+      </template>
       </div>
     </template>
     <div v-else class="loading"></div>
@@ -112,12 +92,16 @@ export default {
               logo1: require('@/assets/logo1.png'),
         logo2: require('@/assets/logoblack.png'),
         hoverMe: false,
-        hoverMe2 : false
+        hoverMe2 : false,
+        hoverMe3: false,
+    
     };
   },
   components: {
     ScalingSquaresSpinner,
-    Taggy: () => import("@/components/tagList")
+    Taggy: () => import("@/components/tagList"),
+    Multiple: () => import("@/components/Multiple"),
+    Single: () => import("@/components/Single")
   },
   computed: {
     instapage() {
@@ -191,7 +175,7 @@ export default {
   //position: relative;
 }
 .insta {
-  height: 100%;
+  //height: 100%;
   display: grid;
   grid-gap: var(--spacing);
   grid-template-columns: repeat(auto-fit, minmax(375px, 2fr));
@@ -276,11 +260,12 @@ a {
   //  border:black solid 1px;
   //  border-radius: 50%;
 }
-iframe,
-video {
-  //max-width: 30vw !important;
-  height: 100% !important;
+// iframe,
+video{
+  //max-width: 30vw !important; 
   width: 100% !important;
+ //height: 100% !important;
+ 
 }
 
 .circle {
@@ -320,35 +305,40 @@ background-color: #9e9e9e7a !important;
   
     // font-size: 200% !important;
 }
-.portfolio-box-caption {
-    position: absolute;
-    // bottom: 0;
-    // display: block;
-    width: 100%;
-    //height: 100%;
-    text-align: center;
-     opacity: 1;
-    z-index : 11;
-    color: #fff;
-    background: rgba(6, 56, 105, 0.9);
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    transition: all 0.2s;
-    min-height: calc(80vh - var(--spacing)*2);
-}
-.portfolio-box-caption:hover {
-  opacity: 1;
-}
+// .portfolio-box-caption {
+//     position: absolute;
+//     // bottom: 0;
+//     // display: block;
+//   //  width: 100%;
+//   height: 100%;
+//     text-align: center;
+//      opacity: 1;
+//     z-index : 11;
+//     color: #fff;
+//     background: rgba(6, 56, 105, 0.9);
+//     -webkit-transition: all 0.2s;
+//     -moz-transition: all 0.2s;
+//     transition: all 0.2s;
+//     min-height: calc(80vh - var(--spacing)*2);
+// }
+// .portfolio-box-caption:hover {
+//   opacity: 1;
+// }
 
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-    padding: 0 15px;
-    font-size: 1em;
-}
+// .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+//     padding: 0 15px;
+//     font-size: 1em;
+// }
 .topMe{
   margin-top: 40vh;
 }
 .bottomMe{
 margin-top: 50vh;
 }
-
+// .infomer{
+//   position: absolute;
+//   z-index: 12;
+//   padding-top: 10px;
+//   padding-left: 10px;
+// }
 </style>
