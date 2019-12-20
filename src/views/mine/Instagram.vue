@@ -52,9 +52,9 @@
         /> -->
         <template v-if="gram.carousel_media"> 
           <v-hover v-slot:default="{ hover }">
-          
+          <div>
         <multiple :cap="gram.caption.text" :grammy="gram.carousel_media" :hov="hover" />
-      
+      </div>
           </v-hover>
         </template>
         <template v-else>
@@ -62,7 +62,9 @@
                   testing2
                 </div>  -->
               <v-hover v-slot:default="{ hover }">
-      <single  :sourceMe="gram.videos.standard_resolution.url" :hov="hover"/>
+                <div>
+      <single  :sour="gram" :hov="hover"/>
+      </div>
   </v-hover>
       </template>
       </div>
