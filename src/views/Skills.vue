@@ -34,13 +34,13 @@
           </v-card-title>
         </v-card>
         <!-- on small and up... pl-4 pb-4 for this flex ^ -->
-        <blockquote>
+        <!-- <blockquote> -->
           <!-- <footer class="text-xs-center">
             <v-btn class="font-weight-light" color="primarydark black--text">
               download résumé 
             </v-btn>
           </footer>-->
-        </blockquote>
+        <!-- </blockquote>
       </v-layout>
     </v-flex>
     <v-flex xs12 sm5 px-3>
@@ -48,7 +48,8 @@
         <h3 class="display-1 me font-weight-medium mb-4 primary--text">{{ degree.title }}</h3>
         <education-card :value="degree" />
       </div>
-    </v-flex>
+    </v-flex> -->
+    
   </core-section>
 </template>
 
