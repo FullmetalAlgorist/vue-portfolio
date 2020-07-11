@@ -9,17 +9,21 @@
             <blockquote >
               <div>          
                 <p class="font-weight-light nothing text-xs-center">
-                  I currently prefer
-                  <span class="tech">Vue</span> (<span class="tech">Nuxt</span> with
+                  
+                  I am a fullstack developer but instead of a static toolkit, I advise clients based on their budget and needs, to choose the best tech for each job. 
+                  I can help modify a theme on an existing framework like 
+                    <span class="tech">Weebly</span> or
+                  <span class="tech">Squarespace</span> 
+                 to get you up and running quickly and cheaply.
+                  Or I can build you a bautiful custom website from scrath using 
+       <span class="tech">Vue</span> (<span class="tech">Nuxt</span> with
                   <span class="tech">Vuex</span> +
                   <span class="tech">Vuetify</span>) for front end development and a backend powered by
                   <span class="tech">Node</span>,
                   <span class="tech">Express</span> and
-                  <span class="tech">MongoDB</span> or
-                  <span class="tech">Firebase</span>, with
-                  <span class="tech">Axios</span> for API calls and
-                  <span class="tech">GreenSock</span> for animation.
-                  <span class="techy">I love implementing emerging technologies!</span>
+                  or anything inbetween using wordpress developer tools. 
+                  Contact me now for a free 30 min consult on the scope of your web needs!
+               <span class="techy">I love implementing emerging technologies!</span>
                 </p>
                   <p class="nothing text-xs-center">
                     <v-icon>mdi-robot</v-icon> &nbsp;&nbsp;I use
