@@ -3,7 +3,7 @@
     <abstract-3 />
       <v-flex xs12 sm6>
           <v-layout justify-space-between>
-      <core-heading>Photography</core-heading>
+      <core-heading>Photography bye</core-heading>
       </v-layout>
       </v-flex>
     <v-flex xs12 sm6>
