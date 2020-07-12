@@ -9,20 +9,19 @@
             <blockquote >
               <div>          
                 <p class="font-weight-light nothing text-xs-center">
-                  hello
-                  I am a fullstack developer and web consultant.  I advise clients based on their budget and needs, to choose the best tech for each job. 
+                  I am comfortable with a variety of programming languages and software, 
+                  I consult with clients to choose the best tech toolkit for each job based on their budget and project needs.
                   I can help modify a theme on an existing framework like 
                     <span class="tech">Weebly</span> or
                   <span class="tech">Squarespace</span> 
                  to get you up and running quickly and cheaply.
-                  Or I can build you a bautiful custom website from scrath using 
-       <span class="tech">Vue</span> (<span class="tech">Nuxt</span> with
-                  <span class="tech">Vuex</span> +
-                  <span class="tech">Vuetify</span>) for front end development and a backend powered by
-                  <span class="tech">Node</span>,
-                  <span class="tech">Express</span> and
-                  or anything inbetween using wordpress developer tools. 
-                  Contact me now for a free 30 min consult on the scope of your web needs!
+                  Or I can build you a beautiful custom website from scratch (like this page!) using 
+                  <span class="tech">Vue</span>,
+                  <span class="tech">Node</span> and
+                  <span class="tech">Express</span>.
+                  As well as anything in between using 
+                  <span class="tech">Wordpress Developer Tools</span>.
+                  Contact me now for a free 30 min consult on the scope of your website needs!
                <span class="techy">I love implementing emerging technologies!</span>
                 </p>
                   <p class="nothing text-xs-center">
