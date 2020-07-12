@@ -45,7 +45,7 @@
           <v-img
             :max-width="(site.id==3) ?  600 : 750"
             class="site"
-            :src="site.src"
+            :src="require('@/assets/'+ site.outline +'.png')"
             :lazy-src="require('@/assets/'+ site.outline +'Outline.png')"
           >
             <template v-slot:placeholder>
