@@ -18,7 +18,7 @@
       <!-- <priorities /> -->
       <!-- <glitch /> -->
       <!-- <Processing /> -->
-      <portfolio />
+      <!-- <portfolio /> -->
 
       <contact />
     </v-container>

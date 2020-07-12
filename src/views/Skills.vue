@@ -9,8 +9,8 @@
             <blockquote >
               <div>          
                 <p class="font-weight-light nothing text-xs-center">
-                  
-                  I am a fullstack developer but instead of a static toolkit, I advise clients based on their budget and needs, to choose the best tech for each job. 
+                  hello
+                  I am a fullstack developer and web consultant.  I advise clients based on their budget and needs, to choose the best tech for each job. 
                   I can help modify a theme on an existing framework like 
                     <span class="tech">Weebly</span> or
                   <span class="tech">Squarespace</span> 
