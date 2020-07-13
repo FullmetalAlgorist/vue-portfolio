@@ -58,6 +58,12 @@
       </v-flex>
                             
       <v-flex xs12 mb-3 :class="`${(site.id==='3') ? 'md6' : 'md5'}`">
+          <v-expansion-panel>
+          <v-expansion-panel-content class="subheading font-weight-light elevation-20">
+            <div slot="header" class="title text-uppercase font-weight-light">{{site.nerdTitle}}</div>
+            <div class="pa-3">&nbsp;&nbsp;&nbsp;&nbsp; {{ site.nerds }}</div>
+          </v-expansion-panel-content>
+        </v-expansion-panel>
          <a  :href="site.link" target="_blank">
           <v-img
             :max-width="(site.id==3) ?  600 : 750"
@@ -65,12 +71,7 @@
             :src="require('@/assets/page2.png')"
            
           >
-              <v-expansion-panel>
-          <v-expansion-panel-content class="subheading font-weight-light elevation-20">
-            <div slot="header" class="title text-uppercase font-weight-light">{{site.nerdTitle}}</div>
-            <div class="pa-3">&nbsp;&nbsp;&nbsp;&nbsp; {{ site.nerds }}</div>
-          </v-expansion-panel-content>
-        </v-expansion-panel>
+            
            </v-img>
          </a>
         <!-- <v-expansion-panel :min-width="(site.id==3) ?  600 : 750">
