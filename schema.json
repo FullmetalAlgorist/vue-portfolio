@@ -88,8 +88,8 @@
       "infoTitle": "What produce is in season?",
       "infoText1": "Produce that's in season is cheaper, more nutritious, tastes better, and has a lower carbon footprint!",
       "infoText2": "Produce that's in season is cheaper, more nutritious, tastes better, and has a lower carbon footprint!  This fun little app reminds you what's currently in season, click on an item to view it’s nutritional facts. Bookmark this app on your home screen for quick reference next time you're on a fruit & veg run!",
-      "nerdTitle": "For the nerds:",
-      "nerds": "With a dynamic grid system, employing Vue router for the season changes, and GreenSock animation for icon transitions, this Nuxt SPA represents my first foray into responsive design. The seasonal produce data is retrieved from a Firebase backend."
+      "nerdTitle": "About the webite",
+      "nerds": "Changing timess call for adaptation, I helped dharma cafe smoothly transition to a subscription based curbside pickup and delivery service to get healthy meals and fresh squeezed juice to the community efficiently. This eccomerce site was built using square's website builder that automatically populated from your square inventory"
     },
      {
       "id": "2",

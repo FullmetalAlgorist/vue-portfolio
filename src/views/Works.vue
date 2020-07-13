@@ -6,7 +6,7 @@
       <core-heading>Recent Work</core-heading>
       <p
         class="single font-weight-light font-italic"
-      >Here are some recent projects I've spent time on, click an image to launch the app!</p>
+      >Here are some recent projects I've spent time on, click an image to launch the site!</p>
     </v-flex>
     <v-flex xs12 sm5 mb-5 mt-2 text-xs-center class="me">
       <v-layout justify-center>
@@ -65,6 +65,12 @@
             :src="require('@/assets/page2.png')"
            
           >
+              <v-expansion-panel>
+          <v-expansion-panel-content class="subheading font-weight-light elevation-20">
+            <div slot="header" class="title text-uppercase font-weight-light">{{site.nerdTitle}}</div>
+            <div class="pa-3">&nbsp;&nbsp;&nbsp;&nbsp; {{ site.nerds }}</div>
+          </v-expansion-panel-content>
+        </v-expansion-panel>
            </v-img>
          </a>
         <!-- <v-expansion-panel :min-width="(site.id==3) ?  600 : 750">
@@ -82,14 +88,9 @@
               </div>
             </blockquote>
           </v-expansion-panel-content>
-        </v-expansion-panel>
-
-        <v-expansion-panel>
-          <v-expansion-panel-content class="subheading font-weight-light elevation-20">
-            <div slot="header" class="title text-uppercase font-weight-light">{{site.nerdTitle}}</div>
-            <div class="pa-3">&nbsp;&nbsp;&nbsp;&nbsp; {{ site.nerds }}</div>
-          </v-expansion-panel-content>
         </v-expansion-panel> -->
+
+    
          
       </v-flex>
      
