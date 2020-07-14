@@ -32,6 +32,8 @@
             </blockquote>
           </v-card-title>
         </v-card>
+        </v-layout>
+        </v-flex>
         <!-- on small and up... pl-4 pb-4 for this flex ^ -->
         <!-- <blockquote> -->
           <!-- <footer class="text-xs-center">
@@ -40,8 +42,8 @@
             </v-btn>
           </footer>-->
         <!-- </blockquote>
-      </v-layout>
-    </v-flex>
+      
+    
     <v-flex xs12 sm5 px-3>
       <div v-for="(degree, i) in schema.education" :key="i">
         <h3 class="display-1 me font-weight-medium mb-4 primary--text">{{ degree.title }}</h3>
