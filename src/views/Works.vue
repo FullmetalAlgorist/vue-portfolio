@@ -10,7 +10,7 @@
     </v-flex>
     <v-flex xs12 sm5 mb-5 mt-2 text-xs-center class="me">
       <v-layout justify-center>
-        <v-hover>
+        <!-- <v-hover>
           <v-card
             class="gitCard"
             :color="`${hover ? 'rgba(65,223,213,.42)' : 'rgba(0,0,0,.28)'}`"
@@ -31,7 +31,7 @@
               </blockquote>
             </v-card-title>
           </v-card>
-        </v-hover>
+        </v-hover> -->
       </v-layout>
     </v-flex>
 

@@ -44,22 +44,31 @@
           </VideoParallax> -->
         <!-- </v-parallax> -->
       </section>
-
       <section>
-        <v-layout
-          column
-          wrap
-          class="my-5"
-          align-center
-        >
-          <v-flex xs12 sm4 class="my-3">
-            <div class="text-xs-center">
-              <h2 class="headline">Welcome!</h2>
-              <span class="subheading">
-                I like to make generative art!
-              </span>
-            </div>
-          </v-flex>
+                 <v-flex xs12 sm7  class="z" >
+          <core-heading v-text="'Welcome to my portfolio'" />
+            
+          <v-layout wrap align-center justify-center>
+            <core-text class="ma-1">
+              <p class=" title font-weight-light  font-italic aboutMe text-xs-center" > I'm in italics </p>
+               <v-flex class="text-xs-center xs12" >
+                 <!-- :pb-4="$vuetify.breakpoint.smAndDown" -->
+             <!-- @click="$vuetify.goTo('#contact')" -->
+              <v-btn
+                class="font-weight-light contactButton"
+                color="primarydark black--text"
+              >Contact Me!</v-btn>
+            </v-flex>
+            <br>
+             <!-- <br> <br> -->
+              <p class="family aboutMe love font-weight-light title font-italic text-xs-center"
+              >If you are here for my generative art portfolio, follow the turtle!</p>
+            </core-text>
+           
+          </v-layout>
+      
+      </v-flex> 
+       </section>
           <v-flex xs12>
             <v-container grid-list-xl>
               <v-layout row wrap align-center>
@@ -72,18 +81,30 @@
                       <div class="headline text-xs-center">Here is a sampling</div>
                     </v-card-title>
                     <v-card-text>
-                
-                    <v-icon>mdi-robot</v-icon> &nbsp;&nbsp;     Often based on natural phenomenon or playing with natural algorithms to create visually pleasing results.  I currently use
+                      <p>
+                For fun I like to integrate technology with the human experience through generative and interactive visuals.
+                    <v-icon>mdi-robot</v-icon> &nbsp;&nbsp;     Often based on natural phenomenon or playing with natural 
+                    algorithms to create visually pleasing results.  I currently use
                   <span class="tech">TouchDesigner</span> and <span class="tech">Processing </span> for visual design.
-         
+         </p>
                     </v-card-text>
                   </v-card>
                 </v-flex>
-           
-              </v-layout>
+                     </v-layout>
             </v-container>
           </v-flex>
         </v-layout>
+            <!-- <v-row align="center" justify="center">
+    <v-img
+      src="https://bad.src/not/valid"
+      lazy-src="https://picsum.photos/id/11/100/60"
+      aspect-ratio="1"
+      class="grey lighten-2"
+      max-width="500"
+      max-height="300"
+    ></v-img>
+            </v-row> -->
+         
       </section>
 
       <section>
@@ -129,40 +150,33 @@
               </v-card>
             </v-flex>
             <v-flex xs12 sm4 offset-sm1>
-              <v-card class="elevation-0 transparent">
-                <v-card-title primary-title class="layout justify-center">
-                  <div class="headline">Contact us</div>
-                </v-card-title>
-                <v-card-text>
-                  Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                </v-card-text>
-                <v-list class="transparent">
-                  <v-list-tile>
-                    <v-list-tile-action>
-                      <v-icon class="blue--text text--lighten-2">mdi-phone</v-icon>
-                    </v-list-tile-action>
-                    <v-list-tile-content>
-                      <v-list-tile-title>777-867-5309</v-list-tile-title>
-                    </v-list-tile-content>
-                  </v-list-tile>
-                  <v-list-tile>
-                    <v-list-tile-action>
-                      <v-icon class="blue--text text--lighten-2">mdi-place</v-icon>
-                    </v-list-tile-action>
-                    <v-list-tile-content>
-                      <v-list-tile-title>Chicago, US</v-list-tile-title>
-                    </v-list-tile-content>
-                  </v-list-tile>
-                  <v-list-tile>
-                    <v-list-tile-action>
-                      <v-icon class="blue--text text--lighten-2">mdi-email</v-icon>
-                    </v-list-tile-action>
-                    <v-list-tile-content>
-                      <v-list-tile-title>john@vuetifyjs.com</v-list-tile-title>
-                    </v-list-tile-content>
-                  </v-list-tile>
-                </v-list>
-              </v-card>
+              
+        <v-card class="mb-4 second restrict" elevation="20">
+          <v-card-title>
+            <blockquote >
+              <div>          
+                <p class="font-weight-light nothing text-xs-center">
+                  I am comfortable with a variety of programming languages and software, 
+                  I consult with clients to choose the best tech toolkit for each job based on their budget and project needs.
+                  I can help modify a theme on an existing framework like 
+                    <span class="tech">Weebly</span> or
+                  <span class="tech">Squarespace</span> 
+                 to get you up and running quickly and cheaply.
+                  Or I can build you a beautiful custom website from scratch (like this page!) using 
+                  <span class="tech">Vue</span>,
+                  <span class="tech">Node</span> and
+                  <span class="tech">Express</span>.
+                  As well as anything in between using 
+                  <span class="tech">Wordpress Developer Tools</span>.
+                  Contact me now for a free 30 min consult on the scope of your website needs!
+               <span class="techy">I love implementing emerging technologies!</span>
+                </p>
+                
+              </div>
+            </blockquote>
+          </v-card-title>
+        </v-card>
+      
             </v-flex>
           </v-layout>
         </v-container>
@@ -208,6 +222,11 @@ import VideoBackground from 'vue-responsive-video-background-player';
   background-color: #aa37b4;
   margin-top: 10px !important;
   margin-right: 23px;
+}
+.second {
+  background-color: #161d25ad !important;
+  /* //  opacity: 0.72 !important; */
+  border-radius: 1%;
 }
 </style>
 

@@ -13,13 +13,13 @@
     >
     
       <about-me />
-      <skills />
+     
       <works />
       <!-- <priorities /> -->
       <!-- <glitch /> -->
       <!-- <Processing /> -->
       <!-- <portfolio /> -->
-
+ <skills />
       <contact />
     </v-container>
   </div>

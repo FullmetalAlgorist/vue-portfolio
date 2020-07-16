@@ -24,10 +24,7 @@
                   Contact me now for a free 30 min consult on the scope of your website needs!
                <span class="techy">I love implementing emerging technologies!</span>
                 </p>
-                  <p class="nothing text-xs-center">
-                    <v-icon>mdi-robot</v-icon> &nbsp;&nbsp;I use
-                  <span class="tech">TouchDesigner</span> and <span class="tech">Processing </span> for visual design.
-              </p>
+                
               </div>
             </blockquote>
           </v-card-title>
