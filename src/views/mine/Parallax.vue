@@ -10,11 +10,11 @@
  </video-background> -->
   <video-background 
     src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/cubictho.mp4"
-    poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/trianglifyLarge.png"
-    style="max-height: 600px; height: 100vh;"
-    overlay="linear-gradient(45deg,#2a4ae430,#fb949e6b)" 
+    poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/cube.png"
+    style="max-height: 380px; height: 100vh;"
     playsWhen="canplaythrough"
 >
+<!-- overlay="linear-gradient(45deg,#2a4ae430,#fb949e6b)"  -->
     <h1 style="color: white;">Hallo welcome!</h1>
 </video-background>
         <!-- height="600" -->
@@ -115,7 +115,7 @@
       </section>
 
       <section>
-        <v-parallax src="https://images.unsplash.com/photo-1508624217470-5ef0f947d8be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" height="380">
+        <!-- <v-parallax src="https://images.unsplash.com/photo-1508624217470-5ef0f947d8be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" height="380">
           <v-layout column align-center justify-center>
             <div class="headline white--text mb-3 text-xs-center">Web development has never been easier</div>
             <em>Kick-start your application today</em>
@@ -128,7 +128,16 @@
               Get Started
             </v-btn>
           </v-layout>
-        </v-parallax>
+        </v-parallax> -->
+         <video-background 
+    src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/reblob4Small.mp4"
+    poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/blob.png"
+    style="max-height: 380px; height: 100vh;"
+    playsWhen="canplaythrough"
+>
+<!-- overlay="linear-gradient(45deg,#2a4ae430,#fb949e6b)"  -->
+    <h1 style="color: white;">Hallo welcome!</h1>
+</video-background>
       </section>
 
       <section>
