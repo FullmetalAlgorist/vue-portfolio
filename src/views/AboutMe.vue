@@ -89,7 +89,9 @@ export default {
       this.$route.push("https://codepen.io/akcrew/");
     },
     toInsta(){
-        this.$router.push('/insta');
+      // this.$route.push("https://akcrew-transitions.herokuapp.com/");
+      
+        this.$router.push('/parallax');
       },
   }
 };

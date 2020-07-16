@@ -2,14 +2,34 @@
   <div class="parralax">
     <v-content>
       <section>
-        <v-parallax src="https://images.unsplash.com/photo-1514907707149-eca420f5de51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80" height="600">
+         <!-- <video-background
+    src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/cubictho.mp4"
+    style=" height: 100vh;"
+ >
+    <h1 style="color: white;">Hello welcome!</h1>
+ </video-background> -->
+  <video-background 
+    src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/cubictho.mp4"
+    poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/trianglifyLarge.png"
+    style="max-height: 600px; height: 100vh;"
+    overlay="linear-gradient(45deg,#2a4ae430,#fb949e6b)" 
+    playsWhen="canplaythrough"
+>
+    <h1 style="color: white;">Hallo welcome!</h1>
+</video-background>
+        <!-- height="600" -->
+       
+  <!-- Some Html Here -->
+
+        <!-- <v-parallax src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/goodOne.mov" > -->
+          <!-- <VideoParallax height="800" img="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/frontPage/trianglifyLarge.png" src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/reblob4Small.mov"> 
           <v-layout
             column
             align-center
             class="white--text"
             justify-center
           > 
-            <!-- <img src="@/assets/logos/bierebw.png" alt="Vuetify.js" height="200"> -->
+  
             <h1 class="white--text mb-2 display-1 text-xs-center">Oh hello</h1>
             <div class="subheading mb-3 text-xs-center">welcome</div>
           <v-btn
@@ -21,7 +41,8 @@
             <v-icon>mdi-circle</v-icon>
             </v-btn>
           </v-layout>
-        </v-parallax>
+          </VideoParallax> -->
+        <!-- </v-parallax> -->
       </section>
 
       <section>
@@ -182,9 +203,12 @@
 </template>
 
 <script>
+import VideoParallax from 'vuetify-video-parallax';
+import VideoBackground from 'vue-responsive-video-background-player';
   export default {
     components: {
-
+      VideoParallax,
+      VideoBackground
     },
     computed:{
       med(){

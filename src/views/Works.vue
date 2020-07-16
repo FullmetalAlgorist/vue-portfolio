@@ -58,22 +58,29 @@
       </v-flex>
                             
       <v-flex xs12 mb-3 :class="`${(site.id==='3') ? 'md6' : 'md5'}`">
-          <v-expansion-panel>
-          <v-expansion-panel-content class="subheading font-weight-light elevation-20">
-            <div slot="header" class="title text-uppercase font-weight-light">{{site.nerdTitle}}</div>
-            <div class="pa-3">&nbsp;&nbsp;&nbsp;&nbsp; {{ site.nerds }}</div>
-          </v-expansion-panel-content>
-        </v-expansion-panel>
-         <a  :href="site.link" target="_blank">
+        <div >
+         
+          
+      
+         <!-- <a  :href="site.link" target="_blank"> -->
           <v-img
             :max-width="(site.id==3) ?  600 : 750"
             class="site"
-            :src="require('@/assets/page2.png')"
+            :src="require('@/assets/page.png')"
            
           >
-            
-           </v-img>
-         </a>
+  <v-expansion-panel class="bb">
+          <v-expansion-panel-content class="second hover font-weight-light elevation-20">
+            <div slot="header" class="f text-uppercase font-weight-light">{{site.nerdTitle}}</div>
+            <div class="pa-3 f2">&nbsp;&nbsp;&nbsp;&nbsp; {{ site.nerds }}</div>
+          </v-expansion-panel-content>
+           
+           </v-expansion-panel>
+
+  </v-img> 
+
+            </div>
+         <!-- </a> -->
         <!-- <v-expansion-panel :min-width="(site.id==3) ?  600 : 750">
           <v-expansion-panel-content class="second elevation-20 App">
             <div slot="header" class="display-1 font-weight-light">About the application</div>
@@ -127,6 +134,16 @@ export default {
 };
 </script>
 <style scoped lang="scss" >
+.f{
+  font-size: 22px;
+}
+.f2{
+  font-size: 19px;
+  line-height: 28px;
+}
+.expanse{
+  position: absolute;
+}
 .gitMe {
   font-size: 90px !important;
   margin: 30px;
@@ -191,12 +208,16 @@ export default {
   font-size: 1.6em !important;
 }
 .site {
+  // padding-top:-30px;
+  // top: 45px;
   margin-bottom: 30px;
 }
+
 .second {
   // background-color: #161d25ad !important;
   border-radius: 2%;
   font-family: "Open Sans", sans-serif;
+
   //  font-size: 1.3em !important;
   //  opacity: 0.72 !important;
 }
@@ -207,10 +228,17 @@ export default {
 // #008078a8
 // #2c2c2c78 dark gray maybe for top bit
 .v-expansion-panel__container {
-  background-color: #2c2c2c78 !important;
+   background-color: #000000c4 !important;
   // opacity: 0.72 !important;
   z-index: 1;
   border-radius: 1%;
+}
+.v-expansion-panel{
+  text-align: center;
+}
+.v-image__image--cover {
+    //background-size: cover;
+    top: 47px;
 }
 .App {
   background-color: #008078a8 !important;

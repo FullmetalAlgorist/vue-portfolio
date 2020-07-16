@@ -149,6 +149,7 @@ export default {
       }
   },
   created() {
+    console.log('hiiiiiiiiiiiii');
     this.getGrams();
   }
 };
