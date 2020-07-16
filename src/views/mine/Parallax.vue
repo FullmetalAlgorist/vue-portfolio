@@ -9,13 +9,13 @@
     <h1 style="color: white;">Hello welcome!</h1>
  </video-background> -->
   <video-background 
-    src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/cubictho.mp4"
-    poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/cube.png"
+    src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/reblob4Small.mp4"
+    poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/blob.png"
     style="max-height: 380px; height: 100vh;"
     playsWhen="canplaythrough"
 >
 <!-- overlay="linear-gradient(45deg,#2a4ae430,#fb949e6b)"  -->
-    <h1 style="color: white;">Hallo welcome!</h1>
+    <!-- <h1 style="color: white;">Hallo welcome!</h1> -->
 </video-background>
         <!-- height="600" -->
        
@@ -54,9 +54,9 @@
         >
           <v-flex xs12 sm4 class="my-3">
             <div class="text-xs-center">
-              <h2 class="headline">The best way to start developing</h2>
+              <h2 class="headline">Welcome!</h2>
               <span class="subheading">
-                Cras facilisis mi vitae nunc 
+                I like to make generative art!
               </span>
             </div>
           </v-flex>
@@ -69,45 +69,17 @@
                       <v-icon x-large class="blue--text text--lighten-2">mdi-color_lens</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline text-xs-center">Material Design</div>
+                      <div class="headline text-xs-center">Here is a sampling</div>
                     </v-card-title>
                     <v-card-text>
-                      Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
-                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                      Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
+                
+                    <v-icon>mdi-robot</v-icon> &nbsp;&nbsp;     Often based on natural phenomenon or playing with natural algorithms to create visually pleasing results.  I currently use
+                  <span class="tech">TouchDesigner</span> and <span class="tech">Processing </span> for visual design.
+         
                     </v-card-text>
                   </v-card>
                 </v-flex>
-                <v-flex xs12 md4>
-                  <v-card class="elevation-0 transparent">
-                    <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">mdi-flash_on</v-icon>
-                    </v-card-text>
-                    <v-card-title primary-title class="layout justify-center">
-                      <div class="headline">Fast development</div>
-                    </v-card-title>
-                    <v-card-text>
-                      Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
-                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                      Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
-                    </v-card-text>
-                  </v-card>
-                </v-flex>
-                <v-flex xs12 md4>
-                  <v-card class="elevation-0 transparent">
-                    <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">mdi-build</v-icon>
-                    </v-card-text>
-                    <v-card-title primary-title class="layout justify-center">
-                      <div class="headline text-xs-center">Completely Open Sourced</div>
-                    </v-card-title>
-                    <v-card-text>
-                      Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
-                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                      Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
-                    </v-card-text>
-                  </v-card>
-                </v-flex>
+           
               </v-layout>
             </v-container>
           </v-flex>
@@ -130,13 +102,14 @@
           </v-layout>
         </v-parallax> -->
          <video-background 
-    src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/reblob4Small.mp4"
-    poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/blob.png"
+   
+     src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/cubictho.mp4"
+    poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/cube.png"
     style="max-height: 380px; height: 100vh;"
     playsWhen="canplaythrough"
 >
 <!-- overlay="linear-gradient(45deg,#2a4ae430,#fb949e6b)"  -->
-    <h1 style="color: white;">Hallo welcome!</h1>
+    <!-- <h1 style="color: white;">Hallo welcome!</h1> -->
 </video-background>
       </section>
 
