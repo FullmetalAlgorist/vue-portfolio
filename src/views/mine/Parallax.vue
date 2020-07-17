@@ -36,7 +36,7 @@
                     >I love to expirement with cool looking algoritms and generative natural phenomemon.  Often rendered in real time and occasionally interactive,   <p class="nothing text-xs-center">
                     <v-icon>mdi-robot</v-icon> &nbsp;&nbsp;I'm currently using 
                   <span class="tech">TouchDesigner</span> and <span class="tech">Processing </span> for visual design.
-              </p></p>
+              </p>
                   </core-text>
                 </v-layout>
               </v-card>
@@ -185,7 +185,7 @@ export default {
   z-index: 10;
 }
 .content {
-  height: 100vh;
+  min-height: 100vh;
 }
 .vid {
   height: 50vh;
