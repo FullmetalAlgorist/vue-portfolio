@@ -22,7 +22,7 @@
                   <core-text class="ma-1">
                     <p
                       class="title font-weight-light font-italic aboutMe text-xs-center"
-                    >I'm in italics</p>
+                    >I love to expirement with cool looking algoritms and generative natural phenomemon.  Often rendered in real time and occasionally interactive</p>
                     <v-flex class="text-xs-center xs12">
                       <v-btn
                         class="font-weight-light contactButton"
@@ -33,10 +33,16 @@
                     <!-- <br> <br> -->
                     <p
                       class="family aboutMe love font-weight-light title font-italic text-xs-center"
-                    >I love to expirement with cool looking algoritms and generative natural phenomemon.  Often rendered in real time and occasionally interactive,   <p class="nothing text-xs-center">
+                    >
+                    
+                     <v-icon>mdi-robot</v-icon> &nbsp;&nbsp;
+                     <br />I'm currently using 
+                  <span class="tech">TouchDesigner</span> and <span class="tech">Processing </span> for visual design.
+                      </p>
+                      <!-- <p class="nothing text-xs-center">
                     <v-icon>mdi-robot</v-icon> &nbsp;&nbsp;I'm currently using 
                   <span class="tech">TouchDesigner</span> and <span class="tech">Processing </span> for visual design.
-              </p>
+                      </p> -->
                   </core-text>
                 </v-layout>
               </v-card>
