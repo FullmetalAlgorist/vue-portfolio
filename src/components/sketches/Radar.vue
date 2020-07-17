@@ -1,5 +1,5 @@
 <template>
-  <v-layout class="sketchMe elevation-24 pt-2" align-center justify-center wrap fill-height :style="{marginTop: $isMobile() ? '0' : '60'}">
+  <v-layout class="sketchMe  pt-2" align-center justify-center wrap fill-height :style="{marginTop: $isMobile() ? '0' : '60'}">
     <info-panel :sketchMe="0" v-model="dialog"></info-panel>
     <v-flex justify-space-between xs4>
       <v-tooltip top>
@@ -14,7 +14,7 @@
     <v-flex justify-space-between xs4>
       <v-tooltip top>
         <template v-slot:activator="{ on }">
-          <v-btn style="font-size: 139%" outline color="black" large @click="flip" v-on="on">flip</v-btn>
+          <v-btn fab style="font-size: 220%" outline color="white" large @click="flip" v-on="on">GO</v-btn>
         </template>
         <span>Try new formula!</span>
       </v-tooltip>
