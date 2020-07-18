@@ -123,7 +123,7 @@
 
           <video-background
           class="vid"
-          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/Tychoesque.mp4"
+          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/rainbowSmall.mp4"
           poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/two.png"
           playsWhen="canplaythrough"
         ></video-background>
