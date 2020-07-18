@@ -14,7 +14,7 @@
       <section>
         <v-container grid-list-xl class="content">
           <v-layout row wrap justify-center class="my-5">
-            <v-flex xs12 sm3 class="z">
+            <v-flex xs12 lg4 class="z">
               <v-card class="elevation-0 transparent">
                 <core-heading v-text="'Welcome to my portfolio'" />
 
@@ -49,13 +49,13 @@
             </v-flex>
 
             <!-- SUPERFORMULA!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-                  <v-flex xs12 sm6 class="sletchMe">
+                  <v-flex xs12 lg4 md6 class="sletchMe">
                     <!-- <v-card class="elevation-0 transparent">  -->
                       <radar-component />
                     <!-- </v-card> -->
                   </v-flex>
             <!-- SUPERFORMULA!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-            <v-flex xs12 sm3>
+            <v-flex xs12 lg4 md6>
               <v-card class="elevation-0 transparent">
                 <v-card-text class="text-xs-center">
                   <v-icon x-large class="blue--text text--lighten-2">mdi-color_lens</v-icon>
@@ -69,6 +69,47 @@
                   </p>
                 </v-card-text>
               </v-card>
+            </v-flex>
+
+            <!-- --- -->
+          </v-layout>
+        </v-container>
+      </section>
+      <section>
+ 
+       
+        <video-background
+          class="vid"
+          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/goodOne.mp4"
+          poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/goodOne.png"
+          playsWhen="canplaythrough"
+        ></video-background>
+    
+      </section>
+
+      <section>
+
+
+
+
+        <v-container grid-list-xl class="content">
+          <v-layout row wrap justify-center class="my-5">
+               <v-flex xs12 sm4 >
+              <v-card class="mb-4 second restrict" elevation="20">
+                <v-card-title>
+                  <blockquote>
+                    
+                    <p class="title font-weight-light font-italic aboutMe text-xs-center">      Generative Art refers to any art practice where the artist uses a system, such as a set of natural language rules a computer program, a machine, or other procedural invention, which is then set into motion with some degree of autonomy to or resulting in a complex work of art (Philip Galanter).</p>
+           
+                  </blockquote>
+                </v-card-title>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 sm6 text-xs-center>
+              <video width="85%" height="85%" autoplay controls>
+  <source src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/Tychoesque.mp4"  type="video/mp4">
+              </video>
+    
             </v-flex>
           </v-layout>
         </v-container>
@@ -131,6 +172,7 @@
                 </v-card-title>
               </v-card>
             </v-flex>
+            
           </v-layout>
         </v-container>
       </section>
@@ -156,6 +198,7 @@
 import VideoParallax from "vuetify-video-parallax";
 import VideoBackground from "vue-responsive-video-background-player";
 import radarComponent from "@/components/sketches/Radar.vue";
+import VueCoreVideoPlayer from "vue-core-video-player";
 if (process.browser) {
   var radar = require("@/Radar.js");
 }
@@ -163,7 +206,8 @@ export default {
   components: {
     VideoParallax,
     VideoBackground,
-    radarComponent
+    radarComponent,
+    VueCoreVideoPlayer
   },
   computed: {
     med() {
@@ -196,9 +240,8 @@ export default {
 .vid {
   height: 50vh;
 }
-.sketchMe{
-  padding-left:30px; 
-  padding-right:30px;
+.smallerVid{
+  width: 300px;
 }
 </style>
 

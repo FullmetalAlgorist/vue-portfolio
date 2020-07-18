@@ -22,20 +22,21 @@
     <v-flex justify-space-between xs4>
       <v-tooltip top>
         <template v-slot:activator="{ on }">
-          <v-btn small fab @click="down" v-on="on">
-            <v-icon large>mdi-minus</v-icon>
-          </v-btn>
-        </template>
-        <span>Subtract a vertex</span>
-      </v-tooltip>
-      <v-tooltip top>
-        <template v-slot:activator="{ on }">
           <v-btn small fab @click="up" v-on="on">
             <v-icon large>mdi-plus</v-icon>
           </v-btn>
         </template>
         <span>Add a vertex</span>
       </v-tooltip>
+      <v-tooltip top>
+        <template v-slot:activator="{ on }">
+          <v-btn small fab @click="down" v-on="on">
+            <v-icon large>mdi-minus</v-icon>
+          </v-btn>
+        </template>
+        <span>Subtract a vertex</span>
+      </v-tooltip>
+      
     </v-flex>
     <v-flex class="top" xs12 text-xs-center justify-center fluid fill-height justify-space-between>
       <div class="canvas" id="p5Canvas"></div>

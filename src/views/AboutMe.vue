@@ -51,11 +51,11 @@
             <v-card-title primary-title>
               <blockquote>
                 <div>
-                  <v-icon class="gitMe pulse-button">mdi-arrow-up-bold-circle-outline</v-icon>
+                  <v-icon class="gitMe pulse-button">mdi-arrow-up</v-icon>
                   <p
                     class="justText headline font-weight-light font-italic pr-1"
-                    :style="{ width: $vuetify.breakpoint.smOnly ?  '249px' : '310px'}"
-                  >Follow the glitch turtle to check out my creative coding and visuals portfolio!</p>
+                    :style="{ width: $vuetify.breakpoint.smOnly ?  '249px' : '249px'}"
+                  >Follow the glitch turtle to check out my creative coding and motion graphics portfolio!</p>
             
                 </div>
               </blockquote>
@@ -150,17 +150,18 @@ export default {
 }
 
 .gitCard {
-  margin-top: 30px;
-  height: 145px;
+  margin-top: 20px;
+  height: 170px;
   border-radius: 3%;
+  justify-content: center;
 }
 .gitMe {
   z-index: -1;
   align-content: center;
   text-align: center;
-  opacity: 0.25; 
+  opacity: 0.4; 
   font-size: 90px !important;
-  margin: 15px;
+  margin: 30px;
 }
 .pulse-button {
   z-index: 1 !important;
@@ -206,7 +207,7 @@ export default {
 }
 .justText {
   color: rgba(255, 255, 255, 0.906);
-  margin-top: -110px;
+  margin-top: -150px;
   font-family: "Open Sans", sans-serif !important;
   font-size: 1.6em !important;
 }
