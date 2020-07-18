@@ -105,12 +105,46 @@
                 </v-card-title>
               </v-card>
             </v-flex>
-            <v-flex xs12 sm6 text-xs-center>
-              <video width="85%" height="85%" autoplay controls>
+     
+              <!-- <video width="100%" height="100%" autoplay controls>
   <source src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/Tychoesque.mp4"  type="video/mp4">
-              </video>
+              </video> -->
     
+                <v-flex xs12 sm6 text-xs-center>
+
+          <video-background
+          class="vid"
+          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/Tychoesque.mp4"
+          poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/one.png"
+          playsWhen="canplaythrough"
+        ></video-background>
+   </v-flex>
+        <v-flex xs12 sm6 text-xs-center>
+
+          <video-background
+          class="vid"
+          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/Tychoesque.mp4"
+          poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/two.png"
+          playsWhen="canplaythrough"
+        ></video-background>
+   </v-flex>
+        <v-flex xs12 sm4 >
+              <v-card class="mb-4 second restrict" elevation="20">
+                <v-card-title>
+                  <blockquote>
+                    
+                    <p class="title font-weight-light font-italic aboutMe text-xs-center">      Generative Art refers to any art practice where the artist uses a system, such as a set of natural language rules a computer program, a machine, or other procedural invention, which is then set into motion with some degree of autonomy to or resulting in a complex work of art (Philip Galanter).</p>
+           
+                  </blockquote>
+                </v-card-title>
+              </v-card>
             </v-flex>
+     
+              <!-- <video width="100%" height="100%" autoplay controls>
+  <source src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/Tychoesque.mp4"  type="video/mp4">
+              </video> -->
+    
+           
           </v-layout>
         </v-container>
       </section>
