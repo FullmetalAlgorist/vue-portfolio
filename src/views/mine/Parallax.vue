@@ -22,7 +22,7 @@
                   <core-text class="ma-1">
                     <p
                       class="title font-weight-light font-italic aboutMe text-xs-center"
-                    >I love to expirement with cool looking algoritms and generative natural phenomemon.  Often rendered in real time and occasionally interactive</p>
+                    >I love to expirement with cool looking algoritms and generative natural phenomemon.  Often rendered in real time and occasionally accompanied by music.</p>
                     <v-flex class="text-xs-center xs12">
                       <v-btn
                         class="font-weight-light contactButton"
@@ -37,7 +37,7 @@
                     
                      <v-icon>mdi-robot</v-icon> &nbsp;&nbsp;
                      <br />I'm currently using 
-                  <span class="tech">TouchDesigner</span> and <span class="tech">Processing </span> for visual design.
+                  <span class="tech">TouchDesigner</span> and <span class="tech">Processing </span> for my creative coding adventures.
                       </p>
                       <!-- <p class="nothing text-xs-center">
                     <v-icon>mdi-robot</v-icon> &nbsp;&nbsp;I'm currently using 
@@ -133,8 +133,9 @@
                 <v-card-title>
                   <blockquote>
                     
-                    <p class="title font-weight-light font-italic aboutMe text-xs-center">      Generative Art refers to any art practice where the artist uses a system, such as a set of natural language rules a computer program, a machine, or other procedural invention, which is then set into motion with some degree of autonomy to or resulting in a complex work of art (Philip Galanter).</p>
-           
+                    <p class="title font-weight-light font-italic aboutMe text-xs-center">My process often involves finding inspiration in nature or from another artists work, and experimenting with concepts and algorithms until I create something visually pleasing. <br> <br>
+                    My favorite way to display my visuals is on a large surface with a projector, but video clips and stills can be just as nice.
+                    </p>
                   </blockquote>
                 </v-card-title>
               </v-card>
