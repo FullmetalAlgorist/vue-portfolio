@@ -3,7 +3,7 @@
     <v-content>
       <section>
         <video-background
-          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/reblob4Small.mp4"
+          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/BLOB.mp4"
           poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/blob.png"
           class="vid"
           playsWhen="canplaythrough"
