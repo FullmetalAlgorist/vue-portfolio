@@ -3,8 +3,8 @@
     <v-content>
       <section>
         <video-background
-          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/BLOB.mp4"
-          poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/blob.png"
+          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/blobTho480.mp4"
+          poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/blobtwo.png"
           class="vid"
           playsWhen="canplaythrough"
         ></video-background>
