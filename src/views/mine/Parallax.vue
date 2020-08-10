@@ -3,8 +3,8 @@
     <v-content>
       <section>
         <video-background
-          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/tychoREDO.3.mp4"
-          poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/REDOtho.png"
+          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/blob720.mp4"
+          poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/bloop.png"
           class="vid"
           playsWhen="canplaythrough"
         objectFit="scale-down"
@@ -115,8 +115,8 @@
 
           <video-background
           class="vid"
-          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/Tychoesque.mp4"
-          poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/one.png"
+          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/tychoREDO.3.mp4"
+          poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/REDOtho.png"
           playsWhen="canplaythrough"
         ></video-background>
    </v-flex>
