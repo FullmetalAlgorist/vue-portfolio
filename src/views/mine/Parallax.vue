@@ -17,13 +17,13 @@
           <v-layout row wrap justify-center class="my-5">
             <v-flex xs12 lg4 class="z">
               <v-card class="elevation-0 transparent">
-                <core-heading v-text="'Welcome to my portfolio'" />
+                <core-heading v-text="'Welcome to my creative coding portfolio'" />
 
                 <v-layout wrap align-center justify-center>
                   <core-text class="ma-1">
                     <p
                       class="title font-weight-light font-italic aboutMe text-xs-center"
-                    >I love to expirement with cool looking algoritms and generative natural phenomemon.  Often rendered in real time and occasionally accompanied by music.</p>
+                    >A constant work in progress... Mostly math, often inspired by nature.  I love to expirement with generative algorithms.  Here is a collection of some of my work.</p>
                     <v-flex class="text-xs-center xs12">
                       <v-btn
                         class="font-weight-light contactButton"
@@ -62,11 +62,11 @@
                   <v-icon x-large class="blue--text text--lighten-2">mdi-color_lens</v-icon>
                 </v-card-text>
                 <v-card-title primary-title class="layout justify-center">
-                  <div class="headline text-xs-center">Here is a live processing sketch</div>
+                  <div class="headline text-xs-center">Try it for yourself!</div>
                 </v-card-title>
                 <v-card-text>
                 <p class="family aboutMe love font-weight-light title font-italic text-xs-center">
-                   Try adding or subtracting vertices, or randomizing the formula completely by clicking GO and starting over!
+                   This is a live processing sketch showing one of my favorite algorithms, the superformula. Try adding or subtracting vertices, or randomizing the formula completely by clicking GO and starting over!
                   </p>
                 </v-card-text>
               </v-card>
@@ -134,9 +134,7 @@
                 <v-card-title>
                   <blockquote>
                     
-                    <p class="title font-weight-light font-italic aboutMe text-xs-center">My process often involves finding inspiration in nature or from another artists work, and experimenting with concepts and algorithms until I create something visually pleasing. <br> <br>
-                    My favorite way to display my visuals is on a large surface with a projector, but video clips and stills can be just as nice.
-                    </p>
+                    <p class="title font-weight-light font-italic aboutMe text-xs-center">In philosophy, systems theory, science, and art, emergence occurs when an entity is observed to have properties its parts do not have on their own. These properties or behaviors emerge only when the parts interact in a wider whole.  This particle system is a simplistic example of emergent behavior</p>
                   </blockquote>
                 </v-card-title>
               </v-card>
@@ -165,47 +163,25 @@
             <v-flex xs12 sm4>
               <v-card class="elevation-0 transparent">
                 <v-card-title primary-title class="layout justify-center">
-                  <div class="headline">Company info</div>
+                  <div class="headline">So what?</div>
                 </v-card-title>
                 <v-card-text>
-                  Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                  Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti.
+                 Although disteilled in to eye catching loops on this page, the real power of generative art is real time interective displays.  Sometimes this is on a stage with a musician and sometimes it is a stand alone interactive art piece.  All of my work is rendered in real time and can be manipulated to interact with any input I choose.
                 </v-card-text>
               </v-card>
             </v-flex>
-            <v-flex xs12 sm4 offset-sm1>
+            <v-flex xs12 sm7 xl6 offset-sm1>
               <v-card class="mb-4 second restrict" elevation="20">
-                <v-card-title>
-                  <blockquote>
-                    <div>
-                      <p class="font-weight-light nothing text-xs-center">
-                        I am comfortable with a variety of programming languages and software,
-                        I consult with clients to choose the best tech toolkit for each job based on their budget and project needs.
-                        I can help modify a theme on an existing framework like
-                        <span
-                          class="tech"
-                        >Weebly</span> or
-                        <span class="tech">Squarespace</span>
-                        to get you up and running quickly and cheaply.
-                        Or I can build you a beautiful custom website from scratch (like this page!) using
-                        <span
-                          class="tech"
-                        >Vue</span>,
-                        <span class="tech">Node</span> and
-                        <span class="tech">Express</span>.
-                        As well as anything in between using
-                        <span
-                          class="tech"
-                        >Wordpress Developer Tools</span>.
-                        Contact me now for a free 30 min consult on the scope of your website needs!
-                        <span
-                          class="techy"
-                        >I love implementing emerging technologies!</span>
-                      </p>
-                    </div>
-                  </blockquote>
-                </v-card-title>
+                
+                
+
+          <video-background
+          class="vid"
+          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/wire720.mp4"
+          poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/WIRE.jpg"
+          playsWhen="canplaythrough"
+        ></video-background>
+  
               </v-card>
             </v-flex>
             
