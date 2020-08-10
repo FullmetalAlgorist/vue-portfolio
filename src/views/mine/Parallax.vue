@@ -115,7 +115,7 @@
 
           <video-background
           class="vid"
-          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/tychoREDO.3.mp4"
+          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/TT.mp4"
           poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/REDOtho.png"
           playsWhen="canplaythrough"
         ></video-background>
@@ -123,9 +123,9 @@
         <v-flex xs12 sm6 text-xs-center>
 
           <video-background
-          class="smallerVid"
-          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/part720.mp4"
-          poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/sss.png"
+          class="vid"
+          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/PARTY720.mp4"
+          poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/smol4.png"
           playsWhen="canplaythrough"
         ></video-background>
    </v-flex>
@@ -280,7 +280,8 @@ export default {
   
 }
 .smallerVid{
-  min-height: 60vh;
+  height: 600px;
+  object-fit: contain;
 }
 </style>
 
