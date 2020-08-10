@@ -3,10 +3,11 @@
     <v-content>
       <section>
         <video-background
-          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/LOOP720.mp4"
-          poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/LOOP.png"
+          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/blob720.mp4"
+          poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/bloop.png"
           class="vid"
           playsWhen="canplaythrough"
+        
         ></video-background>
 
         
@@ -273,7 +274,9 @@ export default {
   min-height: 100vh;
 }
 .vid {
-  height: 50vh;
+  min-height:50vh;
+   /* max-width: 2000px;  */
+  
 }
 .smallerVid{
   width: 300px;
