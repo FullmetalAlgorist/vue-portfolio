@@ -81,8 +81,8 @@
        
         <video-background
           class="vid"
-          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/goodOne.mp4"
-          poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/goodOne.png"
+          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/KNEW720.mp4"
+          poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/KNEW.png"
           playsWhen="canplaythrough"
         ></video-background>
     
@@ -95,7 +95,7 @@
 
         <v-container grid-list-xl class="content">
           <v-layout row wrap justify-center class="my-5">
-               <v-flex xs12 sm4 >
+               <v-flex xs12 sm4 xl5>
               <v-card class="mb-4 second restrict" elevation="20">
                 <v-card-title>
                   <blockquote>
@@ -111,7 +111,7 @@
   <source src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/Tychoesque.mp4"  type="video/mp4">
               </video> -->
     
-                <v-flex xs12 sm6 text-xs-center>
+                <v-flex xs12 sm6 xl4 text-xs-center>
 
           <video-background
           class="vid"
@@ -120,7 +120,7 @@
           playsWhen="canplaythrough"
         ></video-background>
    </v-flex>
-        <v-flex xs12 sm6 text-xs-center>
+        <v-flex xs12 sm6 xl4 text-xs-center>
 
           <video-background
           class="vid"
@@ -153,8 +153,8 @@
       <section>
         <video-background
           class="vid"
-          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/cubictho.mp4"
-          poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/cube.png"
+          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/cuby.mp4"
+          poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/CUBE.png"
           playsWhen="canplaythrough"
         ></video-background>
       </section>
