@@ -3,11 +3,11 @@
     <v-content>
       <section>
         <video-background
-          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/blob720.mp4"
-          poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/bloop.png"
+          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/tychoREDO.3.mp4"
+          poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/REDOtho.png"
           class="vid"
           playsWhen="canplaythrough"
-        
+        objectFit="scale-down"
         ></video-background>
 
         
@@ -276,6 +276,7 @@ export default {
 .vid {
   min-height:50vh;
    /* max-width: 2000px;  */
+   object-fit: contain;
   
 }
 .smallerVid{
