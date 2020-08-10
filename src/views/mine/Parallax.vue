@@ -50,14 +50,14 @@
             </v-flex>
 
             <!-- SUPERFORMULA!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-                  <v-flex xs12 lg4 md6 class="sletchMe">
+                  <v-flex xs12 md6 lg4  class="sletchMe order-xs2 order-sm1">
                     <!-- <v-card class="elevation-0 transparent">  -->
                       <radar-component />
                     <!-- </v-card> -->
                   </v-flex>
             <!-- SUPERFORMULA!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-            <v-flex xs12 lg4 md6>
-              <v-card class="elevation-0 transparent">
+            <v-flex xs12 md4 class="order-xs1 order-sm1">
+              <v-card class="elevation-10 transparent">
                 <v-card-text class="text-xs-center">
                   <v-icon x-large class="blue--text text--lighten-2">mdi-color_lens</v-icon>
                 </v-card-text>
@@ -166,11 +166,11 @@
                   <div class="headline">So what?</div>
                 </v-card-title>
                 <v-card-text>
-                 Although disteilled in to eye catching loops on this page, the real power of generative art is real time interective displays.  Sometimes this is on a stage with a musician and sometimes it is a stand alone interactive art piece.  All of my work is rendered in real time and can be manipulated to interact with any input I choose.
+                 Although distilled in to eye catching loops on this page, the real power of generative art is real time interective displays.  Sometimes this is on a stage with a musician and sometimes it is a stand alone interactive art piece.  All of my work is rendered in real time and can be manipulated to interact with any input I choose.
                 </v-card-text>
               </v-card>
             </v-flex>
-            <v-flex xs12 sm7 xl6 offset-sm1>
+            <v-flex xs12 sm7 lg5 xl3 offset-sm1>
               <v-card class="mb-4 second restrict" elevation="20">
                 
                 
