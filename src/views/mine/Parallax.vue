@@ -12,33 +12,40 @@
 
         
       </section>
-      <section>
-        <v-container grid-list-xl class="content">
-          <v-layout row wrap justify-center class="my-5">
+      <section  >
+        <v-container text-xs-center class="content mt-0">
+          <v-layout row wrap justify-center align-center class="mt-5"> 
+            <!-- spaving -->
             <v-flex xs12 lg4 class="z">
               <v-card class="elevation-0 transparent">
                 <core-heading v-text="'Welcome to my creative coding portfolio'" />
 
-                <v-layout wrap align-center justify-center>
-                  <core-text class="ma-1">
+                <v-layout wrap  >
+                  <core-text class="ma-1" justify-space-between>
                     <p
                       class="title font-weight-light font-italic aboutMe text-xs-center"
                     >A constant work in progress... Mostly math, often inspired by nature.  I love to expirement with generative algorithms.  Here is a collection of some of my work.</p>
-                    <v-flex class="text-xs-center xs12">
+                    <v-flex class="text-xs-center xs12 ">
                       <v-btn
                         class="font-weight-light contactButton"
                         color="primarydark black--text"
                       >Contact Me!</v-btn>
                     </v-flex>
                     <br />
-                    <!-- <br> <br> -->
+                  
                     <p
                       class="family aboutMe love font-weight-light title font-italic text-xs-center"
                     >
                     
-                     <v-icon>mdi-robot</v-icon> &nbsp;&nbsp;
-                     <br />I'm currently using 
+                   
+                <br>
+                     <br /> I'm currently using 
                   <span class="tech">TouchDesigner</span> and <span class="tech">Processing </span> for my creative coding adventures.
+                       <br>
+                           <br>
+                             <br>
+                       <v-icon>mdi-robot</v-icon> &nbsp;&nbsp;
+                         
                       </p>
                       <!-- <p class="nothing text-xs-center">
                     <v-icon>mdi-robot</v-icon> &nbsp;&nbsp;I'm currently using 
@@ -50,19 +57,19 @@
             </v-flex>
 
             <!-- SUPERFORMULA!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-                  <v-flex xs12 md6 lg4  class="sletchMe order-xs2 order-sm1">
+                  <v-flex xs12 lg4  class="sletchMe order-xs2 order-sm1">
                     <!-- <v-card class="elevation-0 transparent">  -->
                       <radar-component />
                     <!-- </v-card> -->
                   </v-flex>
             <!-- SUPERFORMULA!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-            <v-flex xs12 md4 class="order-xs1 order-sm1">
+            <v-flex xs12 lg4 class="order-xs1 order-sm1">
               <v-card class="elevation-10 transparent">
                 <v-card-text class="text-xs-center">
                   <v-icon x-large class="blue--text text--lighten-2">mdi-color_lens</v-icon>
                 </v-card-text>
                 <v-card-title primary-title class="layout justify-center">
-                  <div class="headline text-xs-center">Try it for yourself!</div>
+                  <div class="headline text-xs-center pb-3 try">Try it yourself!</div>
                 </v-card-title>
                 <v-card-text>
                 <p class="family aboutMe love font-weight-light title font-italic text-xs-center">
@@ -248,6 +255,7 @@ export default {
 }
 .content {
   min-height: 100vh;
+  
 }
 .vid {
   min-height:50vh;
@@ -255,9 +263,19 @@ export default {
   
   
 }
+.family{
+  font-family: 'Open Sans', sans-serif !important;
+}
+.aboutMe{
+  /* line-height: 130% !important; */
+  // display: block;
+}
 .smallerVid{
   height: 600px;
   object-fit: contain;
+}
+.try{
+  font-size: 318% !important;
 }
 </style>
 
