@@ -38,7 +38,7 @@
       </v-tooltip>
       
     </v-flex>
-    <v-flex class="top" xs12>
+    <v-flex class="top" xs12 pt-4>
       <div class="canvas" id="p5Canvas"></div>
     </v-flex>
   </v-layout>

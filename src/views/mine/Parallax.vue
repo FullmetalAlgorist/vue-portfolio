@@ -14,14 +14,14 @@
       </section>
       <section  >
         <v-container text-xs-center class="content mt-0">
-          <v-layout row wrap justify-center align-center class="mt-5"> 
+          <v-layout row wrap justify-space-between align-center class="mt-5"> 
             <!-- spaving -->
-            <v-flex xs12 lg4 class="z">
+            <v-flex xs12 lg12 xl4 class="z">
               <v-card class="elevation-0 transparent">
                 <core-heading v-text="'Welcome to my creative coding portfolio'" />
 
                 <v-layout wrap  >
-                  <core-text class="ma-1" justify-space-between>
+                  <v-text class="ma-1" justify-space-between>
                     <p
                       class="title font-weight-light font-italic aboutMe text-xs-center"
                     >A constant work in progress... Mostly math, often inspired by nature.  I love to expirement with generative algorithms.  Here is a collection of some of my work.</p>
@@ -51,19 +51,20 @@
                     <v-icon>mdi-robot</v-icon> &nbsp;&nbsp;I'm currently using 
                   <span class="tech">TouchDesigner</span> and <span class="tech">Processing </span> for visual design.
                       </p> -->
-                  </core-text>
+                  </v-text>
                 </v-layout>
               </v-card>
             </v-flex>
 
             <!-- SUPERFORMULA!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-                  <v-flex xs12 lg4  class="sletchMe order-xs2 order-sm1">
+                  <v-flex xs12 md6 xl4 class="order-xs2 order-md1">
                     <!-- <v-card class="elevation-0 transparent">  -->
                       <radar-component />
                     <!-- </v-card> -->
                   </v-flex>
             <!-- SUPERFORMULA!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-            <v-flex xs12 lg4 class="order-xs1 order-sm1">
+           
+            <v-flex xs12 md5 xl4 class="order-xs1">
               <v-card class="elevation-10 transparent">
                 <v-card-text class="text-xs-center">
                   <v-icon x-large class="blue--text text--lighten-2">mdi-color_lens</v-icon>
