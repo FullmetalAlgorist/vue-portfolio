@@ -159,8 +159,8 @@
       <section>
         <video-background
           class="vid"
-          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/cuby.mp4"
-          poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/CUBE.png"
+          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/bubs.2.720.mp4"
+          poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/bubstill.png"
           playsWhen="canplaythrough"
         ></video-background>
       </section>
