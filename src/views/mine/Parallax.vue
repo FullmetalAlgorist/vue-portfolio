@@ -174,21 +174,21 @@
                   <div class="headline">So what?</div>
                 </v-card-title>
                 <v-card-text>
-                 Although distilled in to eye catching loops on this page, the real power of generative art is real time interective displays.  Sometimes this is on a stage with a musician and sometimes it is a stand alone interactive art piece.  All of my work is rendered in real time and can be manipulated to interact with any input I choose.
+                 Although distilled in to eye catching loops on this page, generative art is best displayed in action. Here is a music video I made to help tell the story of Discuss's song: Lucid Sanctary Dream. All of my work is rendered in real time and can respond to a variety of inputs.
                 </v-card-text>
               </v-card>
             </v-flex>
             <v-flex xs12 sm7 lg5 xl3 offset-sm1>
               <v-card class="mb-4 second restrict" elevation="20">
                 
-                
-
+                <iframe src="https://player.vimeo.com/video/453137884" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<!-- 
           <video-background
           class="vid"
           src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/wire720.mp4"
           poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/WIRE.jpg"
           playsWhen="canplaythrough"
-        ></video-background>
+        ></video-background> -->
   
               </v-card>
             </v-flex>
@@ -200,6 +200,7 @@
       <v-footer class="blue darken-2">
         <v-layout row wrap align-center>
           <v-flex xs12>
+             
             <div class="white--text ml-3">
               Made with
               <v-icon class="red--text">mdi-heart</v-icon>by
@@ -207,6 +208,7 @@
               and
               <a class="white--text" href="https://github.com/vwxyzjn">Costa Huang</a>
             </div>
+           
           </v-flex>
         </v-layout>
       </v-footer>
