@@ -168,7 +168,7 @@
       <section>
         <v-container grid-list-xl class="content">
           <v-layout row wrap justify-center class="my-5">
-            <v-flex xs12 sm4>
+            <v-flex sm12>
               <v-card class="elevation-0 transparent">
                 <v-card-title primary-title class="layout justify-center">
                   <div class="headline">So what?</div>
@@ -178,35 +178,50 @@
                 </v-card-text>
               </v-card>
             </v-flex>
-            <v-flex xs12 sm7 lg5 xl3 offset-sm1>
-              <v-card class="mb-4 second restrict" elevation="20">
-                
-                <iframe src="https://player.vimeo.com/video/453137884" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-<!-- 
-          <video-background
+            <v-flex sm12 lg8 >
+              <!-- //width="640" height="360" -->
+              <!-- <v-card class="mb-4 second restrict" elevation="20"> -->
+  <div  class="vimWrap">
+  <iframe class="vim" src="https://player.vimeo.com/video/453137884?color=2c9b91"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+        <!-- <video-background 
           class="vid"
-          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/wire720.mp4"
+          src="https://vimeo.com/453137884"
           poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/WIRE.jpg"
           playsWhen="canplaythrough"
         ></video-background> -->
   
+              <!-- </v-card> -->
+            </v-flex>
+                   <v-flex sm12>
+              <v-card class="elevation-0 transparent">
+                <v-card-title primary-title class="layout justify-center">
+                  <div class="headline">More about Discuss</div>
+                </v-card-title>
+                <v-card-text>
+                More music from Discuss:
+spotify:artist:1ki7psR4ysYawi6yTrFUrZ
+http://www.music.apple.com/us/artist/discuss/159761540
+http://www.soundcloud.com/discuss
+http://www.discuss.bandcamp.com
+http://www.youtube.com/ekofarm
+                </v-card-text>
               </v-card>
             </v-flex>
-            
           </v-layout>
         </v-container>
       </section>
 
-      <v-footer class="blue darken-2">
+      <v-footer class="coll blue darken-2">
         <v-layout row wrap align-center>
           <v-flex xs12>
              
             <div class="white--text ml-3">
               Made with
-              <v-icon class="red--text">mdi-heart</v-icon>by
-              <a class="white--text" href="https://vuetifyjs.com" target="_blank">Vuetify</a>
-              and
-              <a class="white--text" href="https://github.com/vwxyzjn">Costa Huang</a>
+              <v-icon class="black--text">mdi-heart</v-icon> by
+              <a class="white--text" href="mariah.tech" target="_blank">Mariah</a>
+              using
+              <a class="white--text" href="https://vuejs.org/">Vue.js</a>
             </div>
            
           </v-flex>
@@ -279,6 +294,22 @@ export default {
 }
 .try{
   font-size: 318% !important;
+}
+.coll{
+  background-color: #2c9b91 !important;
+}
+.vim{
+      position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.vimWrap{
+   position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
 }
 </style>
 
