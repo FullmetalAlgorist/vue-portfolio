@@ -186,7 +186,7 @@
 </div>
         <!-- <video-background 
           class="vid"
-          src="https://vimeo.com/453137884"
+          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/wire720.mp4"
           poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/WIRE.jpg"
           playsWhen="canplaythrough"
         ></video-background> -->
@@ -210,23 +210,11 @@ http://www.youtube.com/ekofarm
             </v-flex>
           </v-layout>
         </v-container>
-      </section>
 
-      <v-footer class="coll blue darken-2">
-        <v-layout row wrap align-center>
-          <v-flex xs12>
-             
-            <div class="white--text ml-3">
-              Made with
-              <v-icon class="black--text">mdi-heart</v-icon> by
-              <a class="white--text" href="mariah.tech" target="_blank">Mariah</a>
-              using
-              <a class="white--text" href="https://vuejs.org/">Vue.js</a>
-            </div>
-           
-          </v-flex>
-        </v-layout>
-      </v-footer>
+      </section>
+<section>
+            <contact />
+</section>
     </v-content>
   </div>
 </template>
@@ -244,7 +232,8 @@ export default {
     VideoParallax,
     VideoBackground,
     radarComponent,
-    VueCoreVideoPlayer
+    VueCoreVideoPlayer,
+    Contact: () => import('@/views/Contact')
   },
   computed: {
     med() {
@@ -295,9 +284,7 @@ export default {
 .try{
   font-size: 318% !important;
 }
-.coll{
-  background-color: #2c9b91 !important;
-}
+
 .vim{
       position: absolute;
     top: 0;

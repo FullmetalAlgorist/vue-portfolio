@@ -108,20 +108,30 @@
         text-xs-center
         pt-2
         >
-        <v-flex
+   
+    <!-- <div  max-width="500px"> -->
+      
+      <!--  -->
+      <!-- <v-img
+      :src="require('@/assets/realFinalLow.png')"
+     
+      class="me"
+      /> -->
+  
+       <v-flex
       xs12
       md4 
      style="max-width: 600px;"
         class="me"
     >
-    <!-- <div  max-width="500px"> -->
-      <v-img
-        :src="require('@/assets/realFinalLow.png')"
-     
-      class="me"
-      />
-   
-     <!--   -->
+     <v-card class="mb-4 second restrict" elevation="20">
+      <video-background 
+          class="vid"
+          src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/wire720.mp4"
+          poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/WIRE.jpg"
+          playsWhen="canplaythrough"
+        ></video-background> 
+     </v-card>
     </v-flex>
     <v-flex
       xs12
@@ -168,17 +178,21 @@
             <v-list-tile-sub-title v-text="schema.basics.email" />
           </v-list-tile-content>
       </v-list>
+         
     </v-flex>
-    
+
     </v-layout>
   </core-section>
+  
 </template>
 
 <script>
   // Utilities
+  import VideoBackground from "vue-responsive-video-background-player";
   import {
     mapState
-  } from 'vuex'
+  } from 'vuex';
+  
 
   export default {
     data() {
@@ -204,7 +218,8 @@
     },
     components: {
       SocialContacts: () => import('@/components/SocialContacts'),
-      Abstract5: () => import('@/components/Abstract5')
+      Abstract5: () => import('@/components/Abstract5'),
+      VideoBackground
     },
 
     computed: {
@@ -263,6 +278,13 @@
 .iconic{
   margin-top: 5px;
   margin-bottom: 5px;
+}
+.vid {
+  min-height:50vh;
+  /* width: 100%; */
+    /* max-width: 500px;   */
+  
+  
 }
 
 </style>

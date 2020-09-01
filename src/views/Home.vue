@@ -21,6 +21,7 @@
       <!-- <portfolio /> -->
  <skills />
       <contact />
+       
     </v-container>
   </div>
 </template>
