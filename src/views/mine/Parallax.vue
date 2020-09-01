@@ -171,10 +171,19 @@
             <v-flex sm12>
               <v-card class="elevation-0 transparent">
                 <v-card-title primary-title class="layout justify-center">
-                  <div class="headline">So what?</div>
+                   <core-heading v-text="'So what?'" />
+                  <!-- <div class="headline">So what?</div> -->
                 </v-card-title>
                 <v-card-text>
-                 Although distilled in to eye catching loops on this page, generative art is best displayed in action. Here is a music video I made to help tell the story of Discuss's song: Lucid Sanctary Dream. All of my work is rendered in real time and can respond to a variety of inputs.
+                   <p class="title font-weight-light font-italic aboutMe text-xs-center">
+                 Although distilled in to eye catching loops on this page, generative art is best displayed in action. 
+                 All of my work is rendered in real time and can respond to a variety of inputs.  
+                 Sometimes accompanied by music, occasionally projected on to larger viewing surfaces (even a balloon once!), 
+                 responsive, interactive light art is helping to incorporate technology in to the human experience.
+                   </p>
+                   <p class="title font-weight-light font-italic aboutMe text-xs-center">
+                     Here is a music video I made to help tell the story of Lucid Sanctary Dream by Discuss.
+                   </p>
                 </v-card-text>
               </v-card>
             </v-flex>
@@ -195,16 +204,61 @@
             </v-flex>
                    <v-flex sm12>
               <v-card class="elevation-0 transparent">
-                <v-card-title primary-title class="layout justify-center">
+                <!-- <v-card-title primary-title class="layout justify-center">
                   <div class="headline">More about Discuss</div>
-                </v-card-title>
+                </v-card-title> -->
                 <v-card-text>
-                More music from Discuss:
-spotify:artist:1ki7psR4ysYawi6yTrFUrZ
-http://www.music.apple.com/us/artist/discuss/159761540
-http://www.soundcloud.com/discuss
-http://www.discuss.bandcamp.com
-http://www.youtube.com/ekofarm
+           
+<p class="family aboutMe love font-weight-light title font-italic text-xs-center">
+                <br>
+                     <br /> For more music from 
+                  <span class="tech">Discuss</span> follow the links below!
+                   <br>
+                     <br />
+                     
+                      <br>
+                     <br />
+                 
+
+  <!-- <div class="my-4"> -->
+   <a
+      href="spotify:artist:1ki7psR4ysYawi6yTrFUrZ"
+      class="mx-2"
+      title="Discuss' Spotify" >
+      <v-icon class="bigMe" large> mdi-spotify</v-icon>
+    </a>
+       <a
+      href="http://www.music.apple.com/us/artist/discuss/159761540"
+      class="mx-2"
+      title="Discuss' Apple Music" >
+      <v-icon class="bigMe" large> mdi-apple</v-icon>
+    </a>
+       <a
+      href="http://www.youtube.com/ekofarm"
+      class="mx-2"
+      title="Discuss' Youtube" >
+      <v-icon class="bigMe" large> mdi-youtube</v-icon>
+    </a>
+       <a
+      href="http://www.soundcloud.com/discuss"
+      class="mx-2"
+      title="Discuss' Soundcloud" >
+      <v-icon class="bigMe" large> mdi-soundcloud</v-icon>
+    </a>
+       <a
+      href="http://www.discuss.bandcamp.com"
+      class="mx-2"
+      title="Discuss' Bandcamp" >
+      <v-icon class="bigMe" large> mdi-bandcamp</v-icon>
+    </a>
+  <!-- </div> -->
+     </p>
+<!-- 
+
+mdi-soundcloud
+mdi-apple
+palette -->
+
                 </v-card-text>
               </v-card>
             </v-flex>
@@ -297,6 +351,17 @@ export default {
    position: relative;
     overflow: hidden;
     padding-top: 56.25%;
+}
+  a {
+    text-decoration: none;
+  }
+  .bigMe:hover{
+     color: var(--v-primary-base);
+  }
+  .tech {
+  font-family: "Open Sans", sans-serif;
+  font-size: 110%;
+  font-weight: bold;
 }
 </style>
 
