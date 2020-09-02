@@ -1,6 +1,6 @@
 <template>
   <core-section id="contact">
-    <abstract-5 />
+    <abstract-5   v-if="$route.name == 'Home'" />
     <v-flex xs12>
       <core-heading>Say hello!</core-heading>
     </v-flex>
@@ -111,20 +111,28 @@
    
     <!-- <div  max-width="500px"> -->
       
-      <!--  -->
-      <!-- <v-img
-      :src="require('@/assets/realFinalLow.png')"
-     
-      class="me"
-      /> -->
+      <!-- $route.name -->
+
+  
   
        <v-flex
       xs12
-      md4 
+      md6 
      style="max-width: 600px;"
         class="me"
+      
     >
-     <v-card class="mb-4 second restrict" elevation="20">
+    <!-- <p>{{$route.name}}</p> -->
+        <v-img
+       
+       v-if="$route.name == 'Home'"
+      :src="require('@/assets/realFinalLow.png')"
+     
+      class="me"
+      /> 
+     <v-card 
+      v-else
+     class="mb-4 second restrict" elevation="20">
       <video-background 
           class="vid"
           src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/wire720.mp4"
