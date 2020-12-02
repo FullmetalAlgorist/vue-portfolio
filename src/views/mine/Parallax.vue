@@ -7,10 +7,7 @@
           poster="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/vids/stills/bloop.png"
           class="vid"
           playsWhen="canplaythrough"
-       
         ></video-background>
-
-        
       </section>
       <section  >
         <v-container text-xs-center class="content mt-0">
@@ -19,7 +16,6 @@
             <v-flex xs12 lg12 xl4 class="z">
               <v-card class="elevation-0 transparent">
                 <core-heading v-text="'Welcome to my creative coding portfolio'" />
-
                 <v-layout wrap  >
                   <v-text class="ma-1" justify-space-between>
                     <p
@@ -27,17 +23,15 @@
                     >A constant work in progress... Mostly math, often inspired by nature.  I love to expirement with generative algorithms.  Here is a collection of some of my work.</p>
                     <v-flex class="text-xs-center xs12 ">
                       <v-btn
+                       @click="$vuetify.goTo('#contact')"
                         class="font-weight-light contactButton"
                         color="primarydark black--text"
                       >Contact Me!</v-btn>
                     </v-flex>
                     <br />
-                  
                     <p
                       class="family aboutMe love font-weight-light title font-italic text-xs-center"
                     >
-                    
-                   
                 <br>
                      <br /> I'm currently using 
                   <span class="tech">TouchDesigner</span> and <span class="tech">Processing </span> for my creative coding adventures.
@@ -45,7 +39,6 @@
                            <br>
                              <br>
                        <v-icon>mdi-robot</v-icon> &nbsp;&nbsp;
-                         
                       </p>
                       <!-- <p class="nothing text-xs-center">
                     <v-icon>mdi-robot</v-icon> &nbsp;&nbsp;I'm currently using 
@@ -97,10 +90,6 @@
       </section>
 
       <section>
-
-
-
-
         <v-container grid-list-xl class="content">
           <v-layout row wrap justify-center class="my-5">
                <v-flex xs12 sm4 xl5>
@@ -109,7 +98,6 @@
                   <blockquote>
                     
                     <p class="title font-weight-light font-italic aboutMe text-xs-center">      Generative Art refers to any art practice where the artist uses a system, such as a set of natural language rules a computer program, a machine, or other procedural invention, which is then set into motion with some degree of autonomy to or resulting in a complex work of art (Philip Galanter).</p>
-           
                   </blockquote>
                 </v-card-title>
               </v-card>
@@ -362,6 +350,9 @@ export default {
   font-family: "Open Sans", sans-serif;
   font-size: 110%;
   font-weight: bold;
+}
+.contactButton{
+  font-size: 130%;
 }
 </style>
 

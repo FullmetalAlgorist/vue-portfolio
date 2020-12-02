@@ -79,7 +79,9 @@ export default {
         "WordPress",
         "TouchDesigner",
         "Gimp",
-        "VSCode"
+        "VSCode",
+        "SquareSpace",
+        "Weebly"
       ]
     };
   },
