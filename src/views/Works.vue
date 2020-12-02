@@ -36,16 +36,12 @@
     </v-flex>
 
              <v-flex v-for="site in schema.sites" :key="site.id" sm12>                           
-    <v-layout  justify-space-between wrap align-center text-xs-center>  
+    <v-layout  justify-space-between wrap align-center>  
   
       
       <v-flex  xs12 md6 :class="`${(site.id==='2') ? 'order-md2' : ''}`">
-        <h3 class="display-1 font-weight-medium mb-4 primary--text">{{ site.title }}</h3>
-          <v-btn
-                href="site.link"
-                class="font-weight-light contactButton"
-                color="primarydark black--text"
-              >Launch Site!</v-btn>
+        <h3 class="display-2 font-weight-medium mb-4 primary--text">{{ site.title }}</h3>
+    
         <a  :href="site.link" target="_blank">
           <v-img
             :max-width="(site.id==3) ?  600 : 600"
@@ -84,6 +80,15 @@
           <v-expansion-panel-content class="second hover font-weight-light elevation-20">
             <div slot="header" style="maxHeight: 38px;" class="f text-uppercase font-weight-light">{{site.nerdTitle}}</div>
             <div class="pa-3 f2">&nbsp;&nbsp;&nbsp;&nbsp; {{ site.nerds }}</div>
+                <v-btn
+                :href="site.link"
+                target="_blank"
+                class="font-weight-light contactButton"
+                color="primarydark black--text"
+                large
+              >Launch Site!
+              </v-btn>
+              <!-- </router-link> -->
           </v-expansion-panel-content>
            
            </v-expansion-panel>
@@ -283,5 +288,6 @@ max-height: 38px !important;
 
 .contactButton{
    font-size: 130%;
+margin-bottom: 20px;
 }
 </style>
