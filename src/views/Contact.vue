@@ -1,5 +1,5 @@
 <template>
-  <core-section id="contact">
+  <core-section id="contact" class="contactClass">
     <abstract-5   v-if="$route.name == 'Home'" />
     <v-flex xs12>
       <core-heading>Say hello!</core-heading>
@@ -294,5 +294,7 @@
   
   
 }
-
+.contactClass{
+  padding-top: 0 !important;
+}
 </style>

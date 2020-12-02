@@ -36,16 +36,21 @@
     </v-flex>
 
              <v-flex v-for="site in schema.sites" :key="site.id" sm12>                           
-    <v-layout  justify-space-between wrap align-center>  
+    <v-layout  justify-space-between wrap align-center text-xs-center>  
   
       
       <v-flex  xs12 md6 :class="`${(site.id==='2') ? 'order-md2' : ''}`">
         <h3 class="display-1 font-weight-medium mb-4 primary--text">{{ site.title }}</h3>
+          <v-btn
+                href="site.link"
+                class="font-weight-light contactButton"
+                color="primarydark black--text"
+              >Launch Site!</v-btn>
         <a  :href="site.link" target="_blank">
           <v-img
-            :max-width="(site.id==3) ?  600 : 750"
+            :max-width="(site.id==3) ?  600 : 600"
             class="site"
-            :src="require('@/assets/healthyHarvest.png')"
+            :src="site.src"
             :lazy-src="require('@/assets/'+ site.outline +'Outline.png')"
           >
             <template v-slot:placeholder>
@@ -55,31 +60,37 @@
             </template>
           </v-img>
         </a>
+         <!-- <v-flex class="text-xs-center xs12" > -->
+                 <!-- :pb-4="$vuetify.breakpoint.smAndDown" -->
+            
+            <!-- </v-flex> -->
       </v-flex>
                             
-      <v-flex xs12 mb-3 :class="`${(site.id==='3') ? 'md6' : 'md5'}`">
-        <div >
+      <v-flex xs12 mb-3 :class="`${(site.id==='3') ? 'md5' : 'md5'}`">
+        <!-- <div > -->
          
           
       
          <!-- <a  :href="site.link" target="_blank"> -->
+           <!-- src="https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/works/dharmaPage.png" -->
+          <!-- <a  :href="site.link" target="_blank"> -->
           <v-img
             :max-width="(site.id==3) ?  600 : 750"
-            class="site"
-            :src="require('@/assets/page.png')"
-           
+            class="site vcard"
+            
+           :src="site.src2"
           >
   <v-expansion-panel class="bb">
           <v-expansion-panel-content class="second hover font-weight-light elevation-20">
-            <div slot="header" class="f text-uppercase font-weight-light">{{site.nerdTitle}}</div>
+            <div slot="header" style="maxHeight: 38px;" class="f text-uppercase font-weight-light">{{site.nerdTitle}}</div>
             <div class="pa-3 f2">&nbsp;&nbsp;&nbsp;&nbsp; {{ site.nerds }}</div>
           </v-expansion-panel-content>
            
            </v-expansion-panel>
 
   </v-img> 
-
-            </div>
+<!-- </a> -->
+            <!-- </div> -->
          <!-- </a> -->
         <!-- <v-expansion-panel :min-width="(site.id==3) ?  600 : 750">
           <v-expansion-panel-content class="second elevation-20 App">
@@ -134,11 +145,17 @@ export default {
 };
 </script>
 <style scoped lang="scss" >
+.bb{
+  margin-top: -48px;
+ 
+}
 .f{
-  font-size: 22px;
+  font-size: 17px;
+  
+  //line-height: 20px;
 }
 .f2{
-  font-size: 19px;
+  font-size: 16px;
   line-height: 28px;
 }
 .expanse{
@@ -210,9 +227,13 @@ export default {
 .site {
   // padding-top:-30px;
   // top: 45px;
+  margin-top: 35px;
   margin-bottom: 30px;
 }
-
+.vcard {
+  // top: 45px !important;
+  overflow: visible;
+}
 .second {
   // background-color: #161d25ad !important;
   border-radius: 2%;
@@ -235,10 +256,11 @@ export default {
 }
 .v-expansion-panel{
   text-align: center;
+  //min-height: 38px;
 }
-.v-image__image--cover {
+.v-image__image {
     //background-size: cover;
-    top: 47px;
+    top: 47px !important;
 }
 .App {
   background-color: #008078a8 !important;
@@ -253,5 +275,13 @@ export default {
   // transform: ;
   // max-width: 110%;
   // object-fit: cont;
+}
+.v-expansion-panel-header{
+
+max-height: 38px !important;
+}
+
+.contactButton{
+   font-size: 130%;
 }
 </style>

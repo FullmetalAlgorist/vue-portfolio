@@ -83,7 +83,8 @@
       "id": "1",
       "title": "Dharma Cafe Eccomerce Site",
       "outline": "healthyHarvest",
-      "src": "https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/works/healthyHarvestSmall.png",
+      "src": "https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/works/dharma.png",
+      "src2": "https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/works/page12.png",
       "link": "https://dharmacafeonline.square.site/",
       "infoTitle": "What produce is in season?",
       "infoText1": "Produce that's in season is cheaper, more nutritious, tastes better, and has a lower carbon footprint!",
@@ -93,28 +94,31 @@
     },
      {
       "id": "2",
-      "title": "Parallax and photo blog",
+      "title": "Living Made Simple Home Organization Website ",
       "outline": "another",
        "src": "https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/works/anotherSmall.png",
-       "link": "https://akcrew-transitions.herokuapp.com/",
+       "src2": "https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/works/pagelms.png",
+       "link": "https://living-made-simple.herokuapp.com/",
        "infoTitle": "Photo blog layout",
        "infoText1": "My take on two popular, single page websites, that would be great for a small business or a personal profile!",
        "infoText2": "My take on two popular, single page websites, either would be great for a small business or a personal profile! The first tab is a simple scrolling page that demonstrates an effect called Parallax, in which the foreground images move at a different speed than the background, creating a pleasing 3d effect.",
       "infoText3": "The second will lead you to an attractive mosaic grid of photos that could link to individual blog articles or purchasable items on an e-commerce site. The layout becomes a full page image scroll when on mobile devices.",
-       "nerdTitle": "For the nerds",
-       "nerds": "These two variations on Vuetify themes are meant to serve as starter templates for a myriad of website needs. Each layout scales from mobile to desktop seamlessly so only a single code base is needed, and could be connected to a headless CMS for hassle free content management."
+       "nerdTitle": "About the website",
+       "nerds": "A simple two page blog style layout with parallax scrolling and before// after sliders implemented in vue.js to add interactivity and interest. Connected to DATO a headless CMS for hassle free content management."
     },
     {
       "id": "3",
-      "title": "Discography app",
+      "title": "HealthyHarvest Nutrition App",
       "outline": "dualRobots",
-      "src": "https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/works/dualRobotsSmall.png",
-       "link": "https://akcrew-roboto.herokuapp.com/",
+      "src": "https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/works/healthyHarvestSmall.png",
+      "src2": "https://mariah-vue-portfolio.s3-us-west-2.amazonaws.com/works/veg.png", 
+      "link": "https://mariah-nutrition-app.herokuapp.com/#/winter",
        "infoTitle": "Album search",
-       "infoText1": "Search for your favorite artist and see their top albums (according to the itunes store) displayed in an attractive alternating card layout.",
+       "infoText1": "Produce that's in season is cheaper, more nutritious, tastes better, and has a lower carbon footprint!  This fun little app reminds you what's currently in season, click on an item to view it’s nutritional facts. Bookmark this app on your home screen for quick reference next time you're on a fruit & veg run!",
        "infoText2": "Search for your favorite artist and see their top albums (according to the itunes store) displayed in an attractive alternating card layout.  Featuring a five star rating system, album cover art, and a link to view the album for purchase as well as song previews! This little application blends simplicity with functionality.",
-       "nerdTitle": "For the nerds:",
-       "nerds": "This simple mobile first app showcases how Nuxt and Vuetify can work together with Axios to pull information from an API, and then showcase the results in an attractive material design format."
+       "nerdTitle": "About the application",
+       "nerds": "Produce that's in season is cheaper, more nutritious, tastes better, and has a lower carbon footprint!  This fun little app reminds you what's currently in season, click on an item to view it’s nutritional facts. Bookmark this app on your home screen for quick reference next time you're on a fruit & veg run! This simple mobile first app showcases how Nuxt and Vuetify can work together with Axios to pull information from an API, and then showcase the results in an attractive responsive grid format."
+       
       }
   ],
   "sketch": [

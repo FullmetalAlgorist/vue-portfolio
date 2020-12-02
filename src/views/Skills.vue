@@ -1,8 +1,12 @@
 <template>
-  <core-section id="skills" justify-space-between wrap align-center>
+  <core-section id="skills" class="skillsClass" justify-space-between wrap align-center>
+    <v-flex xs12 px-3>
+    <core-heading>What I know.</core-heading>
+    </v-flex>
     <abstract-2 />
-    <v-flex xs12 sm7  px-2 class="me">
-      <core-heading>What I know.</core-heading>
+   
+    <v-flex sm12 md7  lg4 px-2 class="me">
+      <!-- <core-heading>What I know.</core-heading> -->
       <v-layout justify-center align-center>
         <v-card class="mb-4 second restrict" elevation="20">
           <v-card-title>
@@ -40,14 +44,21 @@
           </footer>-->
         <!-- </blockquote>
       
+    -->
+   <!-- v-bind:style='{"min-width":"300px"}' -->
+   <!-- :width='400'  :radius="90" -->
     
-    <v-flex xs12 sm5 px-3>
+<v-flex px-3 sm12 md5 lg4>
       <div v-for="(degree, i) in schema.education" :key="i">
         <h3 class="display-1 me font-weight-medium mb-4 primary--text">{{ degree.title }}</h3>
         <education-card :value="degree" />
       </div>
-    </v-flex> -->
-    
+    </v-flex> 
+     <v-flex px-3 sm12 lg4>
+          <v-layout justify-center align-center>
+   <tags-ball  v-bind:style='{"border":"none", "width":"300px", "height":"300px"}' font="24px monaco" color="#4db6ac" radius="50" width="200"  :tags='tags'/>
+          </v-layout>
+     </v-flex>
   </core-section>
 </template>
 
@@ -65,8 +76,10 @@ export default {
         "Node.js",
         "Vuetify.js",
         "GIT",
-        "Sass",
-        "GreenSock"
+        "WordPress",
+        "TouchDesigner",
+        "Gimp",
+        "VSCode"
       ]
     };
   },
@@ -118,5 +131,8 @@ export default {
 }
 .restrict{
     max-width: 531px;
+}
+.skillsClass{
+  padding-bottom: 0 !important;
 }
 </style>

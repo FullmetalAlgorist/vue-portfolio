@@ -22,3 +22,5 @@ fuck with codepen.. it's stupid to link so much to it with no real content
     "eslint": "^5.8.0",
     "eslint-config-vuetify": "^0.2.0",
     "eslint-plugin-vue": "^5.1.0",
+
+    "nerdTitle": "This simple mobile first app showcases how Nuxt and Vuetify can work together with Axios to pull information from an API, and then showcase the results in an attractive material design format."

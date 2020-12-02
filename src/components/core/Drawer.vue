@@ -1,7 +1,7 @@
 <template>
 <!-- app -->
   <div>
-     <screen /> 
+     <!-- <screen />  -->
     <v-btn     
       class="toggle homer"  
       fixed
@@ -50,6 +50,7 @@
         />
          <br>
         <v-flex><div class="timer"></div></v-flex>
+        <v-flex>
         <div
           v-for="(item, i) in items"
           :key="i"
@@ -63,6 +64,7 @@
             <span v-text="item.text" class="hi"/>
           </v-btn>
         </div>
+        </v-flex>
         <div class="mt-auto">
           <social-contacts />
         </div>
@@ -109,22 +111,23 @@
           text: 'Home',
           to: '#about-me'
         },
+        //  {
+        //   text: 'Art',
+        //   to: '#about-me'
+        // },
+        
          {
-          text: 'Art',
-          to: '#about-me'
-        },
-        {
-          text: 'Web Dev',
-          to: '#skills'
-        },
-         {
-          text: 'Projects',
+          text: 'Work',
           to: '#works'
         },
         {
-          text: 'Photography',
-          to: '#portfolio'
+          text: 'Skills',
+          to: '#skills'
         },
+        // {
+        //   text: 'Photography',
+        //   to: '#portfolio'
+        // },
         
         {
           text: 'Contact',
