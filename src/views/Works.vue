@@ -10,28 +10,6 @@
     </v-flex>
     <v-flex xs12 sm5 mb-5 mt-2 text-xs-center class="me">
       <v-layout justify-center>
-        <!-- <v-hover>
-          <v-card
-            class="gitCard"
-            :color="`${hover ? 'rgba(65,223,213,.42)' : 'rgba(0,0,0,.28)'}`"
-            :style="{ maxWidth: $vuetify.breakpoint.smOnly ?  '270px' : '340px'}"
-            href="https://github.com/FullmetalAlgorist"
-            slot-scope="{ hover }"
-            elevation="20"
-          >
-            <v-card-title primary-title>
-              <blockquote>
-                <div>
-                  <v-icon class="gitMe pulse-button">mdi-github-circle</v-icon>
-                  <p
-                    class="justText headline font-weight-light font-italic pr-1"
-                    :style="{ width: $vuetify.breakpoint.smOnly ?  '249px' : '310px'}"
-                  >All of my code is public (including the code for this page!), want to see how something works? Check out my github.</p>
-                </div>
-              </blockquote>
-            </v-card-title>
-          </v-card>
-        </v-hover> -->
       </v-layout>
     </v-flex>
 
@@ -56,10 +34,6 @@
             </template>
           </v-img>
         </a>
-         <!-- <v-flex class="text-xs-center xs12" > -->
-                 <!-- :pb-4="$vuetify.breakpoint.smAndDown" -->
-            
-            <!-- </v-flex> -->
       </v-flex>
                             
       <v-flex xs12 mb-3 :class="`${(site.id==='3') ? 'md5' : 'md5'}`">
@@ -79,7 +53,8 @@
   <v-expansion-panel class="bb">
           <v-expansion-panel-content class="second hover font-weight-light elevation-20">
             <div slot="header" style="maxHeight: 38px;" class="f text-uppercase font-weight-light">{{site.nerdTitle}}</div>
-            <div class="pa-3 f2">&nbsp;&nbsp;&nbsp;&nbsp; {{ site.nerds }}</div>
+            <div class="pa-3 f2">&nbsp;&nbsp;&nbsp;&nbsp; {{ site.nerd1 }}</div>
+            <div class="pa-3 f2">&nbsp;&nbsp;&nbsp;&nbsp; {{ site.nerd2 }}</div>
                 <v-btn
                 :href="site.link"
                 target="_blank"

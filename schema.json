@@ -90,7 +90,8 @@
       "infoText1": "Produce that's in season is cheaper, more nutritious, tastes better, and has a lower carbon footprint!",
       "infoText2": "Produce that's in season is cheaper, more nutritious, tastes better, and has a lower carbon footprint!  This fun little app reminds you what's currently in season, click on an item to view it’s nutritional facts. Bookmark this app on your home screen for quick reference next time you're on a fruit & veg run!",
       "nerdTitle": "About the webite",
-      "nerds": "Changing timess call for adaptation, I helped dharma cafe smoothly transition to a subscription based curbside pickup and delivery service to get healthy meals and fresh squeezed juice to the community efficiently. This eccomerce site was built using square's website builder that automatically populated from your square inventory"
+      "nerd1": "Changing times call for adaptation. I helped dharma cafe smoothly transition to a subscription based curbside pickup and delivery service to get healthy meals and fresh squeezed juice to the community efficiently and safely.",
+      "nerd2": "This site was built using Square's website builder that automatically populates from your square inventory and gives your business a professional online presence quickly and with minimal effort."
     },
      {
       "id": "2",
@@ -104,7 +105,8 @@
        "infoText2": "My take on two popular, single page websites, either would be great for a small business or a personal profile! The first tab is a simple scrolling page that demonstrates an effect called Parallax, in which the foreground images move at a different speed than the background, creating a pleasing 3d effect.",
       "infoText3": "The second will lead you to an attractive mosaic grid of photos that could link to individual blog articles or purchasable items on an e-commerce site. The layout becomes a full page image scroll when on mobile devices.",
        "nerdTitle": "About the website",
-       "nerds": "A simple two page blog style layout with parallax scrolling and before// after sliders implemented in vue.js to add interactivity and interest. Connected to DATO a headless CMS for hassle free content management."
+       "nerd1": "A simple two page blog style layout to help showcase the hard work of two female business owners and entrepreneurs.",
+       "nerd2": "This site utilizes parallax scrolling and before// after sliders implemented in Vue.js to add interactivity and interest. Connected to DATO a headless CMS for hassle free content management."
     },
     {
       "id": "3",
@@ -117,8 +119,8 @@
        "infoText1": "Produce that's in season is cheaper, more nutritious, tastes better, and has a lower carbon footprint!  This fun little app reminds you what's currently in season, click on an item to view it’s nutritional facts. Bookmark this app on your home screen for quick reference next time you're on a fruit & veg run!",
        "infoText2": "Search for your favorite artist and see their top albums (according to the itunes store) displayed in an attractive alternating card layout.  Featuring a five star rating system, album cover art, and a link to view the album for purchase as well as song previews! This little application blends simplicity with functionality.",
        "nerdTitle": "About the application",
-       "nerds": "Produce that's in season is cheaper, more nutritious, tastes better, and has a lower carbon footprint!  This fun little app reminds you what's currently in season, click on an item to view it’s nutritional facts. Bookmark this app on your home screen for quick reference next time you're on a fruit & veg run! This simple mobile first app showcases how Nuxt and Vuetify can work together with Axios to pull information from an API, and then showcase the results in an attractive responsive grid format."
-       
+       "nerd1": "Produce that's in season is cheaper, more nutritious, tastes better, and has a lower carbon footprint!  This fun little app reminds you what's currently in season, click on an item to view it’s nutritional facts. Bookmark this app on your home screen for quick reference next time you're on a fruit & veg run!",
+       "nerd2": "This simple mobile first app showcases how Nuxt and Vuetify can work together with Axios to pull information from an API, and then display the results in an attractive responsive grid format."
       }
   ],
   "sketch": [

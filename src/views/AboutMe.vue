@@ -2,15 +2,20 @@
   <core-section id="about-me">
     <v-layout align-center justify-center wrap>
       <abstract-1 />
-      <v-flex xs12 sm7  class="z" >
-      
+      <v-flex xs12 md6  class="z" >
           <core-heading v-text="'Who I am'" />
             <section >
           <v-layout wrap align-center justify-center>
             <core-text class="ma-1">
-              <p class=" title font-weight-light  font-italic aboutMe text-xs-center" > {{ schema.basics.summary }}  </p>
+              <p class="font-weight-light font-italic aboutMe text-xs-center"
+              :style="{ maxWidth: '650px'}"
+              :class="$vuetify.breakpoint.lgAndUp ? 'headline' : 'title'"
+             
+              >
+               {{ schema.basics.summary }}  </p>
                <v-flex class="text-xs-center xs12" >
                  <!-- :pb-4="$vuetify.breakpoint.smAndDown" -->
+                  <!-- :class="expansion !== i ? 'transparent' : 'db'" -->
               <v-btn
                 @click="$vuetify.goTo('#contact')"
                 class="font-weight-light contactButton"
@@ -19,13 +24,13 @@
             </v-flex>
             <br>
              <!-- <br> <br> -->
-             
             </core-text>
-           
           </v-layout>
         </section>
       </v-flex>
-       <v-flex pa-3  xs12 sm5 fill-height align-center justify-center ma-0>
+      <!-- :style="{ maxWidth: $vuetify.breakpoint.smOnly ?  '270px' : '340px'}" -->
+       <v-flex pa-3  xs12 md5 fill-height align-center justify-center ma-0
+       :style="{ maxWidth: '450px'}">
          
         <v-hover
         v-slot:default="{ hover }">
@@ -43,7 +48,7 @@
           <v-card
             class="gitCard"
             :color="`${hover ? 'rgba(65,223,213,.42)' : 'rgba(0,0,0,.28)'}`"
-            :style="{ maxWidth: $vuetify.breakpoint.smOnly ?  '270px' : '340px'}"
+           
              @click="toInsta"
             slot-scope="{ hover }"
             elevation="20"
@@ -130,6 +135,7 @@ export default {
 }
 .aboutMe{
   line-height: 130% !important;
+  // max-width: 350px;
   // display: block;
 }
 .love{
