@@ -58,7 +58,7 @@
                 <v-btn
                 :href="site.link"
                 target="_blank"
-                class="font-weight-light contactButton"
+                class="font-weight-light contactButton me"
                 color="primarydark black--text"
                 large
               >Launch Site!
