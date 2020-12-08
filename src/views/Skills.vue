@@ -1,11 +1,28 @@
 <template>
-  <core-section id="skills" class="skillsClass" justify-space-between wrap align-center>
+  <core-section id="skills" class="skillsClass me" justify-space-between wrap  >
     <v-flex xs12 px-3>
-    <core-heading>What I know.</core-heading>
+    <core-heading class="LEFT LARGE">What I know.</core-heading>
     </v-flex>
     <abstract-2 />
    
-    <v-flex sm12 md7  lg4 px-2 class="me">
+   
+        <!-- on small and up... pl-4 pb-4 for this flex ^ -->
+        <!-- <blockquote> -->
+          <!-- <footer class="text-xs-center">
+            <v-btn class="font-weight-light" color="primarydark black--text">
+              download résumé 
+            </v-btn>
+          </footer>-->
+        <!-- </blockquote>
+      
+    -->
+   <!-- v-bind:style='{"min-width":"300px"}' -->
+   <!-- :width='400'  :radius="90" -->
+    
+
+
+  
+ <v-flex sm12  lg6 pa-2 >
       <!-- <core-heading>What I know.</core-heading> -->
       <v-layout justify-center align-center>
         <v-card class="mb-4 second restrict" elevation="20">
@@ -22,10 +39,10 @@
                   Or I can build you a beautiful custom website from scratch (like this page!) using 
                   <span class="tech">Vue</span>,
                   <span class="tech">Node</span> and
-                  <span class="tech">Express</span>.
-                  As well as anything in between using 
+                  <span class="tech">Express</span>,
+                  as well as anything in between, using 
                   <span class="tech">Wordpress Developer Tools</span>.
-                  Contact me now for a free 30 min consult on the scope of your website needs!
+                  Contact me now for a free 30 min consult on the scope of your website needs.
                <span class="techy">I love implementing emerging technologies!</span>
                 </p>
                 
@@ -35,26 +52,13 @@
         </v-card>
         </v-layout>
         </v-flex>
-        <!-- on small and up... pl-4 pb-4 for this flex ^ -->
-        <!-- <blockquote> -->
-          <!-- <footer class="text-xs-center">
-            <v-btn class="font-weight-light" color="primarydark black--text">
-              download résumé 
-            </v-btn>
-          </footer>-->
-        <!-- </blockquote>
-      
-    -->
-   <!-- v-bind:style='{"min-width":"300px"}' -->
-   <!-- :width='400'  :radius="90" -->
-    
-<v-flex px-3 sm12 md5 lg4>
+<v-flex pa-3 sm12 md5 lg3 class="LEFT">
       <div v-for="(degree, i) in schema.education" :key="i">
-        <h3 class="display-1 me font-weight-medium mb-4 primary--text">{{ degree.title }}</h3>
+        <h3 class="display-1 font-weight-medium mb-4 primary--text">{{ degree.title }}</h3>
         <education-card :value="degree" />
       </div>
     </v-flex> 
-     <v-flex px-3 sm12 lg4>
+   <v-flex px-3 sm12 md7 lg3>
           <v-layout justify-center align-center>
    <tags-ball  v-bind:style='{"border":"none", "width":"300px", "height":"300px"}' font="24px monaco" color="#4db6ac" radius="50" width="200"  :tags='tags'/>
           </v-layout>
@@ -136,5 +140,13 @@ export default {
 }
 .skillsClass{
   padding-bottom: 0 !important;
+}
+.LEFT{
+    align-content: left;
+  text-align: left;
+  // 
+}
+.LARGE{
+font-size: 375% !important;
 }
 </style>

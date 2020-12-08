@@ -20,7 +20,7 @@
                   <v-text class="ma-1" justify-space-between>
                     <p
                       class="title font-weight-light font-italic aboutMe text-xs-center"
-                    >A constant work in progress... Mostly math, often inspired by nature.  I love to expirement with generative algorithms.  Here is a collection of some of my work.</p>
+                    >A constant work in progress... Mostly math, often inspired by nature.  I love to experiment with generative algorithms.  Here is a collection of some of my work.</p>
                     <v-flex class="text-xs-center xs12 ">
                       <v-btn
                        @click="$vuetify.goTo('#contact')"
@@ -97,7 +97,7 @@
                 <v-card-title>
                   <blockquote>
                     
-                    <p class="title font-weight-light font-italic aboutMe text-xs-center">      Generative Art refers to any art practice where the artist uses a system, such as a set of natural language rules a computer program, a machine, or other procedural invention, which is then set into motion with some degree of autonomy to or resulting in a complex work of art (Philip Galanter).</p>
+                    <p class="title font-weight-light font-italic aboutMe text-xs-center">      Generative Art refers to any art practice where the artist uses a system, such as a set of natural language rules, a computer program, a machine, or other procedural invention, which is then set into motion with some degree of autonomy to or resulting in a complex work of art (Philip Galanter).</p>
                   </blockquote>
                 </v-card-title>
               </v-card>
@@ -164,13 +164,13 @@
                 </v-card-title>
                 <v-card-text>
                    <p class="title font-weight-light font-italic aboutMe text-xs-center">
-                 Although distilled in to eye catching loops on this page, generative art is best displayed in action. 
+                 Although distilled into eye catching loops on this page, generative art is best displayed in action. 
                  All of my work is rendered in real time and can respond to a variety of inputs.  
                  Sometimes accompanied by music, occasionally projected on to larger viewing surfaces (even a balloon once!), 
-                 responsive, interactive light art is helping to incorporate technology in to the human experience.
+                 responsive, interactive light art is helping to incorporate technology into the human experience.
                    </p>
                    <p class="title font-weight-light font-italic aboutMe text-xs-center">
-                     Here is a music video I made to help tell the story of Lucid Sanctary Dream by Discuss.
+                     Here is a music video I made to help tell the story of Lucid Sanctuary Dream by Discuss.
                    </p>
                 </v-card-text>
               </v-card>

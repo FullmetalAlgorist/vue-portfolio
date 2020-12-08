@@ -13,9 +13,9 @@
   left: 0
   right: 0
   top: 20%
-  z-index: 0 !important
+  z-index: -1 !important
   opacity: .4
 
   ~ *
-     z-index: 1 !important
+     z-index: -1 !important
 </style>

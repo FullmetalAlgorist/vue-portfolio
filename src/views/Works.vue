@@ -1,16 +1,17 @@
 <template>
-  <core-section id="works" justify-space-between>
+  <core-section id="works">
+     <v-layout align-center justify-center wrap  class="me">
     <abstract-4 />
     <abstract-6 />
-    <v-flex xs12 sm6 class="me">
+    <v-flex xs12 sm6>
       <core-heading>Recent Work</core-heading>
       <p
         class="single font-weight-light font-italic"
       >Here are some recent projects I've spent time on, click an image to launch the site!</p>
     </v-flex>
-    <v-flex xs12 sm5 mb-5 mt-2 text-xs-center class="me">
-      <v-layout justify-center>
-      </v-layout>
+    <v-flex xs12 sm5 mb-5 mt-2 text-xs-center>
+      <!-- <v-layout justify-center>
+      </v-layout> -->
     </v-flex>
 
              <v-flex v-for="site in schema.sites" :key="site.id" sm12>                           
@@ -58,7 +59,7 @@
                 <v-btn
                 :href="site.link"
                 target="_blank"
-                class="font-weight-light contactButton me"
+                class="font-weight-light contactButton"
                 color="primarydark black--text"
                 large
               >Launch Site!
@@ -95,7 +96,7 @@
      
     </v-layout>
  </v-flex>
-
+ </v-layout>
   </core-section>
 </template>
 

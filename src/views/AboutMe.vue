@@ -48,7 +48,7 @@
           <v-card
             class="gitCard"
             :color="`${hover ? 'rgba(65,223,213,.42)' : 'rgba(0,0,0,.28)'}`"
-           
+          
              @click="toInsta"
             slot-scope="{ hover }"
             elevation="20"
@@ -156,7 +156,7 @@ export default {
 }
 
 .gitCard {
-  margin-top: 20px;
+  margin-top: 40px;
   height: 170px;
   border-radius: 3%;
   justify-content: center;
