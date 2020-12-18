@@ -16,12 +16,46 @@
       <core-text class="mb-5">
         Do you like something you see? Let's talk about it! Shoot me a message, I would love to collaborate.
       </core-text>
-
-      <core-subheading class="text-uppercase mb-3">
-        Send me a Message
+  <core-subheading class="text-uppercase mb-3">
+        Send me an email
+          
+      </core-subheading>
+           
+              
+            <core-subheading class="primary--text"
+            
+            >
+             <v-btn
+              fab
+              small
+              href="mailto: mariah.vicary@gmail.com"
+              color="primarydark black--text"
+              >   <v-icon
+            >
+              mdi-email-outline
+            </v-icon> </v-btn>
+          
+     
+            
+       mariah.vicary@gmail.com
       </core-subheading>
 
-      <v-form v-model="valid" ref="form" class="formYou ">
+            
+<!-- <v-list
+        class="transparent"
+        three-line
+     
+      >  
+          <v-list-tile-content>
+                
+            <v-list-tile-title class="primary--text">
+              Email
+            </v-list-tile-title>
+            <v-list-tile-sub-title v-text="schema.basics.email" />
+          </v-list-tile-content>
+      </v-list>
+      -->
+      <!-- <v-form v-model="valid" ref="form" class="formYou ">
          <v-dialog
       v-model="dialog"
       max-width="290"
@@ -99,8 +133,8 @@
             </v-btn>
           </v-flex>
         </v-layout>
-      </v-form>
-    </v-flex>
+      </v-form> -->
+    </v-flex> 
     <v-layout wrap
      align-center
       justify-center
